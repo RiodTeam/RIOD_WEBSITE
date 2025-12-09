@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import MotionWrapper from "../common/MotionWrapper";
 
 export default function CompatibleSection() {
     const brands = [
@@ -14,42 +15,51 @@ export default function CompatibleSection() {
     const loopBrands = [...brands, ...brands];
 
     return (
-        <section className="w-full bg-white py-20 overflow-hidden">
+        <section className="w-full bg-white pt-24 pb-20  md:pt-[8.7rem]  lg:pb-56 overflow-hidden">
             <div className="w-[90%] max-w-[1400px] mx-auto">
 
                 {/* TEXT SECTION */}
-                <div className="max-w-[800px]">
-                    <h2 className="section-heading leading-normal! mt-10 font-inter  text-[#222222]">
-                        Compatible with all plug-in electric vehicles.
-                    </h2>
-
-                    <p className="normal-text text-[#9a99a2] mt-1 font-inter ">
-                        RNDSquare is your end-to-end R&D partner, transforming bold ideas into
-                        market-ready innovations. We combine cutting-edge engineering, IoT solutions,
-                        and software expertise to design, build, and scale products that drive
-                        real-world impact.
-                    </p>
+                <div className="max-w-[890px]">
+                    <MotionWrapper>
+                        <h2 className="section-heading leading-normal! mt-10 font-inter  text-[#222222]">
+                            Compatible with all plug-in electric vehicles.
+                        </h2>
+                    </MotionWrapper>
+                    <MotionWrapper>
+                        <p className="normal-text text-[#9a99a2] mt-6 font-inter leading-[1.8]!">
+                            RNDSquare is your end-to-end R&D partner, transforming bold ideas into
+                            market-ready innovations. We combine cutting-edge engineering, IoT solutions,
+                            and software expertise to design, build, and scale products that drive
+                            real-world impact.
+                        </p>
+                    </MotionWrapper>
                 </div>
 
                 {/* LOGO LOOP */}
-                <div className="mt-16 relative overflow-hidden">
+                <div className="mt-8 relative overflow-hidden">
                     <div className="flex animate-logo-scroll whitespace-nowrap">
 
                         {loopBrands.map((brand, index) => (
-                            <div
-                                key={index}
-                                className="flex items-center justify-center mx-16 min-w-[300px]"
-                            >
-                                <Image
-                                    src={brand.logo}
-                                    alt={brand.alt}
-                                    width={300}
-                                    height={300}
-                                    className="object-contain opacity-90 hover:opacity-100 transition"
-                                />
-                            </div>
+  <MotionWrapper
+    key={index}
+    className="
+      flex items-center justify-center
+      min-w-[140px] mx-6
+      sm:min-w-[180px] sm:mx-8
+      md:min-w-[220px] md:mx-12
+      lg:min-w-[300px] lg:mx-16
+    "
+  >
+    <Image
+      src={brand.logo}
+      alt={brand.alt}
+      width={300}
+      height={300}
+      className="object-contain opacity-90 hover:opacity-100 transition"
+    />
+  </MotionWrapper>
+))}
 
-                        ))}
 
                     </div>
                 </div>

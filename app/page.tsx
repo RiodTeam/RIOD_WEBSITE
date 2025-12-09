@@ -28,8 +28,7 @@ export default function Home() {
     <CompatibleSection/>
     <PowerpodCitySection/>
     <EvNumbersSection/>
-     <PartnerHostSection/>
-    <CompatibleSection/>
+    
     </div>
   );
 }

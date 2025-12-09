@@ -1,0 +1,152 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import MotionWrapper from "../common/MotionWrapper";
+
+export default function FooterSection() {
+    return (
+        <footer className="w-full bg-black text-white pt-[11.7rem] pb-10">
+
+            {/* TOP SECTION */}
+            <MotionWrapper className="w-[90%] max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+
+                {/* LEFT TEXT */}
+                <h3 className="regular-heading max-w-[550px]">
+                    Get valuable strategy, culture, and brand insights
+                    straight to your inbox.
+                </h3>
+
+                {/* RIGHT BUTTON */}
+                <button className="bg-white text-black px-10 py-3 font-inter text-[16px] flex items-center gap-2 hover:opacity-80 transition">
+                    Contact US
+                    <span className="text-[18px]">→</span>
+                </button>
+            </MotionWrapper>
+
+            {/* DIVIDER */}
+            <MotionWrapper>
+                <div className="w-[90%] max-w-[1400px] mx-auto border-b border-[#3a3a3a] mt-18 mb-20"></div>
+            </MotionWrapper>
+
+            {/* MIDDLE FOOTER LINKS */}
+            <div className="w-[90%] max-w-[1400px] mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-0 space-y-16 ">
+
+                {/* LOGO */}
+                <MotionWrapper>
+                    <Image
+                        src="/header/logo.svg"
+                        alt="RIOD Logo"
+                        width={90}
+                        height={10}
+                        className="object-contain"
+                    />
+                </MotionWrapper>
+
+                {/* EXPLORE */}
+                <MotionWrapper className="xl:mr-10 mt-1">
+                    <h4 className="font-inter text-[17px] text-[#b3b3b3] mb-4">Explore</h4>
+                    <ul className="space-y-4 text-[#7c7c7c] text-[17px] font-medium">
+
+                        <li>
+                            <Link href="/industries">Industries</Link>
+                        </li>
+
+                        <li>
+                            <Link href="/about">Who We Are</Link>
+                        </li>
+
+                        <li>
+                            <Link href="/careers">Career Opportunities</Link>
+                        </li>
+
+                        <li>
+                            <Link href="/insights">Insights & Blogs</Link>
+                        </li>
+
+                        <li>
+                            <Link href="/case-studies">Case Studies</Link>
+                        </li>
+
+                        <li>
+                            <Link href="/privacy-policy">Privacy Policy</Link>
+                        </li>
+
+                    </ul>
+
+                </MotionWrapper>
+
+                {/* SERVICES */}
+                <MotionWrapper className="xl:ml-[3.7rem]  mt-1">
+                    <h4 className="font-inter text-[17px] text-[#b3b3b3] mb-4">Services</h4>
+                    <ul className="space-y-4 text-[#7c7c7c] text-[17px] font-medium">
+
+                        <li>
+                            <Link href="/services/product-engineering">Product Engineering</Link>
+                        </li>
+
+                        <li>
+                            <Link href="/services/cloud-applications">Cloud Applications</Link>
+                        </li>
+
+                        <li>
+                            <Link href="/services/vision-ai">Vision AI</Link>
+                        </li>
+
+                        <li>
+                            <Link href="/services/ev-charging">EV Charging</Link>
+                        </li>
+
+                    </ul>
+
+                </MotionWrapper>
+
+                {/* QUICK LINKS */}
+                <MotionWrapper className="xl:ml-42  mt-1">
+                    <h4 className="font-inter text-[17px] text-[#b3b3b3] mb-4">Quicklinks</h4>
+                    <ul className="space-y-4 text-[#7c7c7c] text-[17px] font-medium">
+
+                        <li>
+                            <Link href="/partners">Partners</Link>
+                        </li>
+
+                        <li>
+                            <Link href="/resources">Resources</Link>
+                        </li>
+
+                        <li>
+                            <Link href="/gallery">Gallery</Link>
+                        </li>
+
+                        <li>
+                            <Link href="/contact">Contact</Link>
+                        </li>
+
+                        {/* <li>
+    <Link href="/terms-and-conditions">Terms &amp; Conditions</Link>
+  </li> */}
+
+                    </ul>
+                </MotionWrapper>
+
+            </div>
+
+            {/* DIVIDER */}
+            <MotionWrapper>
+
+                <div className="w-[95%] sm:w-[90%] max-w-[1400px] mx-auto border-b border-[#3a3a3a] mt-18 "></div>
+            </MotionWrapper>
+
+
+
+            {/* BOTTOM FOOTER */}
+            <MotionWrapper className="w-[95%] sm:w-[90%] max-w-[1400px] mx-auto mt-11 flex flex-col md:flex-row justify-between text-[13px] text-[#7f7f7f]">
+                <p className="text-[13.5px]">©2025 RIOD </p>
+                <p className="mt-8 sm:mt-0 text-[#626262] text-[15px] md:text-[17px]">
+                    Crafted With <span className="text-[#626262]">❤</span> by Woxro
+                </p>
+            </MotionWrapper>
+
+        </footer>
+    );
+}

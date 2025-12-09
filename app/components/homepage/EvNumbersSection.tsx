@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import MotionWrapper from "../common/MotionWrapper";
 
 export default function EvNumbersSection() {
     const counters = [
@@ -30,26 +31,30 @@ export default function EvNumbersSection() {
     }, []);
 
     return (
-        <section ref={sectionRef} className="w-full bg-white py-24">
+        <section ref={sectionRef} className="w-full bg-white md:pt-[15.4rem] md:pb-[12.2rem] pt-24 pb-20">
             <div className="w-[90%] max-w-[1400px] mx-auto">
 
                 {/* HEADING */}
-                <h2 className="section-heading leading-normal!  font-inter  text-black w-[60%]">
-                    Driving the Future of EV Charging in Numbers
-                </h2>
+                <MotionWrapper>
+                    <h2 className="section-heading leading-normal!  font-inter  text-black md:w-[60%]">
+                        Driving the Future of EV Charging in Numbers
+                    </h2>
+                </MotionWrapper>
 
                 {/* PARAGRAPH */}
-                <p className="normal-text text-[#9a99a2] mt-1 font-inter">
-                    RNDSquare is your end-to-end R&D partner, transforming bold ideas into
-                    market-ready innovations. We combine cutting-edge engineering, IoT solutions,
-                    and software expertise to design, build, and scale products that drive
-                    real-world impact. From initial concept and prototyping to application
-                    development and lifecycle support, we work alongside your team to bring
-                    ambitious visions to life.
-                </p>
+                <MotionWrapper>
+                    <p className="normal-text text-[#9a99a2] mt-8 font-inter leading-[1.7]!">
+                        RNDSquare is your end-to-end R&D partner, transforming bold ideas into
+                        market-ready innovations. We combine cutting-edge engineering, IoT solutions,
+                        and software expertise to design, build, and scale products that drive
+                        real-world impact. From initial concept and prototyping to application
+                        development and lifecycle support, we work alongside your team to bring
+                        ambitious visions to life.
+                    </p>
+                </MotionWrapper>
 
                 {/* COUNTERS */}
-                <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-y-12">
+                <MotionWrapper className="mt-28 grid grid-cols-2 md:grid-cols-4  gap-y-12 xl:w-[87%]">
 
                     {counters.map((item, index) => (
                         <CounterBox
@@ -61,7 +66,7 @@ export default function EvNumbersSection() {
                         />
                     ))}
 
-                </div>
+                </MotionWrapper>
 
             </div>
         </section>
@@ -105,11 +110,11 @@ function CounterBox({
 
     return (
         <div>
-            <h3 className="text-[28px] md:text-[48px] font-inter font-medium text-black">
+            <h3 className="text-[36px] xl:text-[48px] font-inter font-medium text-black">
                 {count}
                 {suffix}
             </h3>
-            <p className="regular-heading text-[#9a99a2] mt-2 font-inter">{label}</p>
+            <p className="regular-heading text-[#9a99a2]  font-inter tracking-tighter">{label}</p>
         </div>
     );
 }

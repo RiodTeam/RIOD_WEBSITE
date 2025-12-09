@@ -32,7 +32,7 @@ body {
 .hero-title {
   font-size: 42px;
   line-height: 1.15;
-  font-weight: 510;
+  font-weight: 400;
   
 
   @media (min-width: 768px) {
@@ -41,7 +41,7 @@ body {
   }
 
   @media (min-width: 1024px) {
-    font-size: 64px;
+    font-size: 48px;
   }
 
   @media (min-width: 1280px) {
@@ -51,18 +51,18 @@ body {
 }
 
 .hero-desc {
-  font-size: 42px;
+  font-size: 16px;
   line-height: 1.15;
-  font-weight: 510;
+  font-weight: 400;
   
 
   @media (min-width: 768px) {
-    font-size: 58px;
+    font-size: 16px;
     line-height: 1.2;
   }
 
   @media (min-width: 1024px) {
-    font-size: 64px;
+    font-size: 16px;
   }
 
   @media (min-width: 1280px) {
@@ -83,6 +83,7 @@ body {
   @media (min-width: 1024px) {
     font-size: 4rem;
     line-height: 80px;
+    
   }
 
   @media (min-width: 1280px) {
@@ -112,17 +113,17 @@ body {
 }
 
 .regular-heading {
-  font-size: 24px;
+  font-size: 17px;
   font-weight: 350;
   font-family: 'Inter', sans-serif;
 
 
   @media (min-width: 768px) {
-    font-size: 26px;
+    font-size: 17px;
   }
 
   @media (min-width: 1024px) {
-    font-size: 26px;
+    font-size: 17px;
   }
    @media (min-width: 1280px) {
     font-size: 24px;
@@ -218,5 +219,5 @@ body {
 }
 
 .animate-logo-scroll {
-  animation: logo-scroll 18s linear infinite;
+  animation: logo-scroll 8s linear infinite;
 }

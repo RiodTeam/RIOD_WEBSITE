@@ -15,7 +15,7 @@ const Header = () => {
     // Detect pages requiring forced dark header
     const forceDarkHeader =
         pathname.startsWith("/individual-insight") ||
-        pathname.startsWith("/insights/") ||   // <-- ADD THIS
+        pathname.startsWith("/insights/") ||   
         pathname === "/faq" ||
         pathname === "/legal-and-policy";
 
@@ -78,7 +78,7 @@ const Header = () => {
                         </div>
 
                         {/* DESKTOP NAV */}
-                        <nav className="hidden lg:flex items-center space-x-10 mr-64">
+                        <nav className="hidden lg:flex items-center space-x-10 xl:mr-64">
                             {navItems.map((item) => (
                                 <a
                                     key={item.name}
@@ -144,12 +144,12 @@ const Header = () => {
                 >
                     <div className="flex items-center justify-between p-6 border-b border-white/10">
                         <div className="flex items-center">
-                            <Link href="/" className="w-8.5 h-8.5 xl:w-10 xl:h-10 relative block">
+                            <Link href="/" className="w-20 h-20 xl:w-20 xl:h-20 relative block">
                                 <Image
-                                    src="/hlogo.svg"
+                                    src="/header/logo.svg"
                                     alt="Logo"
                                     fill
-                                    className="object-cover"
+                                    className="object-contain"
                                 />
                             </Link>
                         </div>

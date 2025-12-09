@@ -36,7 +36,7 @@ const PlatformSection: React.FC<PlatformSectionProps> = ({
                 <MotionWrapper>
                     <h2
                         className={clsx(
-                            'section-heading leading-normal! mt-10 font-inter w-[40%]',
+                            'section-heading leading-normal! mt-10 font-inter lg:w-[40%]',
                             isWhite ? 'text-black' : 'text-white'
                         )}
                         dangerouslySetInnerHTML={{ __html: title }}
