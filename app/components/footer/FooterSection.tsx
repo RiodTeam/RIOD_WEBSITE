@@ -134,7 +134,7 @@ export default function FooterSection() {
                         <li>
                             <Link href="/contact">IoT Device Integration</Link>
                         </li>
-                         <li>
+                        <li>
                             <Link href="/contact">IoT Device Integration</Link>
                         </li>
 
