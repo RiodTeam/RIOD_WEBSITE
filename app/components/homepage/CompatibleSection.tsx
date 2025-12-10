@@ -40,25 +40,25 @@ export default function CompatibleSection() {
                     <div className="flex animate-logo-scroll whitespace-nowrap">
 
                         {loopBrands.map((brand, index) => (
-  <MotionWrapper
-    key={index}
-    className="
+                            <MotionWrapper
+                                key={index}
+                                className="
       flex items-center justify-center
       min-w-[140px] mx-6
       sm:min-w-[180px] sm:mx-8
       md:min-w-[220px] md:mx-12
       lg:min-w-[300px] lg:mx-16
     "
-  >
-    <Image
-      src={brand.logo}
-      alt={brand.alt}
-      width={300}
-      height={300}
-      className="object-contain opacity-90 hover:opacity-100 transition"
-    />
-  </MotionWrapper>
-))}
+                            >
+                                <Image
+                                    src={brand.logo}
+                                    alt={brand.alt}
+                                    width={300}
+                                    height={300}
+                                    className="object-contain opacity-90 hover:opacity-100 transition"
+                                />
+                            </MotionWrapper>
+                        ))}
 
 
                     </div>

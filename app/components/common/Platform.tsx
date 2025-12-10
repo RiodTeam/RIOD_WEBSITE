@@ -12,6 +12,8 @@ interface PlatformSectionProps {
     description: string
     pt?: string
     pb?: string
+    titleWidth?: string
+    titleMarginTop?: string  
 }
 
 const PlatformSection: React.FC<PlatformSectionProps> = ({
@@ -20,6 +22,9 @@ const PlatformSection: React.FC<PlatformSectionProps> = ({
     description,
     pt = 'pt-16 md:pt-[6.8rem]',
     pb = 'pb-0 md:pb-0',
+    titleWidth = 'lg:w-[40%]',
+    titleMarginTop = "mt-10",   
+
 }) => {
     const isWhite = bg === 'white'
 
@@ -35,12 +40,16 @@ const PlatformSection: React.FC<PlatformSectionProps> = ({
                 {/* HEADING */}
                 <MotionWrapper>
                     <h2
-                        className={clsx(
-                            'section-heading leading-normal! mt-10 font-inter lg:w-[40%]',
-                            isWhite ? 'text-black' : 'text-white'
-                        )}
-                        dangerouslySetInnerHTML={{ __html: title }}
-                    />
+  className={clsx(
+    "section-heading leading-normal! font-inter",
+    titleMarginTop,   // ← apply top margin
+    titleWidth,        // ← apply custom width
+    isWhite ? "text-black" : "text-white"
+  )}
+  dangerouslySetInnerHTML={{ __html: title }}
+/>
+
+
                 </MotionWrapper>
 
                 {/* DESCRIPTION */}

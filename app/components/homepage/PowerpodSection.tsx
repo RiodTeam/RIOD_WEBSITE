@@ -38,7 +38,7 @@ export default function PowerpodStickyScroll() {
         const handleScroll = () => {
             if (!wrapperRef.current) return;
 
-          
+
             const scrollPosition = window.scrollY - (wrapperRef.current.offsetTop);
 
             const sectionHeight = window.innerHeight;
@@ -59,7 +59,7 @@ export default function PowerpodStickyScroll() {
         <div className="w-full bg-white pb-20 xl:pb-0">
             <div
                 ref={wrapperRef}
-               className="relative w-[90%] max-w-[1400px] mx-auto 
+                className="relative w-[90%] max-w-[1400px] mx-auto 
            grid grid-cols-1 lg:grid-cols-[220px_1fr]"
 
                 style={{ height: `${sections.length * 120}vh` }}
@@ -125,7 +125,7 @@ export default function PowerpodStickyScroll() {
                         >
                             {/* TEXT */}
                             <div className="w-full lg:w-[38%] lg:mt-[7.7rem]">
-                                
+
                                 <h2 className="text-[32px] font-normal font-inter text-black mb-5">
                                     {sections[activeIndex].title}
                                 </h2>
