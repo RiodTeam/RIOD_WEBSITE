@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import MotionWrapper from "../common/MotionWrapper";
 
 const blogs = [
   { id: 1, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "Driving the Future of EV Charging in Numbers" },
@@ -27,60 +28,109 @@ export default function BlogGrid() {
       <div className="w-[90%] max-w-[1400px] mx-auto">
 
         {/* ---------------- CATEGORY FILTERS ---------------- */}
-        <div className="flex flex-wrap gap-3 md:gap-4 mb-20">
-          {categories.map((cat) => {
-            const isActive = activeCategory === cat;
-            return (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                className={`
+        <MotionWrapper>
+          <div className="flex flex-wrap gap-3 md:gap-4 mb-20">
+            {categories.map((cat) => {
+              const isActive = activeCategory === cat;
+              return (
+                <button
+                  key={cat}
+                  onClick={() => setActiveCategory(cat)}
+                  className={`
                   px-3 md:px-[1.1rem] py-2.5 rounded-full text-[12px] md:text-[14px] transition
                   ${isActive ? "bg-black text-white" : "bg-[#eeeeee] text-black"}
                 `}
-              >
-                {cat}
-              </button>
-            );
-          })}
-        </div>
+                >
+                  {cat}
+                </button>
+              );
+            })}
+          </div>
+        </MotionWrapper>
 
         {/* ---------------- GRID ---------------- */}
+
+        {/* ---------------- MOBILE SECTION (HORIZONTAL SCROLL) ---------------- */}
+        <MotionWrapper>
+          <div
+            className="
+    sm:hidden flex overflow-x-auto gap-5 pb-4 scrollbar-hide 
+  "
+          >
+            {filteredBlogs.map((blog) => (
+              <div
+                key={blog.id}
+                className="w-[360px] shrink-0 group cursor-pointer"
+              >
+                {/* IMAGE */}
+                <div className="w-full h-[270px] relative overflow-hidden ">
+                  <Image
+                    src={blog.img}
+                    alt="blog image"
+                    fill
+                    className="object-cover group-hover:scale-105 transition duration-300"
+                  />
+                </div>
+
+                {/* TAG + DATE */}
+                <div className="flex justify-between mt-5 text-[12px] text-black font-inter">
+                  <span className="px-4 py-2 bg-[#eeeeee] rounded-full">
+                    {blog.tag}
+                  </span>
+                  <span className="text-[#717171] mt-2">{blog.date}</span>
+                </div>
+
+                {/* TITLE */}
+                <h3 className="mt-4 text-[20px] text-[#404040] font-inter leading-[1.4]">
+                  {blog.title}
+                </h3>
+              </div>
+            ))}
+          </div>
+        </MotionWrapper>
+
+        {/* ---------------- DESKTOP / TABLET GRID ---------------- */}
         <div
           className="
-            grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-[4.8rem]
-            max-sm:flex max-sm:overflow-x-auto max-sm:gap-5 max-sm:pb-4
-            max-sm:*:min-w-[360px]  scrollbar-hide
-          "
+    hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 
+    gap-x-8 gap-y-[4.8rem]
+  "
         >
           {filteredBlogs.map((blog) => (
             <div key={blog.id} className="group cursor-pointer">
 
               {/* IMAGE */}
-              <div className="w-full h-[270px] md:h-[300px] xl:h-[530px] relative overflow-hidden ">
-                <Image
-                  src={blog.img}
-                  alt="blog image"
-                  fill
-                  className="object-cover group-hover:scale-105 transition duration-300"
-                />
-              </div>
+              <MotionWrapper>
+                <div className="w-full h-[270px] md:h-[300px] xl:h-[530px] relative overflow-hidden">
+                  <Image
+                    src={blog.img}
+                    alt="blog image"
+                    fill
+                    className="object-cover group-hover:scale-105 transition duration-300"
+                  />
+                </div>
+              </MotionWrapper>
 
               {/* TAG + DATE */}
-              <div className="flex justify-between mt-5 text-[12px] md:text-[14px] text-black font-inter">
-                <span className=" px-4 py-2 bg-[#eeeeee] rounded-full  font-inter">
-                  {blog.tag}
-                </span>
-                <span className="text-[#717171] mt-2">{blog.date}</span>
-              </div>
+              <MotionWrapper>
+                <div className="flex justify-between mt-5 text-[12px] md:text-[14px] text-black font-inter">
+                  <span className="px-4 py-2 bg-[#eeeeee] rounded-full">
+                    {blog.tag}
+                  </span>
+                  <span className="text-[#717171] mt-2">{blog.date}</span>
+                </div>
+              </MotionWrapper>
 
               {/* TITLE */}
-              <h3 className="mt-4 text-[20px] md:text-[24px] text-[#404040] font-inter tracking-tight leading-[1.4]">
-                {blog.title}
-              </h3>
+              <MotionWrapper>
+                <h3 className="mt-4 text-[20px] md:text-[24px] text-[#404040] font-inter leading-[1.4]">
+                  {blog.title}
+                </h3>
+              </MotionWrapper>
             </div>
           ))}
         </div>
+
 
       </div>
     </section>
