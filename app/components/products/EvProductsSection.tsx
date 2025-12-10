@@ -2,7 +2,6 @@
 
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import { ChevronDown } from "lucide-react";
 import MotionWrapper from "../common/MotionWrapper";
 
 export default function EvProductsSection() {
@@ -140,11 +139,11 @@ export default function EvProductsSection() {
     }, []);
 
     return (
-        <section className="w-full bg-white pt-[5.5rem] pb-[8rem] md:pb-[12.5rem]">
+        <section className="w-full bg-white pt-22 pb-32 md:pb-50">
             <div className="w-[90%] max-w-[1400px] mx-auto">
 
                 {/* ================== TWO DROPDOWNS ================== */}
-                <div className="flex justify-end gap-3 md:gap-4 mb-[4rem] md:mb-[6.3rem]">
+                <div className="flex justify-end gap-3 md:gap-4 mb-16 md:mb-[6.3rem]">
 
                     {/* Dropdown 1 - Category */}
                     <MotionWrapper>

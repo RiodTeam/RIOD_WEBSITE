@@ -23,11 +23,11 @@ export default function BlogGrid() {
       : blogs.filter((b) => b.tag === activeCategory);
 
   return (
-    <section className="w-full bg-white pt-[7.5rem] pb-[8rem] md:pb-[12.3rem]">
+    <section className="w-full bg-white pt-30 pb-32 md:pb-[12.3rem]">
       <div className="w-[90%] max-w-[1400px] mx-auto">
 
         {/* ---------------- CATEGORY FILTERS ---------------- */}
-        <div className="flex flex-wrap gap-3 md:gap-4 mb-[5rem]">
+        <div className="flex flex-wrap gap-3 md:gap-4 mb-20">
           {categories.map((cat) => {
             const isActive = activeCategory === cat;
             return (
@@ -35,7 +35,7 @@ export default function BlogGrid() {
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
                 className={`
-                  px-3 md:px-[1.1rem] py-[10px] rounded-full text-[12px] md:text-[14px] transition
+                  px-3 md:px-[1.1rem] py-2.5 rounded-full text-[12px] md:text-[14px] transition
                   ${isActive ? "bg-black text-white" : "bg-[#eeeeee] text-black"}
                 `}
               >
@@ -50,7 +50,7 @@ export default function BlogGrid() {
           className="
             grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-[4.8rem]
             max-sm:flex max-sm:overflow-x-auto max-sm:gap-5 max-sm:pb-4
-            max-sm:[&>*]:min-w-[360px]  scrollbar-hide
+            max-sm:*:min-w-[360px]  scrollbar-hide
           "
         >
           {filteredBlogs.map((blog) => (
