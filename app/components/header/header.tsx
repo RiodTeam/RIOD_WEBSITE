@@ -47,12 +47,12 @@ const Header = () => {
 
     const navItems = [
         { name: "About", href: "/about" },
-        { name: "Product", href: "/projects" },
-        { name: "Services", href: "/gallery" },
-        { name: "Career", href: "/testimonials" },
-        { name: "Blog", href: "/contact" },
+        { name: "Product", href: "/products" },
+        { name: "Services", href: "/services" },
+        { name: "Career", href: "/career" },
+        { name: "Blog", href: "/blog" },
         { name: "Contact", href: "/contact" },
-        { name: "Be a Partner", href: "/contact" },
+        { name: "Be a Partner", href: "/be-a-partner" },
     ];
 
     return (

@@ -18,10 +18,17 @@ export default function FooterSection() {
                 </h3>
 
                 {/* RIGHT BUTTON */}
-                <button className="bg-white text-black px-10 py-3 font-inter text-[16px] flex items-center gap-2 hover:opacity-80 transition">
+                <button className="bg-white text-black px-7 py-3 font-inter text-[16px] flex items-center gap-8 hover:opacity-80 transition">
                     Contact US
-                    <span className="text-[18px]">→</span>
+                    <Image
+                        src="/footer/arrow.svg"
+                        alt="arrow"
+                        width={12}
+                        height={12}
+                        className="object-contain"
+                    />
                 </button>
+
             </MotionWrapper>
 
             {/* DIVIDER */}
@@ -49,7 +56,7 @@ export default function FooterSection() {
                     <ul className="space-y-4 text-[#7c7c7c] text-[17px] font-medium">
 
                         <li>
-                            <Link href="/industries">Industries</Link>
+                            <Link href="/industries">What We Do</Link>
                         </li>
 
                         <li>
@@ -65,7 +72,7 @@ export default function FooterSection() {
                         </li>
 
                         <li>
-                            <Link href="/case-studies">Case Studies</Link>
+                            <Link href="/case-studies">Get  Quote</Link>
                         </li>
 
                         <li>
@@ -86,15 +93,21 @@ export default function FooterSection() {
                         </li>
 
                         <li>
-                            <Link href="/services/cloud-applications">Cloud Applications</Link>
+                            <Link href="/services/cloud-applications">Application Development</Link>
                         </li>
 
                         <li>
-                            <Link href="/services/vision-ai">Vision AI</Link>
+                            <Link href="/services/vision-ai">Product Life cycle Support</Link>
                         </li>
 
                         <li>
-                            <Link href="/services/ev-charging">EV Charging</Link>
+                            <Link href="/services/ev-charging">Hardware Integration</Link>
+                        </li>
+                        <li>
+                            <Link href="/services/ev-charging">Hardware Checking</Link>
+                        </li>
+                        <li>
+                            <Link href="/services/ev-charging">Electronics Mapping</Link>
                         </li>
 
                     </ul>
@@ -107,19 +120,22 @@ export default function FooterSection() {
                     <ul className="space-y-4 text-[#7c7c7c] text-[17px] font-medium">
 
                         <li>
-                            <Link href="/partners">Partners</Link>
+                            <Link href="/partners">Hardware Rendering</Link>
                         </li>
 
                         <li>
-                            <Link href="/resources">Resources</Link>
+                            <Link href="/resources">3D Modeling</Link>
                         </li>
 
                         <li>
-                            <Link href="/gallery">Gallery</Link>
+                            <Link href="/gallery">EV Chargers</Link>
                         </li>
 
                         <li>
-                            <Link href="/contact">Contact</Link>
+                            <Link href="/contact">IoT Device Integration</Link>
+                        </li>
+                         <li>
+                            <Link href="/contact">IoT Device Integration</Link>
                         </li>
 
                         {/* <li>

@@ -1,6 +1,7 @@
 "use client";
 
 import MotionWrapper from "../common/MotionWrapper";
+import Image from "next/image";
 
 export default function PartnerHostSection() {
     const items = [
@@ -48,9 +49,15 @@ export default function PartnerHostSection() {
                                 {item.desc}
                             </p>
 
-                            <button className="mt-8 flex items-center gap-2 para-text text-white hover:opacity-80 transition">
+                            <button className="mt-8 flex items-center gap-5 para-text text-white hover:opacity-80 transition">
                                 Know more
-                                <span className="text-[18px]">→</span>
+                               <Image
+                                                               src="/home/arrow.svg"
+                                                               alt="arrow"
+                                                               width={14}
+                                                               height={14}
+                                                               className="object-contain"
+                                                           />
                             </button>
                         </MotionWrapper>
                     ))}
