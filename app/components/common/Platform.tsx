@@ -13,7 +13,7 @@ interface PlatformSectionProps {
     pt?: string
     pb?: string
     titleWidth?: string
-    titleMarginTop?: string  
+    titleMarginTop?: string
 }
 
 const PlatformSection: React.FC<PlatformSectionProps> = ({
@@ -23,7 +23,7 @@ const PlatformSection: React.FC<PlatformSectionProps> = ({
     pt = 'pt-16 md:pt-[6.8rem]',
     pb = 'pb-0 md:pb-0',
     titleWidth = 'lg:w-[40%]',
-    titleMarginTop = "mt-10",   
+    titleMarginTop = "mt-10",
 
 }) => {
     const isWhite = bg === 'white'
@@ -40,14 +40,14 @@ const PlatformSection: React.FC<PlatformSectionProps> = ({
                 {/* HEADING */}
                 <MotionWrapper>
                     <h2
-  className={clsx(
-    "section-heading leading-normal! font-inter",
-    titleMarginTop,   // ← apply top margin
-    titleWidth,        // ← apply custom width
-    isWhite ? "text-black" : "text-white"
-  )}
-  dangerouslySetInnerHTML={{ __html: title }}
-/>
+                        className={clsx(
+                            "section-heading leading-normal! font-inter",
+                            titleMarginTop,   // ← apply top margin
+                            titleWidth,        // ← apply custom width
+                            isWhite ? "text-black" : "text-white"
+                        )}
+                        dangerouslySetInnerHTML={{ __html: title }}
+                    />
 
 
                 </MotionWrapper>
@@ -56,7 +56,7 @@ const PlatformSection: React.FC<PlatformSectionProps> = ({
                 <MotionWrapper delay={0.2}>
                     <p
                         className={clsx(
-                            'normal-text font-inter font-normal tracking-[0.3px] mt-8 leading-[1.7]!',
+                            'normal-text font-inter font-normal tracking-[0.3px] xl:w-[97%] mt-8 leading-[1.7]!',
                             isWhite ? 'text-[#9a99a2]' : 'text-[#9a99a2]'
                         )}
                     >

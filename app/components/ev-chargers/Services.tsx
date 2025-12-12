@@ -37,7 +37,7 @@ export default function ServicesSection({ products }: Props) {
                             <div key={p.id} className="flex flex-col snap-start">
 
                                 {/* IMAGE */}
-                                <div className="relative w-full h-[240px] bg-gray-100 overflow-hidden">
+                                <div className="relative w-full h-60 bg-gray-100 overflow-hidden">
                                     <Image src={p.image} alt={p.title} fill className="object-cover" />
                                 </div>
 
@@ -55,7 +55,7 @@ export default function ServicesSection({ products }: Props) {
                     </div>
 
                     {/* DESKTOP GRID */}
-                    <div className="hidden sm:grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-[5rem]">
+                    <div className="hidden sm:grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-20">
                         {products.map((p) => (
                             <div key={p.id} className="flex flex-col">
 

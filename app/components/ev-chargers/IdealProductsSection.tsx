@@ -17,13 +17,13 @@ interface Props {
 
 export default function IdealProductsSection({ data }: Props) {
     return (
-        <section className="w-full bg-white py-[5rem] md:py-[8rem] lg:pt-[13rem] lg:pb-[12.5rem]">
+        <section className="w-full bg-white py-20 md:py-32 lg:pt-52 lg:pb-50">
             <div className="w-[90%] max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 items-center">
 
                 {/* LEFT SIDE */}
                 <div>
                     <MotionWrapper>
-                        <h2 className="font-inter section-heading !leading-[1.5] text-[#222222] md:w-[70%]">
+                        <h2 className="font-inter section-heading leading-normal! text-[#222222] md:w-[70%]">
                             {data.title}
                         </h2>
                     </MotionWrapper>
@@ -35,7 +35,7 @@ export default function IdealProductsSection({ data }: Props) {
                     </MotionWrapper>
 
                     <MotionWrapper>
-                        <h3 className="font-inter regular-heading mt-[2rem] xl:mt-[5.1rem] text-[#161616] md:w-[70%]">
+                        <h3 className="font-inter regular-heading mt-8 xl:mt-[5.1rem] text-[#161616] md:w-[70%]">
                             {data.subTitle}
                         </h3>
                     </MotionWrapper>
@@ -48,7 +48,7 @@ export default function IdealProductsSection({ data }: Props) {
                 </div>
 
                 {/* RIGHT SIDE IMAGE */}
-                <div className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[560px] xl:h-[660px] mt-8 lg:mt-0">
+                <div className="relative w-full h-[260px] sm:h-80 md:h-[380px] lg:h-[560px] xl:h-[660px] mt-8 lg:mt-0">
                     <MotionWrapper>
                         <Image
                             src={data.image}

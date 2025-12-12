@@ -12,7 +12,7 @@ export default function FooterSection() {
             <MotionWrapper className="w-[90%] max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
 
                 {/* LEFT TEXT */}
-                <h3 className="regular-heading max-w-[550px]">
+                <h3 className="regular-heading max-w-[550px] text-white!">
                     Get valuable strategy, culture, and brand insights
                     straight to your inbox.
                 </h3>

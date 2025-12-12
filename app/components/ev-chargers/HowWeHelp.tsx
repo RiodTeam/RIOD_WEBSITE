@@ -20,7 +20,7 @@ export default function HotelAccordion({ items, heading, intro }: Props) {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className="w-full bg-[#1e1e1e] text-white py-[5rem] md:py-[6.5rem]">
+    <section className="w-full bg-[#1e1e1e] text-white py-20 md:py-26">
       <div className="w-[90%] max-w-[1400px] mx-auto">
 
         {/* HEADING */}
@@ -54,7 +54,7 @@ export default function HotelAccordion({ items, heading, intro }: Props) {
                   {/* CLICKABLE TITLE */}
                   <div onClick={() => setOpenIndex(index)} className="cursor-pointer">
                     <MotionWrapper>
-                      <h3 className="regular-heading font-inter !text-white">
+                      <h3 className="regular-heading font-inter text-white!">
                         {item.title}
                       </h3>
                     </MotionWrapper>

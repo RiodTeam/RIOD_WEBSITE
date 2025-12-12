@@ -3,7 +3,7 @@
 import MotionWrapper from "../common/MotionWrapper";
 import Image from "next/image";
 
-export default function PartnerHostSection() {
+export default function Join() {
     const items = [
         {
             title: "Become a Partner",
@@ -26,7 +26,7 @@ export default function PartnerHostSection() {
                 <MotionWrapper className="md:pr-12 md:border-b-0 lg:border-r border-[#545454]">
                     <MotionWrapper>
                         <h2 className="section-heading font-inter leading-normal!">
-                            Partner & Host Opportunities
+                           Join the RIOD Network
                         </h2>
                     </MotionWrapper>
                     <MotionWrapper>

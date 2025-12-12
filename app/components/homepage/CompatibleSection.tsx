@@ -19,7 +19,7 @@ export default function CompatibleSection() {
             <div className="w-[90%] max-w-[1400px] mx-auto">
 
                 {/* TEXT SECTION */}
-                <div className="max-w-[890px]">
+                <div className="max-w-[860px]">
                     <MotionWrapper>
                         <h2 className="section-heading leading-normal! mt-10 font-inter  text-[#222222]">
                             Compatible with all plug-in electric vehicles.
