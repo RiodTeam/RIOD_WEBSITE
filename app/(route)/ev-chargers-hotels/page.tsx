@@ -20,12 +20,12 @@ const page = () => {
         titleWidth="lg:w-[50%] xl:w-[65%]"
         titleMarginTop="mt-4 md:mt-4"
         description="RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations. We combine cutting-edge engineering, IoT solutions, and software expertise to design, build, and scale products that drive real-world impact. From initial concept and prototyping to application development and lifecycle support, we work alongside your team to bring ambitious visions to life." />
-      <ServicesSection products={servicesProducts} />;
-       <HotelAccordion
-      heading="How We Help Hotels"
-      intro="RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations. We combine cutting-edge engineering, IoT solutions, and software expertise to design, build, and scale products that drive real-world impact."
-      items={hotelAccordionData}
-    />
+      <ServicesSection products={servicesProducts} />
+      <HotelAccordion
+        heading="How We Help Hotels"
+        intro="RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations. We combine cutting-edge engineering, IoT solutions, and software expertise to design, build, and scale products that drive real-world impact."
+        items={hotelAccordionData}
+      />
       <IdealProductsSection data={idealProductsData} />
     </div>
   )
