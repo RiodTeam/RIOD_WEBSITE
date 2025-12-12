@@ -1,34 +1,12 @@
-import HotelAccordion from "@/app/components/ev-chargers/HowWeHelp"
-import React from 'react'
-import HeroSection from '@/app/components/common/Hero'
-import IdealProductsSection from '@/app/components/ev-chargers/IdealProductsSection'
-import PlatformSection from '@/app/components/common/Platform'
-import { hotelAccordionData } from "@/app/components/data/hotelAccordionData"
-import { idealProductsDataOffice } from "@/app/components/data/idealProductsData"
-import { servicesProductsOffice } from "@/app/components/data/servicesProducts"
-import ServicesSection from "@/app/components/ev-chargers/Services"
+import type { Metadata } from "next";
+import PageClient from "./page.client";
 
-const page = () => {
-    return (
-        <div>
-            <HeroSection
-                backgroundImage="/home/hero.webp"
-                title="EV Chargers For Office"
-                description="Reliable, fast, and smart EV charging solutions for home, business, and commercial spaces. Designed to empower your journey towards a greener, smarter future." />
-            <PlatformSection
-                title="Why Office Need EV Charging"
-                titleWidth="lg:w-[50%] xl:w-[65%]"
-                titleMarginTop="mt-4 md:mt-4"
-                description="RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations. We combine cutting-edge engineering, IoT solutions, and software expertise to design, build, and scale products that drive real-world impact. From initial concept and prototyping to application development and lifecycle support, we work alongside your team to bring ambitious visions to life." />
-            <ServicesSection products={servicesProductsOffice} />
-            <HotelAccordion
-                heading="How We Help Office"
-                intro="RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations. We combine cutting-edge engineering, IoT solutions, and software expertise to design, build, and scale products that drive real-world impact."
-                items={hotelAccordionData}
-            />
-            <IdealProductsSection data={idealProductsDataOffice} />
-        </div>
-    )
+export const metadata: Metadata = {
+  title: "EV Chargers for Office | RIOD",
+  description:
+    "Smart, fast, and reliable EV charging solutions designed for offices, tech parks, and corporate environments. Boost employee convenience and sustainability.",
+};
+
+export default function Page() {
+  return <PageClient />;
 }
-
-export default page
