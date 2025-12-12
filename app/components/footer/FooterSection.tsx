@@ -9,7 +9,7 @@ export default function FooterSection() {
         <footer className="w-full bg-black text-white pt-[11.7rem] pb-10">
 
             {/* TOP SECTION */}
-            <MotionWrapper className="w-[90%] max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+            <MotionWrapper className="w-[90%] max-w-[1400px] mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
 
                 {/* LEFT TEXT */}
                 <h3 className="regular-heading max-w-[550px] text-white!">
