@@ -21,13 +21,13 @@ export default function ContactDetailsSection() {
 
         {/* RIGHT DETAILS */}
         <div>
-          <h3 className="text-xl font-semibold mb-4">Contact Details</h3>
+          <h3 className="text-xl regular-heading2 font-semibold mb-4">Contact Details</h3>
           <p className="para-text text-[#9A99A2] mb-10 max-w-xl ">
             To accelerate India’s shift towards sustainable electric mobility
             through cutting-edge EV charging infrastructure that's intelligent.
           </p>
 
-          <div className="border-b pb-6 mb-6">
+          <div className="border-b-[0.5px] border-[#9A99A2] pb-6 mb-6">
             <h4 className="regular-heading font-[400]! flex items-center gap-2 mb-2">
               Address
             </h4>
@@ -37,7 +37,7 @@ export default function ContactDetailsSection() {
             </p>
           </div>
 
-          <div className="border-b pb-6 mb-6">
+          <div className="border-b-[0.5px] border-[#9A99A2] pb-6 mb-6">
             <h4 className="regular-heading font-[400]! flex items-center gap-2 mb-2">Phone</h4>
             <p className="normal-text text-[#9A99A2]">+91 9067090165</p>
           </div>
