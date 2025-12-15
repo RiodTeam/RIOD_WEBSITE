@@ -35,14 +35,14 @@ export default function HotelAccordion({ items, heading, intro }: Props) {
         {/* INTRO */}
         {intro && (
           <MotionWrapper>
-            <p className="normal-text font-inter font-normal tracking-[0.3px] mt-12 leading-[1.7]! text-[#9a99a2] md:w-[75%]">
+            <p className="normal-text font-inter font-normal tracking-[0.3px] mt-6 md:mt-12 leading-[1.7]! text-[#9a99a2] md:w-[75%]">
               {intro}
             </p>
           </MotionWrapper>
         )}
 
         {/* ACCORDION */}
-        <div className="mt-[8.3rem] space-y-[4.2rem]">
+        <div className=" mt-20 md:mt-[8.3rem] space-y-[4.2rem]">
           {items.map((item, index) => {
             const isOpen = openIndex === index;
 
@@ -54,7 +54,7 @@ export default function HotelAccordion({ items, heading, intro }: Props) {
                   {/* CLICKABLE TITLE */}
                   <div onClick={() => setOpenIndex(index)} className="cursor-pointer">
                     <MotionWrapper>
-                      <h3 className="regular-heading font-inter text-white!">
+                      <h3 className="regular-heading font-inter text-white! leading-normal!">
                         {item.title}
                       </h3>
                     </MotionWrapper>

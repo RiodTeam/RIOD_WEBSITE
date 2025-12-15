@@ -20,8 +20,8 @@ export default function NextArticlesSection({ articles }: { articles: InsightTyp
 
         {/* ---------- MOBILE SCROLL ---------- */}
         <div className="
-          grid grid-flow-col auto-cols-[90%] 
-          gap-6 overflow-x-auto pb-4 
+          grid grid-flow-col auto-cols-[93%] 
+          gap-4 overflow-x-auto pb-4 
           sm:hidden scrollbar-hide snap-x snap-mandatory
         ">
           {articles.map((item) => (
@@ -45,7 +45,7 @@ export default function NextArticlesSection({ articles }: { articles: InsightTyp
                 </div>
 
                 {/* TITLE */}
-                <h3 className="regular-heading text-[#404040] font-inter mt-5 leading-normal cursor-pointer">
+                <h3 className="regular-heading text-[#404040] font-inter mt-5 leading-[1.3]! cursor-pointer">
                   {item.title}
                 </h3>
 

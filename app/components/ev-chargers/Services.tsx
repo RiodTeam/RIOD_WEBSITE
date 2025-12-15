@@ -24,8 +24,8 @@ export default function ServicesSection({ products }: Props) {
                     <div
                         className="
               grid grid-flow-col 
-              auto-cols-[85%] 
-              gap-6 
+              auto-cols-[93%] 
+              gap-4 
               overflow-x-auto 
               pb-6 
               snap-x snap-mandatory 

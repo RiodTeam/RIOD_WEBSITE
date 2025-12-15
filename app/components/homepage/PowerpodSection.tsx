@@ -139,7 +139,7 @@ export default function PowerpodStickyScroll() {
                                     {sections[activeIndex].tags.map((t) => (
                                         <span
                                             key={t}
-                                            className="px-[10px] md:px-5 py-2  rounded-full bg-[#eeeeee] text-black text-[14px]"
+                                            className="px-2.5 md:px-5 py-2  rounded-full bg-[#eeeeee] text-black text-[14px]"
                                         >
                                             {t}
                                         </span>

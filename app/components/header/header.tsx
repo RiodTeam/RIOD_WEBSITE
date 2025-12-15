@@ -49,7 +49,7 @@ const Header = () => {
     { name: "Product", href: "/products" },
     { name: "Services", href: "/gallery" },
     { name: "Career", href: "/testimonials" },
-    { name: "Blog", href: "/contact" },
+    { name: "Blog", href: "/insights" },
     { name: "Contact", href: "/contact" },
     { name: "Be a Partner", href: "/contact" },
   ];
@@ -138,7 +138,7 @@ const Header = () => {
 
       {/* MOBILE MENU OVERLAY */}
       <div
-        className={`fixed inset-0 z-50 transition-opacity duration-300 ${
+        className={`fixed inset-0 z-50 transition-opacity duration-300 h-screen ${
           isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}>
         <div

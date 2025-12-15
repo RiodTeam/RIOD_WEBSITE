@@ -30,7 +30,7 @@ export default function BlogGrid() {
 
         {/* ---------------- CATEGORY FILTERS ---------------- */}
         <MotionWrapper>
-          <div className="flex flex-wrap gap-3 md:gap-4 mb-20">
+          <div className="flex flex-wrap gap-4 md:gap-4 mb-20">
             {categories.map((cat) => {
               const isActive = activeCategory === cat;
               return (
@@ -51,13 +51,13 @@ export default function BlogGrid() {
 
         {/* ---------------- MOBILE HORIZONTAL SCROLL ---------------- */}
         <MotionWrapper>
-          <div className="sm:hidden flex overflow-x-auto gap-5 pb-4 scrollbar-hide">
+          <div className="sm:hidden flex overflow-x-auto gap-4 pb-4 scrollbar-hide">
 
             {filteredBlogs.map((blog) => (
               <Link
                 key={blog.id}
                 href={`/insights/${blog.slug}`}
-                className="w-[360px] shrink-0 group cursor-pointer"
+                className="w-[93%] shrink-0 group cursor-pointer"
               >
                 {/* IMAGE */}
                 <div className="w-full h-[270px] relative overflow-hidden group">
@@ -77,7 +77,7 @@ export default function BlogGrid() {
                 </div>
 
                 {/* TITLE */}
-                <h3 className="mt-4 text-[20px] text-[#404040] font-inter leading-[1.4]">
+                <h3 className="mt-6 text-[20px] text-[#404040] font-inter leading-[1.4]">
                   {blog.title}
                 </h3>
               </Link>

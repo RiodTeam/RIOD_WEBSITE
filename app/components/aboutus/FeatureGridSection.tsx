@@ -44,7 +44,7 @@ export default function FeatureGridSection() {
               <div className="flex flex-col">
 
                 {/* ICON */}
-                <div className="w-[60px] h-[46px] mb-6">
+                <div className="w-[60px] h-[46px] mb-9 md:mb-6">
                     <MotionWrapper>
                   <Image
                     src={item.icon}
@@ -58,7 +58,7 @@ export default function FeatureGridSection() {
 
                 {/* TITLE */}
                 <MotionWrapper>
-                <h3 className="regular-heading font-inter text-[#404040] mb-3">
+                <h3 className="regular-heading font-inter text-[#404040] mb-5 md:mb-3">
                   {item.title}
                 </h3>
                 </MotionWrapper>

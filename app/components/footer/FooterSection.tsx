@@ -6,13 +6,13 @@ import MotionWrapper from "../common/MotionWrapper";
 
 export default function FooterSection() {
     return (
-        <footer className="w-full bg-black text-white pt-[6rem] md:pt-[11.7rem] pb-10">
+        <footer className="w-full bg-black text-white pt-24 md:pt-[11.7rem] pb-10">
 
             {/* TOP SECTION */}
             <MotionWrapper className="w-[90%] max-w-[1400px] mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
 
                 {/* LEFT TEXT */}
-                <h3 className="regular-heading max-w-[550px] text-white! !leading-[1.4] ">
+                <h3 className="regular-heading max-w-[550px] text-white! leading-[1.4]! ">
                     Get valuable strategy, culture, and brand insights
                     straight to your inbox.
                 </h3>
@@ -135,7 +135,7 @@ export default function FooterSection() {
                     <ul className="space-y-4 text-[#7c7c7c] text-[17px] font-medium">
 
                         <li>
-                            <Link href="/partners" className="link-underline">Hardware Rendering</Link>
+                            <Link href="/ev-chargers-home" className="link-underline">EV Chargers For Home</Link>
                         </li>
 
                         <li>

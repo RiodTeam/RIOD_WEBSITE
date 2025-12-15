@@ -24,7 +24,7 @@ export default function EVNumbersSection() {
 
         {/* HEADING */}
         <MotionWrapper>
-          <h2 className="text-white section-heading font-inter !leading-[1.4] max-w-[700px]">
+          <h2 className="text-white section-heading font-inter leading-[1.4]! max-w-[700px]">
             Driving the Future of EV Charging in Numbers
           </h2>
         </MotionWrapper>
