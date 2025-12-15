@@ -10,7 +10,7 @@ import ServicesSection from "@/app/components/ev-chargers/Services";
 import HotelAccordion from "@/app/components/ev-chargers/HowWeHelp";
 import IdealProductsSection from "@/app/components/ev-chargers/IdealProductsSection";
 
-import { hotelAccordionData } from "@/app/components/data/hotelAccordionData";
+import {officeAccordionData } from "@/app/components/data/hotelAccordionData";
 import { idealProductsDataOffice } from "@/app/components/data/idealProductsData";
 import { servicesProductsOffice } from "@/app/components/data/servicesProducts";
 
@@ -37,7 +37,7 @@ export default function PageClient() {
         <HotelAccordion
           heading="How We Help Office"
           intro="Our flexible commercial models allow organizations to choose between company-owned chargers or revenue-sharing arrangements based on their strategic and financial goals. With intelligent load balancing, RIOD chargers optimize your building’s electrical capacity, allowing multiple vehicles to charge efficiently without expensive infrastructure upgrades. We also enable seamless employee access, branding customization, and integration with corporate systems, offering a smooth and intuitive charging experience for staff and visitors alike. "
-          items={hotelAccordionData}
+          items={officeAccordionData}
         />
 
         <IdealProductsSection data={idealProductsDataOffice} />

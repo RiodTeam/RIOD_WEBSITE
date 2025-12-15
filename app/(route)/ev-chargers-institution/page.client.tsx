@@ -10,7 +10,7 @@ import ServicesSection from "@/app/components/ev-chargers/Services";
 import HotelAccordion from "@/app/components/ev-chargers/HowWeHelp";
 import IdealProductsSection from "@/app/components/ev-chargers/IdealProductsSection";
 
-import { hotelAccordionData } from "@/app/components/data/hotelAccordionData";
+import {InstitutionAccordionData } from "@/app/components/data/hotelAccordionData";
 import { idealProductsDataInstitute } from "@/app/components/data/idealProductsData";
 import { servicesProductsInstitution } from "@/app/components/data/servicesProducts";
 
@@ -36,8 +36,8 @@ export default function PageClient() {
 
         <HotelAccordion
           heading="How We Help Institution"
-          intro="RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations. We combine cutting-edge engineering, IoT solutions, and software expertise to design, build, and scale products that drive real-world impact."
-          items={hotelAccordionData}
+          intro="RIOD helps educational institutions deploy reliable EV charging infrastructure designed for campuses of all sizes. Our solutions focus on seamless installation, flexible deployment models, intelligent power management, and secure system integrations that support students, staff, and visitors without disrupting daily campus life."
+          items={InstitutionAccordionData}
         />
 
         <IdealProductsSection data={idealProductsDataInstitute} />
