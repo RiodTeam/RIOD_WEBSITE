@@ -29,14 +29,14 @@ export default function PageClient() {
           title="Why Hotels Need EV Charging"
           titleWidth="lg:w-[50%] xl:w-[65%]"
           titleMarginTop="mt-4 md:mt-4"
-          description="RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations. We combine cutting-edge engineering, IoT solutions, and software expertise to design, build, and scale products that drive real-world impact."
+          description="As electric vehicle adoption accelerates, hotels that offer reliable EV charging instantly gain a competitive edge. Installing EV chargers not only enhances guest experience but also positions your property as a future-ready, sustainability-driven brand. Here’s why EV charging has become essential for the hospitality industry: "
         />
 
         <ServicesSection products={servicesProducts} />
 
         <HotelAccordion
           heading="How We Help Hotels"
-          intro="RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations. We combine cutting-edge engineering, IoT solutions, and software expertise to design, build, and scale products that drive real-world impact."
+          intro="RIOD delivers smart, reliable, and guest-friendly EV charging solutions designed specifically for the hospitality industry. Our technology, engineering expertise, and end-to-end service model help hotels attract premium guests, boost revenue, and support sustainability goals all with minimal effort and maximum impact. "
           items={hotelAccordionData}
         />
 

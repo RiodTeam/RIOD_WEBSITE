@@ -29,14 +29,14 @@ export default function PageClient() {
           title="Why Office Need EV Charging"
           titleWidth="lg:w-[50%] xl:w-[65%]"
           titleMarginTop="mt-4 md:mt-4"
-          description="RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations. We combine cutting-edge engineering, IoT solutions, and software expertise to design, build, and scale products that drive real-world impact."
+          description="For companies operating corporate fleets, on-site charging accelerates fleet electrification and reduces operational costs. Above all, EV charging future-proofs the workplace and positions the organization as an innovative, forward-thinking brand ready to lead in a sustainable future. "
         />
 
         <ServicesSection products={servicesProductsOffice} />
 
         <HotelAccordion
           heading="How We Help Office"
-          intro="RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations. We combine cutting-edge engineering, IoT solutions, and software expertise to design, build, and scale products that drive real-world impact."
+          intro="Our flexible commercial models allow organizations to choose between company-owned chargers or revenue-sharing arrangements based on their strategic and financial goals. With intelligent load balancing, RIOD chargers optimize your building’s electrical capacity, allowing multiple vehicles to charge efficiently without expensive infrastructure upgrades. We also enable seamless employee access, branding customization, and integration with corporate systems, offering a smooth and intuitive charging experience for staff and visitors alike. "
           items={hotelAccordionData}
         />
 

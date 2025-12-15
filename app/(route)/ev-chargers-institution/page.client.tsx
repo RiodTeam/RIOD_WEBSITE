@@ -29,7 +29,7 @@ export default function PageClient() {
           title="Why Institution Need EV Charging"
           titleWidth="lg:w-full"
           titleMarginTop="mt-4 md:mt-4"
-          description="RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations. We combine cutting-edge engineering, IoT solutions, and software expertise to design, build, and scale products that drive real-world impact."
+          description="As campuses evolve toward smarter, greener, and more connected environments, EV charging has become an essential part of modern institutional infrastructure. Schools, colleges, and universities benefit greatly from providing reliable charging options-enhancing convenience, supporting sustainability goals, and strengthening their position as forward-thinking educational leaders. "
         />
 
         <ServicesSection products={servicesProductsInstitution} />
