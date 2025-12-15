@@ -35,7 +35,7 @@ export default function PowerpodCitySection() {
                     <MotionWrapper className="mt-28 grid grid-cols-2 sm:grid-cols-[40%_40%] gap-x-16 gap-y-18 xl:w-[70%]">
                         {specs.map((item, idx) => (
                             <div key={idx} className="pb-4 border-b border-[#717171]">
-                                <h4 className="regular-heading font-inter">{item.title}</h4>
+                                <h4 className="regular-heading font-inter text-white!">{item.title}</h4>
                                 <p className="normal-text  text-[#9a99a2] mt-2">{item.subtitle}</p>
                             </div>
                         ))}

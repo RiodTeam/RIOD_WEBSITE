@@ -23,32 +23,45 @@
 }
 
 body {
-  background: black;
+  background: white;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 
 .hero-title {
-  font-size: 42px;
-  line-height: 1.15;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  
+  font-size: 42px;      /* mobile */
+  line-height: 52px;    /* adjusted for readability */
+  letter-spacing: 0px;
+}
 
-  @media (min-width: 768px) {
+/* Tablets (768px) */
+@media (min-width: 768px) {
+  .hero-title {
     font-size: 58px;
-    line-height: 1.2;
+    line-height: 72px;
   }
+}
 
-  @media (min-width: 1024px) {
-    font-size: 48px;
+/* Laptops (1024px) */
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 64px;   /* REQUIRED by your design */
+    line-height: 80px; /* REQUIRED by your design */
   }
+}
 
-  @media (min-width: 1280px) {
+/* Large screens (1280px+) */
+@media (min-width: 1280px) {
+  .hero-title {
     font-size: 64px;
+    line-height: 80px;
     font-weight: 400;
   }
 }
+
 
 .hero-desc {
   font-size: 16px;
@@ -93,96 +106,83 @@ body {
 }
 
 .section-heading {
-  font-size: 36px;
-  line-height: 1.2;
-  font-weight: 350;
   font-family: 'Inter', sans-serif;
+  font-weight: 350;
+  font-size: 36px;         /* mobile */
+  line-height: 1.2;
+  letter-spacing: 0;
+}
 
-  @media (min-width: 768px) {
-    font-size: 36px;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: 38px;
-  }
-
-  @media (min-width: 1280px) {
-    font-size: 60px;
-    font-weight: 400;
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 36px;       /* tablet */
   }
 }
+
+@media (min-width: 1024px) {
+  .section-heading {
+    font-size: 38px;       /* small laptop */
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-heading {
+    font-size: 60px;       /* EXACT Figma size */
+    line-height: 90px;     /* EXACT Figma line-height */
+    font-weight: 400;      /* EXACT Figma weight */
+  }
+}
+
 
 .regular-heading {
-  font-size: 17px;
-  font-weight: 350;
   font-family: 'Inter', sans-serif;
+  font-weight: 400;       /* matches spec */
+  font-size: 17px;        /* mobile size */
+  line-height: 24px;      /* good for mobile readability */
+  letter-spacing: 0;      /* matches spec */
+  color: #404040;
+}
 
-
-  @media (min-width: 768px) {
-    font-size: 17px;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: 17px;
-  }
-   @media (min-width: 1280px) {
-    font-size: 24px;
-  
+@media (min-width: 1280px) {
+  .regular-heading {
+    font-size: 24px;       /* desktop size */
+    line-height: 42px;     /* exact design spec */
   }
 }
+
+
 
 .para-text {
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 300;
- font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;       /* mobile */
+  line-height: 24px;     /* mobile */
+  font-weight: 300;      /* mobile lighter/your style */
+  letter-spacing: 0;
+}
 
-  @media (min-width: 768px) {
-    font-size: 15px;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: 15px;
-    line-height: 24px;
-  }
-
-  @media (min-width: 1280px) {
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: 400;
+@media (min-width: 1280px) {
+  .para-text {
+    font-size: 16px;     /* Figma value */
+    line-height: 32px;   /* Figma value */
+    font-weight: 400;    /* Figma value */
   }
 }
 
-.small-text {
-  font-size: 16px;
-  line-height: 1.4;
 
-  @media (min-width: 768px) {
-    font-size: 18px;
-  }
 
-  @media (min-width: 1024px) {
-    font-size: 20px;
-  }
-}
 
 .normal-text {
-  font-size: 15px;
-  line-height: 28px;
-  font-weight: 350;
-  letter-spacing: 0.02em;
   font-family: 'Inter', sans-serif;
+  font-size: 15px;       /* mobile */
+  font-weight: 400;
+  line-height: 28px;     /* mobile comfortable line-height */
+  letter-spacing: 0;
+}
 
-  @media (min-width: 768px) {
-    font-size: 15px;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: 15px;
-  }
-
-  @media (min-width: 1280px) {
-    font-size: 18px;
+@media (min-width: 1280px) {
+  .normal-text {
+    font-size: 18px;     /* desktop as per design */
+    line-height: 32px;   /* exact design spec */
   }
 }
 

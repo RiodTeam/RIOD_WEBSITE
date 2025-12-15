@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import PageClient from "./page.client";
 
 export const metadata: Metadata = {
-  title: "EV Chargers | Best Selling Electric Vehicle Chargers",
+  title: "Blogs & Articles | RIOD",
   description:
-    "Explore reliable, fast, and smart EV charging solutions designed for home, business, and commercial spaces.",
+    "Explore insights, blogs, and articles on EV charging, sustainability, and cutting-edge technology shaping India's electric mobility future.",
 };
 
 export default function Page() {

@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import { ChevronDown } from "lucide-react";
+import MotionWrapper from "../common/MotionWrapper";
 
 export default function EvProductsSection() {
     /* -----------------------------------------
@@ -38,7 +38,7 @@ export default function EvProductsSection() {
             title: "Portable EV Charger",
             type: "Portable Chargers",
             price: 299,
-            desc: "Portable Fast Charging Solution",
+            desc: "Single-Phase Fast AC Wall Box for Private Residential Use",
             badge: "Best Selling Product",
             image: "/home/hero.webp",
         },
@@ -47,7 +47,7 @@ export default function EvProductsSection() {
             title: "10KW Home Charger",
             type: "Home Chargers",
             price: 699,
-            desc: "Fast & Smart Home EV Charger",
+            desc: "Single-Phase Fast AC Wall Box for Private Residential Use",
             badge: "Customer Favorite",
             image: "/home/hero.webp",
         },
@@ -56,7 +56,7 @@ export default function EvProductsSection() {
             title: "Ultra Portable Charger",
             type: "Portable Chargers",
             price: 199,
-            desc: "Compact and Lightweight",
+            desc: "Single-Phase Fast AC Wall Box for Private Residential Use",
             badge: "Top Discount of the Sale",
             image: "/home/hero.webp",
         },
@@ -65,7 +65,7 @@ export default function EvProductsSection() {
             title: "7.4KW Home Charger",
             type: "Home Chargers",
             price: 499,
-            desc: "Single-Phase Fast AC Wall Box",
+            desc: "Single-Phase Fast AC Wall Box for Private Residential Use",
             badge: "Top Discount of the Sale",
             image: "/home/hero.webp",
         },
@@ -74,7 +74,7 @@ export default function EvProductsSection() {
             title: "Portable EV Charger",
             type: "Portable Chargers",
             price: 299,
-            desc: "Portable Fast Charging Solution",
+            desc: "Single-Phase Fast AC Wall Box for Private Residential Use",
             badge: "Best Selling Product",
             image: "/home/hero.webp",
         },
@@ -83,7 +83,7 @@ export default function EvProductsSection() {
             title: "10KW Home Charger",
             type: "Home Chargers",
             price: 699,
-            desc: "Fast & Smart Home EV Charger",
+            desc: "Single-Phase Fast AC Wall Box for Private Residential Use",
             badge: "Customer Favorite",
             image: "/home/hero.webp",
         },
@@ -92,7 +92,7 @@ export default function EvProductsSection() {
             title: "Ultra Portable Charger",
             type: "Portable Chargers",
             price: 199,
-            desc: "Compact and Lightweight",
+            desc: "Single-Phase Fast AC Wall Box for Private Residential Use",
             badge: "Top Discount of the Sale",
             image: "/home/hero.webp",
         },
@@ -101,7 +101,7 @@ export default function EvProductsSection() {
             title: "Ultra Portable Charger",
             type: "Portable Chargers",
             price: 199,
-            desc: "Compact and Lightweight",
+            desc: "Single-Phase Fast AC Wall Box for Private Residential Use",
             badge: "Top Discount of the Sale",
             image: "/home/hero.webp",
         },
@@ -139,98 +139,111 @@ export default function EvProductsSection() {
     }, []);
 
     return (
-        <section className="w-full bg-white pt-[5.5rem] pb-[12.5rem]">
+        <section className="w-full bg-white pt-22 pb-32 md:pb-50">
             <div className="w-[90%] max-w-[1400px] mx-auto">
 
                 {/* ================== TWO DROPDOWNS ================== */}
-                <div className="flex justify-end gap-5 mb-[6.3rem]">
+                <div className="flex justify-end gap-3 md:gap-4 mb-16 md:mb-[6.3rem]">
 
                     {/* Dropdown 1 - Category */}
-                    <div className="relative" ref={dropdownRef1}>
-                        <button
-                            onClick={() => {
-                                setOpen1(!open1);
-                                setOpen2(false);
-                            }}
-                            className="flex items-center gap-3  rounded-full px-4 py-3 bg-[#eeeeee] text-[#222222] text-[16px]"
-                        >
-                            {category}
-                            <Image
-                                src="/projects/icon.svg"
-                                alt="arrow"
-                                width={14}
-                                height={14}
-                                className="object-contain"
-                            />
+                    <MotionWrapper>
+                        <div className="relative" ref={dropdownRef1}>
+                            <button
+                                onClick={() => {
+                                    setOpen1(!open1);
+                                    setOpen2(false);
+                                }}
+                                className="flex items-center gap-4  rounded-full px-4 md:px-7 py-2 md:py-3 bg-[#eeeeee] text-[#222222] text-[16px]"
+                            >
+                                {category}
+                                <Image
+                                    src="/projects/icon.svg"
+                                    alt="arrow"
+                                    width={14}
+                                    height={14}
+                                    className="object-contain"
+                                />
 
-                        </button>
+                            </button>
 
-                        {open1 && (
-                            <div className="absolute top-12 right-0 bg-white border  w-48 z-50">
-                                {categoryOptions.map((opt) => (
-                                    <button
-                                        key={opt}
-                                        onClick={() => {
-                                            setCategory(opt);
-                                            setOpen1(false);
-                                        }}
-                                        className="w-full text-left px-4 py-3 hover:bg-gray-100 text-sm text-black"
-                                    >
-                                        {opt}
-                                    </button>
-                                ))}
-                            </div>
-                        )}
-                    </div>
+                            {open1 && (
+                                <div className="absolute top-12 right-0 bg-white border  w-48 z-50">
+                                    {categoryOptions.map((opt) => (
+                                        <button
+                                            key={opt}
+                                            onClick={() => {
+                                                setCategory(opt);
+                                                setOpen1(false);
+                                            }}
+                                            className="w-full text-left px-4 py-3 hover:bg-gray-100 text-sm text-black"
+                                        >
+                                            {opt}
+                                        </button>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                    </MotionWrapper>
 
                     {/* Dropdown 2 - Sort */}
-                    <div className="relative" ref={dropdownRef2}>
-                        <button
-                            onClick={() => {
-                                setOpen2(!open2);
-                                setOpen1(false);
-                            }}
-                            className="flex items-center gap-3 rounded-full px-4 py-3 bg-[#eeeeee] text-[#222222] text-[16px]"
-                        >
-                            {sortBy}
-                            <Image
-                                src="/projects/icon.svg"
-                                alt="arrow"
-                                width={14}
-                                height={14}
-                                className="object-contain"
-                            />
-                        </button>
+                    <MotionWrapper>
+                        <div className="relative" ref={dropdownRef2}>
+                            <button
+                                onClick={() => {
+                                    setOpen2(!open2);
+                                    setOpen1(false);
+                                }}
+                                className="flex items-center gap-4 rounded-full px-4 md:px-7 py-2 md:py-3 bg-[#eeeeee] text-[#222222] text-[16px]"
+                            >
+                                {sortBy}
+                                <Image
+                                    src="/projects/icon.svg"
+                                    alt="arrow"
+                                    width={14}
+                                    height={14}
+                                    className="object-contain"
+                                />
+                            </button>
 
-                        {open2 && (
-                            <div className="absolute top-12 right-0 bg-white border  w-48 z-50">
-                                {sortOptions.map((opt) => (
-                                    <button
-                                        key={opt}
-                                        onClick={() => {
-                                            setSortBy(opt);
-                                            setOpen2(false);
-                                        }}
-                                        className="w-full text-left px-4 py-3 hover:bg-gray-100 text-sm text-black"
-                                    >
-                                        {opt}
-                                    </button>
-                                ))}
-                            </div>
-                        )}
-                    </div>
+                            {open2 && (
+                                <div className="absolute top-12 right-0 bg-white border  w-48 z-50">
+                                    {sortOptions.map((opt) => (
+                                        <button
+                                            key={opt}
+                                            onClick={() => {
+                                                setSortBy(opt);
+                                                setOpen2(false);
+                                            }}
+                                            className="w-full text-left px-4 py-3 hover:bg-gray-100 text-sm text-black"
+                                        >
+                                            {opt}
+                                        </button>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                    </MotionWrapper>
                 </div>
 
                 {/* ================== PRODUCT GRID ================== */}
                 <div>
 
                     {/* MOBILE → HORIZONTAL SCROLL */}
-                    <div className="grid grid-flow-col auto-cols-[80%] gap-6 overflow-x-auto sm:hidden pb-6 snap-x snap-mandatory  ">
+                    <div className="
+    grid grid-flow-col auto-cols-[90%] 
+    gap-6 
+    overflow-x-auto 
+    sm:hidden 
+    pb-6 
+    snap-x snap-mandatory 
+    scrollbar-hide
+">
+
                         {sortedProducts.map((p) => (
                             <div key={p.id} className="flex flex-col snap-start">
 
                                 {/* IMAGE */}
-                                <div className="relative w-full h-[260px] bg-gray-100 overflow-hidden rounded-lg">
+                                <div className="relative w-full h-[260px] bg-gray-100 overflow-hidden ">
                                     <Image src={p.image} alt={p.title} fill className="object-cover" />
                                 </div>
 
@@ -240,12 +253,12 @@ export default function EvProductsSection() {
                                 </h3>
 
                                 {/* DESC */}
-                                <p className="mt-1 text-[#9a99a2] text-[14px] leading-relaxed">
+                                <p className="mt-3 text-[#9a99a2] text-[14px] leading-relaxed">
                                     {p.desc}
                                 </p>
 
                                 {/* BADGE */}
-                                <span className="mt-3 self-start inline-block bg-[#eeeeee] text-[#222222] text-[14px] px-4 py-1.5 rounded-full whitespace-nowrap">
+                                <span className="mt-4 text-center inline-block bg-[#eeeeee] text-[#222222] text-[14px] px-4 py-1.5 rounded-full whitespace-nowrap">
                                     {p.badge}
                                 </span>
 
@@ -259,24 +272,33 @@ export default function EvProductsSection() {
                             <div key={p.id} className="flex flex-col">
 
                                 {/* IMAGE */}
-                                <div className="relative w-full h-[537px] bg-gray-100 overflow-hidden">
+                                <MotionWrapper className="relative w-full h-[400px] xl:h-[537px] bg-gray-100 overflow-hidden">
                                     <Image src={p.image} alt={p.title} fill className="object-cover" />
-                                </div>
+                                </MotionWrapper>
 
                                 {/* TITLE */}
-                                <h3 className="mt-9 text-[24px] font-medium text-black uppercase">
-                                    {p.title}
-                                </h3>
+                                <MotionWrapper>
+                                    <h3 className="mt-9 text-[20px] xl:text-[24px] font-medium text-black uppercase">
+                                        {p.title}
+                                    </h3>
+                                </MotionWrapper>
+
 
                                 {/* DESCRIPTION */}
-                                <p className="mt-4 text-[#9a99a2] text-[15px] leading-relaxed">
-                                    {p.desc}
-                                </p>
+                                <MotionWrapper>
+                                    <p className="mt-4 text-[#9a99a2] text-[15px] leading-relaxed">
+                                        {p.desc}
+                                    </p>
+                                </MotionWrapper>
+
 
                                 {/* BADGE */}
-                                <span className="mt-6 self-start inline-block bg-[#eeeeee] text-[#222222] text-[14px] px-5 py-2 rounded-full whitespace-nowrap">
-                                    {p.badge}
-                                </span>
+                                <MotionWrapper>
+                                    <span className="mt-6 self-start inline-block bg-[#eeeeee] text-[#222222] text-[14px] px-5 py-2 rounded-full whitespace-nowrap">
+                                        {p.badge}
+                                    </span>
+                                </MotionWrapper>
+
 
                             </div>
                         ))}
