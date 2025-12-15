@@ -152,6 +152,25 @@ body {
 
 
 
+.regular-heading2 {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 20px;
+  }
+   @media (min-width: 1280px) {
+    font-size: 28px;
+  
+  }
+}
+
 .para-text {
   font-family: 'Inter', sans-serif;
   font-size: 15px;       /* mobile */
@@ -165,6 +184,28 @@ body {
     font-size: 16px;     /* Figma value */
     line-height: 32px;   /* Figma value */
     font-weight: 400;    /* Figma value */
+  }
+}
+
+.para-text2 {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+ font-family: 'Inter', sans-serif;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
   }
 }
 
