@@ -46,7 +46,7 @@ const Header = () => {
 
   const navItems = [
     { name: "About", href: "/about" },
-    { name: "Product", href: "/projects" },
+    { name: "Product", href: "/products" },
     { name: "Services", href: "/gallery" },
     { name: "Career", href: "/testimonials" },
     { name: "Blog", href: "/contact" },
@@ -59,7 +59,7 @@ const Header = () => {
       <header
         className={`fixed top-0 z-50 flex items-center justify-between w-full 
           transition-all duration-300 
-          h-[50px] lg:h-[60px] xl:h-[89px] ${headerBg}`}>
+          h-[60px] lg:h-[60px] xl:h-[89px] ${headerBg}`}>
         <div className="relative w-[95%] sm:w-[90%] xl:w-[89.7%] mx-auto">
           <div className="flex items-center justify-between">
             {/* LOGO */}
@@ -104,7 +104,7 @@ const Header = () => {
 
               <button
                 className={`${textColor} hover:text-gray-300 transition-colors`}>
-                <div className="lg:w-5 lg:h-5 xl:w-6 xl:h-3 relative">
+                <div className="lg:w-6 lg:h-3 relative">
                   <Image
                     src="/header/vector2.svg"
                     alt="Message"
@@ -119,12 +119,12 @@ const Header = () => {
                 onClick={toggleMenu}
                 className={`lg:hidden ${textColor} hover:text-gray-300 transition-colors`}>
                 <svg
-                  width="26"
-                  height="26"
+                  width="36"
+                  height="36"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="white"
-                  strokeWidth="1.3"
+                  strokeWidth="1"
                   strokeLinecap="round">
                   <line x1="3" y1="7" x2="21" y2="7" />
                   <line x1="3" y1="12" x2="21" y2="12" />
@@ -146,7 +146,7 @@ const Header = () => {
           onClick={toggleMenu}></div>
 
         <div
-          className={`absolute top-0 right-0 h-full w-[80%] bg-[#4a3728] shadow-2xl
+          className={`absolute top-0 right-0 h-full w-full bg-[#1e1e1e] shadow-2xl
             transform transition-transform duration-300 ease-in-out
             ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
           <div className="flex items-center justify-between p-6 border-b border-white/10">
@@ -171,14 +171,14 @@ const Header = () => {
           </div>
 
           {/* MENU ITEMS */}
-          <nav className="flex flex-col py-6 space-y-6">
+          <nav className="flex flex-col ">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
                 onClick={toggleMenu}
                 className="text-white text-lg font-medium tracking-wide 
-                  hover:text-gray-300 transition-colors py-2 border-b border-white/10 pl-7">
+                  hover:text-gray-300 transition-colors py-6 border-b border-white/10 pl-7">
                 {item.name}
               </a>
             ))}

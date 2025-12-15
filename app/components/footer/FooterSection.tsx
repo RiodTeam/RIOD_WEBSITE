@@ -6,20 +6,32 @@ import MotionWrapper from "../common/MotionWrapper";
 
 export default function FooterSection() {
     return (
-        <footer className="w-full bg-black text-white pt-[11.7rem] pb-10">
+        <footer className="w-full bg-black text-white pt-[6rem] md:pt-[11.7rem] pb-10">
 
             {/* TOP SECTION */}
             <MotionWrapper className="w-[90%] max-w-[1400px] mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
 
                 {/* LEFT TEXT */}
-                <h3 className="regular-heading max-w-[550px] text-white!">
+                <h3 className="regular-heading max-w-[550px] text-white! !leading-[1.4] ">
                     Get valuable strategy, culture, and brand insights
                     straight to your inbox.
                 </h3>
 
                 {/* RIGHT BUTTON */}
-                <button className="bg-white text-black px-7 py-3 font-inter text-[16px] flex items-center gap-8 hover:opacity-80 transition">
-                    Contact US
+                <button
+                    className="
+    bg-white text-black
+    w-full sm:w-auto
+    px-7 py-3
+    font-inter text-[16px]
+    flex items-center
+    justify-between sm:justify-center
+    gap-8
+    hover:opacity-80 transition
+  "
+                >
+                    <span>Contact US</span>
+
                     <Image
                         src="/footer/arrow.svg"
                         alt="arrow"
@@ -29,6 +41,7 @@ export default function FooterSection() {
                     />
                 </button>
 
+
             </MotionWrapper>
 
             {/* DIVIDER */}
@@ -37,18 +50,18 @@ export default function FooterSection() {
             </MotionWrapper>
 
             {/* MIDDLE FOOTER LINKS */}
-           <div className="w-[90%] max-w-[1400px] mx-auto  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-16">
+            <div className="w-[90%] max-w-[1400px] mx-auto  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-16">
 
 
-               <MotionWrapper className="col-span-2 md:col-span-3 lg:col-span-1">
-    <Image
-        src="/header/logo.svg"
-        alt="RIOD Logo"
-        width={90}
-        height={10}
-        className="object-contain"
-    />
-</MotionWrapper>
+                <MotionWrapper className="col-span-2 md:col-span-3 lg:col-span-1">
+                    <Image
+                        src="/header/logo.svg"
+                        alt="RIOD Logo"
+                        width={90}
+                        height={10}
+                        className="object-contain"
+                    />
+                </MotionWrapper>
 
 
 
@@ -158,9 +171,9 @@ export default function FooterSection() {
 
 
             {/* BOTTOM FOOTER */}
-            <MotionWrapper className="w-[95%] sm:w-[90%] max-w-[1400px] mx-auto mt-11 flex flex-col md:flex-row justify-between text-[13px] text-[#7f7f7f]">
+            <MotionWrapper className="w-[95%] sm:w-[90%] max-w-[1400px] mx-auto mt-11 flex flex-row justify-between text-[13px] text-[#7f7f7f]">
                 <p className="text-[13.5px]">©2025 RIOD </p>
-                <p className="mt-8 sm:mt-0 text-[#626262] text-[15px] md:text-[17px]">
+                <p className=" text-[#626262] text-[15px] md:text-[17px]">
                     Crafted With <span className="text-[#626262]">❤</span> by Woxro
                 </p>
             </MotionWrapper>

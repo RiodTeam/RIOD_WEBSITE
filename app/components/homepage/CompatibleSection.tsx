@@ -21,7 +21,7 @@ export default function CompatibleSection() {
                 {/* TEXT SECTION */}
                 <div className="max-w-[860px]">
                     <MotionWrapper>
-                        <h2 className="section-heading leading-normal! mt-10 font-inter  text-[#222222]">
+                        <h2 className="section-heading leading-normal! mt-3 md:mt-10 font-inter  text-[#222222]">
                             Compatible with all plug-in electric vehicles.
                         </h2>
                     </MotionWrapper>
@@ -35,34 +35,37 @@ export default function CompatibleSection() {
                     </MotionWrapper>
                 </div>
 
-                {/* LOGO LOOP */}
-                <div className="mt-8 relative overflow-hidden">
-                    <div className="flex animate-logo-scroll whitespace-nowrap">
+               <div className="mt-8 relative overflow-hidden">
+  <div className="flex w-max animate-logo-scroll whitespace-nowrap">
 
-                        {loopBrands.map((brand, index) => (
-                            <MotionWrapper
-                                key={index}
-                                className="
-      flex items-center justify-center
-      min-w-[140px] mx-6
-      sm:min-w-[180px] sm:mx-8
-      md:min-w-[220px] md:mx-12
-      lg:min-w-[300px] lg:mx-16
-    "
-                            >
-                                <Image
-                                    src={brand.logo}
-                                    alt={brand.alt}
-                                    width={300}
-                                    height={300}
-                                    className="object-contain opacity-90 hover:opacity-100 transition"
-                                />
-                            </MotionWrapper>
-                        ))}
+    {[...loopBrands, ...loopBrands].map((brand, index) => (
+      <div
+        key={index}
+        className="
+          flex items-center justify-center
+          min-w-[140px] mx-0
+          sm:min-w-[180px] sm:mx-8
+          md:min-w-[220px] md:mx-12
+          lg:min-w-[300px] lg:mx-16
+        "
+      >
+       <Image
+  src={brand.logo}
+  alt={brand.alt}
+  width={300}
+  height={300}
+  className="
+    object-contain opacity-90 transition
+    w-[180px] sm:w-[120px] md:w-[200px] lg:w-[300px]
+    h-auto
+  "
+/>
 
+      </div>
+    ))}
 
-                    </div>
-                </div>
+  </div>
+</div>
 
             </div>
         </section>

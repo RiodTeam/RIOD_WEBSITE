@@ -107,7 +107,7 @@ body {
 
 .section-heading {
   font-family: 'Inter', sans-serif;
-  font-weight: 350;
+  font-weight: 400;
   font-size: 36px;         /* mobile */
   line-height: 1.2;
   letter-spacing: 0;
@@ -137,7 +137,7 @@ body {
 .regular-heading {
   font-family: 'Inter', sans-serif;
   font-weight: 400;       /* matches spec */
-  font-size: 17px;        /* mobile size */
+  font-size: 22px;        /* mobile size */
   line-height: 24px;      /* good for mobile readability */
   letter-spacing: 0;      /* matches spec */
   color: #404040;
@@ -214,7 +214,7 @@ body {
 
 .normal-text {
   font-family: 'Inter', sans-serif;
-  font-size: 15px;       /* mobile */
+  font-size: 16px;       /* mobile */
   font-weight: 400;
   line-height: 28px;     /* mobile comfortable line-height */
   letter-spacing: 0;
@@ -255,15 +255,23 @@ body {
 
 
 @keyframes logo-scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-logo-scroll {
-  animation: logo-scroll 8s linear infinite;
+  animation: logo-scroll 35s linear infinite;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
 }
 
 
+/* underline footer */
 .link-underline {
   position: relative;
   display: inline-block;

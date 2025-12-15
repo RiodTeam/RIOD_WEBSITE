@@ -54,7 +54,7 @@ export default function EvNumbersSection() {
                 </MotionWrapper>
 
                 {/* COUNTERS */}
-                <MotionWrapper className="mt-28 grid grid-cols-2 md:grid-cols-4  gap-y-12 xl:w-[87%]">
+                <MotionWrapper className=" mt-20 md:mt-28 grid grid-cols-2 md:grid-cols-4  gap-y-12 xl:w-[87%]">
 
                     {counters.map((item, index) => (
                         <CounterBox
@@ -110,11 +110,11 @@ function CounterBox({
 
     return (
         <div>
-            <h3 className="text-[36px] xl:text-[48px] font-inter font-medium text-black">
+            <h3 className="text-[32px] md:text-[36px] xl:text-[48px]  font-inter md:font-medium text-black">
                 {count}
                 {suffix}
             </h3>
-            <p className="regular-heading text-[#9a99a2]  font-inter tracking-tighter">{label}</p>
+            <p className="text-[17px] md:text-[16px] md:regular-heading text-[#9a99a2]  font-inter tracking-tighter">{label}</p>
         </div>
     );
 }

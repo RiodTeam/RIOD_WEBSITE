@@ -26,7 +26,7 @@ export default function EvFeatures() {
                                 </h3>
                             </MotionWrapper>
                             <MotionWrapper>
-                                <p className="normal-text text-[#9a99a2] mt-1 font-inter">
+                                <p className="normal-text text-[#9a99a2] mt-2 md:mt-1 font-inter">
                                     {item.subtitle}
                                 </p>
                             </MotionWrapper>

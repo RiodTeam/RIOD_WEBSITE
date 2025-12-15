@@ -25,14 +25,14 @@ export default function PowerpodCitySection() {
                         </h2>
                     </MotionWrapper>
                     <MotionWrapper>
-                        <p className="normal-text font-inter font-normal tracking-[0.3px] mt-[4.1rem] leading-[1.7]! text-[#9a99a2]">
+                        <p className="normal-text font-inter font-normal tracking-[0.3px] mt-6 md:mt-[4.1rem] leading-[1.7]! text-[#9a99a2]">
                             RNDSquare is your end-to-end R&D partner, transforming bold ideas into
                             market-ready innovations.
                         </p>
                     </MotionWrapper>
 
                     {/* SPECS GRID */}
-                    <MotionWrapper className="mt-28 grid grid-cols-2 sm:grid-cols-[40%_40%] gap-x-16 gap-y-18 xl:w-[70%]">
+                    <MotionWrapper className="mt-28 grid grid-cols-1 sm:grid-cols-[40%_40%] gap-x-16 gap-y-18 xl:w-[70%]">
                         {specs.map((item, idx) => (
                             <div key={idx} className="pb-4 border-b border-[#717171]">
                                 <h4 className="regular-heading font-inter text-white!">{item.title}</h4>

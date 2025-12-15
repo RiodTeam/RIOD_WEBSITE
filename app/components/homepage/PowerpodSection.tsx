@@ -133,13 +133,13 @@ export default function PowerpodStickyScroll() {
                                     {sections[activeIndex].desc}
                                 </p>
 
-                                <p className="text-[#9a99a2] text-[16px] font-inter mb-5">Suitable for</p>
+                                <p className="text-[#9a99a2] text-[16px] font-inter mb-5">Suitable for:</p>
 
                                 <div className="flex gap-2 md:gap-3 flex-wrap">
                                     {sections[activeIndex].tags.map((t) => (
                                         <span
                                             key={t}
-                                            className="px-4 md:px-5 py-2  rounded-full bg-[#eeeeee] text-black text-[14px]"
+                                            className="px-[10px] md:px-5 py-2  rounded-full bg-[#eeeeee] text-black text-[14px]"
                                         >
                                             {t}
                                         </span>
