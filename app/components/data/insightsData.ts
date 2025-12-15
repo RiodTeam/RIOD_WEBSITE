@@ -37,8 +37,8 @@ export const insightsData: InsightType[] = [
 
     //  YOU CONTROL RELATED ARTICLES BY SLUG HERE
     relatedSlugs: [
-      "why-institutions-need-ev-charging",
-      "the-rise-of-sustainable-ev-infrastructure",
+      "importance-of-temperature-monitoring-in-pharma-companies",
+      "monitoring-hatchery-temperature-humidity-kpi-hatchability",
       
     ],
   },
@@ -79,7 +79,7 @@ export const insightsData: InsightType[] = [
     ],
 
     relatedSlugs: [
-      "driving-the-future-of-ev-charging-in-numbers",
+      "importance-of-temperature-monitoring-in-pharma-companies",
     ],
   },
   {
@@ -98,7 +98,7 @@ export const insightsData: InsightType[] = [
     ],
 
     relatedSlugs: [
-      "driving-the-future-of-ev-charging-in-numbers",
+      "monitoring-hatchery-temperature-humidity-kpi-hatchability",
     ],
   },
 ];
