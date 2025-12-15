@@ -4,7 +4,7 @@ export default function ContactDetailsSection() {
       <div className=" w-[90%] max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
         {/* LEFT TEXT */}
         <div>
-          <h2 className="section-heading leading-[5.5rem]! mb-6">
+          <h2 className="section-heading leading-22! mb-6">
             Let’s Build
             <br />
             What’s Next,
@@ -21,14 +21,14 @@ export default function ContactDetailsSection() {
 
         {/* RIGHT DETAILS */}
         <div>
-          <h3 className="text-xl font-semibold mb-4">Contact Details</h3>
+          <h3 className="text-xl regular-heading2 font-semibold mb-4">Contact Details</h3>
           <p className="para-text text-[#9A99A2] mb-10 max-w-xl ">
             To accelerate India’s shift towards sustainable electric mobility
-            through cutting-edge EV charging infrastructure that's intelligent.
+            through cutting-edge EV charging infrastructure that is intelligent.
           </p>
 
-          <div className="border-b pb-6 mb-6">
-            <h4 className="regular-heading font-[400]! flex items-center gap-2 mb-2">
+          <div className="border-b-[0.5px] border-[#9A99A2] pb-6 mb-6">
+            <h4 className="regular-heading font-normal! flex items-center gap-2 mb-2">
               Address
             </h4>
             <p className="normal-text text-[#9A99A2]">
@@ -37,13 +37,13 @@ export default function ContactDetailsSection() {
             </p>
           </div>
 
-          <div className="border-b pb-6 mb-6">
-            <h4 className="regular-heading font-[400]! flex items-center gap-2 mb-2">Phone</h4>
+          <div className="border-b-[0.5px] border-[#9A99A2] pb-6 mb-6">
+            <h4 className="regular-heading font-normal! flex items-center gap-2 mb-2">Phone</h4>
             <p className="normal-text text-[#9A99A2]">+91 9067090165</p>
           </div>
 
           <div>
-            <h4 className="regular-heading font-[400]! flex items-center gap-2 mb-2">Email</h4>
+            <h4 className="regular-heading font-normal! flex items-center gap-2 mb-2">Email</h4>
             <p className="normal-text text-[#9A99A2]">info@riod.in</p>
           </div>
         </div>

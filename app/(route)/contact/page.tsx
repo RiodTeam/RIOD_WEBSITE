@@ -1,9 +1,7 @@
 import HeroSection from '@/app/components/common/Hero'
-import PlatformSection from '@/app/components/common/Platform'
 import ContactDetailsSection from '@/app/components/contact/ContactDetailsSection'
 import ContactFormSection from '@/app/components/contact/ContactFormSection'
 import LocationSection from '@/app/components/contact/LocationSection'
-import EvProductsSection from '@/app/components/products/EvProductsSection'
 import React from 'react'
 
 const page = () => {
