@@ -6,10 +6,10 @@ import MotionWrapper from "../common/MotionWrapper";
 export default function EvFeatures() {
     const features = [
         { title: "SMART", subtitle: "Advanced Connectivity" },
-        { title: "FAST", subtitle: "Advanced Connectivity" },
-        { title: "SAFE", subtitle: "Advanced Connectivity" },
-        { title: "COMPATIBLE", subtitle: "Advanced Connectivity" },
-        { title: "MADE IN INDIA", subtitle: "Advanced Connectivity" },
+        { title: "FAST", subtitle: "upto 22kW Charging" },
+        { title: "SAFE", subtitle: "Advanced Protections" },
+        { title: "COMPATIBLE", subtitle: "All 2, 3, 4 Wheelers" },
+        { title: "MADE IN INDIA", subtitle: "Designed & Built by RIOD Experts" },
     ];
 
     return (

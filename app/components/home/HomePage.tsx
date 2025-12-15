@@ -30,7 +30,7 @@ export default function HomePage() {
 
         <PlatformSection
           title="Why RIOD"
-          description="RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations. We combine cutting-edge engineering, IoT solutions, and software expertise to design, build, and scale products that drive real-world impact. From initial concept and prototyping to application development and lifecycle support, we work alongside your team to bring ambitious visions to life."
+          description="At RIOD, we are redefining the EV charging experience in India through advanced engineering and intelligent design. Our reliable, durable, and user-friendly charging solutions deliver fast, safe, and seamless performance across residential, commercial, and public environments. By integrating smart hardware and scalable software, we enable future-ready charging infrastructure that supports the rapid growth of electric mobility."
         />
 
         <EvFeatures />

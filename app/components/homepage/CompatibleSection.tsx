@@ -27,10 +27,8 @@ export default function CompatibleSection() {
                     </MotionWrapper>
                     <MotionWrapper>
                         <p className="normal-text text-[#9a99a2] mt-6 font-inter leading-[1.8]!">
-                            RNDSquare is your end-to-end R&D partner, transforming bold ideas into
-                            market-ready innovations. We combine cutting-edge engineering, IoT solutions,
-                            and software expertise to design, build, and scale products that drive
-                            real-world impact.
+                            Our EV chargers are compatible with all plug-in electric vehicles, delivering seamless charging across brands and models. 
+                            Designed for universal connectivity and reliable performance, they provide a future-ready solution for both home and commercial use.
                         </p>
                     </MotionWrapper>
                 </div>

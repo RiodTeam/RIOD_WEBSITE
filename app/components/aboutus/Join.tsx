@@ -30,7 +30,7 @@ export default function Join() {
                         </h2>
                     </MotionWrapper>
                     <MotionWrapper>
-                        <p className="mt-8 normal-text text-[#9a99a2] w-[95%] leading-[1.8]!">
+                        <p className="mt-8 normal-text text-[#9a99a2] md:w-[95%] leading-[1.8]!">
                             RNDSquare is your end-to-end R&D partner, transforming bold ideas
                             into market-ready innovations. We combine cutting-edge engineering,
                             IoT solutions, and software expertise to design, build, and scale

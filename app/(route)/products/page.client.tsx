@@ -22,7 +22,7 @@ export default function PageClient() {
           title="Best Selling Products"
           titleWidth="lg:w-[50%] xl:w-[65%]"
           titleMarginTop="mt-4 md:mt-3"
-          description="RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations. We combine cutting-edge engineering, IoT solutions, and software expertise to design, build, and scale products that drive real-world impact. From initial concept and prototyping to application development and lifecycle support, we work alongside your team to bring ambitious visions to life."
+          description="Our best-selling products reflect RNDSquare’s commitment to engineering excellence, performance, and reliability. Designed through in-house innovation and powered by advanced hardware, IoT, and software integration, they deliver proven results across real-world applications. Trusted by customers across industries, these solutions represent the impact of ideas built right-from concept to scalable success."
         />
 
         <EvProductsSection />

@@ -5,12 +5,12 @@ import MotionWrapper from "../common/MotionWrapper";
 
 export default function PowerpodCitySection() {
     const specs = [
-        { title: "44 KW", subtitle: "Combined Capacity" },
-        { title: "AC Type 2", subtitle: "Combined Capacity" },
-        { title: "4G+Wifi", subtitle: "Combined Capacity" },
-        { title: "OCPP", subtitle: "Combined Capacity" },
-        { title: "IP65", subtitle: "Combined Capacity" },
-        { title: "Easy to Install", subtitle: "Combined Capacity" },
+        { title: "44 kW", subtitle: "Combined Capacity" },
+        { title: "AC Type 2", subtitle: "4 Wheeler" },
+        { title: "4G+Wifi", subtitle: "Connectivity" },
+        { title: "OCPP", subtitle: "Communication" },
+        { title: "IP65", subtitle: "Made for outdoor" },
+        { title: "Easy to Install", subtitle: "Floor Mount" },
     ];
 
     return (
@@ -26,8 +26,7 @@ export default function PowerpodCitySection() {
                     </MotionWrapper>
                     <MotionWrapper>
                         <p className="normal-text font-inter font-normal tracking-[0.3px] mt-6 md:mt-[4.1rem] leading-[1.7]! text-[#9a99a2]">
-                            RNDSquare is your end-to-end R&D partner, transforming bold ideas into
-                            market-ready innovations.
+                            Power up your commercial space with POWERPOD CITY, delivering reliable, high-performance EV charging for modern business environments.
                         </p>
                     </MotionWrapper>
 
