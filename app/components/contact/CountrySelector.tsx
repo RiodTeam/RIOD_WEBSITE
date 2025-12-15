@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { countries } from "./country";
+import Image from "next/image";
 
 export default function CountryCodeSelect() {
   const [open, setOpen] = useState(false);
@@ -26,11 +27,14 @@ export default function CountryCodeSelect() {
         onClick={() => setOpen(!open)}
         className="flex items-center gap-2 border-[0.5px] border-white px-4 py-4 cursor-pointer select-none"
       >
-        <img
-          src={`https://flagcdn.com/w20/${selected.iso}.png`}
-          alt=""
-          className="w-5 h-auto"
-        />
+        <div className="w-5 h-auto">
+          <Image
+            src={`https://flagcdn.com/w20/${selected.iso}.png`}
+            alt=""
+            fill
+            className="w-5 h-auto"
+          />
+        </div>
         <span className="text-sm">{selected.code}</span>
       </div>
 
@@ -46,9 +50,11 @@ export default function CountryCodeSelect() {
               }}
               className="flex items-center gap-2 px-4 py-2 cursor-pointer hover:bg-white/10"
             >
-              <img
+              <Image
                 src={`https://flagcdn.com/w20/${c.iso}.png`}
                 alt=""
+                width={20}
+                height={15}
                 className="w-5 h-auto"
               />
               <span className="text-[13px] text-gray-400">{c.code}</span>
