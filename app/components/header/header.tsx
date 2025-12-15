@@ -15,7 +15,7 @@ const Header = () => {
     // Detect pages requiring forced dark header
     const forceDarkHeader =
         pathname.startsWith("/individual-insight") ||
-        pathname.startsWith("/insights/") ||   
+        pathname.startsWith("/insights/") ||
         pathname === "/faq" ||
         pathname === "/legal-and-policy";
 
@@ -60,14 +60,14 @@ const Header = () => {
             <header
                 className={`fixed top-0 z-50 flex items-center justify-between w-full 
           transition-all duration-300 
-          h-[50px] lg:h-[60px] xl:h-[89px] ${headerBg}`}
+          h-[60px] lg:h-[70px] xl:h-[89px] ${headerBg}`}
             >
                 <div className="relative w-[95%] sm:w-[90%] xl:w-[89.7%] mx-auto">
                     <div className="flex items-center justify-between">
 
                         {/* LOGO */}
                         <div className="flex items-center">
-                            <Link href="/" className="w-8.5 h-8.5 xl:w-20 xl:h-20 relative block">
+                            <Link href="/" className="w-20 h-20 xl:w-20 xl:h-20 relative block">
                                 <Image
                                     src="/header/logo.svg"
                                     alt="Logo"
@@ -99,7 +99,7 @@ const Header = () => {
                             </button>
 
                             <button className={`${textColor} hover:text-gray-300 transition-colors`}>
-                                <div className="lg:w-5 lg:h-5 xl:w-6 xl:h-3 relative">
+                                <div className="lg:w-6 lg:h-3 xl:w-6 xl:h-3 relative">
                                     <Image src="/header/vector2.svg" alt="Message" fill className="object-cover" />
                                 </div>
                             </button>
@@ -138,7 +138,7 @@ const Header = () => {
                 <div className="absolute inset-0 bg-black/60" onClick={toggleMenu}></div>
 
                 <div
-                    className={`absolute top-0 right-0 h-full w-[80%] bg-[#4a3728] shadow-2xl
+                    className={`absolute top-0 right-0 h-full w-full bg-[#1e1e1e] shadow-2xl
             transform transition-transform duration-300 ease-in-out
             ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
                 >
@@ -160,14 +160,14 @@ const Header = () => {
                     </div>
 
                     {/* MENU ITEMS */}
-                    <nav className="flex flex-col py-6 space-y-6">
+                    <nav className="flex flex-col  space-y-0">
                         {navItems.map((item) => (
                             <a
                                 key={item.name}
                                 href={item.href}
                                 onClick={toggleMenu}
                                 className="text-white text-lg font-medium tracking-wide 
-                  hover:text-gray-300 transition-colors py-2 border-b border-white/10 pl-7"
+                  hover:text-gray-300 transition-colors py-6 border-b border-white/10 pl-7"
                             >
                                 {item.name}
                             </a>

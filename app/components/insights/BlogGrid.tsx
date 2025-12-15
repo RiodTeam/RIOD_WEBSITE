@@ -60,12 +60,13 @@ export default function BlogGrid() {
                 className="w-[360px] shrink-0 group cursor-pointer"
               >
                 {/* IMAGE */}
-                <div className="w-full h-[270px] relative overflow-hidden">
+                <div className="w-full h-[270px] relative overflow-hidden group">
                   <Image
                     src={blog.img}
                     alt="blog image"
                     fill
-                    className="object-cover group-hover:scale-105 transition duration-300"
+                    className="object-cover transition-transform duration-500 ease-out
+            group-hover:scale-110"
                   />
                 </div>
 
@@ -96,12 +97,13 @@ export default function BlogGrid() {
             >
               {/* IMAGE */}
               <MotionWrapper>
-                <div className="w-full h-[270px] md:h-[300px] xl:h-[530px] relative overflow-hidden">
+                <div className="w-full h-[270px] md:h-[300px] xl:h-[530px] relative overflow-hidden group">
                   <Image
                     src={blog.img}
                     alt="blog image"
                     fill
-                    className="object-cover group-hover:scale-105 transition duration-300"
+                    className="object-cover transition-transform duration-500 ease-out
+            group-hover:scale-110"
                   />
                 </div>
               </MotionWrapper>

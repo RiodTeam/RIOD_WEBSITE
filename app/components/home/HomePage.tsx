@@ -30,14 +30,15 @@ export default function HomePage() {
 
         <PlatformSection
           title="Why RIOD"
-          description="RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations..."
+          description="RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations. We combine cutting-edge engineering, IoT solutions, and software expertise to design, build, and scale products that drive real-world impact. From initial concept and prototyping to application development and lifecycle support, we work alongside your team to bring ambitious visions to life."
         />
 
         <EvFeatures />
 
         <PlatformSection
           title="Charge Anywhere, Anytime!"
-          description="RNDSquare is your end-to-end R&D partner..."
+          titleWidth="lg:w-[50%] xl:w-[45%]"
+          description="RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations. We combine cutting-edge engineering, IoT solutions, and software expertise to design, build, and scale products that drive real-world impact. From initial concept and prototyping to application development and lifecycle support, we work alongside your team to bring ambitious visions to life."
         />
 
         <PowerpodSection />

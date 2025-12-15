@@ -37,8 +37,9 @@ export default function ServicesSection({ products }: Props) {
                             <div key={p.id} className="flex flex-col snap-start">
 
                                 {/* IMAGE */}
-                                <div className="relative w-full h-60 bg-gray-100 overflow-hidden">
-                                    <Image src={p.image} alt={p.title} fill className="object-cover" />
+                                <div className="relative w-full h-60 bg-gray-100 overflow-hidden group">
+                                    <Image src={p.image} alt={p.title} fill className="object-cover transition-transform duration-500 ease-out
+            group-hover:scale-110" />
                                 </div>
 
                                 {/* TITLE */}
@@ -60,8 +61,9 @@ export default function ServicesSection({ products }: Props) {
                             <div key={p.id} className="flex flex-col">
 
                                 {/* IMAGE */}
-                                <MotionWrapper className="relative w-full h-[400px] xl:h-[480px] bg-gray-100 overflow-hidden">
-                                    <Image src={p.image} alt={p.title} fill className="object-cover" />
+                                <MotionWrapper className="relative w-full h-[400px] xl:h-[480px] bg-gray-100 overflow-hidden group" >
+                                    <Image src={p.image} alt={p.title} fill className="object-cover transition-transform duration-500 ease-out
+            group-hover:scale-110" />
                                 </MotionWrapper>
 
                                 {/* TITLE */}

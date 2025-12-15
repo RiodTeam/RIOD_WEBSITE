@@ -37,18 +37,20 @@ export default function FooterSection() {
             </MotionWrapper>
 
             {/* MIDDLE FOOTER LINKS */}
-            <div className="w-[90%] max-w-[1400px] mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-0 space-y-16 ">
+           <div className="w-[90%] max-w-[1400px] mx-auto  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-16">
 
-                {/* LOGO */}
-                <MotionWrapper>
-                    <Image
-                        src="/header/logo.svg"
-                        alt="RIOD Logo"
-                        width={90}
-                        height={10}
-                        className="object-contain"
-                    />
-                </MotionWrapper>
+
+               <MotionWrapper className="col-span-2 md:col-span-3 lg:col-span-1">
+    <Image
+        src="/header/logo.svg"
+        alt="RIOD Logo"
+        width={90}
+        height={10}
+        className="object-contain"
+    />
+</MotionWrapper>
+
+
 
                 {/* EXPLORE */}
                 <MotionWrapper className="xl:mr-10 mt-1">
@@ -56,27 +58,27 @@ export default function FooterSection() {
                     <ul className="space-y-4 text-[#7c7c7c] text-[17px] font-medium">
 
                         <li>
-                            <Link href="/industries">What We Do</Link>
+                            <Link href="/industries " className="link-underline">What We Do</Link>
                         </li>
 
                         <li>
-                            <Link href="/about">Who We Are</Link>
+                            <Link href="/about" className="link-underline">Who We Are</Link>
                         </li>
 
                         <li>
-                            <Link href="/careers">Career Opportunities</Link>
+                            <Link href="/careers" className="link-underline">Career Opportunities</Link>
                         </li>
 
                         <li>
-                            <Link href="/insights">Insights & Blogs</Link>
+                            <Link href="/insights" className="link-underline">Insights & Blogs</Link>
                         </li>
 
                         <li>
-                            <Link href="/case-studies">Get  Quote</Link>
+                            <Link href="/case-studies" className="link-underline">Get  Quote</Link>
                         </li>
 
                         <li>
-                            <Link href="/privacy-policy">Privacy Policy</Link>
+                            <Link href="/privacy-policy" className="link-underline">Privacy Policy</Link>
                         </li>
 
                     </ul>
@@ -89,25 +91,25 @@ export default function FooterSection() {
                     <ul className="space-y-4 text-[#7c7c7c] text-[17px] font-medium">
 
                         <li>
-                            <Link href="/services/product-engineering">Product Engineering</Link>
+                            <Link href="/services/product-engineering" className="link-underline">Product Engineering</Link>
                         </li>
 
                         <li>
-                            <Link href="/services/cloud-applications">Application Development</Link>
+                            <Link href="/services/cloud-applications" className="link-underline">Application Development</Link>
                         </li>
 
                         <li>
-                            <Link href="/services/vision-ai">Product Life cycle Support</Link>
+                            <Link href="/services/vision-ai" className="link-underline">Product Life cycle Support</Link>
                         </li>
 
                         <li>
-                            <Link href="/services/ev-charging">Hardware Integration</Link>
+                            <Link href="/services/ev-charging" className="link-underline">Hardware Integration</Link>
                         </li>
                         <li>
-                            <Link href="/services/ev-charging">Hardware Checking</Link>
+                            <Link href="/services/ev-charging" className="link-underline">Hardware Checking</Link>
                         </li>
                         <li>
-                            <Link href="/services/ev-charging">Electronics Mapping</Link>
+                            <Link href="/services/ev-charging" className="link-underline">Electronics Mapping</Link>
                         </li>
 
                     </ul>
@@ -115,27 +117,27 @@ export default function FooterSection() {
                 </MotionWrapper>
 
                 {/* QUICK LINKS */}
-                <MotionWrapper className="xl:ml-42  mt-1">
+                <MotionWrapper className="md:ml-[25%] lg:ml-[20%] xl:ml-[48%]  mt-1">
                     <h4 className="font-inter text-[17px] text-[#b3b3b3] mb-4">Quicklinks</h4>
                     <ul className="space-y-4 text-[#7c7c7c] text-[17px] font-medium">
 
                         <li>
-                            <Link href="/partners">Hardware Rendering</Link>
+                            <Link href="/partners" className="link-underline">Hardware Rendering</Link>
                         </li>
 
                         <li>
-                            <Link href="/resources">3D Modeling</Link>
+                            <Link href="/resources" className="link-underline">3D Modeling</Link>
                         </li>
 
                         <li>
-                            <Link href="/gallery">EV Chargers</Link>
+                            <Link href="/gallery" className="link-underline">EV Chargers</Link>
                         </li>
 
                         <li>
-                            <Link href="/contact">IoT Device Integration</Link>
+                            <Link href="/contact" className="link-underline">IoT Device Integration</Link>
                         </li>
                         <li>
-                            <Link href="/contact">IoT Device Integration</Link>
+                            <Link href="/contact" className="link-underline">IoT Device Integration</Link>
                         </li>
 
                         {/* <li>

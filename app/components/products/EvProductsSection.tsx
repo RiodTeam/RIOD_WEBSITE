@@ -243,9 +243,19 @@ export default function EvProductsSection() {
                             <div key={p.id} className="flex flex-col snap-start">
 
                                 {/* IMAGE */}
-                                <div className="relative w-full h-[260px] bg-gray-100 overflow-hidden ">
-                                    <Image src={p.image} alt={p.title} fill className="object-cover" />
+                                <div className="relative w-full h-[260px] bg-gray-100 overflow-hidden group">
+                                    <Image
+                                        src={p.image}
+                                        alt={p.title}
+                                        fill
+                                        className="
+            object-cover
+            transition-transform duration-500 ease-out
+            group-hover:scale-110
+        "
+                                    />
                                 </div>
+
 
                                 {/* TITLE */}
                                 <h3 className="mt-4 text-[20px] font-medium text-black">
@@ -272,9 +282,20 @@ export default function EvProductsSection() {
                             <div key={p.id} className="flex flex-col">
 
                                 {/* IMAGE */}
-                                <MotionWrapper className="relative w-full h-[400px] xl:h-[537px] bg-gray-100 overflow-hidden">
-                                    <Image src={p.image} alt={p.title} fill className="object-cover" />
+                                {/* IMAGE */}
+                                <MotionWrapper className="relative w-full h-[400px] xl:h-[537px] bg-gray-100 overflow-hidden group">
+                                    <Image
+                                        src={p.image}
+                                        alt={p.title}
+                                        fill
+                                        className="
+            object-cover
+            transition-transform duration-500 ease-out
+            group-hover:scale-110
+        "
+                                    />
                                 </MotionWrapper>
+
 
                                 {/* TITLE */}
                                 <MotionWrapper>

@@ -29,8 +29,9 @@ export default function NextArticlesSection({ articles }: { articles: InsightTyp
               <div className="flex flex-col">
 
                 {/* IMAGE */}
-                <div className="relative w-full h-[260px] overflow-hidden">
-                  <Image src={item.image} alt={item.title} fill className="object-cover" />
+                <div className="relative w-full h-[260px] overflow-hidden group">
+                  <Image src={item.image} alt={item.title} fill className="object-cover transition-transform duration-500 ease-out
+            group-hover:scale-110" />
                 </div>
 
                 {/* META */}
@@ -60,8 +61,9 @@ export default function NextArticlesSection({ articles }: { articles: InsightTyp
               <Link href={`/insights/${item.slug}`}>
                 <div className="flex flex-col">
 
-                  <div className="relative w-full h-[260px] sm:h-[280px] md:h-[420px] xl:h-[530px] overflow-hidden">
-                    <Image src={item.image} alt={item.title} fill className="object-cover" />
+                  <div className="relative w-full h-[260px] sm:h-[280px] md:h-[420px] xl:h-[530px] overflow-hidden group">
+                    <Image src={item.image} alt={item.title} fill className="object-cover transition-transform duration-500 ease-out
+            group-hover:scale-110" />
                   </div>
 
                   <div className="flex items-center justify-between mt-5">

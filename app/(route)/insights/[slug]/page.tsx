@@ -1,28 +1,38 @@
 import { insightsData } from "@/app/components/data/insightsData";
-import BlogDetailSection from "@/app/components/individual-insight/BlogDetailSection";
-import NextArticlesSection from "@/app/components/individual-insight/NextArticlesSection";
+import PageClient from "./page.client";
+import { Metadata } from "next";
 
-export default async function InsightPage({
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+
+  const insight = insightsData.find(
+    (item) =>
+      item.slug.trim().toLowerCase() === slug.trim().toLowerCase()
+  );
+
+  if (!insight) {
+    return {
+      title: "Article Not Found",
+      description: "The requested article does not exist.",
+    };
+  }
+
+  return {
+    title: insight.title,
+    description: insight.title, // safe, type-correct
+  };
+}
+
+export default async function Page({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
 
-  const insight = insightsData.find((item) => item.slug === slug);
-
-  if (!insight)
-    return <div className="p-10 text-red-500">Article not found</div>;
-
-  // ⭐ Get related using slug list
-  const relatedArticles = insightsData.filter((i) =>
-    insight.relatedSlugs.includes(i.slug)
-  );
-
-  return (
-    <>
-      <BlogDetailSection data={insight} />
-      <NextArticlesSection articles={relatedArticles} />
-    </>
-  );
+  return <PageClient slug={slug} />;
 }
