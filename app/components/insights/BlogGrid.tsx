@@ -6,12 +6,12 @@ import Link from "next/link";
 import MotionWrapper from "../common/MotionWrapper";
 
 const blogs = [
-  { id: 1, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "Driving the Future of EV Charging in Numbers", slug: "driving-the-future-of-ev-charging-in-numbers" },
-  { id: 2, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "Driving the Future of EV Charging in Numbers", slug: "driving-the-future-of-ev-charging-in-numbers" },
-  { id: 3, img: "/home/hero.webp", tag: "Technology", date: "March 20, 2025", title: "Driving the Future of EV Charging in Numbers", slug: "driving-the-future-of-ev-charging-in-numbers" },
-  { id: 4, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "Driving the Future of EV Charging in Numbers", slug: "driving-the-future-of-ev-charging-in-numbers" },
-  { id: 5, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "Driving the Future of EV Charging in Numbers", slug: "driving-the-future-of-ev-charging-in-numbers" },
-  { id: 6, img: "/home/hero.webp", tag: "Sustainability", date: "March 20, 2025", title: "Driving the Future of EV Charging in Numbers", slug: "driving-the-future-of-ev-charging-in-numbers" },
+  { id: 1, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "RIOD is Collaborating With CPO’s to Solve EV Charging Infrastructure Problem", slug: "riod-collaborating-with-cpos-to-solve-ev-charging-infrastructure-problem" },
+  { id: 2, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "Importance of temperature monitoring in Pharma companies", slug: "importance-of-temperature-monitoring-in-pharma-companies" },
+  { id: 3, img: "/home/hero.webp", tag: "Technology", date: "March 20, 2025", title: "Monitoring Your Hatchery & Know how Temperature, Humidity and KPI affects the Hatchability", slug: "monitoring-hatchery-temperature-humidity-kpi-hatchability" },
+  { id: 4, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "Elive - Energy Management Solution", slug: "elive-energy-management-solution" },
+  // { id: 5, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "Driving the Future of EV Charging in Numbers", slug: "driving-the-future-of-ev-charging-in-numbers" },
+  // { id: 6, img: "/home/hero.webp", tag: "Sustainability", date: "March 20, 2025", title: "Driving the Future of EV Charging in Numbers", slug: "driving-the-future-of-ev-charging-in-numbers" },
 ];
 
 const categories = ["View All", "Sustainability", "EV Charging", "Technology"];

@@ -27,8 +27,8 @@ export default function CompatibleSection() {
                     </MotionWrapper>
                     <MotionWrapper>
                         <p className="normal-text text-[#9a99a2] mt-6 font-inter leading-[1.8]!">
-                            Our EV chargers are compatible with all plug-in electric vehicles, delivering seamless charging across brands and models. 
-                            Designed for universal connectivity and reliable performance, they provide a future-ready solution for both home and commercial use.
+                            Our charging solutions are engineered to work seamlessly with every major plug-in electric vehicle on the market. Whether it’s cars, bikes, 
+                            or commercial EVs, RIOD chargers deliver reliable, efficient, and universal compatibility-trusted by leading brands and industry partners showcased below. 
                         </p>
                     </MotionWrapper>
                 </div>

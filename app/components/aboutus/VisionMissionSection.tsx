@@ -31,12 +31,10 @@ export default function VisionMissionSection() {
 
             <MotionWrapper>
               <p className="para-text font-inter text-[#9a99a2] leading-[1.7] lg:max-w-[620px]">
-               To accelerate India’s shift towards sustainable electric mobility through cutting-edge EV charging infrastructure that’s 
-               intelligent, reliable, and accessible. We envision a future where every journey is powered by clean energy, and EV charging
-                is as effortless as using your smartphone connected, fast, and everywhere you need it. By combining technology, design, and 
-                sustainability, we aim to make India a global leader in next generation charging solutions.We envision a future where every 
-                journey is powered by clean energy, and EV charging is as effortless as using your smartphone connected, fast, and everywhere 
-                you need it. By combining technology, design, and sustainability, we aim to make India a global leader in next generation charging solutions.
+                Our vision is to lead India’s IoT and EV innovation by creating smart, reliable,
+                and sustainable technologies that transform the energy, agriculture, and industrial sectors.
+                We aspire to empower businesses and communities with intelligent solutions that enhance productivity,
+                promote clean energy adoption, and contribute to a more connected and sustainable future.
               </p>
             </MotionWrapper>
           </div>
@@ -51,13 +49,9 @@ export default function VisionMissionSection() {
 
             <MotionWrapper>
               <p className="para-text font-inter text-[#9a99a2] leading-[1.7] lg:max-w-[620px]">
-                To empower homes, businesses, and cities with future-ready charging solutions that make
-                owning and operating EVs effortless. Through constant innovation and in-house engineering,
-                we strive to deliver products that are smart, durable, and built for Indian conditions.
-                Our mission is to bridge the gap between technology and sustainability, enabling a connected
-                network of EV charging experiences that drive convenience, reliability, and a cleaner planet.
-                We envision a future where every journey is powered by clean energy, and EV charging is as
-                effortless as using your smartphone-connected, fast, and everywhere you need it.
+                Our mission is to design, develop, and manufacture world-class IoT products and EV charging solutions that deliver intelligence,
+                efficiency, and measurable real-world impact. We are committed to engineering excellence, customer-centric innovation,
+                and a Made-in-India approach that supports digital transformation across essential industries and drives long-term sustainability.
               </p>
             </MotionWrapper>
           </div>

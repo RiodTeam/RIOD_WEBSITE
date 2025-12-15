@@ -2,20 +2,21 @@
 
 import MotionWrapper from "../common/MotionWrapper";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PartnerHostSection() {
     const items = [
         {
-            title: "Become a Partner",
-            desc: "RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations.",
+            title: "Affiliate Partner Engagement ",
+            desc: "We have a lucrative affiliate marketing program that gives you 10% on all orders referred to us through your site or other channels. ",
         },
         {
-            title: "Host EV Charger",
-            desc: "RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations.",
+            title: "Distributor/Dealership Mode Engagement  ",
+            desc: " RIOD distributors benefit from industry-leading margins, competitive pricing, and reliable support to grow their business. ",
         },
         {
-            title: "Partner Network",
-            desc: "RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations.",
+            title: "Business Partner Engagement  ",
+            desc: "Our business partners can build unique co-branded strategies through joint marketing initiatives and collaborative product offerings.",
         },
     ];
 
@@ -49,16 +50,18 @@ export default function PartnerHostSection() {
                                 {item.desc}
                             </p>
 
-                            <button className="mt-8 flex items-center gap-5 para-text text-white hover:opacity-80 transition">
-                                Know more
-                               <Image
-                                                               src="/home/arrow.svg"
-                                                               alt="arrow"
-                                                               width={14}
-                                                               height={14}
-                                                               className="object-contain"
-                                                           />
-                            </button>
+                            <Link href="/contact">
+                                <button className="mt-8 flex items-center gap-5 para-text text-white hover:opacity-80 transition">
+                                    Know more
+                                    <Image
+                                        src="/home/arrow.svg"
+                                        alt="arrow"
+                                        width={14}
+                                        height={14}
+                                        className="object-contain"
+                                    />
+                                </button>
+                            </Link>
                         </MotionWrapper>
                     ))}
                 </div>

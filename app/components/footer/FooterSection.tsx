@@ -18,29 +18,30 @@ export default function FooterSection() {
                 </h3>
 
                 {/* RIGHT BUTTON */}
-                <button
-                    className="
-    bg-white text-black
-    w-full sm:w-auto
-    px-7 py-3
-    font-inter text-[16px]
-    flex items-center
-    justify-between sm:justify-center
-    gap-8
-    hover:opacity-80 transition
-  "
-                >
-                    <span>Contact US</span>
+                <Link href="/contact" className="block w-full sm:w-auto">
+                    <button
+                        className="
+      bg-white text-black
+      w-full sm:w-auto
+      px-7 py-3
+      font-inter text-[16px]
+      flex items-center
+      justify-between sm:justify-center
+      gap-8
+      hover:opacity-80 transition
+    "
+                    >
+                        <span>Contact US</span>
 
-                    <Image
-                        src="/footer/arrow.svg"
-                        alt="arrow"
-                        width={12}
-                        height={12}
-                        className="object-contain"
-                    />
-                </button>
-
+                        <Image
+                            src="/footer/arrow.svg"
+                            alt="arrow"
+                            width={12}
+                            height={12}
+                            className="object-contain"
+                        />
+                    </button>
+                </Link>
 
             </MotionWrapper>
 
@@ -130,28 +131,28 @@ export default function FooterSection() {
                 </MotionWrapper>
 
                 {/* QUICK LINKS */}
-                <MotionWrapper className="md:ml-[25%] lg:ml-[20%] xl:ml-[48%]  mt-1">
+                <MotionWrapper className="md:ml-[10%] lg:ml-[11%] xl:ml-[39%]  mt-1">
                     <h4 className="font-inter text-[17px] text-[#b3b3b3] mb-4">Quicklinks</h4>
                     <ul className="space-y-4 text-[#7c7c7c] text-[17px] font-medium">
 
                         <li>
+                            <Link href="/ev-chargers-hotels" className="link-underline">EV Chargers For Hotels</Link>
+                        </li>
+
+                        <li>
+                            <Link href="/ev-chargers-office" className="link-underline">EV Chargers For Office</Link>
+                        </li>
+
+                        <li>
+                            <Link href="/ev-chargers-institution" className="link-underline">EV Chargers For Institution</Link>
+                        </li>
+
+                        <li>
                             <Link href="/ev-chargers-home" className="link-underline">EV Chargers For Home</Link>
                         </li>
-
-                        <li>
-                            <Link href="/resources" className="link-underline">3D Modeling</Link>
-                        </li>
-
-                        <li>
-                            <Link href="/gallery" className="link-underline">EV Chargers</Link>
-                        </li>
-
-                        <li>
+                        {/* <li>
                             <Link href="/contact" className="link-underline">IoT Device Integration</Link>
-                        </li>
-                        <li>
-                            <Link href="/contact" className="link-underline">IoT Device Integration</Link>
-                        </li>
+                        </li> */}
 
                         {/* <li>
     <Link href="/terms-and-conditions">Terms &amp; Conditions</Link>
