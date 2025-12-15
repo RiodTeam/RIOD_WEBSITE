@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Phone, MessageCircle, X, ArrowDown } from "lucide-react";
+import { Phone, MessageCircle, X,  } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -11,7 +11,7 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [isSegmentsOpen, setIsSegmentsOpen] = useState(false);
-    const dropdownTextColor = scrolled ? "text-black" : "text-white";
+    // const dropdownTextColor = scrolled ? "text-black" : "text-white";
 
 
     const pathname = usePathname();
