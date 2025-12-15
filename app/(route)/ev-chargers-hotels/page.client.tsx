@@ -20,7 +20,7 @@ export default function PageClient() {
       <div className="overflow-hidden">
 
         <HeroSection
-          backgroundImage="/home/hero.webp"
+          backgroundImage="/hotel/hero.webp"
           title="Power Up Guest Experience with Smart EV Charging"
           description="Reliable, fast, and smart EV charging solutions for home, business, and commercial spaces. Designed to empower your journey towards a greener, smarter future."
         />

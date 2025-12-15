@@ -23,7 +23,7 @@ export default function HomePage() {
       
       <div>
         <HeroSection
-          backgroundImage="/home/hero.webp"
+          backgroundImage="/home/hero1.webp"
           title="Powering India’s EV Revolution"
           description="Reliable, fast, and smart EV charging solutions for home, business, and commercial spaces. Designed to empower your journey towards a greener, smarter future."
         />

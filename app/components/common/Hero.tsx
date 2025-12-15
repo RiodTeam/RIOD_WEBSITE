@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import MotionWrapper from './MotionWrapper'
+
 
 interface HeroSectionProps {
   backgroundImage: string
@@ -29,7 +29,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           src={backgroundImage}
           alt="Hero background"
           fill
-          className="object-cover object-center"
+          className="object-cover object-center "
           priority
         />
 
@@ -42,23 +42,22 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="mx-auto w-[90%] md:w-[90%] 2xl:max-w-[1800px]">
           <div className="max-w-4xl">
             {/* Title */}
-            <MotionWrapper>
+           
               <h1
                 className="hero-title font-inter leading-tight! mb-[30px] md:mb-[15px] lg:mb-[17px]"
                 dangerouslySetInnerHTML={{ __html: title }}
               />
-            </MotionWrapper>
-
+           
             {/* Description */}
-            <MotionWrapper>
+           
               {description && (
                 <p className="hero-desc font-inter leading-[1.55rem]! mb-6 md:mb-[1.8rem]  max-w-2xl xl:max-w-2xl text-[#f4f4f4]">
                   {description}
                 </p>
               )}
-            </MotionWrapper>
+            
             {/* Button (Optional) */}
-            <MotionWrapper>
+           
               {buttonText && (
                 <Link href={buttonHref}>
                   <button className="flex justify-center items-center rounded-full mt-3 px-6 md:px-8 h-[50px] md:h-14 bg-[#00E17B] text-black font-medium text-sm md:text-base hover:bg-[#00c96b] transition-colors">
@@ -66,7 +65,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   </button>
                 </Link>
               )}
-            </MotionWrapper>
+            
           </div>
         </div>
       </div>

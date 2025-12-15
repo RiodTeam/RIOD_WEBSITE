@@ -39,7 +39,7 @@ export default function EvFeatures() {
                     <div className="w-full  relative">
                         <MotionWrapper>
                             <Image
-                                src="/home/hero.webp"
+                                src="/home/riod.webp"
                                 alt="EV Charger"
                                 fill
                                 className="object-cover"
