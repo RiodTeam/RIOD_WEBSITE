@@ -52,10 +52,7 @@ export default function ContactFormSection() {
           </h2>
 
           <p className="text-gray-400 leading-9! normal-text">
-            RNDSquare is your end-to-end R&D partner, transforming bold ideas into
-            market-ready innovations. We combine cutting-edge engineering, IoT solutions,
-            and software expertise to design, build, and scale products that drive
-            real-world impact.
+           Connect with RIOD for all inquiries related to our EV charging stations and IoT solutions. Share your details through the form below, and our experts will reach out with tailored information and next steps. 
           </p>
         </div>
 

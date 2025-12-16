@@ -22,7 +22,7 @@ const PlatformSection: React.FC<PlatformSectionProps> = ({
   pt = "pt-16 md:pt-[6.8rem]",
   pb = "pb-0 md:pb-0",
   titleWidth = "lg:w-[40%]",
-  titleMarginTop = "mt-10",
+  titleMarginTop = "mt-3 md:mt-10",
 }) => {
   const isWhite = bg === "white";
 

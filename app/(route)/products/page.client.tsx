@@ -22,7 +22,7 @@ export default function PageClient() {
           title="Best Selling Products"
           titleWidth="lg:w-[50%] xl:w-[65%]"
           titleMarginTop="mt-4 md:mt-3"
-          description="RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations. We combine cutting-edge engineering, IoT solutions, and software expertise to design, build, and scale products that drive real-world impact. From initial concept and prototyping to application development and lifecycle support, we work alongside your team to bring ambitious visions to life."
+          description="RIOD is a leading provider of electric vehicle (EV) charging solutions in India, with a wide range of products to suit the needs of different customers. Among these products, there are some best-selling EV chargers that have become a popular choice among EV drivers and businesses alike. "
         />
 
         <EvProductsSection />

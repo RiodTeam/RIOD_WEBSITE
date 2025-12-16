@@ -20,8 +20,8 @@ export default function NextArticlesSection({ articles }: { articles: InsightTyp
 
         {/* ---------- MOBILE SCROLL ---------- */}
         <div className="
-          grid grid-flow-col auto-cols-[90%] 
-          gap-6 overflow-x-auto pb-4 
+          grid grid-flow-col auto-cols-[93%] 
+          gap-4 overflow-x-auto pb-4 
           sm:hidden scrollbar-hide snap-x snap-mandatory
         ">
           {articles.map((item) => (
@@ -29,8 +29,9 @@ export default function NextArticlesSection({ articles }: { articles: InsightTyp
               <div className="flex flex-col">
 
                 {/* IMAGE */}
-                <div className="relative w-full h-[260px] overflow-hidden">
-                  <Image src={item.image} alt={item.title} fill className="object-cover" />
+                <div className="relative w-full h-[260px] overflow-hidden group">
+                  <Image src={item.image} alt={item.title} fill className="object-cover transition-transform duration-500 ease-out
+            group-hover:scale-110" />
                 </div>
 
                 {/* META */}
@@ -44,7 +45,7 @@ export default function NextArticlesSection({ articles }: { articles: InsightTyp
                 </div>
 
                 {/* TITLE */}
-                <h3 className="regular-heading text-[#404040] font-inter mt-5 leading-normal cursor-pointer">
+                <h3 className="regular-heading text-[#404040] font-inter mt-5 leading-[1.3]! cursor-pointer">
                   {item.title}
                 </h3>
 
@@ -60,8 +61,9 @@ export default function NextArticlesSection({ articles }: { articles: InsightTyp
               <Link href={`/insights/${item.slug}`}>
                 <div className="flex flex-col">
 
-                  <div className="relative w-full h-[260px] sm:h-[280px] md:h-[420px] xl:h-[530px] overflow-hidden">
-                    <Image src={item.image} alt={item.title} fill className="object-cover" />
+                  <div className="relative w-full h-[260px] sm:h-[280px] md:h-[420px] xl:h-[530px] overflow-hidden group">
+                    <Image src={item.image} alt={item.title} fill className="object-cover transition-transform duration-500 ease-out
+            group-hover:scale-110" />
                   </div>
 
                   <div className="flex items-center justify-between mt-5">

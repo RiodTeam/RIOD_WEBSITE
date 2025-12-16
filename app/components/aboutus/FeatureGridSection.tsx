@@ -8,27 +8,27 @@ export default function FeatureGridSection() {
     {
       icon: "/about/icon3.svg",
       title: "Smarter Connectivity",
-      desc: "Experience truly intelligent charging with seamless Wi-Fi, 4G, and OCPP (Open Charge Point Protocol) integration. Every RIOD charger connects effortlessly to your network",
+      desc: "Our systems are designed for intelligent connectivity, featuring built-in Wi-Fi, 4G, and OCPP support for seamless communication, real-time monitoring, and easy platform integration.",
     },
     {
       icon: "/about/icon5.svg",
       title: "Safe & Reliable",
-      desc: "Experience truly intelligent charging with seamless Wi-Fi, 4G, and OCPP (Open Charge Point Protocol) integration. Every RIOD charger connects effortlessly to your network",
+      desc: "Safety and reliability define every RIOD charger, engineered with layered protection and robust components for secure, consistent performance across all environments.",
     },
     {
       icon: "/about/icon2.svg",
       title: "Sustainable",
-      desc: "Experience truly intelligent charging with seamless Wi-Fi, 4G, and OCPP (Open Charge Point Protocol) integration. Every RIOD charger connects effortlessly to your network",
+      desc: "RIOD designs energy-efficient, durable technology that supports a cleaner, greener future and sustainable energy adoption worldwide.",
     },
     {
       icon: "/about/icon1.svg",
       title: "Versatile",
-      desc: "Experience truly intelligent charging with seamless Wi-Fi, 4G, and OCPP (Open Charge Point Protocol) integration. Every RIOD charger connects effortlessly to your network",
+      desc: "RIOD chargers and IoT products are designed for flexibility across residential and commercial environments, delivering intelligent features and reliable performance wherever deployed.",
     },
     {
       icon: "/about/icon4.svg",
       title: "Future Ready Technology",
-      desc: "Experience truly intelligent charging with seamless Wi-Fi, 4G, and OCPP (Open Charge Point Protocol) integration. Every RIOD charger connects effortlessly to your network",
+      desc: "RIOD solutions are built with scalable architecture, OTA upgrades, and future-ready compatibility to ensure long-term performance and evolving relevance.",
     },
   ];
 
@@ -44,30 +44,30 @@ export default function FeatureGridSection() {
               <div className="flex flex-col">
 
                 {/* ICON */}
-                <div className="w-[60px] h-[46px] mb-6">
-                    <MotionWrapper>
-                  <Image
-                    src={item.icon}
-                    alt={item.title}
-                    width={60}
-                    height={60}
-                    className="object-contain"
-                  />
+                <div className="w-[60px] h-[46px] mb-9 md:mb-6">
+                  <MotionWrapper>
+                    <Image
+                      src={item.icon}
+                      alt={item.title}
+                      width={60}
+                      height={60}
+                      className="object-contain"
+                    />
                   </MotionWrapper>
                 </div>
 
                 {/* TITLE */}
                 <MotionWrapper>
-                <h3 className="regular-heading font-inter text-[#404040] mb-3">
-                  {item.title}
-                </h3>
+                  <h3 className="regular-heading font-inter text-[#404040] mb-5 md:mb-3">
+                    {item.title}
+                  </h3>
                 </MotionWrapper>
 
                 {/* DESCRIPTION */}
                 <MotionWrapper>
-                <p className="normal-text text-[#9a99a2] font-inter leading-[1.7] ">
-                  {item.desc}
-                </p>
+                  <p className="normal-text text-[#9a99a2] font-inter leading-[1.7] ">
+                    {item.desc}
+                  </p>
                 </MotionWrapper>
 
                 {/* LINE */}

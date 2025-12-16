@@ -23,7 +23,7 @@ export default function IdealProductsSection({ data }: Props) {
                 {/* LEFT SIDE */}
                 <div>
                     <MotionWrapper>
-                        <h2 className="font-inter section-heading leading-normal! text-[#222222] md:w-[70%]">
+                        <h2 className="font-inter section-heading leading-[1.3]! lg:leading-normal! text-[#222222] md:w-[70%]">
                             {data.title}
                         </h2>
                     </MotionWrapper>
@@ -35,7 +35,7 @@ export default function IdealProductsSection({ data }: Props) {
                     </MotionWrapper>
 
                     <MotionWrapper>
-                        <h3 className="font-inter regular-heading mt-8 xl:mt-[5.1rem] text-[#161616] md:w-[70%]">
+                        <h3 className="font-inter regular-heading mt-12 lg:mt-8 xl:mt-[5.1rem] text-[#161616] md:w-[70%] leading-normal!">
                             {data.subTitle}
                         </h3>
                     </MotionWrapper>

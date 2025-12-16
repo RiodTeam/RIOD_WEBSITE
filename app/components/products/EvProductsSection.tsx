@@ -17,7 +17,7 @@ export default function EvProductsSection() {
     const dropdownRef1 = useRef<HTMLDivElement | null>(null);
     const dropdownRef2 = useRef<HTMLDivElement | null>(null);
 
-    const categoryOptions = ["All Products", "Home Chargers", "Portable Chargers"];
+    const categoryOptions = ["All Products", "electric-vehicle-charging-stations", "ev-charging-station"];
     const sortOptions = ["Best Selling", "Price: Low to High", "Price: High to Low"];
 
     /* -----------------------------------------
@@ -26,85 +26,59 @@ export default function EvProductsSection() {
     const allProducts = [
         {
             id: 1,
-            title: "7.4KW Home Charger",
-            type: "Home Chargers",
-            price: 499,
-            desc: "Single-Phase Fast AC Wall Box for Private Residential Use",
+            title: "7.4kW Home EV Charger - Single-Phase Fast AC Wall Box for Private Residential Use",
+            type: "electric-vehicle-charging-stations",
+            price: 30000.00,
+            desc: "The 7.4kW Home EV Charger is a reliable and compact AC wall-mounted charger tailored for private residential use.",
             badge: "Top Discount of the Sale",
-            image: "/home/hero.webp",
+            image: "/products/p2.jpg",
         },
         {
             id: 2,
-            title: "Portable EV Charger",
-            type: "Portable Chargers",
-            price: 299,
-            desc: "Single-Phase Fast AC Wall Box for Private Residential Use",
-            badge: "Best Selling Product",
-            image: "/home/hero.webp",
+            title: "22kW Dual-Port EV Charging Station - Public Access",
+            type: "ev-charging-station",
+            price: 90000.00,
+            desc: "This 22kW dual-port AC charger is ideal for commercial spaces, enabling fast and simultaneous charging of two vehicles with RFID-based access.",
+            badge: "Customer Favorite",
+            image: "/products/p1.jpg",
         },
         {
             id: 3,
-            title: "10KW Home Charger",
-            type: "Home Chargers",
-            price: 699,
-            desc: "Single-Phase Fast AC Wall Box for Private Residential Use",
+            title: "22kW Home EV Charger - Fast 3-Phase Type 2",
+            type: "electric-vehicle-charging-stations",
+            price: 49999.00,
+            desc: "Upgrade your home charging setup with this 22kW 3-Phase AC EV Charger, designed for Indian households equipped with a three-phase power supply.",
             badge: "Customer Favorite",
-            image: "/home/hero.webp",
+            image: "/products/p2.jpg",
         },
         {
             id: 4,
-            title: "Ultra Portable Charger",
-            type: "Portable Chargers",
-            price: 199,
-            desc: "Single-Phase Fast AC Wall Box for Private Residential Use",
-            badge: "Top Discount of the Sale",
-            image: "/home/hero.webp",
+            title: "POWERPOD City - Hybrid EV Charging station Dual Port 7.4Kw",
+            type: "ev-charging-station",
+            price: 110000.00,
+            desc: "POWERPOD City is a hybrid EV charging station with Dual EV charging at a time. ",
+            badge: "Best Selling Product",
+            image: "/products/p1.jpg",
         },
         {
             id: 5,
-            title: "7.4KW Home Charger",
-            type: "Home Chargers",
-            price: 499,
-            desc: "Single-Phase Fast AC Wall Box for Private Residential Use",
+            title: "7.4kW Wall-Mounted EV Charger for Public & Shared Parking - Type 2, OCPP, RFID",
+            type: "electric-vehicle-charging-stations",
+            price: 45000.00,
+            desc: "This 7.4kW wall-mounted EV charger is designed for shared spaces such as apartments, offices, and gated communities.",
             badge: "Top Discount of the Sale",
-            image: "/home/hero.webp",
+            image: "/products/p2.jpg",
         },
         {
             id: 6,
-            title: "Portable EV Charger",
-            type: "Portable Chargers",
-            price: 299,
-            desc: "Single-Phase Fast AC Wall Box for Private Residential Use",
+            title: "7.4kW AC EV Charger for Commercial Use - OCPP & RFID Enabled | Type 2 Wall-Mounted",
+            type: "electric-vehicle-charging-stations",
+            price: 58000.00,
+            desc: "The 7.4kW wall-mounted EV charger is a smart AC solution for shared and commercial spaces.",
             badge: "Best Selling Product",
-            image: "/home/hero.webp",
+            image: "/products/p2.jpg",
         },
-        {
-            id: 7,
-            title: "10KW Home Charger",
-            type: "Home Chargers",
-            price: 699,
-            desc: "Single-Phase Fast AC Wall Box for Private Residential Use",
-            badge: "Customer Favorite",
-            image: "/home/hero.webp",
-        },
-        {
-            id: 8,
-            title: "Ultra Portable Charger",
-            type: "Portable Chargers",
-            price: 199,
-            desc: "Single-Phase Fast AC Wall Box for Private Residential Use",
-            badge: "Top Discount of the Sale",
-            image: "/home/hero.webp",
-        },
-        {
-            id: 9,
-            title: "Ultra Portable Charger",
-            type: "Portable Chargers",
-            price: 199,
-            desc: "Single-Phase Fast AC Wall Box for Private Residential Use",
-            badge: "Top Discount of the Sale",
-            image: "/home/hero.webp",
-        },
+       
     ];
 
     /* -----------------------------------------
@@ -115,11 +89,21 @@ export default function EvProductsSection() {
         return item.type === category;
     });
 
-    const sortedProducts = [...filteredProducts].sort((a, b) => {
-        if (sortBy === "Price: Low to High") return a.price - b.price;
-        if (sortBy === "Price: High to Low") return b.price - a.price;
-        return 0; // Default: Best Selling (no sorting)
-    });
+    let sortedProducts = [...filteredProducts];
+
+if (sortBy === "Best Selling") {
+    sortedProducts = filteredProducts
+        .filter((item) => item.badge === "Best Selling Product")
+        .slice(0, 2); // ✅ only 2 items
+}
+
+if (sortBy === "Price: Low to High") {
+    sortedProducts.sort((a, b) => a.price - b.price);
+}
+
+if (sortBy === "Price: High to Low") {
+    sortedProducts.sort((a, b) => b.price - a.price);
+}
 
     /* -----------------------------------------
         CLOSE DROPDOWN ON OUTSIDE CLICK
@@ -153,7 +137,7 @@ export default function EvProductsSection() {
                                     setOpen1(!open1);
                                     setOpen2(false);
                                 }}
-                                className="flex items-center gap-4  rounded-full px-4 md:px-7 py-2 md:py-3 bg-[#eeeeee] text-[#222222] text-[16px]"
+                                className="flex items-center gap-4  rounded-full px-4 md:px-7 py-2 md:py-3 bg-[#eeeeee] text-[#222222] text-[14px] md:text-[16px]"
                             >
                                 {category}
                                 <Image
@@ -193,7 +177,7 @@ export default function EvProductsSection() {
                                     setOpen2(!open2);
                                     setOpen1(false);
                                 }}
-                                className="flex items-center gap-4 rounded-full px-4 md:px-7 py-2 md:py-3 bg-[#eeeeee] text-[#222222] text-[16px]"
+                                className="flex items-center gap-4 rounded-full px-4 md:px-7 py-2 md:py-3 bg-[#eeeeee] text-[#222222] text-[14px] md:text-[16px]"
                             >
                                 {sortBy}
                                 <Image
@@ -230,8 +214,8 @@ export default function EvProductsSection() {
 
                     {/* MOBILE → HORIZONTAL SCROLL */}
                     <div className="
-    grid grid-flow-col auto-cols-[90%] 
-    gap-6 
+    grid grid-flow-col auto-cols-[93%] 
+    gap-4
     overflow-x-auto 
     sm:hidden 
     pb-6 
@@ -243,22 +227,32 @@ export default function EvProductsSection() {
                             <div key={p.id} className="flex flex-col snap-start">
 
                                 {/* IMAGE */}
-                                <div className="relative w-full h-[260px] bg-gray-100 overflow-hidden ">
-                                    <Image src={p.image} alt={p.title} fill className="object-cover" />
+                                <div className="relative w-full h-[260px] bg-gray-100 overflow-hidden group">
+                                    <Image
+                                        src={p.image}
+                                        alt={p.title}
+                                        fill
+                                        className="
+            object-cover
+            transition-transform duration-500 ease-out
+            group-hover:scale-110
+        "
+                                    />
                                 </div>
 
+
                                 {/* TITLE */}
-                                <h3 className="mt-4 text-[20px] font-medium text-black">
+                                <h3 className="mt-6 text-[22px] font-medium text-black">
                                     {p.title}
                                 </h3>
 
                                 {/* DESC */}
-                                <p className="mt-3 text-[#9a99a2] text-[14px] leading-relaxed">
+                                <p className="mt-3 text-[#9a99a2] text-[16px] leading-relaxed">
                                     {p.desc}
                                 </p>
 
                                 {/* BADGE */}
-                                <span className="mt-4 text-center inline-block bg-[#eeeeee] text-[#222222] text-[14px] px-4 py-1.5 rounded-full whitespace-nowrap">
+                                <span className="mt-5 text-center inline-block bg-[#eeeeee] text-[#222222] text-[14px] px-4 py-3 md:py-1.5 rounded-full whitespace-nowrap">
                                     {p.badge}
                                 </span>
 
@@ -272,13 +266,24 @@ export default function EvProductsSection() {
                             <div key={p.id} className="flex flex-col">
 
                                 {/* IMAGE */}
-                                <MotionWrapper className="relative w-full h-[400px] xl:h-[537px] bg-gray-100 overflow-hidden">
-                                    <Image src={p.image} alt={p.title} fill className="object-cover" />
+                                {/* IMAGE */}
+                                <MotionWrapper className="relative w-full h-[400px] xl:h-[537px] bg-gray-100 overflow-hidden group">
+                                    <Image
+                                        src={p.image}
+                                        alt={p.title}
+                                        fill
+                                        className="
+            object-cover
+            transition-transform duration-500 ease-out
+            group-hover:scale-110
+        "
+                                    />
                                 </MotionWrapper>
+
 
                                 {/* TITLE */}
                                 <MotionWrapper>
-                                    <h3 className="mt-9 text-[20px] xl:text-[24px] font-medium text-black uppercase">
+                                    <h3 className="mt-9 text-[20px] xl:text-[24px] font-medium text-black ">
                                         {p.title}
                                     </h3>
                                 </MotionWrapper>

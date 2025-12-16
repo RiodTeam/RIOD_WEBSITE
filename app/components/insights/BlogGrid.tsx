@@ -6,12 +6,12 @@ import Link from "next/link";
 import MotionWrapper from "../common/MotionWrapper";
 
 const blogs = [
-  { id: 1, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "Driving the Future of EV Charging in Numbers", slug: "driving-the-future-of-ev-charging-in-numbers" },
-  { id: 2, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "Driving the Future of EV Charging in Numbers", slug: "driving-the-future-of-ev-charging-in-numbers" },
-  { id: 3, img: "/home/hero.webp", tag: "Technology", date: "March 20, 2025", title: "Driving the Future of EV Charging in Numbers", slug: "driving-the-future-of-ev-charging-in-numbers" },
-  { id: 4, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "Driving the Future of EV Charging in Numbers", slug: "driving-the-future-of-ev-charging-in-numbers" },
-  { id: 5, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "Driving the Future of EV Charging in Numbers", slug: "driving-the-future-of-ev-charging-in-numbers" },
-  { id: 6, img: "/home/hero.webp", tag: "Sustainability", date: "March 20, 2025", title: "Driving the Future of EV Charging in Numbers", slug: "driving-the-future-of-ev-charging-in-numbers" },
+  { id: 1, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "RIOD is Collaborating With CPO’s to Solve EV Charging Infrastructure Problem", slug: "riod-collaborating-with-cpos-to-solve-ev-charging-infrastructure-problem" },
+  { id: 2, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "Importance of temperature monitoring in Pharma companies", slug: "importance-of-temperature-monitoring-in-pharma-companies" },
+  { id: 3, img: "/home/hero.webp", tag: "Technology", date: "March 20, 2025", title: "Monitoring Your Hatchery & Know how Temperature, Humidity and KPI affects the Hatchability", slug: "monitoring-hatchery-temperature-humidity-kpi-hatchability" },
+  { id: 4, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "Elive - Energy Management Solution", slug: "elive-energy-management-solution" },
+  // { id: 5, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "Driving the Future of EV Charging in Numbers", slug: "driving-the-future-of-ev-charging-in-numbers" },
+  // { id: 6, img: "/home/hero.webp", tag: "Sustainability", date: "March 20, 2025", title: "Driving the Future of EV Charging in Numbers", slug: "driving-the-future-of-ev-charging-in-numbers" },
 ];
 
 const categories = ["View All", "Sustainability", "EV Charging", "Technology"];
@@ -30,7 +30,7 @@ export default function BlogGrid() {
 
         {/* ---------------- CATEGORY FILTERS ---------------- */}
         <MotionWrapper>
-          <div className="flex flex-wrap gap-3 md:gap-4 mb-20">
+          <div className="flex flex-wrap gap-4 md:gap-4 mb-20">
             {categories.map((cat) => {
               const isActive = activeCategory === cat;
               return (
@@ -51,21 +51,22 @@ export default function BlogGrid() {
 
         {/* ---------------- MOBILE HORIZONTAL SCROLL ---------------- */}
         <MotionWrapper>
-          <div className="sm:hidden flex overflow-x-auto gap-5 pb-4 scrollbar-hide">
+          <div className="sm:hidden flex overflow-x-auto gap-4 pb-4 scrollbar-hide">
 
             {filteredBlogs.map((blog) => (
               <Link
                 key={blog.id}
                 href={`/insights/${blog.slug}`}
-                className="w-[360px] shrink-0 group cursor-pointer"
+                className="w-[93%] shrink-0 group cursor-pointer"
               >
                 {/* IMAGE */}
-                <div className="w-full h-[270px] relative overflow-hidden">
+                <div className="w-full h-[270px] relative overflow-hidden group">
                   <Image
                     src={blog.img}
                     alt="blog image"
                     fill
-                    className="object-cover group-hover:scale-105 transition duration-300"
+                    className="object-cover transition-transform duration-500 ease-out
+            group-hover:scale-110"
                   />
                 </div>
 
@@ -76,7 +77,7 @@ export default function BlogGrid() {
                 </div>
 
                 {/* TITLE */}
-                <h3 className="mt-4 text-[20px] text-[#404040] font-inter leading-[1.4]">
+                <h3 className="mt-6 text-[20px] text-[#404040] font-inter leading-[1.4]">
                   {blog.title}
                 </h3>
               </Link>
@@ -96,12 +97,13 @@ export default function BlogGrid() {
             >
               {/* IMAGE */}
               <MotionWrapper>
-                <div className="w-full h-[270px] md:h-[300px] xl:h-[530px] relative overflow-hidden">
+                <div className="w-full h-[270px] md:h-[300px] xl:h-[530px] relative overflow-hidden group">
                   <Image
                     src={blog.img}
                     alt="blog image"
                     fill
-                    className="object-cover group-hover:scale-105 transition duration-300"
+                    className="object-cover transition-transform duration-500 ease-out
+            group-hover:scale-110"
                   />
                 </div>
               </MotionWrapper>

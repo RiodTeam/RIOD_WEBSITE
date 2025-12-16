@@ -8,22 +8,22 @@ const sections = [
     {
         id: "home",
         title: "Powerpod Home",
-        desc: "Choose a plan that fits your business whether you need foundational branding or full creative support. Our flexible monthly options are built to help startups grow and scale.",
-        image: "/home/hero.webp",
+        desc: "Power up your EV in the comfort of your home or business with our private EV charger. Engineered for performance and reliability, it ensures fast, safe, and seamless charging whenever you need it.",
+        image: "/home/home.webp",
         tags: ["Homes", "Small Offices", "Apartment Complexes"],
     },
     {
         id: "go",
         title: "Powerpod Go",
-        desc: "Choose a plan that fits your business whether you need foundational branding or full creative support. Our flexible monthly options are built to help startups grow and scale.",
-        image: "/home/hero.webp",
+        desc: " Empower your business with fast, reliable EV charging using our commercial-grade EV charger. Engineered for durability and scalability, it ensures seamless operation in demanding commercial settings.",
+        image: "/home/go.webp",
         tags: ["Homes", "Small Offices", "Apartment Complexes"],
     },
     {
         id: "city",
         title: "Powerpod City",
-        desc: "Choose a plan that fits your business whether you need foundational branding or full creative support. Our flexible monthly options are built to help startups grow and scale.",
-        image: "/home/hero.webp",
+        desc: "Power two vehicles at the same time with our durable commercial-grade dual EV charger. Engineered for performance and longevity, it ensures seamless charging in high-traffic commercial environments.",
+        image: "/home/city.webp",
         tags: ["Homes", "Small Offices", "Apartment Complexes"],
     },
 ];
@@ -133,13 +133,13 @@ export default function PowerpodStickyScroll() {
                                     {sections[activeIndex].desc}
                                 </p>
 
-                                <p className="text-[#9a99a2] text-[16px] font-inter mb-5">Suitable for</p>
+                                <p className="text-[#9a99a2] text-[16px] font-inter mb-5">Suitable for:</p>
 
-                                <div className="flex gap-3 flex-wrap">
+                                <div className="flex gap-2 md:gap-3 flex-wrap">
                                     {sections[activeIndex].tags.map((t) => (
                                         <span
                                             key={t}
-                                            className="px-5 py-2  rounded-full bg-[#eeeeee] text-black text-[14px]"
+                                            className="px-2.5 md:px-5 py-2  rounded-full bg-[#eeeeee] text-black text-[14px]"
                                         >
                                             {t}
                                         </span>

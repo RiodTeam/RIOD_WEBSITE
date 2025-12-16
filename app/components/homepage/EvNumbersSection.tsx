@@ -44,17 +44,15 @@ export default function EvNumbersSection() {
                 {/* PARAGRAPH */}
                 <MotionWrapper>
                     <p className="normal-text text-[#9a99a2] mt-8 font-inter leading-[1.7]!">
-                        RNDSquare is your end-to-end R&D partner, transforming bold ideas into
-                        market-ready innovations. We combine cutting-edge engineering, IoT solutions,
-                        and software expertise to design, build, and scale products that drive
-                        real-world impact. From initial concept and prototyping to application
-                        development and lifecycle support, we work alongside your team to bring
-                        ambitious visions to life.
+                        RNDSquare partners with businesses to transform innovative ideas into scalable, market-ready solutions. 
+                        Through advanced engineering, IoT integration, and robust software development, we design and deliver high-impact products-from concept 
+                        and prototyping to deployment and long-term support. 
+                        Our in-house expertise enables us to build reliable, future-ready solutions that power real-world success.
                     </p>
                 </MotionWrapper>
 
                 {/* COUNTERS */}
-                <MotionWrapper className="mt-28 grid grid-cols-2 md:grid-cols-4  gap-y-12 xl:w-[87%]">
+                <MotionWrapper className=" mt-20 md:mt-28 grid grid-cols-2 md:grid-cols-4  gap-y-12 xl:w-[87%]">
 
                     {counters.map((item, index) => (
                         <CounterBox
@@ -110,11 +108,11 @@ function CounterBox({
 
     return (
         <div>
-            <h3 className="text-[36px] xl:text-[48px] font-inter font-medium text-black">
+            <h3 className="text-[32px] md:text-[36px] xl:text-[48px]  font-inter md:font-medium text-black">
                 {count}
                 {suffix}
             </h3>
-            <p className="regular-heading text-[#9a99a2]  font-inter tracking-tighter">{label}</p>
+            <p className="text-[17px] md:text-[16px] md:regular-heading text-[#9a99a2]  font-inter tracking-tighter">{label}</p>
         </div>
     );
 }
