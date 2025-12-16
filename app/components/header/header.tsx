@@ -85,7 +85,7 @@ const Header = () => {
                         </div>
 
                         {/* DESKTOP NAV */}
-                        <nav className="hidden lg:flex items-center space-x-8 xl:space-x-12 2xl:space-x-[3.5rem] ">
+                        <nav className="hidden lg:flex items-center space-x-8 xl:space-x-12 2xl:space-x-14 ">
 
                             {navItems.slice(0, 2).map((item) => (
                                 <Link
