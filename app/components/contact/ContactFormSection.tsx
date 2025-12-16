@@ -63,15 +63,16 @@ export default function ContactFormSection() {
         </div>
 
         {/* RIGHT TEXT BLOCK */}
-        <div className="flex flex-col justify-start border-l-[0.5px] border-white pl-10 lg:pl-20">
-          <h2 className="section-heading mb-6">
-            What Do You Need Help With?
-          </h2>
+        <div className="flex flex-col justify-start md:pl-6 lg:pl-20 lg:border-l-[0.5px] lg:border-white">
+  <h2 className="section-heading mb-6 ">
+    What Do You Need Help With?
+  </h2>
 
-          <p className="text-[#9a99a2] leading-9! normal-text">
-            Connect with RIOD for all inquiries related to our EV charging stations and IoT solutions. Share your details through the form below, and our experts will reach out with tailored information and next steps.
-          </p>
-        </div>
+  <p className="text-[#9a99a2] leading-9! normal-text">
+    Connect with RIOD for all inquiries related to our EV charging stations and IoT solutions. Share your details through the form below, and our experts will reach out with tailored information and next steps.
+  </p>
+</div>
+
 
       </div>
     </section>

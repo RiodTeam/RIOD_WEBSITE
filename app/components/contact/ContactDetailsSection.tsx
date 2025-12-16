@@ -2,7 +2,7 @@ import { MailIcon, MapPin, PhoneIcon } from "lucide-react";
 
 export default function ContactDetailsSection() {
   return (
-    <section className="w-full bg-white pt-[120px] pb-[163px] ">
+    <section className="w-full bg-white pt-20 md:pt-[120px] pb-20 md:pb-[163px] ">
       <div className="w-[90%] max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-[37%_50%] gap-16">
         {/* LEFT TEXT */}
         <div>

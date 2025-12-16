@@ -2,7 +2,7 @@
 
 export default function LocationSection() {
   return (
-    <section className="w-full bg-white pt-[7.7rem] pb-52 ">
+    <section className="w-full bg-white pt-20 md:pt-[7.7rem] pb-32 md:pb-52 ">
       <div className="w-[90%] max-w-[1400px] mx-auto">
         <h2 className="section-heading text-gray-900 mb-6">Location</h2>
 

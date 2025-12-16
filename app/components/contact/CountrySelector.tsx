@@ -25,14 +25,14 @@ export default function CountryCodeSelect() {
       {/* Selected */}
       <div
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-2 border-[0.5px] border-white px-4 py-4 cursor-pointer select-none"
+        className="flex items-center gap-2 border-[0.5px] border-white pl-3 pr-4 lg:px-4 py-4 cursor-pointer select-none"
       >
         <Image
           src={`https://flagcdn.com/w20/${selected.iso}.png`}
           alt=""
           width={20}
           height={15}
-          className="w-5 h-auto"
+          className=" w-4 lg:w-5 h-auto"
         />
         <span className="text-sm">{selected.code}</span>
       </div>
