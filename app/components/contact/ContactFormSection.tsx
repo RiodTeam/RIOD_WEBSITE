@@ -5,7 +5,7 @@ import CountryCodeSelect from "./CountrySelector";
 export default function ContactFormSection() {
   return (
     <section className="w-full bg-[#1C1C1C] text-white py-24 px-6 md:px-16">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+      <div className="w-[90%] max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
         
         {/* LEFT FORM */}
         <div>
@@ -46,12 +46,12 @@ export default function ContactFormSection() {
         </div>
 
         {/* RIGHT TEXT BLOCK */}
-        <div className="flex flex-col justify-start border-l-[0.5px] border-white pl-10">
+        <div className="flex flex-col justify-start border-l-[0.5px] border-white pl-20">
           <h2 className="section-heading mb-6">
             What Do You Need Help With?
           </h2>
 
-          <p className="text-gray-400 para-text">
+          <p className="text-gray-400 leading-9! normal-text">
             RNDSquare is your end-to-end R&D partner, transforming bold ideas into
             market-ready innovations. We combine cutting-edge engineering, IoT solutions,
             and software expertise to design, build, and scale products that drive

@@ -27,14 +27,13 @@ export default function CountryCodeSelect() {
         onClick={() => setOpen(!open)}
         className="flex items-center gap-2 border-[0.5px] border-white px-4 py-4 cursor-pointer select-none"
       >
-        <div className="w-5 h-auto">
-          <Image
-            src={`https://flagcdn.com/w20/${selected.iso}.png`}
-            alt=""
-            fill
-            className="w-5 h-auto"
-          />
-        </div>
+        <Image
+          src={`https://flagcdn.com/w20/${selected.iso}.png`}
+          alt=""
+          width={20}
+          height={15}
+          className="w-5 h-auto"
+        />
         <span className="text-sm">{selected.code}</span>
       </div>
 
