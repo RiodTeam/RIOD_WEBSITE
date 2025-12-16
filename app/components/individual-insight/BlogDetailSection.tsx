@@ -32,13 +32,13 @@ export default function BlogDetailSection({ data }: { data: InsightType }) {
         </MotionWrapper>
 
         {/* INTRO */}
-       {data.intro.map((para, i) => (
-  <MotionWrapper key={i}>
-    <p className="mt-8 normal-text text-[#9a99a2] font-inter leading-[1.7]">
-      {para}
-    </p>
-  </MotionWrapper>
-))}
+        {data.intro.map((para, i) => (
+          <MotionWrapper key={i}>
+            <p className="mt-8 normal-text text-[#9a99a2] font-inter leading-[1.7]">
+              {para}
+            </p>
+          </MotionWrapper>
+        ))}
 
         {/* MAIN IMAGE */}
         <MotionWrapper>
@@ -47,41 +47,41 @@ export default function BlogDetailSection({ data }: { data: InsightType }) {
           </div>
         </MotionWrapper>
 
-       {/* SECTIONS */}
-{data.sections.map((sec, i) => (
-  <div key={i} className="mt-20">
+        {/* SECTIONS */}
+        {data.sections.map((sec, i) => (
+          <div key={i} className="mt-20">
 
-    {/* HEADING */}
-    <MotionWrapper>
-      <h2 className="text-[32px] font-inter text-[#161616]">
-        {sec.heading}
-      </h2>
-    </MotionWrapper>
+            {/* HEADING */}
+            <MotionWrapper>
+              <h2 className="text-[32px] font-inter text-[#161616]">
+                {sec.heading}
+              </h2>
+            </MotionWrapper>
 
-    {/* PARAGRAPHS */}
-    {sec.paragraphs?.map((para, idx) => (
-      <MotionWrapper key={idx}>
-        <p className="mt-4 para-text text-[#7b7b7b] font-inter leading-[1.7]">
-          {para}
-        </p>
-      </MotionWrapper>
-    ))}
+            {/* PARAGRAPHS */}
+            {sec.paragraphs?.map((para, idx) => (
+              <MotionWrapper key={idx}>
+                <p className="mt-4 para-text text-[#7b7b7b] font-inter leading-[1.7]">
+                  {para}
+                </p>
+              </MotionWrapper>
+            ))}
 
-    {/* POINTS */}
-    {sec.points && (
-      <MotionWrapper>
-        <ul className="mt-6 space-y-3 list-disc pl-6 text-[#7b7b7b] font-inter">
-          {sec.points.map((point, idx) => (
-            <li key={idx} className="para-text leading-[1.7]">
-              {point}
-            </li>
-          ))}
-        </ul>
-      </MotionWrapper>
-    )}
+            {/* POINTS */}
+            {sec.points && (
+              <MotionWrapper>
+                <ul className="mt-6 space-y-3 list-disc pl-6 text-[#7b7b7b] font-inter">
+                  {sec.points.map((point, idx) => (
+                    <li key={idx} className="para-text leading-[1.7]">
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </MotionWrapper>
+            )}
 
-  </div>
-))}
+          </div>
+        ))}
 
 
       </div>

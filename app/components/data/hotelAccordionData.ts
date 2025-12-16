@@ -16,25 +16,24 @@ export const hotelAccordionData = [
   },
   {
     title: "Smart Load Balancing for Hotel Power Infrastructure ",
-   desc: `Our intelligent load management system ensures efficient use of your existing electrical capacity. This prevents overloads, eliminates 
+    desc: `Our intelligent load management system ensures efficient use of your existing electrical capacity. This prevents overloads, eliminates 
    the need for expensive power upgrades, and allows multiple vehicles to charge safely and simultaneously. `,
     image: "/hotel/frame.webp",
   },
   {
     title: "Guest-friendly, branded charging experience",
-   desc: `Enhance your hotel’s image with sleek, easy-to-use chargers that can be customized with your branding. Guests enjoy a seamless
+    desc: `Enhance your hotel’s image with sleek, easy-to-use chargers that can be customized with your branding. Guests enjoy a seamless
     charging experience with intuitive interfaces, 
    clear instructions, and secure payment options adding comfort and convenience to their stay. `,
     image: "/hotel/frame.webp",
   },
   {
     title: " Integration With Hotel Apps & Billing Systems ",
-   desc: `RIOD chargers integrate smoothly with hospitality software, enabling features like room-based billing, loyalty point rewards, 
+    desc: `RIOD chargers integrate smoothly with hospitality software, enabling features like room-based billing, loyalty point rewards, 
    app-based access, and automated reporting. This ensures easy management for staff and a frictionless experience for guests. .`,
     image: "/hotel/frame.webp",
   },
 ];
-
 
 export const officeAccordionData = [
   {
@@ -49,17 +48,17 @@ export const officeAccordionData = [
   },
   {
     title: "Seamless Employee & Visitor Access ",
-   desc: `RIOD chargers provide an effortless and user-friendly charging experience with secure access controls tailored for staff, guests, and fleet vehicles. This ensures smooth operation, controlled usage, and reliable performance while maintaining convenience across all charging environments.`,
+    desc: `RIOD chargers provide an effortless and user-friendly charging experience with secure access controls tailored for staff, guests, and fleet vehicles. This ensures smooth operation, controlled usage, and reliable performance while maintaining convenience across all charging environments.`,
     image: "/home/hero.webp",
   },
   {
     title: "Custom Branding for a Professional Look",
-   desc: `RIOD chargers can be customized to align with your office branding, creating a cohesive and modern on-site charging experience. This enhances visual consistency while reinforcing your brand identity and commitment to innovation. `,
+    desc: `RIOD chargers can be customized to align with your office branding, creating a cohesive and modern on-site charging experience. This enhances visual consistency while reinforcing your brand identity and commitment to innovation. `,
     image: "/home/hero.webp",
   },
   {
     title: " Integration With Corporate Software & Systems",
-   desc: `RIOD charging infrastructure can be seamlessly integrated with employee ID systems, access control solutions, HRMS, and internal billing platforms. This enables centralized management, accurate usage tracking, and a smooth, automated charging experience across your organization.`,
+    desc: `RIOD charging infrastructure can be seamlessly integrated with employee ID systems, access control solutions, HRMS, and internal billing platforms. This enables centralized management, accurate usage tracking, and a smooth, automated charging experience across your organization.`,
     image: "/home/hero.webp",
   },
 ];
@@ -77,17 +76,17 @@ export const InstitutionAccordionData = [
   },
   {
     title: "Intelligent Power Management for Campuses ",
-   desc: `Our chargers intelligently manage electrical load to ensure safe and efficient charging across multiple points simultaneously. This prevents overloads, optimizes power distribution, and supports reliable operation without additional infrastructure upgrades.`,
+    desc: `Our chargers intelligently manage electrical load to ensure safe and efficient charging across multiple points simultaneously. This prevents overloads, optimizes power distribution, and supports reliable operation without additional infrastructure upgrades.`,
     image: "/home/hero.webp",
   },
   {
     title: "Simple, Branded Charging Experience for Users ",
-   desc: `RIOD chargers offer a seamless and user-friendly charging experience with branding options tailored to match your institution’s identity. This creates a consistent on-campus look while reinforcing sustainability goals and a modern campus environment. `,
+    desc: `RIOD chargers offer a seamless and user-friendly charging experience with branding options tailored to match your institution’s identity. This creates a consistent on-campus look while reinforcing sustainability goals and a modern campus environment. `,
     image: "/home/hero.webp",
   },
   {
     title: "Smooth Integration With Campus Systems ",
-   desc: `RIOD EV charging solutions can be integrated with student ID systems, staff access controls, mobile applications, and internal billing platforms. This enables secure access, accurate usage tracking, and streamlined management across the entire campus.`,
+    desc: `RIOD EV charging solutions can be integrated with student ID systems, staff access controls, mobile applications, and internal billing platforms. This enables secure access, accurate usage tracking, and streamlined management across the entire campus.`,
     image: "/home/hero.webp",
   },
 ];
@@ -105,17 +104,17 @@ export const homeAccordionData = [
   },
   {
     title: "Compact, Elegant & Home-Friendly Design  ",
-   desc: `Our chargers are thoughtfully designed to complement any home environment with a sleek, modern appearance. Their compact form delivers a clean aesthetic while still providing powerful, reliable charging performance.`,
+    desc: `Our chargers are thoughtfully designed to complement any home environment with a sleek, modern appearance. Their compact form delivers a clean aesthetic while still providing powerful, reliable charging performance.`,
     image: "/home/hero.webp",
   },
   {
     title: "Smart App Control for Homeowners",
-   desc: `Monitor charging activity, set personalized schedules, track energy usage, and manage costs directly from your smartphone. This provides complete control, real-time insights, and greater convenience for everyday charging. `,
+    desc: `Monitor charging activity, set personalized schedules, track energy usage, and manage costs directly from your smartphone. This provides complete control, real-time insights, and greater convenience for everyday charging. `,
     image: "/home/hero.webp",
   },
   {
     title: " Seamless Integration With Home Energy Systems  ",
-   desc: `Our chargers can seamlessly integrate with solar setups, backup power systems, and smart meters to optimize overall energy usage. This helps reduce monthly electricity costs while supporting smarter and more sustainable home charging.`,
+    desc: `Our chargers can seamlessly integrate with solar setups, backup power systems, and smart meters to optimize overall energy usage. This helps reduce monthly electricity costs while supporting smarter and more sustainable home charging.`,
     image: "/home/hero.webp",
   },
 ];
