@@ -20,7 +20,7 @@ export default function PageClient() {
       <div className="overflow-hidden">
 
         <HeroSection
-          backgroundImage="/home/hero.webp"
+          backgroundImage="/office/hero.webp"
           title="EV Chargers For Office"
           description="Reliable, fast, and smart EV charging solutions for home, business, and commercial spaces. Designed to empower your journey towards a greener, smarter future."
         />
