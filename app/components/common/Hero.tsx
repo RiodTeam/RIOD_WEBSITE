@@ -19,7 +19,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   description,
   buttonText,
   buttonHref = '/',
-  overlayOpacity = 0.2,
+  overlayOpacity = 0.5,
 }) => {
   return (
     <section className="relative text-white">

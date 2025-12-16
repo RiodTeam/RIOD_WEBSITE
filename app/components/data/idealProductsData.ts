@@ -5,7 +5,7 @@ export const idealProductsData = {
   subTitle: "Level 2 AC Chargers - Perfect for Overnight Stays",
   description:
     "Level 2 AC chargers are ideal for hotels, providing reliable overnight charging and seamless integration into existing parking infrastructure without major upgrades. RIOD’s scalable solutions support properties of all sizes with flexible deployment and ownership models aligned to operational and financial goals.",
-  image: "/home/hero.webp",
+  image: "/hotel/ideal.webp",
 };
 
 export const idealProductsDataOffice = {
@@ -15,7 +15,7 @@ export const idealProductsDataOffice = {
   subTitle: "Flexible Deployment & Ownership Options",
   description:
     " Offices can choose between purchasing chargers outright or adopting flexible financial models such as leasing or revenue-sharing-ensuring the right fit for every budget. ",
-  image: "/home/hero.webp",
+  image: "/office/ideal.webp",
 };
 
 export const idealProductsDataInstitute = {
@@ -25,7 +25,7 @@ export const idealProductsDataInstitute = {
   subTitle: "Scalable Charging Networks",
   description:
     "RIOD chargers are designed for ease of use, providing students, staff, and visitors with a smooth charging experience from start to finish. Clear interfaces, secure authentication, and optional branding allow campuses to customize chargers to reflect their institutional identity. This enhances the overall campus environment and ensures EV drivers enjoy a convenient and intuitive interaction every time they charge. ",
-  image: "/home/hero.webp",
+  image: "/institution/ideal.webp",
 };
 
 export const idealProductsDataHome = {
@@ -35,5 +35,5 @@ export const idealProductsDataHome = {
   subTitle: "Compact DC Fast Chargers for High-Demand Households ",
   description:
     " For homes with multiple EVs or families needing quicker turnaround times, compact DC fast chargers provide significantly faster charging without compromising safety or energy efficiency. ",
-  image: "/home/hero.webp",
+  image: "/home2/ideal.webp",
 };

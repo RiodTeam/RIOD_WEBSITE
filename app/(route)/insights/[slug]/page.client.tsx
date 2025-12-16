@@ -15,8 +15,9 @@ export default function PageClient({ slug }: { slug: string }) {
   }
 
   const relatedArticles = insightsData.filter((i) =>
-    insight.relatedSlugs.includes(i.slug)
+    insight.relatedSlugs?.includes(i.slug)
   );
+
 
   return (
     <>
