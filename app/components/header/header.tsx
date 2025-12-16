@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Phone, MessageCircle, X,  } from "lucide-react";
+import { Phone, MessageCircle, X, } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -85,7 +85,7 @@ const Header = () => {
                         </div>
 
                         {/* DESKTOP NAV */}
-                        <nav className="hidden lg:flex items-center space-x-10 xl:mr-64">
+                        <nav className="hidden lg:flex items-center space-x-8 xl:space-x-12 2xl:space-x-[3.5rem] ">
 
                             {navItems.slice(0, 2).map((item) => (
                                 <Link
@@ -100,10 +100,12 @@ const Header = () => {
                             {/* SEGMENTS DROPDOWN */}
                             <div className="relative group">
                                 <span
-                                    className={`para-text ${textColor} font-[350]! font-inter cursor-pointer`}
+                                    className={`para-text ${textColor} font-[350]! font-inter cursor-pointer inline-flex items-center gap-2`}
                                 >
                                     Segments We Serve
+                                    <MdOutlineKeyboardArrowDown className="text-[18px]" />
                                 </span>
+
 
 
                                 {/* DROPDOWN */}
@@ -112,13 +114,10 @@ const Header = () => {
     absolute top-full left-0 mt-7
     w-56
     ${dropdownBg}
-    ring-1 ring-white/10
-    shadow-lg
     opacity-0 invisible
     group-hover:opacity-100 group-hover:visible
     transition-all duration-200
-  `}
-                                >
+  `}>
 
 
 
