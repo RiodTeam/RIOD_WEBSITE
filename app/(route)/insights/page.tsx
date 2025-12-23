@@ -1,14 +1,6 @@
 import type { Metadata } from "next";
 import PageClient from "./page.client";
 
-const getCat = cache(async () => {
-  const payload = await getPayload({ config: configPromise })
-  const { docs: cat } = await payload.find({
-    collection: 'categories',
-    depth: 9999,
-  })
-  return cat
-})
 
 export interface Cat {
   title: string
