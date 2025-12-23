@@ -7,6 +7,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
+const RND_URL = process.env.NEXT_PUBLIC_RND_DOMAIN;
+
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
@@ -56,7 +58,7 @@ const Header = () => {
         { name: "About", href: "/about" },
         { name: "Product", href: "/products" },
 
-        { name: "Career", href: "/testimonials" },
+        { name: "Career", href: `${RND_URL}/careers` },
         { name: "Blog", href: "/insights" },
         { name: "Contact", href: "/contact" },
         { name: "Be a Partner", href: "/contact" },

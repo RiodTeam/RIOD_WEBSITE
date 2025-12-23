@@ -1,5 +1,5 @@
 export const fetchPosts = async (slug?: string) => {
-  const base = `${process.env.NEXT_PUBLIC_PAYLOAD_URL}/api/posts`;
+  const base = `${process.env.NEXT_PUBLIC_RND_DOMAIN}/api/posts`;
   const url = slug ? `${base}?where[slug][equals]=${slug}` : `${base}?sort=-publishedAt&limit=50`;
 
   console.log('Payload URL:', process.env.NEXT_PUBLIC_PAYLOAD_URL)

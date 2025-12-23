@@ -28,12 +28,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .hero-title {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 42px;      /* mobile */
-  line-height: 52px;    /* adjusted for readability */
+  font-size: 42px; /* mobile */
+  line-height: 52px; /* adjusted for readability */
   letter-spacing: 0px;
 }
 
@@ -48,7 +47,7 @@ body {
 /* Laptops (1024px) */
 @media (min-width: 1024px) {
   .hero-title {
-    font-size: 64px;   /* REQUIRED by your design */
+    font-size: 64px; /* REQUIRED by your design */
     line-height: 80px; /* REQUIRED by your design */
   }
 }
@@ -62,12 +61,10 @@ body {
   }
 }
 
-
 .hero-desc {
   font-size: 16px;
   line-height: 1.15;
   font-weight: 400;
-  
 
   @media (min-width: 768px) {
     font-size: 16px;
@@ -96,7 +93,6 @@ body {
   @media (min-width: 1024px) {
     font-size: 4rem;
     line-height: 80px;
-    
   }
 
   @media (min-width: 1280px) {
@@ -106,57 +102,53 @@ body {
 }
 
 .section-heading {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 36px;         /* mobile */
+  font-size: 36px; /* mobile */
   line-height: 1.2;
   letter-spacing: 0;
 }
 
 @media (min-width: 768px) {
   .section-heading {
-    font-size: 36px;       /* tablet */
+    font-size: 36px; /* tablet */
   }
 }
 
 @media (min-width: 1024px) {
   .section-heading {
-    font-size: 38px;       /* small laptop */
+    font-size: 38px; /* small laptop */
   }
 }
 
 @media (min-width: 1280px) {
   .section-heading {
-    font-size: 60px;       /* EXACT Figma size */
-    line-height: 90px;     /* EXACT Figma line-height */
-    font-weight: 400;      /* EXACT Figma weight */
+    font-size: 60px; /* EXACT Figma size */
+    line-height: 90px; /* EXACT Figma line-height */
+    font-weight: 400; /* EXACT Figma weight */
   }
 }
 
-
 .regular-heading {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;       /* matches spec */
-  font-size: 22px;        /* mobile size */
-  line-height: 24px;      /* good for mobile readability */
-  letter-spacing: 0;      /* matches spec */
+  font-family: "Inter", sans-serif;
+  font-weight: 400; /* matches spec */
+  font-size: 22px; /* mobile size */
+  line-height: 24px; /* good for mobile readability */
+  letter-spacing: 0; /* matches spec */
   color: #404040;
 }
 
 @media (min-width: 1280px) {
   .regular-heading {
-    font-size: 24px;       /* desktop size */
-    line-height: 42px;     /* exact design spec */
+    font-size: 24px; /* desktop size */
+    line-height: 42px; /* exact design spec */
   }
 }
-
-
 
 .regular-heading2 {
   font-size: 18px;
   font-weight: 400;
-  font-family: 'Inter', sans-serif;
-
+  font-family: "Inter", sans-serif;
 
   @media (min-width: 768px) {
     font-size: 20px;
@@ -165,25 +157,24 @@ body {
   @media (min-width: 1024px) {
     font-size: 20px;
   }
-   @media (min-width: 1280px) {
+  @media (min-width: 1280px) {
     font-size: 28px;
-  
   }
 }
 
 .para-text {
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;       /* mobile */
-  line-height: 24px;     /* mobile */
-  font-weight: 300;      /* mobile lighter/your style */
+  font-family: "Inter", sans-serif;
+  font-size: 15px; /* mobile */
+  line-height: 24px; /* mobile */
+  font-weight: 300; /* mobile lighter/your style */
   letter-spacing: 0;
 }
 
 @media (min-width: 1280px) {
   .para-text {
-    font-size: 16px;     /* Figma value */
-    line-height: 32px;   /* Figma value */
-    font-weight: 400;    /* Figma value */
+    font-size: 16px; /* Figma value */
+    line-height: 32px; /* Figma value */
+    font-weight: 400; /* Figma value */
   }
 }
 
@@ -191,7 +182,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
- font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 
   @media (min-width: 768px) {
     font-size: 14px;
@@ -209,26 +200,20 @@ body {
   }
 }
 
-
-
-
 .normal-text {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;       /* mobile */
+  font-family: "Inter", sans-serif;
+  font-size: 16px; /* mobile */
   font-weight: 400;
-  line-height: 28px;     /* mobile comfortable line-height */
+  line-height: 28px; /* mobile comfortable line-height */
   letter-spacing: 0;
 }
 
 @media (min-width: 1280px) {
   .normal-text {
-    font-size: 18px;     /* desktop as per design */
-    line-height: 32px;   /* exact design spec */
+    font-size: 18px; /* desktop as per design */
+    line-height: 32px; /* exact design spec */
   }
 }
-
-
-
 
 /* Hide scrollbar */
 .scrollbar-hide::-webkit-scrollbar {
@@ -238,7 +223,6 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
 
 @keyframes spin-slow {
   from {
@@ -252,7 +236,6 @@ body {
 .animate-spin-slow {
   animation: spin-slow 12s linear infinite;
 }
-
 
 @keyframes logo-scroll {
   0% {
@@ -269,7 +252,6 @@ body {
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
 }
-
 
 /* underline footer */
 .link-underline {
@@ -290,4 +272,29 @@ body {
 
 .link-underline:hover::after {
   width: 100%;
+}
+
+/* Animated underline hover */
+.underline-hover {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem; /* same as -bottom-1 */
+  height: 1.5px;
+  width: 100%;
+  background-color: white;
+
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease;
+}
+
+.underline-hover:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
