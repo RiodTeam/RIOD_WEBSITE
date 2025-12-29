@@ -45,7 +45,7 @@ export default function PowerpodCitySection() {
                 <div className="w-full h-full flex items-center justify-center">
                     <MotionWrapper className="w-full h-[360px] sm:h-[450px] md:h-[520px] lg:h-[670px] relative">
                         <Image
-                            src="/home/powerpod.webp"
+                            src="/home/powerpod1.webp"
                             alt="EV Charging"
                             fill
                             className="object-cover object-center"

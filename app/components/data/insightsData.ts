@@ -172,7 +172,7 @@ export const insightsData: InsightType[] = [
           "Tracking Temperature and Humidity Across Multiple Incubators to Increase Hatchery Efficiency",
         paragraphs: [
           "Temperature and humidity control are vital to successful hatchery management, as they can impact embryo viability, chick quality and overall hatchability. In this section we will look at how you can use technology to optimize your temperature and humidity levels across multiple incubators in order to increase your hatchery efficiency.",
-          "The online indicates that the machines is running and the data in the software is live. You will get live hatchery information like – Running temperature, Running Humidity, Safety Sensor Reading, Egg tray turning delay, No of turn rotations from your Hatchery Monitoring Software",
+          "The online indicates that the machines is running and the data in the software is live. You will get live hatchery information like - Running temperature, Running Humidity, Safety Sensor Reading, Egg tray turning delay, No of turn rotations from your Hatchery Monitoring Software",
         ],
       },
 

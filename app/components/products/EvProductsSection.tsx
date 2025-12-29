@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import MotionWrapper from "../common/MotionWrapper";
+import Link from "next/link";
 
 export default function EvProductsSection() {
     /* -----------------------------------------
@@ -30,8 +31,8 @@ export default function EvProductsSection() {
             type: "electric-vehicle-charging-stations",
             price: 30000.00,
             desc: "The 7.4kW Home EV Charger is a reliable and compact AC wall-mounted charger tailored for private residential use.",
-            badge: "Top Discount of the Sale",
-            image: "/products/p2.jpg",
+            badge: "Best Selling Product",
+            image: "/products/p2.webp",
         },
         {
             id: 2,
@@ -39,8 +40,8 @@ export default function EvProductsSection() {
             type: "ev-charging-station",
             price: 90000.00,
             desc: "This 22kW dual-port AC charger is ideal for commercial spaces, enabling fast and simultaneous charging of two vehicles with RFID-based access.",
-            badge: "Customer Favorite",
-            image: "/products/p1.jpg",
+            badge: "Best Selling Product",
+            image: "/products/p1.webp",
         },
         {
             id: 3,
@@ -48,8 +49,8 @@ export default function EvProductsSection() {
             type: "electric-vehicle-charging-stations",
             price: 49999.00,
             desc: "Upgrade your home charging setup with this 22kW 3-Phase AC EV Charger, designed for Indian households equipped with a three-phase power supply.",
-            badge: "Customer Favorite",
-            image: "/products/p2.jpg",
+            badge: "Best Selling Product",
+            image: "/products/p2.webp",
         },
         {
             id: 4,
@@ -58,7 +59,7 @@ export default function EvProductsSection() {
             price: 110000.00,
             desc: "POWERPOD City is a hybrid EV charging station with Dual EV charging at a time. ",
             badge: "Best Selling Product",
-            image: "/products/p1.jpg",
+            image: "/products/p1.webp",
         },
         {
             id: 5,
@@ -66,8 +67,8 @@ export default function EvProductsSection() {
             type: "electric-vehicle-charging-stations",
             price: 45000.00,
             desc: "This 7.4kW wall-mounted EV charger is designed for shared spaces such as apartments, offices, and gated communities.",
-            badge: "Top Discount of the Sale",
-            image: "/products/p2.jpg",
+            badge: "Best Selling Product",
+            image: "/products/p2.webp",
         },
         {
             id: 6,
@@ -76,9 +77,36 @@ export default function EvProductsSection() {
             price: 58000.00,
             desc: "The 7.4kW wall-mounted EV charger is a smart AC solution for shared and commercial spaces.",
             badge: "Best Selling Product",
-            image: "/products/p2.jpg",
+            image: "/products/p2.webp",
         },
-       
+        {
+            id: 7,
+            title: "7.4kW Home EV Charger - Single Phase Fast Charger with Type 2 Connector",
+            type: "electric-vehicle-charging-stations",
+            price: 45000.00,
+            desc: "The 7.4kW Home EV Charger is a reliable and efficient AC wall-mounted charger, perfect for daily home charging",
+            badge: "Best Selling Product",
+            image: "/products/p2.webp",
+        },
+        {
+            id: 8,
+            title: "PowerPod Commercial 22 kW Fast EV Charger",
+            type: "electric-vehicle-charging-stations",
+            price: 70000.00,
+            desc: "The Smart PowerPod  Commercial 22 kW Fast EV Charger has been designed specifically with the Electric Vehicle charging experience in mind. ",
+            badge: "Best Selling Product",
+            image: "/products/p2.webp",
+        },
+        {
+            id: 9,
+            title: "3.3kW Public & Shared EV Charger - Wall-Mounted Type 2 with OCPP & RFID Access",
+            type: "electric-vehicle-charging-stations",
+            price: 18000.00,
+            desc: "The 3.3kW commercial EV charger is a reliable entry-level solution for shared and public charging spaces.",
+            badge: "Best Selling Product",
+            image: "/products/p3.webp",
+        },
+
     ];
 
     /* -----------------------------------------
@@ -91,19 +119,19 @@ export default function EvProductsSection() {
 
     let sortedProducts = [...filteredProducts];
 
-if (sortBy === "Best Selling") {
-    sortedProducts = filteredProducts
-        .filter((item) => item.badge === "Best Selling Product")
-        .slice(0, 2); //  only 2 items
-}
+    if (sortBy === "Best Selling") {
+        sortedProducts = filteredProducts
+            .filter((item) => item.badge === "Best Selling Product")
 
-if (sortBy === "Price: Low to High") {
-    sortedProducts.sort((a, b) => a.price - b.price);
-}
+    }
 
-if (sortBy === "Price: High to Low") {
-    sortedProducts.sort((a, b) => b.price - a.price);
-}
+    if (sortBy === "Price: Low to High") {
+        sortedProducts.sort((a, b) => a.price - b.price);
+    }
+
+    if (sortBy === "Price: High to Low") {
+        sortedProducts.sort((a, b) => b.price - a.price);
+    }
 
     /* -----------------------------------------
         CLOSE DROPDOWN ON OUTSIDE CLICK
@@ -127,7 +155,7 @@ if (sortBy === "Price: High to Low") {
             <div className="w-[90%] max-w-[1400px] mx-auto">
 
                 {/* ================== TWO DROPDOWNS ================== */}
-                <div className="flex justify-end gap-3 md:gap-4 mb-16 md:mb-[6.3rem]">
+                <div className="flex flex-col md:flex-row md:justify-end gap-3 md:gap-4 mb-16 md:mb-[6.3rem]">
 
                     {/* Dropdown 1 - Category */}
                     <MotionWrapper>
@@ -212,8 +240,7 @@ if (sortBy === "Price: High to Low") {
                 {/* ================== PRODUCT GRID ================== */}
                 <div>
 
-                    {/* MOBILE → HORIZONTAL SCROLL */}
-               
+
 
 
                     {/* DESKTOP & TABLET → NORMAL GRID */}
@@ -252,12 +279,24 @@ if (sortBy === "Price: High to Low") {
                                     </p>
                                 </MotionWrapper>
 
+                                <MotionWrapper>
+                                    <p className="mt-4 text-red-600 text-[15px] leading-relaxed">
+                                        Rs.{p.price}
+                                    </p>
+                                </MotionWrapper>
+
 
                                 {/* BADGE */}
                                 <MotionWrapper>
-                                    <span className="mt-6 self-start inline-block bg-[#eeeeee] text-[#222222] text-[14px] px-5 py-2 rounded-full whitespace-nowrap">
-                                        {p.badge}
-                                    </span>
+                                    <Link
+                                        href="https://shop.riod.in/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <span className="mt-6 self-start inline-block bg-[#eeeeee] text-[#222222] text-[14px] px-5 py-2 rounded-full whitespace-nowrap cursor-pointer hover:bg-[#e0e0e0] transition">
+                                            {p.badge}
+                                        </span>
+                                    </Link>
                                 </MotionWrapper>
 
 
@@ -268,9 +307,9 @@ if (sortBy === "Price: High to Low") {
                 </div>
 
             </div>
-              {/* MOBILE → HORIZONTAL SCROLL */}
-<div
-  className="
+            {/* MOBILE → HORIZONTAL SCROLL */}
+            <div
+                className="
     flex
     overflow-x-auto
     sm:hidden
@@ -280,36 +319,46 @@ if (sortBy === "Price: High to Low") {
     px-[3.5%]
     
   "
->
-  {sortedProducts.map((p) => (
-    <div
-      key={p.id}
-      className="shrink-0 w-[95%] snap-start flex flex-col pl-[5%]"
-    >
-      {/* IMAGE */}
-      <div className="relative w-full h-[260px] bg-gray-100 overflow-hidden group">
-        <Image
-          src={p.image}
-          alt={p.title}
-          fill
-          className="object-cover transition-transform duration-500 group-hover:scale-110"
-        />
-      </div>
+            >
+                {sortedProducts.map((p) => (
+                    <div
+                        key={p.id}
+                        className="shrink-0 w-[95%] snap-start flex flex-col pl-[5%]"
+                    >
+                        {/* IMAGE */}
+                        <div className="relative w-full h-[260px] bg-gray-100 overflow-hidden group">
+                            <Image
+                                src={p.image}
+                                alt={p.title}
+                                fill
+                                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                            />
+                        </div>
 
-      <h3 className="mt-6 text-[22px] font-medium text-black">
-        {p.title}
-      </h3>
+                        <h3 className="mt-6 text-[22px] font-medium text-black">
+                            {p.title}
+                        </h3>
 
-      <p className="mt-3 text-[#9a99a2] text-[16px] leading-relaxed">
-        {p.desc}
-      </p>
+                        <p className="mt-3 text-[#9a99a2] text-[16px] leading-relaxed">
+                            {p.desc}
+                        </p>
 
-      <span className="mt-5 self-start bg-[#eeeeee] text-[#222222] text-[14px] px-4 py-3 rounded-full">
-        {p.badge}
-      </span>
-    </div>
-  ))}
-</div>
+                        <p className="mt-3 text-red-600 text-[16px] leading-relaxed">
+                            Rs.{p.price}
+                        </p>
+                        <Link
+                            href="https://shop.riod.in/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span className="mt-5 self-start bg-[#eeeeee] text-[#222222] text-[14px] px-4 py-3 rounded-full cursor-pointer hover:bg-[#e0e0e0] transition">
+                                {p.badge}
+                            </span>
+                        </Link>
+
+                    </div>
+                ))}
+            </div>
         </section>
     );
 }
