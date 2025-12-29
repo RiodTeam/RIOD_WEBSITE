@@ -17,14 +17,14 @@ const sections = [
         title: "Powerpod Go",
         desc: " Empower your business with fast, reliable EV charging using our commercial-grade EV charger. Engineered for durability and scalability, it ensures seamless operation in demanding commercial settings.",
         image: "/home/go.webp",
-        tags: ["Homes", "Small Offices", "Apartment Complexes"],
+        tags: ["Workplaces", "Retail Locations", "Fleet Parking"],
     },
     {
         id: "city",
         title: "Powerpod City",
         desc: "Power two vehicles at the same time with our durable commercial-grade dual EV charger. Engineered for performance and longevity, it ensures seamless charging in high-traffic commercial environments.",
         image: "/home/city.webp",
-        tags: ["Homes", "Small Offices", "Apartment Complexes"],
+        tags: ["Public Charging", "Commercial Parking", "Urban Infrastructure"],
     },
 ];
 

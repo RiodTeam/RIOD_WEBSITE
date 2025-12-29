@@ -11,9 +11,7 @@ export default function VisionMissionSection() {
         <div className="flex items-start">
           <MotionWrapper>
             <h2 className="font-inter section-heading leading-normal! text-[#222222] md:w-[70%]">
-              Made in India.
-              Designed for
-              the World.
+              Driven by Purpose, Built for Impact
             </h2>
           </MotionWrapper>
         </div>

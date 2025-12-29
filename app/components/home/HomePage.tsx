@@ -38,7 +38,7 @@ export default function HomePage() {
         <PlatformSection
           title="Charge Anywhere, Anytime!"
           titleWidth="lg:w-[50%] xl:w-[45%]"
-          description="RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations. We combine cutting-edge engineering, IoT solutions, and software expertise to design, build, and scale products that drive real-world impact. From initial concept and prototyping to application development and lifecycle support, we work alongside your team to bring ambitious visions to life."
+          description="RIOD builds reliable and scalable EV charging solutions designed for real-world use. By integrating robust hardware, intelligent energy management, and connected software platforms, RIOD delivers safe and efficient charging systems ready for everyday deployment. From product development and validation to large-scale rollout and long-term operation, RIOD focuses on enabling dependable charging experiences for modern electric mobility."
         />
 
         <PowerpodSection />

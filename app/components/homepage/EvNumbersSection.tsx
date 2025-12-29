@@ -6,9 +6,9 @@ import MotionWrapper from "../common/MotionWrapper";
 export default function EvNumbersSection() {
     const counters = [
         { value: 10, suffix: "K+", label: "Products Sold" },
-        { value: 4, suffix: "+", label: "Countries" },
+         { value: 250, suffix: "+", label: "Customers" },
         { value: 100, suffix: "%", label: "Inhouse Engineering" },
-        { value: 250, suffix: "+", label: "Customers" },
+         { value: 4, suffix: "+", label: "Countries" },
     ];
 
     const [visible, setVisible] = useState(false);

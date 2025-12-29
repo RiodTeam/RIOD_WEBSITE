@@ -41,7 +41,7 @@ const PageClient = () => {
           title="Innovation That Drives Us"
           titleWidth="lg:w-[50%] xl:w-[65%]"
           titleMarginTop="mt-4 md:mt-[5.9rem]"
-          description="RNDSquare is your end-to-end R&D partner, transforming bold ideas into market-ready innovations. We combine cutting-edge engineering, IoT solutions, and software expertise to design, build, and scale products that drive real-world impact."
+          description="RIOD is driven by innovation that turns complex engineering into practical, reliable solutions. By combining intelligent hardware, connected software, and scalable system design, we create EV charging and IoT products built for real-world performance. Every solution is engineered to deliver safety, efficiency, and long-term value across diverse deployment environments."
         />
 
         {/* FEATURES GRID */}

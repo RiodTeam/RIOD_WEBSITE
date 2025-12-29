@@ -15,7 +15,7 @@ export default function CompatibleSection() {
   const loopBrands = [...brands, ...brands];
 
   return (
-    <section className="w-full bg-white pt-24 pb-20  md:pt-[8.7rem]  lg:pb-56 overflow-hidden">
+    <section className="w-full bg-white pt-24 pb-20  md:pt-[8.7rem]  lg:pb-28 overflow-hidden">
       <div className="w-[90%] max-w-[1400px] mx-auto">
 
         {/* TEXT SECTION */}

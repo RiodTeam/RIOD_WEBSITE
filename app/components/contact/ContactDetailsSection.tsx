@@ -11,9 +11,7 @@ export default function ContactDetailsSection() {
           </h2>
 
           <p className="para-text max-w-md leading-6.5! text-[#9A99A2] font-inter">
-            To accelerate India’s shift towards sustainable electric mobility
-            through cutting-edge EV charging infrastructure that’s intelligent,
-            reliable, and accessible.
+            Accelerating India’s transition to sustainable electric mobility through intelligent, reliable, and scalable EV charging solutions.
           </p>
         </div>
 
@@ -23,8 +21,7 @@ export default function ContactDetailsSection() {
             Contact Details
           </h3>
           <p className="para-text leading-6.5! text-[#9A99A2] mb-18 max-w-132 ">
-            To accelerate India’s shift towards sustainable electric mobility
-            through cutting-edge EV charging infrastructure that is intelligent.
+           Supporting India’s electric mobility journey with smart, dependable EV charging infrastructure designed for real-world deployment.
           </p>
 
           <div className="border-b-[0.5px] flex gap-x-4.5 border-[#9A99A2] pb-[1.2rem] mb-8">

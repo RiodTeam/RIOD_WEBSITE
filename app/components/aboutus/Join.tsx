@@ -32,10 +32,7 @@ export default function Join() {
                     </MotionWrapper>
                     <MotionWrapper>
                         <p className="mt-8 normal-text text-[#9a99a2] md:w-[95%] leading-[1.8]!">
-                            RNDSquare is your end-to-end R&D partner, transforming bold ideas
-                            into market-ready innovations. We combine cutting-edge engineering,
-                            IoT solutions, and software expertise to design, build, and scale
-                            products that drive real-world impact.
+                           RIOD works with partners across distribution, hosting, and collaboration models to expand access to reliable EV charging infrastructure. Our partner programs are designed to create shared value by enabling sustainable growth, strong commercial returns, and long-term collaboration in the evolving electric mobility ecosystem.
                         </p>
                     </MotionWrapper>
                 </MotionWrapper>
