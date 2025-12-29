@@ -10,7 +10,7 @@ const blogs = [
   { id: 2, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "Importance of temperature monitoring in Pharma companies", slug: "importance-of-temperature-monitoring-in-pharma-companies" },
   { id: 3, img: "/home/hero.webp", tag: "Technology", date: "March 20, 2025", title: "Monitoring Your Hatchery & Know how Temperature, Humidity and KPI affects the Hatchability", slug: "monitoring-hatchery-temperature-humidity-kpi-hatchability" },
   { id: 4, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "Elive - Energy Management Solution", slug: "elive-energy-management-solution" },
-  // { id: 5, img: "/home/hero.webp", tag: "EV Charging", date: "March 20, 2025", title: "Driving the Future of EV Charging in Numbers", slug: "driving-the-future-of-ev-charging-in-numbers" },
+  { id: 5, img: "/home/hero.webp", tag: "Technology", date: "March 20, 2025", title: "How Climate pro is helping mushroom farms to maintain optimal climate conditions for better yields.", slug: "how-climate-pro-is-helping-mushroom-farms-to-maintain-optimal-climate-conditions-for-better-yields" },
   // { id: 6, img: "/home/hero.webp", tag: "Sustainability", date: "March 20, 2025", title: "Driving the Future of EV Charging in Numbers", slug: "driving-the-future-of-ev-charging-in-numbers" },
 ];
 

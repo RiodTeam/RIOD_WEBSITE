@@ -50,13 +50,15 @@ export default function FooterSection() {
       {/* MIDDLE FOOTER LINKS */}
       <div className="w-[90%] max-w-[1400px] mx-auto  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-16">
         <MotionWrapper className="col-span-2 md:col-span-3 lg:col-span-1">
-          <Image
-            src="/header/logo.svg"
-            alt="RIOD Logo"
-            width={90}
-            height={10}
-            className="object-contain"
-          />
+          <Link href="/" aria-label="Go to home">
+            <Image
+              src="/header/logo.svg"
+              alt="RIOD Logo"
+              width={90}
+              height={10}
+              className="object-contain cursor-pointer"
+            />
+          </Link>
         </MotionWrapper>
 
         {/* EXPLORE */}
@@ -65,20 +67,28 @@ export default function FooterSection() {
             Explore
           </h4>
           <ul className="space-y-4 text-[#7c7c7c] text-[16px] font-medium">
-            <li>
+            {/* <li>
               <Link
                 href="/industries "
                 className="underline-hover"
               >
                 What We Do
               </Link>
-            </li>
+            </li> */}
 
             <li>
               <Link href="/about" className="underline-hover">
                 Who We Are
               </Link>
             </li>
+
+
+            <li>
+              <Link href="/products" className="underline-hover">
+                Products
+              </Link>
+            </li>
+
 
             <li>
               <Link href="/careers" className="underline-hover">
@@ -93,16 +103,24 @@ export default function FooterSection() {
             </li>
 
             <li>
-              <Link href="/case-studies" className="underline-hover">
-                Get Quote
+              <Link href="/contact" className="underline-hover">
+                contact
               </Link>
             </li>
 
-            <li>
+
+
+            {/* <li>
+              <Link href="/case-studies" className="underline-hover">
+                Get Quote
+              </Link>
+            </li> */}
+
+            {/* <li>
               <Link href="/privacy-policy" className="underline-hover">
                 Privacy Policy
               </Link>
-            </li>
+            </li> */}
           </ul>
         </MotionWrapper>
 
@@ -141,7 +159,7 @@ export default function FooterSection() {
                 Hardware Integration
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/services/ev-charging" className="underline-hover">
                 Hardware Checking
               </Link>
@@ -150,7 +168,7 @@ export default function FooterSection() {
               <Link href="/services/ev-charging" className="underline-hover">
                 Electronics Mapping
               </Link>
-            </li>
+            </li> */}
           </ul>
         </MotionWrapper>
 
@@ -203,16 +221,16 @@ export default function FooterSection() {
       <MotionWrapper className="w-[95%] sm:w-[90%] max-w-[1400px] mx-auto mt-11 flex flex-col md:flex-row justify-between text-[15px] text-[#626262]">
         <p className="text-[15px]">©2025 RIOD Square. All Rights Reserved. </p>
         <p className="mt-3 sm:mt-0 text-[#626262] text-[15px]">
-            Crafted With <span className="text-[#626262]">❤</span> by{' '}
-            <a
-              href="https://woxro.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className=""
-            >
-              Woxro
-            </a>
-          </p>
+          Crafted With <span className="text-[#626262]">❤</span> by{' '}
+          <a
+            href="https://woxro.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=""
+          >
+            Woxro
+          </a>
+        </p>
       </MotionWrapper>
     </footer>
   );

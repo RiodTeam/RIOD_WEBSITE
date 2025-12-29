@@ -61,7 +61,7 @@ const Header = () => {
         { name: "Career", href: `${RND_URL}/careers` },
         { name: "Blog", href: "/insights" },
         { name: "Contact", href: "/contact" },
-        
+
     ];
 
     return (
@@ -69,7 +69,7 @@ const Header = () => {
             <header
                 className={`fixed top-0 z-50 flex items-center justify-between w-full 
           transition-all duration-300 
-          h-[60px] lg:h-[60px] xl:h-[89px] ${headerBg}`}>
+          h-[85px] ${headerBg}`}>
                 <div className="relative w-[95%] sm:w-[90%] xl:w-[89.7%] mx-auto">
                     <div className="flex items-center justify-between">
                         {/* LOGO */}
@@ -161,19 +161,22 @@ const Header = () => {
 
                         {/* ICONS */}
                         <div className="flex items-center space-x-5 xl:gap-5 lg:-mr-4">
-                            <button
-                                className={`${textColor} hover:text-gray-300 transition-colors`}>
-                                <div className="lg:w-5 lg:h-5 xl:w-6 xl:h-6 relative">
-                                    <Image
-                                        src="/header/vector1.svg"
-                                        alt="Call"
-                                        fill
-                                        className="object-cover"
-                                    />
-                                </div>
-                            </button>
+                            <Link href="/contact" aria-label="Contact us">
+                                <button
+                                    className={`${textColor} hover:text-gray-300 transition-colors`}
+                                >
+                                    <div className="lg:w-5 lg:h-5 xl:w-6 xl:h-6 relative">
+                                        <Image
+                                            src="/header/vector1.svg"
+                                            alt="Call"
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    </div>
+                                </button>
+                            </Link>
 
-                            <button
+                            {/* <button
                                 className={`${textColor} hover:text-gray-300 transition-colors`}>
                                 <div className="lg:w-6 lg:h-3 relative">
                                     <Image
@@ -183,7 +186,7 @@ const Header = () => {
                                         className="object-cover"
                                     />
                                 </div>
-                            </button>
+                            </button> */}
 
                             {/* MOBILE MENU BUTTON */}
                             <button
@@ -331,13 +334,13 @@ const Header = () => {
                         </Link>
 
                         {/* PARTNER */}
-                        <Link
+                        {/* <Link
                             href="/contact"
                             onClick={toggleMenu}
                             className="text-white text-lg font-medium py-6 pl-7 border-b border-white/10"
                         >
                             Be a Partner
-                        </Link>
+                        </Link> */}
 
                     </nav>
 
