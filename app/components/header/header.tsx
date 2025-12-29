@@ -59,7 +59,7 @@ const Header = () => {
         { name: "Product", href: "/products" },
 
         { name: "Career", href: `${RND_URL}/careers` },
-        { name: "Blog", href: "/insights" },
+        { name: "Insights", href: "/insights" },
         { name: "Contact", href: "/contact" },
 
     ];
@@ -321,7 +321,7 @@ const Header = () => {
                             onClick={toggleMenu}
                             className="text-white text-lg font-medium py-6 pl-7 border-b border-white/10"
                         >
-                            Blog
+                            Insights
                         </Link>
 
                         {/* CONTACT */}
