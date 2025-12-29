@@ -25,6 +25,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
     <section className="relative text-white">
       {/* Background Image */}
       <div className="relative w-full h-svh min-h-140 md:min-h-[450px] lg:min-h-[580px] lg:h-lvh">
+        
         <Image
           src={backgroundImage}
           alt="Hero background"
@@ -38,20 +39,20 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       </div>
 
       {/* Overlay Content */}
-      <div className="absolute inset-0 flex flex-col justify-end pb-8 md:pb-12 lg:pb-[65px] z-2">
+      <div className="absolute inset-0 flex flex-col justify-end pb-28 md:pb-12 lg:pb-[65px] z-2">
         <div className="mx-auto w-[90%] md:w-[90%] 2xl:max-w-[1800px]">
           <div className="max-w-4xl">
             {/* Title */}
            
               <h1
-                className="hero-title font-inter leading-tight! mb-[30px] md:mb-[15px] lg:mb-[17px]"
+                className="hero-title font-inter leading-tight! mb-0 md:mb-[15px] lg:mb-[17px]"
                 dangerouslySetInnerHTML={{ __html: title }}
               />
            
             {/* Description */}
            
               {description && (
-                <p className="hero-desc font-inter leading-[1.55rem]! mb-6 md:mb-[1.8rem]  max-w-2xl xl:max-w-2xl text-[#f4f4f4]">
+                <p className="hidden md:block hero-desc font-inter leading-[1.55rem]! mb-6 md:mb-[1.8rem]  max-w-2xl xl:max-w-2xl text-[#f4f4f4]">
                   {description}
                 </p>
               )}

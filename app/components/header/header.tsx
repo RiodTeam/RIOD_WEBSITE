@@ -113,7 +113,7 @@ const Header = () => {
                                 {/* DROPDOWN */}
                                 <div
                                     className={`
-    absolute top-full left-0 mt-7
+    absolute top-full left-0 mt-6.5
     w-56
     ${dropdownBg}
     opacity-0 invisible
