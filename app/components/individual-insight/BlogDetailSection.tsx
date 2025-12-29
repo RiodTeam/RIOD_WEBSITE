@@ -11,33 +11,33 @@ export default function BlogDetailSection({ data }: { data: InsightType }) {
       <div className="w-[90%] max-w-[1400px] mx-auto">
 
         {/* CATEGORY BADGE */}
-        <MotionWrapper>
+      
           <span className="inline-block bg-[#eeeeee] text-[#222] px-4.5 py-2.5 rounded-full text-[16px] font-inter">
             {data.tag}
           </span>
-        </MotionWrapper>
+     
 
         {/* DATE */}
-        <MotionWrapper>
+      
           <p className="text-[#717171] mt-[1.1rem] text-[16px] font-inter">
             {data.date}
           </p>
-        </MotionWrapper>
+      
 
         {/* TITLE */}
-        <MotionWrapper>
+      
           <h1 className="font-inter text-[#222222] mt-6 section-heading leading-[1.3]">
             {data.title}
           </h1>
-        </MotionWrapper>
+       
 
         {/* INTRO */}
         {data.intro.map((para, i) => (
-          <MotionWrapper key={i}>
+          <div key={i}>
             <p className="mt-8 normal-text text-[#9a99a2] font-inter leading-[1.7]">
               {para}
             </p>
-          </MotionWrapper>
+          </div>
         ))}
 
         {/* MAIN IMAGE */}

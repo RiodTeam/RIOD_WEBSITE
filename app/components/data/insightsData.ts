@@ -227,12 +227,9 @@ export const insightsData: InsightType[] = [
     image: "/home/hero.webp",
 
     intro: [
-      "Are you worried about your business chain Energy consumption bills ?",
-      "Wanted to track & identify high energy consumption Equipment’s ?",
-      "Control HVAC consumption during non working hours ?",
-      "Wanted to know your DG fuel consumption ?",
-      "Wanted to monitor Equipment’s status, anomalies remotely ?",
-    ],
+  "Elive is an intelligent energy management solution designed to help organizations gain complete visibility into their energy consumption across facilities, equipment, and utilities. By continuously collecting and analyzing real-time energy data, Elive enables businesses to identify high energy-consuming assets, detect inefficiencies early, and make informed decisions to optimize usage. The platform supports centralized monitoring and control of HVAC systems, DG fuel usage, water and gas consumption, and critical equipment, helping organizations reduce operational costs while improving sustainability and reliability."
+],
+
 
     sections: [
       {
