@@ -24,7 +24,7 @@ export const insightsData: InsightType[] = [
       "RIOD is Collaborating With CPO’s to Solve EV Charging Infrastructure Problem",
     tag: "EV Charging",
     date: "March 20, 2025",
-    image: "/home/hero.webp",
+    image: "/blog/b1.webp",
 
     intro: [
       "RIOD designs, develops and manufactures EV charging infrastructure for public, buildings, commercial entities and residential homes. We are an Indian company that has a good expertise and one of the few companies in India that is an OEM (Original Equipment Manufacturer) Charging Station Manufacturer. We build on our strong history of successfully integrating hardware, software and systems engineering to create innovative solutions for electric transportation infrastructure.",
@@ -50,6 +50,7 @@ export const insightsData: InsightType[] = [
     relatedSlugs: [
       "importance-of-temperature-monitoring-in-pharma-companies",
       "monitoring-hatchery-temperature-humidity-kpi-hatchability",
+      "how-climate-pro-is-helping-mushroom-farms-to-maintain-optimal-climate-conditions-for-better-yields",
     ],
   },
 
@@ -59,7 +60,7 @@ export const insightsData: InsightType[] = [
     title: "Importance of temperature monitoring in Pharma companies",
     tag: "Technology",
     date: "April 10, 2025",
-    image: "/home/hero.webp",
+    image: "/blog/b2.webp",
     intro: [
       "Temperature monitoring is a critical process in most industries, from pharmaceuticals to food production. It can help prevent spoilage, product failure and loss of revenue. Temperature monitoring provides critical information and alerts that can reduce costs and ensure compliance with regulatory agencies.",
       "If you’re working in the pharma industry or any other where temperature monitoring is important, this guide will walk you through the different aspects of choosing a temperature monitoring solution",
@@ -130,7 +131,9 @@ export const insightsData: InsightType[] = [
     ],
 
     relatedSlugs: [
-      "riod-collaborating-with-cpos-to-solve-ev-charging-infrastructure-problem",
+      "importance-of-temperature-monitoring-in-pharma-companies",
+      "monitoring-hatchery-temperature-humidity-kpi-hatchability",
+      "how-climate-pro-is-helping-mushroom-farms-to-maintain-optimal-climate-conditions-for-better-yields",
     ],
   },
 
@@ -141,7 +144,7 @@ export const insightsData: InsightType[] = [
       "Monitoring Your Hatchery & Know how Temperature, Humidity and KPI affects the Hatchability",
     tag: "Sustainability",
     date: "May 05, 2025",
-    image: "/home/hero.webp",
+    image: "/blog/b3.webp",
 
     intro: [
       "We were approached by a hatchery owner during the covid 19 period. he lost a batch due to unstable temperature in one of their hatchery unit. Later the issue was identified with the cabling of the heater, resulted in a big loss.",
@@ -215,7 +218,11 @@ export const insightsData: InsightType[] = [
       },
     ],
 
-    relatedSlugs: ["importance-of-temperature-monitoring-in-pharma-companies"],
+    relatedSlugs: [
+      "importance-of-temperature-monitoring-in-pharma-companies",
+      "monitoring-hatchery-temperature-humidity-kpi-hatchability",
+      "how-climate-pro-is-helping-mushroom-farms-to-maintain-optimal-climate-conditions-for-better-yields",
+    ],
   },
 
   {
@@ -224,7 +231,7 @@ export const insightsData: InsightType[] = [
     title: "Elive - Energy Management Solution",
     tag: "Sustainability",
     date: "May 05, 2025",
-    image: "/home/hero.webp",
+    image: "/blog/b4.webp",
 
     intro: [
   "Elive is an intelligent energy management solution designed to help organizations gain complete visibility into their energy consumption across facilities, equipment, and utilities. By continuously collecting and analyzing real-time energy data, Elive enables businesses to identify high energy-consuming assets, detect inefficiencies early, and make informed decisions to optimize usage. The platform supports centralized monitoring and control of HVAC systems, DG fuel usage, water and gas consumption, and critical equipment, helping organizations reduce operational costs while improving sustainability and reliability."
@@ -277,7 +284,11 @@ export const insightsData: InsightType[] = [
       },
     ],
 
-    relatedSlugs: ["monitoring-hatchery-temperature-humidity-kpi-hatchability"],
+    relatedSlugs: [
+      "importance-of-temperature-monitoring-in-pharma-companies",
+      "monitoring-hatchery-temperature-humidity-kpi-hatchability",
+      "how-climate-pro-is-helping-mushroom-farms-to-maintain-optimal-climate-conditions-for-better-yields",
+    ],
   },
 
 
@@ -287,7 +298,7 @@ export const insightsData: InsightType[] = [
   title: "How Climate Pro Helps Mushroom Farms Maintain Optimal Climate Conditions for Better Yields",
   tag: "Agriculture",
   date: "May 05, 2025",
-  image: "/home/hero.webp",
+  image: "/blog/b5.webp",
 
   intro: [
     "Climate Pro is the leading climate control solution for indoor farming. By utilizing our proprietary technology, we are able to monitor and control the climate in your growing facility so you can focus on what matters most: growing your product! This technology allows us to monitor temperature, humidity levels and CO2 levels inside the grow chambers. We then use this data to determine if anything needs adjusting based on our algorithms. Our goal is simple: help you increase yield while also reducing cost by only heating or cooling when needed resulting in less wasted energy usage and lower utility costs per square foot of production space.",
@@ -349,8 +360,10 @@ export const insightsData: InsightType[] = [
   ],
 
   relatedSlugs: [
-    "monitoring-hatchery-temperature-humidity-kpi-hatchability"
-  ]
+      "importance-of-temperature-monitoring-in-pharma-companies",
+      "monitoring-hatchery-temperature-humidity-kpi-hatchability",
+      "how-climate-pro-is-helping-mushroom-farms-to-maintain-optimal-climate-conditions-for-better-yields",
+    ],
 }
 
 ];

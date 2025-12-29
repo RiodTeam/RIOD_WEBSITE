@@ -5,6 +5,8 @@ import Link from "next/link";
 import MotionWrapper from "../common/MotionWrapper";
 import { InsightType } from "../data/insightsData";
 
+
+
 export default function NextArticlesSection({ articles }: { articles: InsightType[] }) {
 
   return (
