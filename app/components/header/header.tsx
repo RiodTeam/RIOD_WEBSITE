@@ -308,7 +308,7 @@ const Header = () => {
 
                         {/* CAREER */}
                         <Link
-                            href="/testimonials"
+                            href={`${RND_URL}/careers`}
                             onClick={toggleMenu}
                             className="text-white text-lg font-medium py-6 pl-7 border-b border-white/10"
                         >
