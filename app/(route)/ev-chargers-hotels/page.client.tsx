@@ -22,7 +22,7 @@ export default function PageClient() {
         <HeroSection
           backgroundImage="/hotel/hero.webp"
           title="Power Up Guest Experience with Smart EV Charging"
-          description="Reliable, fast, and smart EV charging solutions for home, business, and commercial spaces. Designed to empower your journey towards a greener, smarter future."
+          description="Enhance guest convenience and satisfaction with reliable, intelligent EV charging solutions designed for hotels, resorts, and premium hospitality spaces."
         />
 
         <PlatformSection

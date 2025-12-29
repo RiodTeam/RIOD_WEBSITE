@@ -10,7 +10,7 @@ const page = () => {
             <HeroSection
                 backgroundImage="/contact/hero.webp"
                 title="Contact Us"
-                description="Reliable, fast, and smart EV charging solutions for home, business, and commercial spaces. Designed to empower your journey towards a greener, smarter future." />
+                description="Get in touch with our team to learn more about our EV charging solutions, partnerships, or support-let’s build a smarter mobility future together." />
             <ContactDetailsSection />
             <ContactFormSection />
             <LocationSection />

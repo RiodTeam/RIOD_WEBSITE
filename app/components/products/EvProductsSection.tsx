@@ -284,7 +284,7 @@ if (sortBy === "Price: High to Low") {
   {sortedProducts.map((p) => (
     <div
       key={p.id}
-      className="flex-shrink-0 w-[95%] snap-start flex flex-col pl-[5%]"
+      className="shrink-0 w-[95%] snap-start flex flex-col pl-[5%]"
     >
       {/* IMAGE */}
       <div className="relative w-full h-[260px] bg-gray-100 overflow-hidden group">

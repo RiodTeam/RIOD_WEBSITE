@@ -22,7 +22,7 @@ export default function PageClient() {
         <HeroSection
           backgroundImage="/office/hero.webp"
           title="EV Chargers For Office"
-          description="Reliable, fast, and smart EV charging solutions for home, business, and commercial spaces. Designed to empower your journey towards a greener, smarter future."
+          description="Smart and reliable EV charging solutions designed for office environments, supporting employee convenience, sustainability goals, and efficient daily operations."
         />
 
         <PlatformSection

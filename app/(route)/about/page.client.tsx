@@ -27,7 +27,7 @@ const PageClient = () => {
         <HeroSection
           backgroundImage="/about/hero.webp"
           title="Powering the Future of Electric Mobility"
-          description="Reliable, fast, and smart EV charging solutions for home, business, and commercial spaces. Designed to empower your journey towards a greener, smarter future."
+          description="Delivering intelligent and reliable EV charging solutions designed for homes, businesses, and public environments-supporting a cleaner, smarter mobility future."
         />
 
         {/* VISION + MISSION */}

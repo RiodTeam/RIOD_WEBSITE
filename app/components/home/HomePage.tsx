@@ -25,7 +25,7 @@ export default function HomePage() {
         <HeroSection
           backgroundImage="/home/hero1.webp"
           title="Powering India’s EV Revolution"
-          description="Reliable, fast, and smart EV charging solutions for home, business, and commercial spaces. Designed to empower your journey towards a greener, smarter future."
+          description="Building reliable and intelligent EV charging infrastructure that supports India’s transition to clean, connected, and sustainable electric mobility."
         />
 
         <PlatformSection

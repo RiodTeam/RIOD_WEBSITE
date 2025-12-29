@@ -22,7 +22,7 @@ export default function PageClient() {
         <HeroSection
           backgroundImage="/home2/hero.webp"
           title="EV Chargers For Home"
-          description="Reliable, fast, and smart EV charging solutions for home, business, and commercial spaces. Designed to empower your journey towards a greener, smarter future."
+          description="Safe, reliable, and easy-to-use EV charging solutions designed for convenient everyday charging at home, delivering consistent performance and peace of mind for daily use."
         />
 
         <PlatformSection

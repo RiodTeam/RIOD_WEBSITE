@@ -22,7 +22,7 @@ export default function PageClient() {
         <HeroSection
           backgroundImage="/institution/hero.webp"
           title="EV Chargers For Institution"
-          description="Reliable, fast, and smart EV charging solutions for home, business, and commercial spaces. Designed to empower your journey towards a greener, smarter future."
+          description="Reliable and scalable EV charging solutions designed for institutional environments, supporting safe, efficient, and future-ready electric mobility."
         />
 
         <PlatformSection
