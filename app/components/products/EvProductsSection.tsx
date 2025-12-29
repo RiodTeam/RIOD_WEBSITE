@@ -94,7 +94,7 @@ export default function EvProductsSection() {
 if (sortBy === "Best Selling") {
     sortedProducts = filteredProducts
         .filter((item) => item.badge === "Best Selling Product")
-        .slice(0, 2); // ✅ only 2 items
+        .slice(0, 2); //  only 2 items
 }
 
 if (sortBy === "Price: Low to High") {
@@ -213,52 +213,8 @@ if (sortBy === "Price: High to Low") {
                 <div>
 
                     {/* MOBILE → HORIZONTAL SCROLL */}
-                    <div className="
-    grid grid-flow-col auto-cols-[93%] 
-    gap-4
-    overflow-x-auto 
-    sm:hidden 
-    pb-6 
-    snap-x snap-mandatory 
-    scrollbar-hide
-">
+               
 
-                        {sortedProducts.map((p) => (
-                            <div key={p.id} className="flex flex-col snap-start">
-
-                                {/* IMAGE */}
-                                <div className="relative w-full h-[260px] bg-gray-100 overflow-hidden group">
-                                    <Image
-                                        src={p.image}
-                                        alt={p.title}
-                                        fill
-                                        className="
-            object-cover
-            transition-transform duration-500 ease-out
-            group-hover:scale-110
-        "
-                                    />
-                                </div>
-
-
-                                {/* TITLE */}
-                                <h3 className="mt-6 text-[22px] font-medium text-black">
-                                    {p.title}
-                                </h3>
-
-                                {/* DESC */}
-                                <p className="mt-3 text-[#9a99a2] text-[16px] leading-relaxed">
-                                    {p.desc}
-                                </p>
-
-                                {/* BADGE */}
-                                <span className="mt-5 text-center inline-block bg-[#eeeeee] text-[#222222] text-[14px] px-4 py-3 md:py-1.5 rounded-full whitespace-nowrap">
-                                    {p.badge}
-                                </span>
-
-                            </div>
-                        ))}
-                    </div>
 
                     {/* DESKTOP & TABLET → NORMAL GRID */}
                     <div className="hidden sm:grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-[6.2rem]">
@@ -312,6 +268,48 @@ if (sortBy === "Price: High to Low") {
                 </div>
 
             </div>
+              {/* MOBILE → HORIZONTAL SCROLL */}
+<div
+  className="
+    flex
+    overflow-x-auto
+    sm:hidden
+    pb-6
+    snap-x snap-mandatory
+    scrollbar-hide
+    px-[3.5%]
+    
+  "
+>
+  {sortedProducts.map((p) => (
+    <div
+      key={p.id}
+      className="flex-shrink-0 w-[95%] snap-start flex flex-col pl-[5%]"
+    >
+      {/* IMAGE */}
+      <div className="relative w-full h-[260px] bg-gray-100 overflow-hidden group">
+        <Image
+          src={p.image}
+          alt={p.title}
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+      </div>
+
+      <h3 className="mt-6 text-[22px] font-medium text-black">
+        {p.title}
+      </h3>
+
+      <p className="mt-3 text-[#9a99a2] text-[16px] leading-relaxed">
+        {p.desc}
+      </p>
+
+      <span className="mt-5 self-start bg-[#eeeeee] text-[#222222] text-[14px] px-4 py-3 rounded-full">
+        {p.badge}
+      </span>
+    </div>
+  ))}
+</div>
         </section>
     );
 }

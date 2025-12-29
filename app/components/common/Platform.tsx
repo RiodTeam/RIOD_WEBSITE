@@ -51,7 +51,7 @@ const PlatformSection: React.FC<PlatformSectionProps> = ({
         <MotionWrapper delay={0.2}>
           <p
             className={clsx(
-              "normal-text font-inter font-normal tracking-[0.3px] mt-8 leading-[1.7]!",
+              "normal-text font-inter font-normal tracking-[0.3px] mt-8 md:leading-[1.7]!",
               isWhite ? "text-[#9a99a2]" : "text-[#9a99a2]"
             )}>
             {description}

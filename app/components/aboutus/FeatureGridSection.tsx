@@ -8,7 +8,7 @@ export default function FeatureGridSection() {
     {
       icon: "/about/icon3.svg",
       title: "Smarter Connectivity",
-      desc: "Our systems are designed for intelligent connectivity, featuring built-in Wi-Fi, 4G, and OCPP support for seamless communication, real-time monitoring, and easy platform integration.",
+      desc: "Our systems feature built-in Wi-Fi, 4G, and OCPP for seamless connectivity, real-time monitoring, and easy platform integration at scale across deployments.",
     },
     {
       icon: "/about/icon5.svg",

@@ -164,8 +164,8 @@ body {
 
 .para-text {
   font-family: "Inter", sans-serif;
-  font-size: 15px; /* mobile */
-  line-height: 24px; /* mobile */
+  font-size: 16.8px; /* mobile */
+  line-height: 1.8rem; /* mobile */
   font-weight: 300; /* mobile lighter/your style */
   letter-spacing: 0;
 }
@@ -202,9 +202,9 @@ body {
 
 .normal-text {
   font-family: "Inter", sans-serif;
-  font-size: 16px; /* mobile */
+  font-size: 16.8px; /* mobile */
   font-weight: 400;
-  line-height: 28px; /* mobile comfortable line-height */
+  line-height: 1.8rem; /* mobile comfortable line-height */
   letter-spacing: 0;
 }
 
@@ -285,7 +285,7 @@ body {
   position: absolute;
   left: 0;
   bottom: -0.25rem; /* same as -bottom-1 */
-  height: 1.5px;
+  height: 1px;
   width: 100%;
   background-color: white;
 

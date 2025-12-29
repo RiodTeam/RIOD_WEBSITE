@@ -28,7 +28,7 @@ export default function ContactDetailsSection() {
           </p>
 
           <div className="border-b-[0.5px] flex gap-x-4.5 border-[#9A99A2] pb-[1.2rem] mb-8">
-            <MapPin strokeWidth={0.7} className=" size-18 -mt-5 lg:size-13 text-black " />
+            <MapPin strokeWidth={0.7} className=" size-18 -mt-1 lg:size-13 text-black " />
             <div>
               <h4 className="regular-heading font-normal! flex items-center gap-2 mb-2">
                 Address

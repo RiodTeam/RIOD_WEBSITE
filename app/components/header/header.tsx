@@ -61,7 +61,7 @@ const Header = () => {
         { name: "Career", href: `${RND_URL}/careers` },
         { name: "Blog", href: "/insights" },
         { name: "Contact", href: "/contact" },
-        { name: "Be a Partner", href: "/contact" },
+        
     ];
 
     return (

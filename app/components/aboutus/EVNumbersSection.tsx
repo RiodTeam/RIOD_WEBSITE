@@ -50,7 +50,7 @@ export default function EVNumbersSection() {
               <h3 className="text-[30px] md:text-[40px] xl:text-[48px] md:font-medium font-inter">
                 <Counter to={10} suffix="K+" />
               </h3>
-              <p className="text-[16px] md:text-[22px] text-light! text-white/80! mt-1 font-inter">Products Sold</p>
+              <p className="text-[16.8px] md:text-[22px] text-light! text-white/80! mt-1 font-inter">Products Sold</p>
             </div>
           </MotionWrapper>
 
@@ -60,7 +60,7 @@ export default function EVNumbersSection() {
              <h3 className="text-[30px] md:text-[40px] xl:text-[48px] md:font-medium font-inter">
                 <Counter to={4} suffix="+" />
               </h3>
-              <p className="text-[16px] md:text-[22px] text-light! text-white/80! mt-1">Countries</p>
+              <p className="text-[16.8px] md:text-[22px] text-light! text-white/80! mt-1">Countries</p>
             </div>
           </MotionWrapper>
 
@@ -70,7 +70,7 @@ export default function EVNumbersSection() {
             <h3 className="text-[30px] md:text-[40px] xl:text-[48px] md:font-medium font-inter">
                 <Counter to={100} suffix="%" />
               </h3>
-              <p className="text-[16px] md:text-[22px] text-light! text-white/80! mt-1">Inhouse Engineering</p>
+              <p className="text-[16.8px] md:text-[22px] text-light! text-white/80! mt-1">Inhouse Engineering</p>
             </div>
           </MotionWrapper>
 
@@ -80,7 +80,7 @@ export default function EVNumbersSection() {
              <h3 className="text-[30px] md:text-[40px] xl:text-[48px] md:font-medium font-inter">
                 <Counter to={250} suffix="+" />
               </h3>
-              <p className="text-[16px] md:text-[22px] text-light! text-white/80! mt-1">Customers</p>
+              <p className="text-[16.8px] md:text-[22px] text-light! text-white/80! mt-1">Customers</p>
             </div>
           </MotionWrapper>
 

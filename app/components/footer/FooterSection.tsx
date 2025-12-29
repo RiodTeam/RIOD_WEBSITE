@@ -64,7 +64,7 @@ export default function FooterSection() {
           <h4 className="font-inter text-[17px] text-[#b3b3b3] mb-4">
             Explore
           </h4>
-          <ul className="space-y-4 text-[#7c7c7c] text-[17px] font-medium">
+          <ul className="space-y-4 text-[#7c7c7c] text-[16px] font-medium">
             <li>
               <Link
                 href="/industries "
@@ -111,7 +111,7 @@ export default function FooterSection() {
           <h4 className="font-inter text-[17px] text-[#b3b3b3] mb-4">
             Services
           </h4>
-          <ul className="space-y-4 text-[#7c7c7c] text-[17px] font-medium">
+          <ul className="space-y-4 text-[#7c7c7c] text-[16px] font-medium">
             <li>
               <Link
                 href="/services/product-engineering"
@@ -159,7 +159,7 @@ export default function FooterSection() {
           <h4 className="font-inter text-[17px] text-[#b3b3b3] mb-4">
             Quicklinks
           </h4>
-          <ul className="space-y-4 text-[#7c7c7c] text-[17px] font-medium">
+          <ul className="space-y-4 text-[#7c7c7c] text-[16px] font-medium">
             <li>
               <Link href="/ev-chargers-hotels" className="underline-hover">
                 EV Chargers For Hotels
@@ -200,11 +200,19 @@ export default function FooterSection() {
       </MotionWrapper>
 
       {/* BOTTOM FOOTER */}
-      <MotionWrapper className="w-[95%] sm:w-[90%] max-w-[1400px] mx-auto mt-11 flex flex-row justify-between text-[13px] text-[#7f7f7f]">
-        <p className="text-[13.5px]">©2025 RIOD </p>
-        <p className=" text-[#626262] text-[15px] md:text-[17px]">
-          Crafted With <span className="text-[#626262]">❤</span> by Woxro
-        </p>
+      <MotionWrapper className="w-[95%] sm:w-[90%] max-w-[1400px] mx-auto mt-11 flex flex-col md:flex-row justify-between text-[15px] text-[#626262]">
+        <p className="text-[15px]">©2025 RIOD Square. All Rights Reserved. </p>
+        <p className="mt-3 sm:mt-0 text-[#626262] text-[15px]">
+            Crafted With <span className="text-[#626262]">❤</span> by{' '}
+            <a
+              href="https://woxro.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=""
+            >
+              Woxro
+            </a>
+          </p>
       </MotionWrapper>
     </footer>
   );

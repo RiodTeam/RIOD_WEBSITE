@@ -30,7 +30,7 @@ export default function VisionMissionSection() {
             </MotionWrapper>
 
             <MotionWrapper>
-              <p className="para-text font-inter text-[#9a99a2] leading-[1.7] lg:max-w-[620px]">
+              <p className="para-text font-inter text-[#9a99a2] md:leading-[1.7] lg:max-w-[620px]">
                 Our vision is to lead India’s IoT and EV innovation by creating smart, reliable,
                 and sustainable technologies that transform the energy, agriculture, and industrial sectors.
                 We aspire to empower businesses and communities with intelligent solutions that enhance productivity,
@@ -48,7 +48,7 @@ export default function VisionMissionSection() {
             </MotionWrapper>
 
             <MotionWrapper>
-              <p className="para-text font-inter text-[#9a99a2] leading-[1.7] lg:max-w-[620px]">
+              <p className="para-text font-inter text-[#9a99a2] md:leading-[1.7] lg:max-w-[620px]">
                 Our mission is to design, develop, and manufacture world-class IoT products and EV charging solutions that deliver intelligence,
                 efficiency, and measurable real-world impact. We are committed to engineering excellence, customer-centric innovation,
                 and a Made-in-India approach that supports digital transformation across essential industries and drives long-term sustainability.

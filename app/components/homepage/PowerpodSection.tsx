@@ -129,11 +129,11 @@ export default function PowerpodStickyScroll() {
                                 <h2 className="text-[32px] font-normal font-inter text-black mb-5">
                                     {sections[activeIndex].title}
                                 </h2>
-                                <p className="text-[#9a99a2] text-[16px] font-inter mb-4 lg:mb-[4.7rem] leading-loose! xl:w-[93%]">
+                                <p className="text-[#9a99a2] text-[16.8px]  md:text-[16px] font-inter mb-12 md:mb-4 lg:mb-[4.7rem] leading-[1.8rem] md:leading-loose! xl:w-[93%]">
                                     {sections[activeIndex].desc}
                                 </p>
 
-                                <p className="text-[#9a99a2] text-[16px] font-inter mb-5">Suitable for:</p>
+                                <p className="text-[#9a99a2] text-[16.8px]  md:text-[16px] font-inter mb-5">Suitable for:</p>
 
                                 <div className="flex gap-2 md:gap-3 flex-wrap">
                                     {sections[activeIndex].tags.map((t) => (
