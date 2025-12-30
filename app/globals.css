@@ -133,7 +133,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400; /* matches spec */
   font-size: 22px; /* mobile size */
-  line-height: 24px; /* good for mobile readability */
+  line-height: 34px; /* good for mobile readability */
   letter-spacing: 0; /* matches spec */
   color: #404040;
 }

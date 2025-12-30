@@ -6,7 +6,7 @@ export default function ContactDetailsSection() {
       <div className="w-[90%] max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-[37%_50%] gap-16">
         {/* LEFT TEXT */}
         <div>
-          <h2 className="section-heading leading-[1.6]! lg:leading-22! mb-7 text-black lg:w-[76%]">
+          <h2 className="section-heading leading-[1.4]! lg:leading-22! mb-7 text-black lg:w-[76%]">
             Let’s Build What’s Next, Together
           </h2>
 
@@ -25,7 +25,7 @@ export default function ContactDetailsSection() {
           </p>
 
           <div className="border-b-[0.5px] flex gap-x-4.5 border-[#9A99A2] pb-[1.2rem] mb-8">
-            <MapPin strokeWidth={0.7} className=" size-18 -mt-1 lg:size-13 text-black " />
+            <MapPin strokeWidth={0.7} className=" size-18 -mt-4 lg:-mt-2 xl:-mt-1 lg:size-13 text-black " />
             <div>
               <h4 className="regular-heading font-normal! flex items-center gap-2 mb-2">
                 Address
@@ -38,7 +38,7 @@ export default function ContactDetailsSection() {
           </div>
 
           <div className="border-b-[0.5px] flex gap-x-5.5 border-[#9A99A2] pb-[1.2rem] mb-8">
-            <PhoneIcon strokeWidth={0.7} className="size-5 lg:size-6 lg:mt-3 text-black" />
+            <PhoneIcon strokeWidth={0.7} className="size-5 lg:size-6 mt-2 lg:mt-3 text-black" />
             <div>
               <h4 className="regular-heading font-normal! flex items-center gap-2 mb-2">
                 Phone
@@ -48,7 +48,7 @@ export default function ContactDetailsSection() {
           </div>
 
           <div className="flex gap-x-4.5 border-b-[0.5px] border-[#9A99A2] pb-[1.2rem] mb-8">
-            <MailIcon strokeWidth={0.7} className=" size-6 lg:size-7  lg:mt-3 text-black" />
+            <MailIcon strokeWidth={0.7} className=" size-6 lg:size-7 mt-1 lg:mt-3 text-black" />
             <div>
               <h4 className="regular-heading font-normal! flex items-center gap-2 mb-2">
                 Email

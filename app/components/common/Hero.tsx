@@ -45,14 +45,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Title */}
            
               <h1
-                className="hero-title font-inter leading-tight! mb-0 md:mb-[15px] lg:mb-[17px]"
+                className="hero-title font-inter leading-tight! mb-6 md:mb-[15px] lg:mb-[17px]"
                 dangerouslySetInnerHTML={{ __html: title }}
               />
            
             {/* Description */}
            
               {description && (
-                <p className="hidden md:block hero-desc font-inter leading-[1.55rem]! mb-6 md:mb-[1.8rem]  max-w-2xl xl:max-w-2xl text-[#f4f4f4]">
+                <p className=" hero-desc font-inter leading-[1.55rem]! mb-0 md:mb-[1.8rem]  max-w-2xl xl:max-w-2xl text-[#f4f4f4]">
                   {description}
                 </p>
               )}

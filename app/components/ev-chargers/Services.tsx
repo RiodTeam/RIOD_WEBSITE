@@ -20,40 +20,7 @@ export default function ServicesSection({ products }: Props) {
             <div className="w-[90%] max-w-[1400px] mx-auto">
 
                 <div>
-                    {/* MOBILE → HORIZONTAL SCROLL */}
-                    <div
-                        className="
-              grid grid-flow-col 
-              auto-cols-[93%] 
-              gap-4 
-              overflow-x-auto 
-              pb-6 
-              snap-x snap-mandatory 
-              sm:hidden 
-              scrollbar-hide
-            "
-                    >
-                        {products.map((p) => (
-                            <div key={p.id} className="flex flex-col snap-start">
-
-                                {/* IMAGE */}
-                                <div className="relative w-full h-60 bg-gray-100 overflow-hidden group">
-                                    <Image src={p.image} alt={p.title} fill className="object-cover transition-transform duration-500 ease-out
-            group-hover:scale-110" />
-                                </div>
-
-                                {/* TITLE */}
-                                <h3 className="mt-4 text-[20px] font-medium text-[#404040]">
-                                    {p.title}
-                                </h3>
-
-                                {/* DESCRIPTION */}
-                                <p className="mt-3 text-[#9a99a2] text-[14px] leading-relaxed">
-                                    {p.desc}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
+                    
 
                     {/* DESKTOP GRID */}
                     <div className="hidden sm:grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-20">
@@ -85,6 +52,44 @@ export default function ServicesSection({ products }: Props) {
                 </div>
 
             </div>
+
+            {/* MOBILE → HORIZONTAL SCROLL */}
+                    <div
+                        className="
+              grid grid-flow-col 
+              auto-cols-[93%] 
+              gap-4 
+              overflow-x-auto 
+              pb-6 
+              snap-x snap-mandatory 
+              sm:hidden 
+              scrollbar-hide
+               pl-[5%]
+            "
+                    >
+
+                        
+                        {products.map((p) => (
+                            <div key={p.id} className="flex flex-col snap-start first:pl-[5%]">
+
+                                {/* IMAGE */}
+                                <div className="relative w-full h-60 bg-gray-100 overflow-hidden group">
+                                    <Image src={p.image} alt={p.title} fill className="object-cover transition-transform duration-500 ease-out
+            group-hover:scale-110" />
+                                </div>
+
+                                {/* TITLE */}
+                                <h3 className="mt-4 text-[22px] font-medium text-[#404040]">
+                                    {p.title}
+                                </h3>
+
+                                {/* DESCRIPTION */}
+                                <p className="mt-3 text-[#9a99a2] text-[16.8px] leading-relaxed">
+                                    {p.desc}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
         </section>
     );
 }

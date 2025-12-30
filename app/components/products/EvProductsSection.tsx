@@ -343,7 +343,7 @@ export default function EvProductsSection() {
                             {p.desc}
                         </p>
 
-                        <p className="mt-3 text-red-600 text-[16px] leading-relaxed">
+                        <p className="mt-3 text-red-600 text-[16px] leading-relaxed mb-5">
                             Rs.{p.price}
                         </p>
                         <Link

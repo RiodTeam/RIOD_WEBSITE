@@ -41,7 +41,7 @@ export default function Join() {
                 <div className="space-y-[4.4rem] mt-2">
                     {items.map((item, idx) => (
                         <MotionWrapper key={idx} className="border-b border-[#545454] pb-8">
-                            <h3 className="regular-heading text-white!">{item.title}</h3>
+                            <h3 className="regular-heading text-white! ">{item.title}</h3>
 
                             <p className="mt-8 normal-text text-[#9a99a2] leading-[1.8]!">
                                 {item.desc}
