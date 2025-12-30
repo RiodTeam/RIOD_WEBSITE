@@ -176,89 +176,110 @@ const Header = () => {
       </header>
 
       {/* MOBILE MENU */}
-      <div
-        className={`fixed inset-0 z-50 transition-opacity duration-300 ${
-          isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
-        }`}
+    {/* MOBILE MENU */}
+<div
+  className={`fixed inset-0 z-50 transition-opacity duration-300 ${
+    isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+  }`}
+>
+  {/* OVERLAY */}
+  <div
+    className="absolute inset-0 bg-black/60"
+    onClick={toggleMenu}
+  />
+
+  {/* SLIDE PANEL */}
+  <div
+    className={`absolute top-0 right-0 h-full w-full bg-[#1e1e1e]
+    transform transition-transform duration-300
+    ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
+  >
+    {/* HEADER */}
+    <div className="flex items-center justify-between p-6 border-b border-white/20">
+      <Image src="/header/logo.svg" alt="Logo" width={80} height={80} />
+      <button onClick={toggleMenu}>
+        <X size={28} className="text-white" />
+      </button>
+    </div>
+
+    {/* NAV */}
+    <nav className="flex flex-col">
+      <Link
+        href="/about"
+        onClick={toggleMenu}
+        className="text-white text-lg py-6 pl-7 border-b border-white/20"
       >
-        <div
-          className="absolute inset-0 bg-black/60"
-          onClick={toggleMenu}
-        ></div>
+        About
+      </Link>
 
-        <div
-          className={`absolute top-0 right-0 h-full w-full bg-[#1e1e1e]
-          transform transition-transform duration-300
-          ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
+      <Link
+        href="/products"
+        onClick={toggleMenu}
+        className="text-white text-lg py-6 pl-7 border-b border-white/20"
+      >
+        Product
+      </Link>
+
+      {/* SEGMENTS */}
+      <div className="border-b border-white/20">
+        <button
+          onClick={() => setIsSegmentsOpen(!isSegmentsOpen)}
+          className="w-full flex justify-between items-center text-white text-lg py-6 pl-7 pr-6"
         >
-          <div className="flex items-center justify-between p-6 border-b border-white/10">
-            <Image
-              src="/header/logo.svg"
-              alt="Logo"
-              width={80}
-              height={80}
-            />
-            <button onClick={toggleMenu}>
-              <X size={28} className="text-white" />
-            </button>
-          </div>
+          Segments We Serve
+          <MdOutlineKeyboardArrowDown
+            className={`transition-transform ${
+              isSegmentsOpen ? "rotate-180" : ""
+            }`}
+          />
+        </button>
 
-          <nav className="flex flex-col">
-            <Link href="/about" onClick={toggleMenu} className="menu-link">
-              About
-            </Link>
-            <Link href="/products" onClick={toggleMenu} className="menu-link">
-              Product
-            </Link>
-
-            {/* MOBILE SEGMENTS */}
-            <div className="border-b border-white/10">
-              <button
-                onClick={() => setIsSegmentsOpen(!isSegmentsOpen)}
-                className="w-full flex justify-between items-center text-white text-lg py-6 pl-7 pr-6"
-              >
-                Segments We Serve
-                <MdOutlineKeyboardArrowDown
-                  className={`transition-transform ${
-                    isSegmentsOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {isSegmentsOpen &&
-                ["Hotels", "Office", "Institution", "Home"].map((name) => (
-                  <Link
-                    key={name}
-                    href={`/ev-chargers-${name.toLowerCase()}`}
-                    onClick={toggleMenu}
-                    className="block text-white py-6 pl-12 border-b border-white/10"
-                  >
-                    {name}
-                  </Link>
-                ))}
-            </div>
-
+        {isSegmentsOpen &&
+          ["Hotels", "Office", "Institution", "Home"].map((name) => (
             <Link
-              href={`${RND_URL}/careers`}
+              key={name}
+              href={`/ev-chargers-${name.toLowerCase()}`}
               onClick={toggleMenu}
-              className="menu-link"
+              className="block text-white py-5 pl-12 border-t border-white/10"
             >
-              Career
+              {name}
             </Link>
-            <Link href="/insights" onClick={toggleMenu} className="menu-link">
-              Insights
-            </Link>
-            <Link href="/contact" onClick={toggleMenu} className="menu-link">
-              Contact
-            </Link>
-          </nav>
-
-          <div className="absolute mt-12 left-6 flex gap-6">
-            <Phone className="text-white" />
-            <MessageCircle className="text-white" />
-          </div>
-        </div>
+          ))}
       </div>
+
+      <Link
+        href={`${RND_URL}/careers`}
+        onClick={toggleMenu}
+        className="text-white text-lg py-6 pl-7 border-b border-white/20"
+      >
+        Career
+      </Link>
+
+      <Link
+        href="/insights"
+        onClick={toggleMenu}
+        className="text-white text-lg py-6 pl-7 border-b border-white/20"
+      >
+        Insights
+      </Link>
+
+      <Link
+        href="/contact"
+        onClick={toggleMenu}
+        className="text-white text-lg py-6 pl-7 border-b border-white/20"
+      >
+        Contact
+      </Link>
+    </nav>
+
+    {/* ICONS */}
+    {/* <div className="absolute bottom-8 left-7 flex gap-6">
+      <Phone className="text-white" />
+      <MessageCircle className="text-white" />
+    </div> */}
+  </div>
+</div>
+
     </>
   );
 };

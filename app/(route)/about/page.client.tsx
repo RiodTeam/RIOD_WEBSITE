@@ -25,7 +25,7 @@ const PageClient = () => {
 
         {/* HERO */}
         <HeroSection
-          backgroundImage="/about/hero.webp"
+          backgroundImage="/about/h1.webp"
           title="Powering the Future of Electric Mobility"
           description="Delivering intelligent and reliable EV charging solutions designed for homes, businesses, and public environments-supporting a cleaner, smarter mobility future."
         />
