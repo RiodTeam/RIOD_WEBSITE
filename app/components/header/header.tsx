@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Phone, MessageCircle, X } from "lucide-react";
+import { X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -37,8 +37,8 @@ const Header = () => {
   const headerBg = forceDarkHeader
     ? "bg-[#2C2C2C]"
     : scrolled
-    ? "bg-[#2C2C2C]"
-    : "bg-transparent";
+      ? "bg-[#2C2C2C]"
+      : "bg-transparent";
 
   const textColor = "text-white";
 
@@ -96,10 +96,9 @@ const Header = () => {
                     backdrop-blur-xl
                     transition-all duration-200 z-50
                     opacity-0 invisible group-hover:opacity-100 group-hover:visible
-                    ${
-                      scrolled
-                        ? "bg-white/90 border border-black/10"
-                        : "bg-black/40 border border-white/20"
+                    ${scrolled
+                      ? "bg-white/90 border border-black/10"
+                      : "bg-black/40 border border-white/20"
                     }
                   `}
                 >
@@ -114,10 +113,9 @@ const Header = () => {
                       href={item.href}
                       className={`
                         block px-5 py-3 text-sm font-inter transition-colors
-                        ${
-                          scrolled
-                            ? "text-black hover:bg-black/5"
-                            : "text-white hover:bg-white/10"
+                        ${scrolled
+                          ? "text-black hover:bg-black/5"
+                          : "text-white hover:bg-white/10"
                         }
                       `}
                     >
@@ -176,109 +174,107 @@ const Header = () => {
       </header>
 
       {/* MOBILE MENU */}
-    {/* MOBILE MENU */}
-<div
-  className={`fixed inset-0 z-50 transition-opacity duration-300 ${
-    isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
-  }`}
->
-  {/* OVERLAY */}
-  <div
-    className="absolute inset-0 bg-black/60"
-    onClick={toggleMenu}
-  />
+      {/* MOBILE MENU */}
+      <div
+        className={`fixed inset-0 z-50 transition-opacity duration-300 ${isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+          }`}
+      >
+        {/* OVERLAY */}
+        <div
+          className="absolute inset-0 bg-black/60"
+          onClick={toggleMenu}
+        />
 
-  {/* SLIDE PANEL */}
-  <div
-    className={`absolute top-0 right-0 h-full w-full bg-[#1e1e1e]
+        {/* SLIDE PANEL */}
+        <div
+          className={`absolute top-0 right-0 h-full w-full bg-[#1e1e1e]
     transform transition-transform duration-300
     ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
-  >
-    {/* HEADER */}
-    <div className="flex items-center justify-between p-6 border-b border-white/20">
-      <Image src="/header/logo.svg" alt="Logo" width={80} height={80} />
-      <button onClick={toggleMenu}>
-        <X size={28} className="text-white" />
-      </button>
-    </div>
-
-    {/* NAV */}
-    <nav className="flex flex-col">
-      <Link
-        href="/about"
-        onClick={toggleMenu}
-        className="text-white text-lg py-6 pl-7 border-b border-white/20"
-      >
-        About
-      </Link>
-
-      <Link
-        href="/products"
-        onClick={toggleMenu}
-        className="text-white text-lg py-6 pl-7 border-b border-white/20"
-      >
-        Product
-      </Link>
-
-      {/* SEGMENTS */}
-      <div className="border-b border-white/20">
-        <button
-          onClick={() => setIsSegmentsOpen(!isSegmentsOpen)}
-          className="w-full flex justify-between items-center text-white text-lg py-6 pl-7 pr-6"
         >
-          Segments We Serve
-          <MdOutlineKeyboardArrowDown
-            className={`transition-transform ${
-              isSegmentsOpen ? "rotate-180" : ""
-            }`}
-          />
-        </button>
+          {/* HEADER */}
+          <div className="flex items-center justify-between p-6 border-b border-white/20">
+            <Image src="/header/logo.svg" alt="Logo" width={80} height={80} />
+            <button onClick={toggleMenu}>
+              <X size={28} className="text-white" />
+            </button>
+          </div>
 
-        {isSegmentsOpen &&
-          ["Hotels", "Office", "Institution", "Home"].map((name) => (
+          {/* NAV */}
+          <nav className="flex flex-col">
             <Link
-              key={name}
-              href={`/ev-chargers-${name.toLowerCase()}`}
+              href="/about"
               onClick={toggleMenu}
-              className="block text-white py-5 pl-12 border-t border-white/10"
+              className="text-white text-lg py-6 pl-7 border-b border-white/20"
             >
-              {name}
+              About
             </Link>
-          ))}
-      </div>
 
-      <Link
-        href={`${RND_URL}/careers`}
-        onClick={toggleMenu}
-        className="text-white text-lg py-6 pl-7 border-b border-white/20"
-      >
-        Career
-      </Link>
+            <Link
+              href="/products"
+              onClick={toggleMenu}
+              className="text-white text-lg py-6 pl-7 border-b border-white/20"
+            >
+              Product
+            </Link>
 
-      <Link
-        href="/insights"
-        onClick={toggleMenu}
-        className="text-white text-lg py-6 pl-7 border-b border-white/20"
-      >
-        Insights
-      </Link>
+            {/* SEGMENTS */}
+            <div className="border-b border-white/20">
+              <button
+                onClick={() => setIsSegmentsOpen(!isSegmentsOpen)}
+                className="w-full flex justify-between items-center text-white text-lg py-6 pl-7 pr-6"
+              >
+                Segments We Serve
+                <MdOutlineKeyboardArrowDown
+                  className={`transition-transform ${isSegmentsOpen ? "rotate-180" : ""
+                    }`}
+                />
+              </button>
 
-      <Link
-        href="/contact"
-        onClick={toggleMenu}
-        className="text-white text-lg py-6 pl-7 border-b border-white/20"
-      >
-        Contact
-      </Link>
-    </nav>
+              {isSegmentsOpen &&
+                ["Hotels", "Office", "Institution", "Home"].map((name) => (
+                  <Link
+                    key={name}
+                    href={`/ev-chargers-${name.toLowerCase()}`}
+                    onClick={toggleMenu}
+                    className="block text-white py-5 pl-12 border-t border-white/10"
+                  >
+                    {name}
+                  </Link>
+                ))}
+            </div>
 
-    {/* ICONS */}
-    {/* <div className="absolute bottom-8 left-7 flex gap-6">
+            <Link
+              href={`${RND_URL}/careers`}
+              onClick={toggleMenu}
+              className="text-white text-lg py-6 pl-7 border-b border-white/20"
+            >
+              Career
+            </Link>
+
+            <Link
+              href="/insights"
+              onClick={toggleMenu}
+              className="text-white text-lg py-6 pl-7 border-b border-white/20"
+            >
+              Insights
+            </Link>
+
+            <Link
+              href="/contact"
+              onClick={toggleMenu}
+              className="text-white text-lg py-6 pl-7 border-b border-white/20"
+            >
+              Contact
+            </Link>
+          </nav>
+
+          {/* ICONS */}
+          {/* <div className="absolute bottom-8 left-7 flex gap-6">
       <Phone className="text-white" />
       <MessageCircle className="text-white" />
     </div> */}
-  </div>
-</div>
+        </div>
+      </div>
 
     </>
   );

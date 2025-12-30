@@ -179,7 +179,8 @@ export default function EvProductsSection() {
                             </button>
 
                             {open1 && (
-                                <div className="absolute top-12 right-0 bg-white border  w-48 z-50">
+                                <div className="absolute top-12 left-0 md:right-0 md:left-auto bg-white border w-48 z-50 rounded-xl">
+
                                     {categoryOptions.map((opt) => (
                                         <button
                                             key={opt}
@@ -218,7 +219,8 @@ export default function EvProductsSection() {
                             </button>
 
                             {open2 && (
-                                <div className="absolute top-12 right-0 bg-white border  w-48 z-50">
+                                <div className="absolute top-12 left-0 md:right-0 md:left-auto bg-white border w-48 z-50 rounded-xl">
+
                                     {sortOptions.map((opt) => (
                                         <button
                                             key={opt}
@@ -335,15 +337,15 @@ export default function EvProductsSection() {
                             />
                         </div>
 
-                        <h3 className="mt-6 text-[22px] font-medium text-black">
+                        <h3 className="mt-6 text-[22px] font-medium text-black leading-[1.6]">
                             {p.title}
                         </h3>
 
-                        <p className="mt-3 text-[#9a99a2] text-[16px] leading-relaxed">
+                        <p className="mt-5 text-[#9a99a2] text-[16px] leading-relaxed">
                             {p.desc}
                         </p>
 
-                        <p className="mt-3 text-red-600 text-[16px] leading-relaxed mb-5">
+                        <p className="mt-5 text-red-600 text-[16px] leading-relaxed ">
                             Rs.{p.price}
                         </p>
                         <Link
@@ -351,10 +353,11 @@ export default function EvProductsSection() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <span className="mt-5 self-start bg-[#eeeeee] text-[#222222] text-[14px] px-4 py-3 rounded-full cursor-pointer hover:bg-[#e0e0e0] transition">
+                            <span className="block mt-5 w-full self-start bg-[#eeeeee] text-[#222222] text-[14px] px-4 py-3 rounded-full cursor-pointer hover:bg-[#e0e0e0] transition text-center">
                                 {p.badge}
                             </span>
                         </Link>
+
 
                     </div>
                 ))}
