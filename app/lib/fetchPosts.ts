@@ -1,23 +1,59 @@
+import { getPayload } from 'payload'
+import configPromise from '@payload-config'
+
 export const fetchPosts = async (slug?: string) => {
-  const base = `${process.env.NEXT_PUBLIC_RND_DOMAIN}/api/posts`;
-  const url = slug ? `${base}?where[slug][equals]=${slug}` : `${base}?sort=-publishedAt&limit=50`;
+  const payload = await getPayload({ config: configPromise })
 
-  console.log('Payload URL:', process.env.NEXT_PUBLIC_PAYLOAD_URL)
-console.log('Fetching:', url)
+  if (slug) {
+    const result = await payload.find({
+      collection: 'posts',
+      where: { slug: { equals: slug } },
+      limit: 1,
+    })
+    return {
+      posts: result.docs,
+      fetchedAt: new Date().toISOString(),
+      cacheStatus: 'local',
+    }
+  }
 
-  const fetchedAt = new Date().toISOString();
-  const res = await fetch(url, { next: { tags: ['cms-updates'] } });
-
-  console.log('fetched on: ', res)
-
-  // Get Next.js cache info
-  const cacheStatus = res.headers.get('x-nextjs-cache') || 'unknown';
-
-  const data = await res.json();
-
+  const result = await payload.find({
+    collection: 'posts',
+    sort: '-publishedAt',
+    limit: 50,
+  })
   return {
-    posts: slug ? [data.docs[0]] : data.docs,
-    fetchedAt,
-    cacheStatus,
-  };
-};
+    posts: result.docs,
+    fetchedAt: new Date().toISOString(),
+    cacheStatus: 'local',
+  }
+}
+
+export const fetchCategories = async () => {
+  const payload = await getPayload({ config: configPromise })
+
+  const result = await payload.find({
+    collection: 'categories',
+    limit: 100,
+  })
+  return result.docs
+}
+
+export const fetchCaseStudies = async (slug?: string) => {
+  const payload = await getPayload({ config: configPromise })
+
+  if (slug) {
+    const result = await payload.find({
+      collection: 'case-studies',
+      where: { slug: { equals: slug } },
+      limit: 1,
+    })
+    return result.docs
+  }
+
+  const result = await payload.find({
+    collection: 'case-studies',
+    limit: 50,
+  })
+  return result.docs
+}
