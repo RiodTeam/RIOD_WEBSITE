@@ -14,6 +14,9 @@ import { BlogImage } from './collections/Posts/BlogImage'
 import { Posts } from './collections/Posts'
 import { CaseStudies } from './collections/CaseStudies'
 import { CaseStudyMedia } from './collections/CaseStudyMedia'
+import { ContactSubmissions } from './collections/ContactSubmissions'
+import { NewsletterSubmissions } from './collections/NewsletterSubmissions'
+import { TechDownloads } from './collections/TechDownloads'
 import { plugins } from './plugins'
 import { defaultLexical } from '@/fields/defaultLexical'
 import { getServerSideURL } from './utilities/getURL'
@@ -63,6 +66,9 @@ export default buildConfig({
     BlogImage,
     CaseStudies,
     CaseStudyMedia,
+    ContactSubmissions,
+    NewsletterSubmissions,
+    TechDownloads,
   ],
   cors: [getServerSideURL(), 'http://localhost:3000'].filter(Boolean),
   plugins: [
@@ -89,7 +95,7 @@ export default buildConfig({
       },
     }),
   ],
-  secret: process.env.PAYLOAD_SECRET,
+  secret: process.env.PAYLOAD_SECRET || '',
   sharp,
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),

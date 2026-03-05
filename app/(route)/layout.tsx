@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Cormorant_Garamond } from "next/font/google";
 import "../globals.css";
 import Header from "../components/header/header";
@@ -29,18 +30,32 @@ const cormorantGaramond = Cormorant_Garamond({
   variable: '--font-cormorant',
 })
 
+export const metadata: Metadata = {
+  title: "RIOD",
+  description: "RIOD - EV Charging & Energy Technology",
+  icons: {
+    icon: "/header/logo.svg",
+    shortcut: "/header/logo.svg",
+    apple: "/header/logo.svg",
+  },
+};
+
 export default function FrontendLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${cormorantGaramond.variable} antialiased`}
-    >
-      <Header />
-      {children}
-      <FooterSection />
-    </div>
+    <html lang="en">
+      <body>
+        <div
+          className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${cormorantGaramond.variable} antialiased`}
+        >
+          <Header />
+          {children}
+          <FooterSection />
+        </div>
+      </body>
+    </html>
   );
 }

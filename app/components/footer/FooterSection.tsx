@@ -4,208 +4,181 @@ import Image from "next/image";
 import Link from "next/link";
 import MotionWrapper from "../common/MotionWrapper";
 
+const productLinks = [
+  { label: "AC Powerpod 3.4kW", href: "/products" },
+  { label: "AC Powerpod 7.4kW", href: "/products" },
+  { label: "AC Powerpod 22kW", href: "/products" },
+  { label: "AC PowerPod Edge 3.4kW", href: "/products" },
+  { label: "AC PowerPod Edge 7.4kW", href: "/products" },
+  { label: "AC PowerPod Edge 22kW", href: "/products" },
+  { label: "DC Fast 30kW", href: "/products" },
+  { label: "DC Fast 60kW", href: "/products" },
+  { label: "DC Fast 120kW", href: "/products" },
+];
+
+const solutionLinks = [
+  { label: "Charging Hardware", href: "/products" },
+  { label: "CPMS & Cloud Platform", href: "/products" },
+  { label: "Mobile Applications", href: "/products" },
+  { label: "Firmware & Embedded", href: "/products" },
+  { label: "Energy Management", href: "/products" },
+];
+
+const companyLinks = [
+  { label: "About Us", href: "/about" },
+  { label: "Insights & Blogs", href: "/insights" },
+  { label: "Case Studies", href: "/case-studies" },
+  { label: "Resources", href: "/resources" },
+  { label: "Find Your Charger", href: "/ev-charger-selection-guide" },
+  { label: "Careers", href: "/careers" },
+  { label: "Contact", href: "/contact" },
+];
+
+const socialLinks = [
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/riod",
+    icon: (
+      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+      </svg>
+    ),
+  },
+  {
+    label: "Twitter",
+    href: "https://twitter.com/riod",
+    icon: (
+      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+      </svg>
+    ),
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/riod",
+    icon: (
+      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+      </svg>
+    ),
+  },
+];
+
 export default function FooterSection() {
   return (
-    <footer className="w-full bg-black text-white pt-24 md:pt-[11.7rem] pb-10">
-      {/* TOP SECTION */}
-      <MotionWrapper className="w-[90%] max-w-[1400px] mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
-        {/* LEFT TEXT */}
-        <h3 className="regular-heading max-w-[550px] text-white! leading-[1.4]! ">
-          Get valuable strategy, culture, and brand insights straight to your
-          inbox.
-        </h3>
-
-        {/* RIGHT BUTTON */}
-        <Link href="/contact" className="block w-full sm:w-auto">
-          <button
-            className="
-      bg-white text-black
-      w-full sm:w-auto
-      px-7 py-3
-      font-inter text-[16px]
-      flex items-center
-      justify-between sm:justify-center
-      gap-8
-      hover:opacity-80 transition
-    "
-          >
-            <span>Contact US</span>
-
+    <footer className="w-full bg-black text-white pt-16 md:pt-[6.8rem] pb-10">
+      <div className="w-[90%] max-w-[1400px] mx-auto">
+        {/* Top Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
+          {/* Logo & Tagline */}
+          <MotionWrapper className="lg:col-span-4">
             <Image
-              src="/footer/arrow.svg"
-              alt="arrow"
-              width={12}
-              height={12}
-              className="object-contain"
+              src="/header/logo.svg"
+              alt="RIOD Logo"
+              width={90}
+              height={10}
+              className="object-contain mb-6"
             />
-          </button>
-        </Link>
-      </MotionWrapper>
+            <p className="para-text2 text-[#7c7c7c] max-w-[320px] leading-relaxed">
+              Engineering the complete EV charging ecosystem — from silicon to
+              cloud. A division of RIOD Logic Pvt Ltd.
+            </p>
+            <div className="flex items-center gap-4 mt-6">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#7c7c7c] hover:text-white transition-colors"
+                  aria-label={social.label}
+                >
+                  {social.icon}
+                </a>
+              ))}
+            </div>
+          </MotionWrapper>
 
-      {/* DIVIDER */}
-      <MotionWrapper>
-        <div className="w-[90%] max-w-[1400px] mx-auto border-b border-[#3a3a3a] mt-18 mb-20"></div>
-      </MotionWrapper>
+          {/* Products */}
+          <MotionWrapper className="lg:col-span-3 lg:pl-8">
+            <h4 className="font-inter text-[15px] text-[#b3b3b3] mb-5 font-medium">
+              Products
+            </h4>
+            <ul className="space-y-3.5">
+              {productLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-[#7c7c7c] text-[15px] hover:text-white transition-colors link-underline"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </MotionWrapper>
 
-      {/* MIDDLE FOOTER LINKS */}
-      <div className="w-[90%] max-w-[1400px] mx-auto  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-16">
-        <MotionWrapper className="col-span-2 md:col-span-3 lg:col-span-1">
-          <Image
-            src="/header/logo.svg"
-            alt="RIOD Logo"
-            width={90}
-            height={10}
-            className="object-contain"
-          />
-        </MotionWrapper>
+          {/* Solutions */}
+          <MotionWrapper className="lg:col-span-3 lg:pl-4">
+            <h4 className="font-inter text-[15px] text-[#b3b3b3] mb-5 font-medium">
+              Solutions
+            </h4>
+            <ul className="space-y-3.5">
+              {solutionLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-[#7c7c7c] text-[15px] hover:text-white transition-colors link-underline"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </MotionWrapper>
 
-        {/* EXPLORE */}
-        <MotionWrapper className="xl:mr-10 mt-1">
-          <h4 className="font-inter text-[17px] text-[#b3b3b3] mb-4">
-            Explore
-          </h4>
-          <ul className="space-y-4 text-[#7c7c7c] text-[17px] font-medium">
-            <li>
-              <Link
-                href="/industries "
-                className="underline-hover"
-              >
-                What We Do
-              </Link>
-            </li>
+          {/* Company */}
+          <MotionWrapper className="lg:col-span-2">
+            <h4 className="font-inter text-[15px] text-[#b3b3b3] mb-5 font-medium">
+              Company
+            </h4>
+            <ul className="space-y-3.5">
+              {companyLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-[#7c7c7c] text-[15px] hover:text-white transition-colors link-underline"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </MotionWrapper>
+        </div>
 
-            <li>
-              <Link href="/about" className="underline-hover">
-                Who We Are
-              </Link>
-            </li>
+        {/* Divider */}
+        <div className="border-b border-[#2a2a2a] mt-16 mb-8"></div>
 
-            <li>
-              <Link href="/careers" className="underline-hover">
-                Career Opportunities
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/insights" className="underline-hover">
-                Insights & Blogs
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/case-studies" className="underline-hover">
-                Get Quote
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/privacy-policy" className="underline-hover">
-                Privacy Policy
-              </Link>
-            </li>
-          </ul>
-        </MotionWrapper>
-
-        {/* SERVICES */}
-        <MotionWrapper className="xl:ml-[3.7rem]  mt-1">
-          <h4 className="font-inter text-[17px] text-[#b3b3b3] mb-4">
-            Services
-          </h4>
-          <ul className="space-y-4 text-[#7c7c7c] text-[17px] font-medium">
-            <li>
-              <Link
-                href="/services/product-engineering"
-                className="underline-hover"
-              >
-                Product Engineering
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                href="/services/cloud-applications"
-                className="underline-hover"
-              >
-                Application Development
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/services/vision-ai" className="underline-hover">
-                Product Life cycle Support
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/services/ev-charging" className="underline-hover">
-                Hardware Integration
-              </Link>
-            </li>
-            <li>
-              <Link href="/services/ev-charging" className="underline-hover">
-                Hardware Checking
-              </Link>
-            </li>
-            <li>
-              <Link href="/services/ev-charging" className="underline-hover">
-                Electronics Mapping
-              </Link>
-            </li>
-          </ul>
-        </MotionWrapper>
-
-        {/* QUICK LINKS */}
-        <MotionWrapper className="md:ml-[10%] lg:ml-[11%] xl:ml-[39%]  mt-1">
-          <h4 className="font-inter text-[17px] text-[#b3b3b3] mb-4">
-            Quicklinks
-          </h4>
-          <ul className="space-y-4 text-[#7c7c7c] text-[17px] font-medium">
-            <li>
-              <Link href="/ev-chargers-hotels" className="underline-hover">
-                EV Chargers For Hotels
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/ev-chargers-office" className="underline-hover">
-                EV Chargers For Office
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/ev-chargers-institution" className="underline-hover">
-                EV Chargers For Institution
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/ev-chargers-home" className="underline-hover">
-                EV Chargers For Home
-              </Link>
-            </li>
-            {/* <li>
-                            <Link href="/contact" className="underline-hover">IoT Device Integration</Link>
-                        </li> */}
-
-            {/* <li>
-    <Link href="/terms-and-conditions">Terms &amp; Conditions</Link>
-  </li> */}
-          </ul>
-        </MotionWrapper>
+        {/* Bottom */}
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-[13px] text-[#626262]">
+          <p>© 2026 RIOD Logic Pvt Ltd. All rights reserved.</p>
+          <div className="flex items-center gap-6">
+            <Link
+              href="/privacy-policy"
+              className="hover:text-white transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="/terms-and-conditions"
+              className="hover:text-white transition-colors"
+            >
+              Terms of Service
+            </Link>
+          </div>
+        </div>
       </div>
-
-      {/* DIVIDER */}
-      <MotionWrapper>
-        <div className="w-[95%] sm:w-[90%] max-w-[1400px] mx-auto border-b border-[#3a3a3a] mt-18 "></div>
-      </MotionWrapper>
-
-      {/* BOTTOM FOOTER */}
-      <MotionWrapper className="w-[95%] sm:w-[90%] max-w-[1400px] mx-auto mt-11 flex flex-row justify-between text-[13px] text-[#7f7f7f]">
-        <p className="text-[13.5px]">©2025 RIOD </p>
-        <p className=" text-[#626262] text-[15px] md:text-[17px]">
-          Crafted With <span className="text-[#626262]">❤</span> by Woxro
-        </p>
-      </MotionWrapper>
     </footer>
   );
 }

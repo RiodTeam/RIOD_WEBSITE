@@ -3,7 +3,6 @@ import { useState } from "react";
 import CountryCodeSelect from "./CountrySelector";
 import Image from "next/image";
 
-const API_BASE = process.env.NEXT_PUBLIC_RND_DOMAIN!;
 
 export default function ContactFormSection() {
   const [form, setForm] = useState({
@@ -29,7 +28,7 @@ export default function ContactFormSection() {
     setSuccess(false);
 
     try {
-      const res = await fetch(`${API_BASE}/api/riod-submissions`, {
+      const res = await fetch(`/api/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -1,4 +1,6 @@
-import { withPayload } from '@payloadcms/next/withPayload'
+// Set PAYLOAD=true to enable Payload CMS (admin panel, API routes, MongoDB)
+// Default: disabled for fast frontend dev. Enable for deployment or CMS work.
+const usePayload = process.env.PAYLOAD === 'true'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -33,4 +35,11 @@ const nextConfig = {
   },
 }
 
-export default withPayload(nextConfig)
+let config = nextConfig
+
+if (usePayload) {
+  const { withPayload } = await import('@payloadcms/next/withPayload')
+  config = withPayload(nextConfig)
+}
+
+export default config

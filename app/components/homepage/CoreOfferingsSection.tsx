@@ -1,0 +1,72 @@
+"use client";
+
+import MotionWrapper from "../common/MotionWrapper";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
+const offerings = [
+  {
+    number: "01",
+    title: "Charging\nStations",
+    description:
+      "Full-spectrum EV charging hardware including AC wallboxes, DC fast chargers, and high-power charging stations engineered for reliability, scalability, and global certification compliance.",
+    cta: "Explore Products",
+    href: "/products",
+    image: "/home/hero.webp",
+  },
+  {
+    number: "02",
+    title: "Technology\nSolutions",
+    description:
+      "End-to-end technology stack covering embedded firmware, CPMS platforms, mobile applications, energy management systems, and V2G-ready architectures for the modern charging ecosystem.",
+    cta: "Discover Solutions",
+    href: "#solutions",
+    image: "/home/hero.webp",
+  },
+];
+
+export default function CoreOfferingsSection() {
+  return (
+    <section className="bg-white pt-16 md:pt-[6.8rem] pb-16 md:pb-[6.8rem]">
+      <div className="w-[90%] max-w-[1400px] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+          {offerings.map((item, index) => (
+            <MotionWrapper key={item.number} delay={index * 0.15}>
+              <Link href={item.href} className="group block">
+                <div className="relative h-[400px] md:h-[520px] lg:h-[600px] rounded-2xl overflow-hidden">
+                  {/* Background image */}
+                  <div
+                    className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                    style={{ backgroundImage: `url(${item.image})` }}
+                  />
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-black/55 group-hover:bg-black/45 transition-colors duration-500" />
+
+                  {/* Content */}
+                  <div className="relative z-10 h-full flex flex-col justify-end p-8 md:p-10 lg:p-12">
+                    <span
+                      className="text-sm font-medium tracking-widest mb-4"
+                      style={{ color: "#cdf80a" }}
+                    >
+                      {item.number}
+                    </span>
+                    <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-normal leading-tight whitespace-pre-line mb-4">
+                      {item.title}
+                    </h2>
+                    <p className="para-text text-white/70 max-w-[480px] mb-6">
+                      {item.description}
+                    </p>
+                    <div className="flex items-center gap-2 text-white group-hover:text-[#cdf80a] transition-colors">
+                      <span className="text-sm font-medium">{item.cta}</span>
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </MotionWrapper>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

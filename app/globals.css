@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --brand: #cdf80a;
+  --brand-dark: #b8e000;
 }
 
 @theme inline {
@@ -297,4 +299,25 @@ body {
 .underline-hover:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+/* Insights horizontal auto-scroll */
+@keyframes insights-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-insights-scroll {
+  animation: insights-scroll 45s linear infinite;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+.animate-insights-scroll:hover {
+  animation-play-state: paused;
 }
