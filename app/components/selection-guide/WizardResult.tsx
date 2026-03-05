@@ -10,7 +10,10 @@ import {
   Monitor,
 } from "lucide-react";
 import MotionWrapper from "../common/MotionWrapper";
-import type { Recommendation } from "@/app/lib/chargerRecommendation";
+import type {
+  Recommendation,
+  WizardInput,
+} from "@/app/lib/chargerRecommendation";
 
 function ChargerCard({
   name,
@@ -57,20 +60,36 @@ function ChargerCard({
 export default function WizardResult({
   recommendation,
   onStartOver,
+  wizardAnswers,
 }: {
   recommendation: Recommendation;
   onStartOver: () => void;
+  wizardAnswers: WizardInput;
 }) {
   const [showForm, setShowForm] = useState(false);
   const [form, setForm] = useState({
     name: "",
     email: "",
     phone: "",
-    message: "",
   });
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
+
+  const buildMessage = () => {
+    const parts = [
+      `Location: ${wizardAnswers.location}`,
+      `Expected vehicles (3 years): ${wizardAnswers.userRange}`,
+      `Parking duration: ${wizardAnswers.parkingDuration}`,
+    ];
+    if (wizardAnswers.maxPowerKW) parts.push(`Max power: ${wizardAnswers.maxPowerKW} kW`);
+    if (wizardAnswers.budget) parts.push(`Budget: ${wizardAnswers.budget}`);
+    parts.push(`Recommended: ${recommendation.primary.name} ${recommendation.primary.power}`);
+    if (recommendation.secondary) {
+      parts.push(`Also suggested: ${recommendation.secondary.name} ${recommendation.secondary.power}`);
+    }
+    return parts.join(" | ");
+  };
 
   const handleSubmit = async () => {
     if (!form.name || !form.email) {
@@ -85,12 +104,13 @@ export default function WizardResult({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...form,
+          message: buildMessage(),
           type: "charger-selection",
         }),
       });
       if (!res.ok) throw new Error("Failed");
       setSubmitted(true);
-      setForm({ name: "", email: "", phone: "", message: "" });
+      setForm({ name: "", email: "", phone: "" });
     } catch {
       setError("Something went wrong. Please try again.");
     } finally {
@@ -251,20 +271,6 @@ export default function WizardResult({
                     }
                     placeholder="Phone number"
                     className={inputClass}
-                  />
-                </div>
-                <div>
-                  <label className="block mb-2 text-sm font-inter text-[#626262]">
-                    Message
-                  </label>
-                  <textarea
-                    value={form.message}
-                    onChange={(e) =>
-                      setForm({ ...form, message: e.target.value })
-                    }
-                    placeholder="Tell us about your charging needs"
-                    maxLength={500}
-                    className={`${inputClass} h-28 resize-none`}
                   />
                 </div>
               </div>

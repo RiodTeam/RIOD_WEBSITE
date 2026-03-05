@@ -82,6 +82,13 @@ export default function SelectionWizard() {
           <WizardResult
             recommendation={recommendation}
             onStartOver={handleStartOver}
+            wizardAnswers={{
+              location: location!,
+              userRange: userRange!,
+              maxPowerKW,
+              budget,
+              parkingDuration: parkingDuration!,
+            }}
           />
         </div>
       </section>
