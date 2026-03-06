@@ -37,7 +37,7 @@ const products = [
   {
     type: "AC",
     category: "Community / Public",
-    name: "RIOD AC PowerPod Edge 3.4kW",
+    name: "RIOD AC Powerpod Go 3.4kW",
     power: "3.4 kW",
     description:
       "Networked community charger with RFID authentication, billing support, and remote management.",
@@ -46,7 +46,7 @@ const products = [
   {
     type: "AC",
     category: "Community / Public",
-    name: "RIOD AC PowerPod Edge 7.4kW",
+    name: "RIOD AC Powerpod Go 7.4kW",
     power: "7.4 kW",
     description:
       "Public-ready wallbox with 4G, RFID, payment terminal integration, and OCPP cloud connectivity.",
@@ -55,7 +55,7 @@ const products = [
   {
     type: "AC",
     category: "Community / Public",
-    name: "RIOD AC PowerPod Edge 22kW",
+    name: "RIOD AC Powerpod Go 22kW",
     power: "22 kW",
     description:
       "High-power public AC charger with dual sockets, smart queuing, and integrated energy metering.",

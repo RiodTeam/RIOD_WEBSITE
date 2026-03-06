@@ -71,9 +71,9 @@ const faqs = [
       "Yes. All RIOD AC chargers with Type 2 connectors work with every EV sold in India,Tata, MG, Hyundai, Kia, BYD, BMW, Mercedes, Audi, Volvo, Mahindra, and more. Our DC chargers with CCS2 connectors support all CCS-compatible vehicles. The charger communicates with the vehicle to deliver the maximum power the vehicle can accept.",
   },
   {
-    question: "What is the difference between Powerpod and PowerPod Edge?",
+    question: "What is the difference between Powerpod and Powerpod Go?",
     answer:
-      "The Powerpod is designed for private, dedicated use,home garages, villa parking, and single-user installations. It focuses on smart scheduling and energy monitoring. The PowerPod Edge is built for shared and public environments,apartments, offices, and commercial spaces. It adds RFID authentication, 4G connectivity, payment terminal support, and OCPP cloud management for multi-user scenarios.",
+      "The Powerpod is designed for private, dedicated use,home garages, villa parking, and single-user installations. It focuses on smart scheduling and energy monitoring. The Powerpod Go is built for shared and public environments,apartments, offices, and commercial spaces. It adds RFID authentication, 4G connectivity, payment terminal support, and OCPP cloud management for multi-user scenarios.",
   },
 ];
 

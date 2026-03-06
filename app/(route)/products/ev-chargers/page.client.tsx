@@ -39,7 +39,7 @@ const privateChargers = [
 /* ─── Section 3: Public Charging ─── */
 const edgeChargers = [
   {
-    name: "RIOD AC PowerPod Edge",
+    name: "RIOD AC Powerpod Go",
     power: "3.4 kW",
     description:
       "Compact shared charger with RFID access, 4G connectivity, and OCPP cloud management for apartments and offices.",
@@ -47,7 +47,7 @@ const edgeChargers = [
     shopUrl: "https://shop.riod.in",
   },
   {
-    name: "RIOD AC PowerPod Edge",
+    name: "RIOD AC Powerpod Go",
     power: "7.4 kW",
     description:
       "Mid-range community charger with payment terminal support, user authentication, and remote monitoring.",
@@ -55,7 +55,7 @@ const edgeChargers = [
     shopUrl: "https://shop.riod.in",
   },
   {
-    name: "RIOD AC PowerPod Edge",
+    name: "RIOD AC Powerpod Go",
     power: "22 kW",
     description:
       "High-power shared AC charger for commercial spaces. Supports multiple payment methods and load balancing.",
@@ -149,7 +149,7 @@ export default function EVChargersClient() {
           bg="gray"
           labelHighlight
           groups={[
-            { subHeading: "RIOD AC PowerPod Edge", products: edgeChargers },
+            { subHeading: "RIOD AC Powerpod Go", products: edgeChargers },
             { subHeading: "RIOD AC PowerPod City (Dual Gun)", products: cityChargers },
             { subHeading: "RIOD DC Fast", products: dcChargers },
           ]}

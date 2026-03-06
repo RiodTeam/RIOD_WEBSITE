@@ -77,7 +77,7 @@ const powerpod = (power: string): ChargerRec => ({
 });
 
 const edge = (power: string): ChargerRec => ({
-  name: `RIOD AC PowerPod Edge ${power}`,
+  name: `RIOD AC Powerpod Go ${power}`,
   power,
   image: "/products/powerpod.png",
   shopUrl: "https://shop.riod.in",
@@ -185,15 +185,15 @@ export function getRecommendation(input: WizardInput): Recommendation {
       primary = city("22 kW");
       secondary = edge("7.4 kW");
       reasoning =
-        `For a ${location} with ${userRange} expected vehicles, the PowerPod City dual-gun charger is the best fit. It can charge two vehicles simultaneously from a single unit, effectively doubling your charging capacity. The dual-gun design is more space-efficient than installing two separate chargers. For additional parking spots, the PowerPod Edge 7.4kW offers a cost-effective way to expand coverage. In India, power availability is a key factor, and AC chargers work well for locations where vehicles park for extended hours.`;
+        `For a ${location} with ${userRange} expected vehicles, the PowerPod City dual-gun charger is the best fit. It can charge two vehicles simultaneously from a single unit, effectively doubling your charging capacity. The dual-gun design is more space-efficient than installing two separate chargers. For additional parking spots, the Powerpod Go 7.4kW offers a cost-effective way to expand coverage. In India, power availability is a key factor, and AC chargers work well for locations where vehicles park for extended hours.`;
     } else if (parkingDuration === "overnight" || parkingDuration === "4-8h") {
       primary = edge("7.4 kW");
       reasoning =
-        `With longer parking durations at your ${location}, AC charging is the most cost-effective approach. Vehicles have enough time to charge fully even at 7.4kW. The PowerPod Edge comes with RFID access control and OCPP cloud management, making it easy to manage who charges and track usage across the community. It supports automated billing per user, which is essential for shared spaces.`;
+        `With longer parking durations at your ${location}, AC charging is the most cost-effective approach. Vehicles have enough time to charge fully even at 7.4kW. The Powerpod Go comes with RFID access control and OCPP cloud management, making it easy to manage who charges and track usage across the community. It supports automated billing per user, which is essential for shared spaces.`;
     } else {
       primary = edge("22 kW");
       reasoning =
-        `For your ${location} where parking time may be limited, the 22kW PowerPod Edge delivers the fastest AC charging available. It requires a three-phase connection but provides a full charge in under 2 hours. With RFID access and payment terminals, it works well for shared environments where multiple users need managed access.`;
+        `For your ${location} where parking time may be limited, the 22kW Powerpod Go delivers the fastest AC charging available. It requires a three-phase connection but provides a full charge in under 2 hours. With RFID access and payment terminals, it works well for shared environments where multiple users need managed access.`;
     }
 
     return {
@@ -219,7 +219,7 @@ export function getRecommendation(input: WizardInput): Recommendation {
     } else {
       primary = edge("7.4 kW");
       reasoning =
-        `For your ${location}, the PowerPod Edge 7.4kW is the ideal choice. Guests typically park overnight, giving plenty of time for a full charge at 7.4kW. The Edge series includes payment terminals, user authentication, and OCPP cloud management, so you can offer EV charging as a premium guest amenity. The single-phase installation keeps setup costs reasonable.`;
+        `For your ${location}, the Powerpod Go 7.4kW is the ideal choice. Guests typically park overnight, giving plenty of time for a full charge at 7.4kW. The Edge series includes payment terminals, user authentication, and OCPP cloud management, so you can offer EV charging as a premium guest amenity. The single-phase installation keeps setup costs reasonable.`;
     }
 
     return {
@@ -294,7 +294,7 @@ export function getRecommendation(input: WizardInput): Recommendation {
   return {
     primary: edge("7.4 kW"),
     reasoning:
-      "Based on your requirements, the PowerPod Edge 7.4kW is a versatile choice that works well across most use cases. It offers smart connectivity, RFID access, and payment support, making it suitable for both private and shared environments.",
+      "Based on your requirements, the Powerpod Go 7.4kW is a versatile choice that works well across most use cases. It offers smart connectivity, RFID access, and payment support, making it suitable for both private and shared environments.",
     software: communitySuite,
     applicationPage: appPage,
   };

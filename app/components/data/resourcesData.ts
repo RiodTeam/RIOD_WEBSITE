@@ -54,33 +54,33 @@ export const resources: Resource[] = [
     icon: "FileText",
   },
   {
-    id: "ds-edge-3.4",
-    title: "AC PowerPod Edge 3.4kW Datasheet",
+    id: "ds-go-3.4",
+    title: "AC Powerpod Go 3.4kW Datasheet",
     description:
       "Specifications for the compact shared charger with RFID access and OCPP cloud management.",
     category: "Product Datasheets",
     fileSize: "1.5 MB",
-    filePath: "/downloads/datasheets/ac-powerpod-edge-3.4kw.pdf",
+    filePath: "/downloads/datasheets/ac-powerpod-go-3.4kw.pdf",
     icon: "FileText",
   },
   {
-    id: "ds-edge-7.4",
-    title: "AC PowerPod Edge 7.4kW Datasheet",
+    id: "ds-go-7.4",
+    title: "AC Powerpod Go 7.4kW Datasheet",
     description:
       "Specifications for the mid-range community charger with payment terminal support.",
     category: "Product Datasheets",
     fileSize: "1.5 MB",
-    filePath: "/downloads/datasheets/ac-powerpod-edge-7.4kw.pdf",
+    filePath: "/downloads/datasheets/ac-powerpod-go-7.4kw.pdf",
     icon: "FileText",
   },
   {
-    id: "ds-edge-22",
-    title: "AC PowerPod Edge 22kW Datasheet",
+    id: "ds-go-22",
+    title: "AC Powerpod Go 22kW Datasheet",
     description:
       "Specifications for the high-power shared AC charger for commercial spaces.",
     category: "Product Datasheets",
     fileSize: "1.6 MB",
-    filePath: "/downloads/datasheets/ac-powerpod-edge-22kw.pdf",
+    filePath: "/downloads/datasheets/ac-powerpod-go-22kw.pdf",
     icon: "FileText",
   },
   {
@@ -156,13 +156,13 @@ export const resources: Resource[] = [
     icon: "Wrench",
   },
   {
-    id: "ig-edge-commercial",
-    title: "PowerPod Edge Installation Guide",
+    id: "ig-go-commercial",
+    title: "Powerpod Go Installation Guide",
     description:
-      "Installation guide for RIOD AC PowerPod Edge chargers in apartments, offices, and shared spaces.",
+      "Installation guide for RIOD AC Powerpod Go chargers in apartments, offices, and shared spaces.",
     category: "Installation Guides",
     fileSize: "3.5 MB",
-    filePath: "/downloads/guides/powerpod-edge-installation.pdf",
+    filePath: "/downloads/guides/powerpod-go-installation.pdf",
     icon: "Wrench",
   },
   {
@@ -223,7 +223,7 @@ export const resources: Resource[] = [
     id: "cc-ac-chargers",
     title: "AC Charger Comparison Chart",
     description:
-      "Side-by-side comparison of all RIOD AC chargers: Powerpod, PowerPod Edge, and PowerPod City across all power levels.",
+      "Side-by-side comparison of all RIOD AC chargers: Powerpod, Powerpod Go, and PowerPod City across all power levels.",
     category: "Comparison Charts",
     fileSize: "1.1 MB",
     filePath: "/downloads/comparisons/ac-charger-comparison.pdf",
