@@ -2,7 +2,8 @@ export type ResourceCategory =
   | "Product Datasheets"
   | "Installation Guides"
   | "Brochures"
-  | "Comparison Charts";
+  | "Comparison Charts"
+  | "Whitepapers & Guides";
 
 export interface Resource {
   id: string;
@@ -12,6 +13,7 @@ export interface Resource {
   fileSize: string;
   filePath: string;
   icon: "FileText" | "Wrench" | "BookOpen" | "BarChart3";
+  isLeadMagnet?: boolean;
 }
 
 export const resourceCategories: ResourceCategory[] = [
@@ -19,6 +21,7 @@ export const resourceCategories: ResourceCategory[] = [
   "Installation Guides",
   "Brochures",
   "Comparison Charts",
+  "Whitepapers & Guides",
 ];
 
 export const resources: Resource[] = [
@@ -248,5 +251,58 @@ export const resources: Resource[] = [
     fileSize: "1.4 MB",
     filePath: "/downloads/comparisons/ac-vs-dc-guide.pdf",
     icon: "BarChart3",
+  },
+
+  // Whitepapers & Guides
+  {
+    id: "wp-workplace-10-steps",
+    title: "10 Steps to Install EV Charging at the Workplace",
+    description:
+      "Step-by-step guide for facility managers and HR teams. Covers site assessment, electrical capacity check, charger selection, load balancing, employee billing, and go-live checklist.",
+    category: "Whitepapers & Guides",
+    fileSize: "2.1 MB",
+    filePath: "/downloads/whitepapers/10-steps-workplace-ev-charging.pdf",
+    icon: "BookOpen",
+  },
+  {
+    id: "wp-apartment-6-things",
+    title: "6 Things to Consider When Installing EV Chargers in Apartment Societies",
+    description:
+      "Essential guide for RWAs and residents. Covers electrical load assessment, metering and billing, RWA approval process, charger placement, safety compliance, and resident onboarding.",
+    category: "Whitepapers & Guides",
+    fileSize: "1.8 MB",
+    filePath: "/downloads/whitepapers/6-things-apartment-ev-charging.pdf",
+    icon: "BookOpen",
+  },
+  {
+    id: "wp-future-energy-infrastructure",
+    title: "The Future of Energy Infrastructure",
+    description:
+      "In-depth whitepaper on the convergence of EV charging, renewable energy, and smart grid technology. Covers V2G, HEMS, dynamic load balancing, and the role of communication protocols in the energy transition.",
+    category: "Whitepapers & Guides",
+    fileSize: "3.2 MB",
+    filePath: "/downloads/whitepapers/future-of-energy-infrastructure.pdf",
+    icon: "BookOpen",
+    isLeadMagnet: true,
+  },
+  {
+    id: "wp-ocpp-guide",
+    title: "OCPP 1.6J Implementation Guide",
+    description:
+      "Technical guide for charge point operators on OCPP 1.6J integration. Covers message flows, backend configuration, remote management, and firmware updates.",
+    category: "Whitepapers & Guides",
+    fileSize: "1.8 MB",
+    filePath: "/downloads/whitepapers/ocpp-1.6j-implementation-guide.pdf",
+    icon: "BookOpen",
+  },
+  {
+    id: "wp-power-master",
+    title: "Power Master: Dynamic Load Balancing Whitepaper",
+    description:
+      "Technical deep-dive into Power Master's architecture, protocol support, and deployment scenarios. Includes case studies from grid-constrained sites.",
+    category: "Whitepapers & Guides",
+    fileSize: "3.0 MB",
+    filePath: "/downloads/whitepapers/power-master-whitepaper.pdf",
+    icon: "BookOpen",
   },
 ];

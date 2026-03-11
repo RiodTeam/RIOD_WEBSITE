@@ -32,26 +32,33 @@ function ResourceCard({
 
   return (
     <MotionWrapper delay={index * 0.06}>
-      <div className="group flex flex-col h-full bg-[#f6f6f6] rounded-xl p-6 md:p-8 hover:shadow-lg transition-all duration-300 border border-transparent hover:border-[#cdf80a]/30">
-        <div className="w-12 h-12 rounded-lg bg-[#1b1b1b] flex items-center justify-center mb-5">
-          <Icon className="w-6 h-6 text-[#cdf80a]" />
+      <div className={`group flex flex-col h-full rounded-xl p-6 md:p-8 hover:shadow-lg transition-all duration-300 ${resource.isLeadMagnet ? "bg-[#1b1b1b] border border-[#cdf80a]/30" : "bg-[#f6f6f6] border border-transparent hover:border-[#cdf80a]/30"}`}>
+        <div className="flex items-center gap-3 mb-5">
+          <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${resource.isLeadMagnet ? "bg-[#cdf80a]" : "bg-[#1b1b1b]"}`}>
+            <Icon className={`w-6 h-6 ${resource.isLeadMagnet ? "text-[#1b1b1b]" : "text-[#cdf80a]"}`} />
+          </div>
+          {resource.isLeadMagnet && (
+            <span className="text-[10px] font-semibold tracking-widest uppercase text-[#cdf80a] font-inter">
+              Featured
+            </span>
+          )}
         </div>
 
-        <h3 className="text-lg md:text-xl font-medium text-black font-inter mb-2">
+        <h3 className={`text-lg md:text-xl font-medium font-inter mb-2 ${resource.isLeadMagnet ? "text-white" : "text-black"}`}>
           {resource.title}
         </h3>
 
-        <p className="para-text2 text-[#626262] leading-relaxed flex-1 mb-4">
+        <p className={`para-text2 leading-relaxed flex-1 mb-4 ${resource.isLeadMagnet ? "text-[#9a99a2]" : "text-[#626262]"}`}>
           {resource.description}
         </p>
 
-        <div className="flex items-center justify-between mt-auto pt-4 border-t border-[#e0e0e0]">
+        <div className={`flex items-center justify-between mt-auto pt-4 border-t ${resource.isLeadMagnet ? "border-[#333]" : "border-[#e0e0e0]"}`}>
           <span className="text-xs text-[#9a99a2] font-inter uppercase tracking-wide">
             PDF &middot; {resource.fileSize}
           </span>
           <button
             onClick={() => onDownload(resource)}
-            className="inline-flex items-center gap-2 bg-[#1b1b1b] text-[#cdf80a] px-4 py-2 rounded-md text-sm font-medium font-inter hover:bg-[#cdf80a] hover:text-[#1b1b1b] transition-colors duration-300"
+            className={`inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium font-inter transition-colors duration-300 ${resource.isLeadMagnet ? "bg-[#cdf80a] text-[#1b1b1b] hover:bg-[#d8f540]" : "bg-[#1b1b1b] text-[#cdf80a] hover:bg-[#cdf80a] hover:text-[#1b1b1b]"}`}
           >
             <Download className="w-4 h-4" />
             Download
