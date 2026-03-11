@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 70">
+  <defs>
+    <style>
+      .sh-name { font-family: 'Arial', 'Helvetica', sans-serif; font-weight: 700; font-size: 26px; fill: #c8102e; letter-spacing: 2px; }
+      .sh-sub { font-family: 'Arial', sans-serif; font-weight: 400; font-size: 10px; fill: #555555; letter-spacing: 3px; }
+    </style>
+  </defs>
+  <!-- Sugam logo mark - stylized S with building shape -->
+  <g transform="translate(22, 10)">
+    <rect x="0" y="0" width="6" height="40" rx="1" fill="#c8102e"/>
+    <rect x="10" y="8" width="6" height="32" rx="1" fill="#c8102e"/>
+    <rect x="20" y="4" width="6" height="36" rx="1" fill="#c8102e"/>
+    <rect x="0" y="42" width="26" height="2" fill="#c8102e"/>
+  </g>
+  <!-- Brand text -->
+  <text x="140" y="30" text-anchor="middle" class="sh-name">SUGAM</text>
+  <text x="140" y="46" text-anchor="middle" class="sh-sub">HOMES</text>
+</svg>

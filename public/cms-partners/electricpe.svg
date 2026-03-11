@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80">
+  <defs>
+    <style>
+      .ep-text { font-family: 'Arial', 'Helvetica Neue', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: 0.5px; }
+      .ep-electric { fill: #6c5ce7; }
+      .ep-pe { fill: #2d3436; }
+    </style>
+  </defs>
+  <!-- Electric Pe icon - stylized plug with lightning -->
+  <g transform="translate(16, 12)">
+    <rect x="8" y="0" width="24" height="8" rx="3" fill="#6c5ce7"/>
+    <rect x="12" y="8" width="4" height="10" fill="#6c5ce7"/>
+    <rect x="24" y="8" width="4" height="10" fill="#6c5ce7"/>
+    <rect x="6" y="18" width="28" height="14" rx="4" fill="#6c5ce7"/>
+    <rect x="16" y="32" width="8" height="12" rx="2" fill="#6c5ce7"/>
+    <!-- Lightning symbol on plug body -->
+    <polygon points="22,20 17,27 20,27 18,32 25,24 22,24 24,20" fill="white"/>
+  </g>
+  <!-- Brand text -->
+  <text x="146" y="42" text-anchor="middle" class="ep-text">
+    <tspan class="ep-electric">Electric</tspan><tspan class="ep-pe"> Pe</tspan>
+  </text>
+  <!-- Tagline -->
+  <text x="146" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#999" letter-spacing="2">CHARGE ANYWHERE</text>
+</svg>

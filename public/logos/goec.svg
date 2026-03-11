@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 70">
+  <defs>
+    <style>
+      .goec-main { font-family: 'Arial', 'Helvetica Neue', sans-serif; font-weight: 900; font-size: 32px; fill: #2e7d32; letter-spacing: 4px; }
+      .goec-sub { font-family: 'Arial', sans-serif; font-weight: 400; font-size: 7px; fill: #555; letter-spacing: 2px; }
+    </style>
+  </defs>
+  <!-- Lightning bolt / energy icon -->
+  <g transform="translate(28, 8)">
+    <polygon points="18,0 8,22 16,22 10,42 30,16 20,16 26,0" fill="#2e7d32"/>
+    <!-- Leaf accent -->
+    <ellipse cx="32" cy="6" rx="6" ry="3" fill="#4caf50" transform="rotate(30 32 6)"/>
+  </g>
+  <!-- Brand text -->
+  <text x="120" y="34" text-anchor="middle" class="goec-main">GOEC</text>
+  <text x="120" y="48" text-anchor="middle" class="goec-sub">GREEN OHM ENERGY</text>
+  <!-- Green accent underline -->
+  <rect x="50" y="52" width="140" height="2" rx="1" fill="#4caf50"/>
+</svg>

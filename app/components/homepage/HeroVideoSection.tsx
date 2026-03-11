@@ -1,9 +1,10 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Zap, Settings, Lightbulb, Users } from "lucide-react";
 import Link from "next/link";
+import Hls from "hls.js";
 
 const navLinks = [
   { id: "01", label: "EV Chargers", icon: Zap, href: "/products" },
@@ -16,28 +17,55 @@ export default function HeroVideoSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [videoLoaded, setVideoLoaded] = useState(false);
 
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const hlsSrc = "/home/herobg/index.m3u8";
+
+    if (Hls.isSupported()) {
+      const hls = new Hls({
+        enableWorker: true,
+        lowLatencyMode: false,
+      });
+      hls.loadSource(hlsSrc);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        video.play().catch(() => {});
+      });
+      return () => {
+        hls.destroy();
+      };
+    } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+      // Safari native HLS support
+      video.src = hlsSrc;
+      video.addEventListener("loadedmetadata", () => {
+        video.play().catch(() => {});
+      });
+    }
+  }, []);
+
   return (
     <section className="relative h-screen w-full overflow-hidden bg-black">
-      {/* Background image fallback */}
+      {/* Poster / fallback image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url(/home/hero.webp)" }}
+        style={{ backgroundImage: "url(/home/t2.webp)" }}
       />
 
-      {/* Video background */}
+      {/* HLS Video background */}
       <video
         ref={videoRef}
         autoPlay
         loop
         muted
         playsInline
+        poster="/home/t2.webp"
         onLoadedData={() => setVideoLoaded(true)}
         className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
           videoLoaded ? "opacity-100" : "opacity-0"
         }`}
-      >
-        <source src="/home/hero-video.mp4" type="video/mp4" />
-      </video>
+      />
 
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/60" />

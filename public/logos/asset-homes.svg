@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 70">
+  <defs>
+    <style>
+      .ah-name { font-family: 'Georgia', 'Times New Roman', serif; font-weight: 700; font-size: 24px; fill: #1a3c5e; letter-spacing: 2px; }
+      .ah-tag { font-family: 'Arial', sans-serif; font-weight: 400; font-size: 9px; fill: #8b7355; letter-spacing: 4px; }
+    </style>
+  </defs>
+  <!-- House/building icon -->
+  <g transform="translate(30, 8)">
+    <polygon points="16,0 32,14 28,14 28,28 20,28 20,18 12,18 12,28 4,28 4,14 0,14" fill="#1a3c5e"/>
+    <rect x="14" y="6" width="4" height="4" fill="#c9a96e" rx="0.5"/>
+  </g>
+  <!-- Brand text -->
+  <text x="130" y="28" text-anchor="middle" class="ah-name">ASSET HOMES</text>
+  <!-- Tagline area -->
+  <text x="130" y="42" text-anchor="middle" class="ah-tag">BUILDING DREAMS</text>
+  <!-- Gold accent line -->
+  <line x1="60" y1="48" x2="200" y2="48" stroke="#c9a96e" stroke-width="1"/>
+</svg>

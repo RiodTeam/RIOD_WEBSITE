@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <defs>
+    <style>
+      .godrej-text { font-family: 'Georgia', 'Times New Roman', serif; font-weight: 700; font-size: 30px; fill: #5c2d91; letter-spacing: 3px; }
+    </style>
+  </defs>
+  <text x="100" y="35" text-anchor="middle" class="godrej-text">Godrej</text>
+  <line x1="38" y1="44" x2="162" y2="44" stroke="#5c2d91" stroke-width="1.5"/>
+</svg>

@@ -34,7 +34,8 @@ const Header = () => {
     pathname.startsWith("/individual-insight") ||
     pathname.startsWith("/insights/") ||
     pathname === "/faq" ||
-    pathname === "/legal-and-policy";
+    pathname === "/legal-and-policy" ||
+    pathname === "/partners";
 
   useEffect(() => {
     if (forceDarkHeader) return;
