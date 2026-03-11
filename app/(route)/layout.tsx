@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Inter, Cormorant_Garamond } from "next/font/google";
 import "../globals.css";
 import Header from "../components/header/header";
 import FooterSection from "../components/footer/FooterSection";
+import AutoLeadPopup from "../components/common/AutoLeadPopup";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -54,6 +55,7 @@ export default function FrontendLayout({
           <Header />
           {children}
           <FooterSection />
+          <AutoLeadPopup />
         </div>
       </body>
     </html>

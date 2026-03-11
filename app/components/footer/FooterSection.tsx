@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import MotionWrapper from "../common/MotionWrapper";
+import NewsletterSignup from "../common/NewsletterSignup";
 
 const productLinks = [
   { label: "AC Powerpod 3.4kW", href: "/products" },
@@ -30,6 +31,7 @@ const companyLinks = [
   { label: "Case Studies", href: "/case-studies" },
   { label: "Resources", href: "/resources" },
   { label: "Find Your Charger", href: "/ev-charger-selection-guide" },
+  { label: "Partners", href: "/partners" },
   { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
 ];
@@ -97,6 +99,8 @@ export default function FooterSection() {
                 </a>
               ))}
             </div>
+
+            <NewsletterSignup variant="inline" />
           </MotionWrapper>
 
           {/* Products */}
