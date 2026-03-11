@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
+import { ArrowUpRight, ArrowRight } from "lucide-react";
 import MotionWrapper from "../common/MotionWrapper";
 
 type Product = {
@@ -15,6 +16,7 @@ type Product = {
 type ProductGroup = {
   subHeading: string;
   products: Product[];
+  specUrl?: string;
 };
 
 interface ProductGridProps {
@@ -25,6 +27,7 @@ interface ProductGridProps {
   groups?: ProductGroup[];
   bg?: "white" | "gray";
   labelHighlight?: boolean;
+  specUrl?: string;
 }
 
 function ProductCard({ product, index }: { product: Product; index: number }) {
@@ -77,6 +80,7 @@ export default function ProductGrid({
   groups,
   bg = "white",
   labelHighlight = false,
+  specUrl,
 }: ProductGridProps) {
   const bgClass = bg === "gray" ? "bg-[#f6f6f6]" : "bg-white";
   const labelColor = labelHighlight ? "text-[#cdf80a]" : "text-[#717171]";
@@ -96,7 +100,18 @@ export default function ProductGrid({
               {label}
             </span>
           )}
-          <h2 className="section-heading text-black mb-3">{heading}</h2>
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-3">
+            <h2 className="section-heading text-black">{heading}</h2>
+            {specUrl && (
+              <Link
+                href={specUrl}
+                className="inline-flex items-center gap-2 border border-[#1b1b1b] text-[#1b1b1b] px-5 py-2.5 rounded-full font-inter font-medium text-sm hover:bg-[#1b1b1b] hover:text-white transition-colors whitespace-nowrap"
+              >
+                View Specifications
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            )}
+          </div>
           {subtext && (
             <p className="para-text text-[#626262] max-w-[560px] mb-12 md:mb-16">
               {subtext}
@@ -123,9 +138,20 @@ export default function ProductGrid({
           groups.map((group, gIndex) => (
             <div key={group.subHeading} className={gIndex > 0 ? "mt-16 md:mt-20" : ""}>
               <MotionWrapper>
-                <h3 className="text-xl md:text-2xl font-medium text-black font-inter mb-8 md:mb-10">
-                  {group.subHeading}
-                </h3>
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-8 md:mb-10">
+                  <h3 className="text-xl md:text-2xl font-medium text-black font-inter">
+                    {group.subHeading}
+                  </h3>
+                  {group.specUrl && (
+                    <Link
+                      href={group.specUrl}
+                      className="inline-flex items-center gap-2 border border-[#1b1b1b] text-[#1b1b1b] px-4 py-2 rounded-full font-inter font-medium text-xs hover:bg-[#1b1b1b] hover:text-white transition-colors whitespace-nowrap"
+                    >
+                      View Specifications
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  )}
+                </div>
               </MotionWrapper>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 {group.products.map((product, index) => (

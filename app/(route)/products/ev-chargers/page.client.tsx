@@ -125,17 +125,18 @@ export default function EVChargersClient() {
         <HeroSection
           backgroundImage="/products/powerpod-city.png"
           title="Charge While You Park"
-          description="From home pods to highway fast chargers, RIOD's full range of AC and DC charging solutions, built for India."
+          description="From home pods to highway fast chargers, RIOD's full range of AC and DC charging solutions, built in India for the world."
           overlayOpacity={0.55}
         />
 
         {/* Section 1: Private and Community Charging */}
         <ProductGrid
           label="Private and Community Charging"
-          heading="RIOD AC Powerpod"
+          heading="Private & Community Solutions"
           subtext="Designed for home garages, villas, private parking, companies, and apartment communities. Smart scheduling, energy monitoring, and seamless overnight charging."
           products={privateChargers}
           labelHighlight
+          specUrl="/products/ev-chargers/powerpod"
         />
 
         {/* Section 2: Community Charging Suite */}
@@ -149,8 +150,8 @@ export default function EVChargersClient() {
           bg="gray"
           labelHighlight
           groups={[
-            { subHeading: "RIOD AC Powerpod Go", products: edgeChargers },
-            { subHeading: "RIOD AC PowerPod City (Dual Gun)", products: cityChargers },
+            { subHeading: "RIOD AC Powerpod Go", products: edgeChargers, specUrl: "/products/ev-chargers/powerpod-go" },
+            { subHeading: "RIOD AC PowerPod City (Dual Gun)", products: cityChargers, specUrl: "/products/ev-chargers/powerpod-city" },
             { subHeading: "RIOD DC Fast", products: dcChargers },
           ]}
         />

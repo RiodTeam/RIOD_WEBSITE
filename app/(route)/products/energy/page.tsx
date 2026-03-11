@@ -4,7 +4,7 @@ import EnergyClient from "./page.client";
 export const metadata: Metadata = {
   title: "Energy Solutions | RIOD",
   description:
-    "RIOD energy solutions — smart energy management, solar integration, and grid-connected systems for sustainable EV charging infrastructure.",
+    "RIOD Power Master — dynamic load balancing, solar management, HVAC control, and battery storage integration for buildings, factories, and commercial sites.",
 };
 
 export default function EnergyPage() {
