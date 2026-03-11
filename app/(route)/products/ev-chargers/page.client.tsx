@@ -70,7 +70,7 @@ const cityChargers = [
     power: "3.4 kW",
     description:
       "Dual-gun public charger with RFID access, 4G connectivity, and OCPP cloud management for apartments and offices.",
-    image: "/products/powerpod.png",
+    image: "/products/powerpod-city.png",
     shopUrl: "https://shop.riod.in",
   },
   {
@@ -78,7 +78,7 @@ const cityChargers = [
     power: "7.4 kW",
     description:
       "Mid-range dual-gun charger with payment terminal support, user authentication, and remote monitoring.",
-    image: "/products/powerpod.png",
+    image: "/products/powerpod-city.png",
     shopUrl: "https://shop.riod.in",
   },
   {
@@ -86,7 +86,7 @@ const cityChargers = [
     power: "22 kW",
     description:
       "High-power dual-gun charger for commercial spaces. Supports multiple payment methods and load balancing.",
-    image: "/products/powerpod.png",
+    image: "/products/powerpod-city.png",
     shopUrl: "https://shop.riod.in",
   },
 ];
