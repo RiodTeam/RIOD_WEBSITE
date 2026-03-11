@@ -45,10 +45,6 @@ const commonSpecs: { label: string; value: string }[] = [
   { label: "Operating Temperature", value: "-30\u00B0C to 55\u00B0C" },
   { label: "Storage Temperature", value: "-40\u00B0C to 70\u00B0C" },
   { label: "Humidity", value: "Up to 95%, non-condensing" },
-  {
-    label: "Compliance",
-    value: "IEC 62196 (Type 2 models)",
-  },
 ];
 
 const vehiclesSupported = [
@@ -72,8 +68,8 @@ const vehiclesSupported = [
 export const productFamilies: ProductFamily[] = [
   {
     slug: "powerpod",
-    name: "RIOD AC Powerpod",
-    tagline: "Engineered for where you park. Built for how you charge.",
+    name: "RIOD AC Powerpod Specifications",
+    tagline: "Engineered to charge where you park.",
     heroImage: "/products/powerpod.png",
     intro:
       "Every PowerPod is designed around one simple idea: your vehicle charges while it is parked, not while you stand around waiting. Whether it is a home garage, a villa, or a private parking bay, the charging infrastructure should fit the location, not the other way around. RIOD builds every PowerPod from the ground up. The hardware, the firmware, the connectivity stack, the energy metering, and the cloud platform. One engineering team. No outsourced modules. No white-labelled boards. This is what it means when we say Engineered, Not Assembled.",

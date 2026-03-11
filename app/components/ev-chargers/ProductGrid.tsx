@@ -33,20 +33,19 @@ interface ProductGridProps {
 function ProductCard({ product, index }: { product: Product; index: number }) {
   return (
     <MotionWrapper key={`${product.name}-${product.power}`} delay={index * 0.1}>
-      <div className="group flex flex-col h-full">
-        {/* Image with hover overlay */}
-        <div className="relative w-full aspect-square bg-[#f0f0f0] rounded-xl overflow-hidden">
+      <div className="group flex flex-col h-full border-2 border-transparent hover:border-[#cdf80a] rounded-xl transition-colors duration-300">
+        {/* Image */}
+        <div className="relative w-full aspect-square bg-[#f0f0f0] rounded-t-xl overflow-hidden">
           <Image
             src={product.image}
             alt={product.name}
             fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            className="object-cover"
           />
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
         </div>
 
         {/* Product info */}
-        <div className="mt-5 flex flex-col flex-1">
+        <div className="p-5 flex flex-col flex-1">
           <h3 className="text-lg md:text-xl font-medium text-black font-inter">
             {product.name}
           </h3>

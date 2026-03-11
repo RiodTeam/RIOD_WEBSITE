@@ -137,14 +137,14 @@ export default function VehiclesSupported(_props: VehiclesSupportedProps) {
                     key={brand.name}
                     delay={catIndex * 0.05 + brandIndex * 0.03}
                   >
-                    <div className="group flex flex-col items-center justify-center p-6 md:p-8 rounded-xl border border-[#e8e8e8] hover:border-[#cdf80a] transition-colors bg-white">
-                      <div className="w-full h-[120px] md:h-[160px] relative flex items-center justify-center mb-3">
+                    <div className="group flex flex-col items-center justify-center p-4 md:p-6 rounded-xl border border-[#e8e8e8] hover:border-[#cdf80a] transition-colors bg-white">
+                      <div className="w-full h-[60px] md:h-[80px] relative flex items-center justify-center mb-3">
                         <Image
                           src={brand.logo}
                           alt={brand.name}
-                          width={320}
-                          height={160}
-                          className="object-contain max-h-[120px] md:max-h-[160px] grayscale group-hover:grayscale-0 transition-all duration-300"
+                          width={160}
+                          height={80}
+                          className="object-contain max-h-[60px] md:max-h-[80px] grayscale group-hover:grayscale-0 transition-all duration-300"
                         />
                       </div>
                       <p className="text-sm md:text-base text-[#626262] font-inter text-center font-medium">
