@@ -1,0 +1,40 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          command_timeout: 30m
+          script: |
+            cd ~/RIOD_WEBSITE
+
+            # Pull latest code
+            git pull origin main
+
+            # Install dependencies
+            npm install
+
+            # Generate Payload CMS files
+            npx payload generate:types
+            npx payload generate:importmap
+
+            # Build Next.js app
+            npm run build
+
+            # Restart PM2 process
+            pm2 restart riod || pm2 start npm --name "riod" --cwd /home/ubuntu/RIOD_WEBSITE -- start
+            pm2 save
+
+            echo "Deployment complete!"
