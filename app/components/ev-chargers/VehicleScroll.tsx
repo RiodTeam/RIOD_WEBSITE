@@ -52,42 +52,43 @@ export default function VehicleScroll() {
     : [];
 
   return (
-    <section className="bg-white py-16 md:py-[6.8rem]">
-      <div className="w-[90%] max-w-[1400px] mx-auto">
+    <section className="bg-white py-16 md:py-[6.8rem] overflow-hidden">
+      <div className="w-[90%] max-w-[1400px] mx-auto mb-10">
         <MotionWrapper>
           <span className="text-xs font-medium tracking-[0.2em] uppercase text-[#717171] block mb-3">
             Compatibility
           </span>
           <h2 className="section-heading text-black mb-4">Supported Vehicles</h2>
-          <p className="para-text text-[#626262] max-w-2xl mb-12 md:mb-16">
+          <p className="para-text text-[#626262] max-w-2xl">
             Works with every plug-in electric vehicle. Compatible with Type 2
             (IEC 62196) connector and standard 3-pin plug for two and three wheelers.
           </p>
         </MotionWrapper>
+      </div>
 
-        {/* Logo Grid - 3x size */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mb-16 md:mb-20">
-          {vehicles.map((vehicle, i) => (
-            <MotionWrapper key={vehicle.name} delay={i * 0.03}>
-              <div className="group flex flex-col items-center justify-center p-6 md:p-8 rounded-xl border border-[#e8e8e8] hover:border-[#cdf80a] transition-colors bg-white">
-                <div className="w-full h-[100px] md:h-[140px] relative flex items-center justify-center mb-3">
-                  <Image
-                    src={vehicle.logo}
-                    alt={vehicle.name}
-                    width={240}
-                    height={140}
-                    className="object-contain max-h-[100px] md:max-h-[140px] grayscale group-hover:grayscale-0 transition-all duration-300"
-                  />
-                </div>
-                <p className="text-sm md:text-base text-[#626262] font-inter text-center font-medium">
-                  {vehicle.name}
-                </p>
+      {/* Infinite scroll logos - no text */}
+      <div className="relative w-full overflow-hidden mb-16 md:mb-20">
+        <div className="flex animate-logo-scroll w-max">
+          {[...vehicles, ...vehicles].map((vehicle, i) => (
+            <div
+              key={`${vehicle.name}-${i}`}
+              className="flex items-center justify-center mx-6 md:mx-10 shrink-0"
+            >
+              <div className="relative w-[50px] h-[35px] md:w-[70px] md:h-[45px] grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+                <Image
+                  src={vehicle.logo}
+                  alt={vehicle.name}
+                  fill
+                  className="object-contain"
+                />
               </div>
-            </MotionWrapper>
+            </div>
           ))}
         </div>
+      </div>
 
-        {/* Vehicle Compatibility Checker */}
+      {/* Vehicle Compatibility Checker */}
+      <div className="w-[90%] max-w-[1400px] mx-auto">
         <MotionWrapper delay={0.2}>
           <div className="bg-[#f6f6f6] rounded-2xl p-8 md:p-12">
             <h3 className="text-xl md:text-2xl font-medium text-[#1b1b1b] font-inter mb-2">
