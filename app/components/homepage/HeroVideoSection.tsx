@@ -85,9 +85,9 @@ export default function HeroVideoSection() {
                 Energy Technology
               </h1>
               <p className="hero-desc text-white/80 mt-6 max-w-[620px]">
-                Complete charging infrastructure, from hardware design and
-                embedded firmware to cloud platforms and energy management
-                systems.
+                Every layer of charging infrastructure, built in-house: from
+                the hardware and firmware that powers the device, to the cloud
+                platforms and energy systems that keep it all running.
               </p>
             </motion.div>
           </div>

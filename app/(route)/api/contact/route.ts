@@ -1,11 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getPayload } from 'payload'
 import config from '@payload-config'
+import { sendDiscordNotification } from '@/app/lib/discord'
 
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json()
-    const { name, email, phone, company, type, message } = body
+    const { name, email, phone, company, type, message, formSource } = body
 
     if (!name || !email || !message) {
       return NextResponse.json(
@@ -27,6 +28,16 @@ export async function POST(req: NextRequest) {
         message,
         status: 'new',
       },
+    })
+
+    const title = formSource === 'lead-popup'
+      ? 'Lead Popup Enquiry'
+      : 'Contact Form Enquiry'
+
+    await sendDiscordNotification({
+      formTitle: title,
+      page: formSource === 'lead-popup' ? 'Lead Popup (Auto)' : '/contact',
+      data: { name, email, phone, company, message },
     })
 
     return NextResponse.json({ success: true })

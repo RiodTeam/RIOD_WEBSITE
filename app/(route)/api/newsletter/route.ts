@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getPayload } from 'payload'
 import config from '@payload-config'
+import { sendDiscordNotification } from '@/app/lib/discord'
 
 export async function POST(req: NextRequest) {
   try {
@@ -33,6 +34,12 @@ export async function POST(req: NextRequest) {
         email,
         status: 'active',
       },
+    })
+
+    await sendDiscordNotification({
+      formTitle: 'Newsletter Subscription',
+      page: 'Footer / Newsletter',
+      data: { email },
     })
 
     return NextResponse.json({ success: true })

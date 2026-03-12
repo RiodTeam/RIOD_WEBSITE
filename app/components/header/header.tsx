@@ -38,7 +38,8 @@ const Header = () => {
     pathname.startsWith("/products/ev-chargers/powerpod-city") ||
     pathname === "/faq" ||
     pathname === "/legal-and-policy" ||
-    pathname === "/partners";
+    pathname === "/partners" ||
+    pathname === "/future-of-ev-energy";
 
   useEffect(() => {
     if (forceDarkHeader) return;
@@ -193,6 +194,14 @@ const Header = () => {
                 className={`para-text ${textColor} font-[350]! font-inter`}
               >
                 Technology
+              </Link>
+
+              {/* Future of EV Energy */}
+              <Link
+                href="/future-of-ev-energy"
+                className={`para-text ${textColor} font-[350]! font-inter`}
+              >
+                Future of EV Energy
               </Link>
 
               {/* Insights */}
@@ -406,6 +415,15 @@ const Header = () => {
               className="text-white text-lg font-medium py-6 pl-7 border-b border-white/10"
             >
               Technology
+            </Link>
+
+            {/* Future of EV Energy */}
+            <Link
+              href="/future-of-ev-energy"
+              onClick={toggleMenu}
+              className="text-white text-lg font-medium py-6 pl-7 border-b border-white/10"
+            >
+              Future of EV Energy
             </Link>
 
             {/* Insights */}

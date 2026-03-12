@@ -105,6 +105,7 @@ const LeadFormPopup: React.FC<LeadFormPopupProps> = ({ isOpen, onClose }) => {
           email: formData.email.trim(),
           phone: formData.phone.trim(),
           message: formData.message.trim() || "Lead form submission",
+          formSource: "lead-popup",
         }),
       });
 

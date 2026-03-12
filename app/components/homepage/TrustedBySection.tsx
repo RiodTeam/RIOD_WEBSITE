@@ -6,10 +6,10 @@ import Image from "next/image";
 const logos = [
   { name: "Tata", src: "/logos/tata.svg" },
   { name: "Siemens", src: "/logos/siemens.svg" },
-  { name: "Godrej", src: "/logos/godrej.svg" },
-  { name: "JSW", src: "/logos/jsw.svg" },
-  { name: "Asset Homes", src: "/logos/asset-homes.svg" },
-  { name: "Sugam Homes", src: "/logos/sugam-homes.svg" },
+  { name: "Godrej", src: "/logos/godrej.png" },
+  { name: "JSW", src: "/logos/jsw.png" },
+  { name: "Asset Homes", src: "/logos/asset-homes.webp" },
+  { name: "Sugam Homes", src: "/logos/sugam-homes.webp" },
   { name: "GOEC", src: "/logos/goec.svg" },
 ];
 

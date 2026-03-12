@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getPayload } from 'payload'
 import config from '@payload-config'
+import { sendDiscordNotification } from '@/app/lib/discord'
 
 export async function POST(req: NextRequest) {
   try {
@@ -24,6 +25,12 @@ export async function POST(req: NextRequest) {
         company: company || undefined,
         resource,
       },
+    })
+
+    await sendDiscordNotification({
+      formTitle: 'Tech Download Request',
+      page: '/technology',
+      data: { name, email, company, resource },
     })
 
     return NextResponse.json({ success: true })
