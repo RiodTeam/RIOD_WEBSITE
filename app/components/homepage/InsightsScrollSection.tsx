@@ -3,57 +3,9 @@
 import MotionWrapper from "../common/MotionWrapper";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { insightsData } from "../data/insightsData";
 
-const insights = [
-  {
-    category: "Technology",
-    title: "The Rise of V2G Technology in India",
-    date: "Feb 2026",
-    href: "/insights",
-  },
-  {
-    category: "Standards",
-    title: "OCPP 2.0.1: What Operators Need to Know",
-    date: "Jan 2026",
-    href: "/insights",
-  },
-  {
-    category: "Software",
-    title: "Building Scalable CPMS Platforms",
-    date: "Jan 2026",
-    href: "/insights",
-  },
-  {
-    category: "Engineering",
-    title: "DC Fast Charging: Hardware Design Deep Dive",
-    date: "Dec 2025",
-    href: "/insights",
-  },
-  {
-    category: "Solutions",
-    title: "Energy Management for Multi-Point Charging",
-    date: "Dec 2025",
-    href: "/insights",
-  },
-  {
-    category: "Standards",
-    title: "ISO 15118 Plug & Charge Implementation",
-    date: "Nov 2025",
-    href: "/insights",
-  },
-  {
-    category: "Industry",
-    title: "Fleet Electrification: Complete Guide",
-    date: "Nov 2025",
-    href: "/insights",
-  },
-  {
-    category: "Technology",
-    title: "Smart Grid Integration for EV Charging",
-    date: "Oct 2025",
-    href: "/insights",
-  },
-];
+const insights = insightsData.slice(0, 8);
 
 export default function InsightsScrollSection() {
   const duplicatedInsights = [...insights, ...insights];
@@ -85,8 +37,8 @@ export default function InsightsScrollSection() {
       <div className="animate-insights-scroll flex gap-5">
         {duplicatedInsights.map((insight, index) => (
           <Link
-            key={`${insight.title}-${index}`}
-            href={insight.href}
+            key={`${insight.slug}-${index}`}
+            href={`/insights/${insight.slug}`}
             className="flex-shrink-0 w-[320px] md:w-[380px] group"
           >
             <div className="bg-[#141414] border border-[#222] rounded-xl p-6 md:p-8 h-full flex flex-col hover:border-[#cdf80a]/30 transition-colors">
@@ -95,7 +47,7 @@ export default function InsightsScrollSection() {
                   className="text-xs font-semibold px-3 py-1 rounded-full text-black"
                   style={{ backgroundColor: "#cdf80a" }}
                 >
-                  {insight.category}
+                  {insight.tag}
                 </span>
                 <span className="text-xs text-[#717171]">{insight.date}</span>
               </div>

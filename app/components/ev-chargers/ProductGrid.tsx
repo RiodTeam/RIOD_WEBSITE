@@ -35,12 +35,12 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
     <MotionWrapper key={`${product.name}-${product.power}`} delay={index * 0.1}>
       <div className="group flex flex-col h-full border-2 border-transparent hover:border-[#cdf80a] rounded-xl transition-colors duration-300">
         {/* Image */}
-        <div className="relative w-full aspect-square bg-[#f0f0f0] rounded-t-xl overflow-hidden">
+        <div className="relative w-full aspect-square bg-[#f6f6f6] rounded-t-xl overflow-hidden">
           <Image
             src={product.image}
             alt={product.name}
             fill
-            className="object-cover"
+            className="object-contain p-4"
           />
         </div>
 
@@ -104,7 +104,7 @@ export default function ProductGrid({
             {specUrl && (
               <Link
                 href={specUrl}
-                className="inline-flex items-center gap-2 border border-[#1b1b1b] text-[#1b1b1b] px-5 py-2.5 rounded-full font-inter font-medium text-sm hover:bg-[#1b1b1b] hover:text-white transition-colors whitespace-nowrap"
+                className="inline-flex items-center gap-2 bg-[#cdf80a] text-[#1b1b1b] px-5 py-2.5 rounded-full font-inter font-medium text-sm hover:bg-[#b8e000] transition-colors whitespace-nowrap"
               >
                 View Specifications
                 <ArrowRight className="w-4 h-4" />
@@ -144,7 +144,7 @@ export default function ProductGrid({
                   {group.specUrl && (
                     <Link
                       href={group.specUrl}
-                      className="inline-flex items-center gap-2 border border-[#1b1b1b] text-[#1b1b1b] px-4 py-2 rounded-full font-inter font-medium text-xs hover:bg-[#1b1b1b] hover:text-white transition-colors whitespace-nowrap"
+                      className="inline-flex items-center gap-2 bg-[#cdf80a] text-[#1b1b1b] px-4 py-2 rounded-full font-inter font-medium text-xs hover:bg-[#b8e000] transition-colors whitespace-nowrap"
                     >
                       View Specifications
                       <ArrowRight className="w-3.5 h-3.5" />

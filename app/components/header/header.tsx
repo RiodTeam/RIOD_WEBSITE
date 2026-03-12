@@ -33,6 +33,9 @@ const Header = () => {
   const forceDarkHeader =
     pathname.startsWith("/individual-insight") ||
     pathname.startsWith("/insights/") ||
+    pathname.startsWith("/products/ev-chargers/powerpod") ||
+    pathname.startsWith("/products/ev-chargers/powerpod-go") ||
+    pathname.startsWith("/products/ev-chargers/powerpod-city") ||
     pathname === "/faq" ||
     pathname === "/legal-and-policy" ||
     pathname === "/partners";
@@ -192,12 +195,12 @@ const Header = () => {
                 Technology
               </Link>
 
-              {/* Innovations */}
+              {/* Insights */}
               <Link
                 href="/insights"
                 className={`para-text ${textColor} font-[350]! font-inter`}
               >
-                Innovations
+                Insights
               </Link>
 
               {/* Case Studies */}
@@ -405,13 +408,13 @@ const Header = () => {
               Technology
             </Link>
 
-            {/* Innovations */}
+            {/* Insights */}
             <Link
               href="/insights"
               onClick={toggleMenu}
               className="text-white text-lg font-medium py-6 pl-7 border-b border-white/10"
             >
-              Innovations
+              Insights
             </Link>
 
             {/* Case Studies */}

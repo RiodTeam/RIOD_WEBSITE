@@ -89,7 +89,7 @@ export default function ProductDetailCards({
                   </div>
 
                   <div className="flex flex-wrap gap-3 lg:flex-col lg:items-end lg:min-w-[180px]">
-                    <div className="bg-[#f6f6f6] rounded-lg px-4 py-2.5">
+                    <div className="bg-[#cdf80a]/15 border border-[#cdf80a]/30 rounded-lg px-4 py-2.5">
                       <p className="text-xs text-[#1b1b1b]/50 font-inter">
                         Connector
                       </p>
@@ -97,7 +97,7 @@ export default function ProductDetailCards({
                         {v.connector}
                       </p>
                     </div>
-                    <div className="bg-[#f6f6f6] rounded-lg px-4 py-2.5">
+                    <div className="bg-[#cdf80a]/15 border border-[#cdf80a]/30 rounded-lg px-4 py-2.5">
                       <p className="text-xs text-[#1b1b1b]/50 font-inter">
                         Current
                       </p>
@@ -105,7 +105,7 @@ export default function ProductDetailCards({
                         {v.current}
                       </p>
                     </div>
-                    <div className="bg-[#f6f6f6] rounded-lg px-4 py-2.5">
+                    <div className="bg-[#cdf80a]/15 border border-[#cdf80a]/30 rounded-lg px-4 py-2.5">
                       <p className="text-xs text-[#1b1b1b]/50 font-inter">
                         Authentication
                       </p>
