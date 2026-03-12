@@ -123,7 +123,7 @@ export default function EVChargersClient() {
     <ReactLenis root>
       <main>
         <HeroSection
-          backgroundImage="/products/powerpod-city.png"
+          backgroundImage="/heroes/ev-chargers-hero.webp"
           title="Charge While You Park"
           description="From home pods to highway fast chargers, RIOD's full range of AC and DC charging solutions, built in India for the world."
           overlayOpacity={0.55}

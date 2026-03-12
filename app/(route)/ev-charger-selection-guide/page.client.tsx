@@ -9,7 +9,7 @@ export default function SelectionGuideClient() {
     <ReactLenis root>
       <main>
         <HeroSection
-          backgroundImage="/products/powerpod-city.png"
+          backgroundImage="/heroes/selection-guide-hero.webp"
           title="Find the Right EV Charger"
           description="Not sure which charger fits your needs? Tell us about your location, expected usage, and budget. We will recommend the best RIOD charger for you."
           overlayOpacity={0.55}

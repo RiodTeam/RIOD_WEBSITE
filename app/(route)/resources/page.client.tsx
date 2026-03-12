@@ -9,7 +9,7 @@ export default function ResourcesClient() {
     <ReactLenis root>
       <main>
         <HeroSection
-          backgroundImage="/products/powerpod-city.png"
+          backgroundImage="/heroes/resources-hero.webp"
           title="Resources"
           description="Product datasheets, installation guides, brochures, and comparison charts for all RIOD EV chargers."
           overlayOpacity={0.55}
