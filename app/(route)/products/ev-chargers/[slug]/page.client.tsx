@@ -2,7 +2,6 @@
 
 import { ReactLenis } from "lenis/react";
 import type { ProductFamily } from "@/app/data/powerpodData";
-import HeroSection from "@/app/components/common/Hero";
 import WhySection from "@/app/components/product-detail/WhySection";
 import FeaturesGrid from "@/app/components/product-detail/FeaturesGrid";
 import UseCasesSection from "@/app/components/product-detail/UseCasesSection";
@@ -20,14 +19,12 @@ export default function ProductDetailClient({ product }: Props) {
   return (
     <ReactLenis root>
       <main>
-        <HeroSection
-          backgroundImage={product.heroImage}
-          title={product.name}
-          description={product.tagline}
-          overlayOpacity={0.55}
+        <WhySection
+          name={product.name}
+          tagline={product.tagline}
+          intro={product.intro}
+          heroImage={product.heroImage}
         />
-
-        <WhySection name={product.name} intro={product.intro} />
 
         <VariantsTable variants={product.variants} />
 
