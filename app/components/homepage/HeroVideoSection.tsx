@@ -109,7 +109,9 @@ export default function HeroVideoSection() {
               >
                 <Link
                   href={link.href}
-                  className="group flex items-start gap-4 md:px-6 first:md:pl-0 py-3 md:py-0 transition-opacity hover:opacity-100 opacity-80"
+                  className={`group flex items-start gap-4 py-3 md:py-0 transition-opacity hover:opacity-100 opacity-80 ${
+                    index === 0 ? "md:pr-6" : "md:px-6"
+                  }`}
                 >
                   <link.icon
                     className="w-5 h-5 mt-0.5 shrink-0"

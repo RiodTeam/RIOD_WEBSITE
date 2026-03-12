@@ -12,9 +12,6 @@ const productLinks = [
   { label: "AC Powerpod Go 3.4kW", href: "/products" },
   { label: "AC Powerpod Go 7.4kW", href: "/products" },
   { label: "AC Powerpod Go 22kW", href: "/products" },
-  { label: "DC Fast 30kW", href: "/products" },
-  { label: "DC Fast 60kW", href: "/products" },
-  { label: "DC Fast 120kW", href: "/products" },
 ];
 
 const solutionLinks = [
@@ -82,8 +79,8 @@ export default function FooterSection() {
               className="object-contain mb-6"
             />
             <p className="para-text2 text-[#7c7c7c] max-w-[320px] leading-relaxed">
-              Engineering the complete EV charging ecosystem — from silicon to
-              cloud. A division of RIOD Logic Pvt Ltd.
+              Engineering the future of EV Charging & Energy, from hardware to
+              cloud applications.
             </p>
             <div className="flex items-center gap-4 mt-6">
               {socialLinks.map((social) => (

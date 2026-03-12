@@ -17,7 +17,7 @@ export default function BlogGrid() {
       : insightsData.filter((b) => b.tag === activeCategory);
 
   return (
-    <section className="w-full bg-white pt-30 pb-32 md:pb-[12.3rem]">
+    <section className="w-full bg-white pt-36 md:pt-44 pb-32 md:pb-[12.3rem]">
       <div className="w-[90%] max-w-[1400px] mx-auto">
 
         {/* ---------------- CATEGORY FILTERS ---------------- */}

@@ -13,7 +13,7 @@ export default function LocationSection() {
         {/* Map */}
         <div className="w-full overflow-hidden mt-20 lg:mt-32">
           <iframe
-            src="https://www.google.com/maps?q=Thrissur,Kerala&output=embed"
+            src="https://www.google.com/maps?q=RIOD+LOGIC+PVT+LTD,+Kallely+Tower,+Vengoor,+Angamaly,+Kerala+683572&output=embed"
             className="w-full h-[400px] lg:h-[560px] border-0"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

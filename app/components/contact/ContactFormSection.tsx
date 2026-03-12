@@ -55,7 +55,7 @@ export default function ContactFormSection() {
     }
   };
   return (
-    <section className="w-full bg-[#1C1C1C] text-white pt-26 pb-[6.2rem]">
+    <section className="w-full bg-[#1C1C1C] text-white pt-36 md:pt-48 pb-[6.2rem]">
       <div className="w-[90%] max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
         {/* LEFT FORM */}
         <div className="mt-6">
