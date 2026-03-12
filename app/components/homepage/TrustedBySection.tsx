@@ -11,6 +11,8 @@ const logos = [
   { name: "Asset Homes", src: "/logos/asset-homes.webp" },
   { name: "Sugam Homes", src: "/logos/sugam-homes.webp" },
   { name: "GOEC", src: "/logos/goec.svg" },
+  { name: "Virgin Power", src: "/logos/virgin-power.png" },
+  { name: "Electric Pe", src: "/logos/electric-pe.png" },
 ];
 
 export default function TrustedBySection() {

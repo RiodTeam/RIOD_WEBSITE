@@ -28,7 +28,6 @@ export default function PageClient() {
         <PlatformSection
           title="Why Hotels Need EV Charging"
           titleWidth="lg:w-[50%] xl:w-[65%]"
-          titleMarginTop="mt-4 md:mt-4"
           description="As electric vehicle adoption accelerates, hotels that offer reliable EV charging instantly gain a competitive edge. Installing EV chargers not only enhances guest experience but also positions your property as a future-ready, sustainability-driven brand. Here’s why EV charging has become essential for the hospitality industry: "
         />
 

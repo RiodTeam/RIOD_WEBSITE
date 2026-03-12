@@ -28,6 +28,46 @@ export const idealProductsDataInstitute = {
   image: "/institution/ideal.webp",
 };
 
+export const idealProductsDataResorts = {
+  title: "Ideal Products for Resorts",
+  intro:
+    "RIOD provides premium EV charging solutions tailored for resort environments—designed for extended stays, scenic settings, and luxury guest experiences.",
+  subTitle: "Level 2 AC Chargers - Perfect for Extended Stays",
+  description:
+    "Level 2 AC chargers are ideal for resorts where guests park for extended durations. RIOD's chargers integrate seamlessly into resort parking areas with minimal visual impact, providing reliable overnight and multi-day charging for all EV types.",
+  image: "/hotel/ideal.webp",
+};
+
+export const idealProductsDataMalls = {
+  title: "Ideal Products for Malls & Theatres",
+  intro:
+    "RIOD delivers high-throughput EV charging solutions designed for busy retail and entertainment venues—increasing footfall and revenue.",
+  subTitle: "Fast Charging for High-Turnover Venues",
+  description:
+    "Malls and theatres benefit from a mix of Level 2 AC chargers for extended shopping visits and DC fast chargers for quick top-ups during movie screenings. RIOD's scalable solutions adapt to any parking layout and visitor volume.",
+  image: "/office/ideal.webp",
+};
+
+export const idealProductsDataHospitals = {
+  title: "Ideal Products for Hospitals",
+  intro:
+    "RIOD provides safe, reliable EV charging infrastructure for hospitals—supporting staff, patients, visitors, and fleet vehicles.",
+  subTitle: "Reliable Charging for Healthcare Environments",
+  description:
+    "Hospitals require charging solutions that operate safely alongside critical medical systems. RIOD's chargers feature intelligent power management, robust safety certifications, and flexible deployment options suitable for staff parking, visitor areas, and emergency fleet zones.",
+  image: "/institution/ideal.webp",
+};
+
+export const idealProductsDataParking = {
+  title: "Ideal Products for Parking Complexes",
+  intro:
+    "RIOD's scalable EV charging solutions are built for large parking facilities—maximizing utilization, revenue, and operational efficiency.",
+  subTitle: "Scalable Solutions for Large Facilities",
+  description:
+    "Parking complexes need high-density charging deployments with smart load management. RIOD's chargers support 50+ simultaneous sessions from existing power infrastructure, integrated payment systems, and cloud-based monitoring for seamless facility management.",
+  image: "/home2/ideal.webp",
+};
+
 export const idealProductsDataHome = {
   title: "Ideal Products for Home",
   intro:

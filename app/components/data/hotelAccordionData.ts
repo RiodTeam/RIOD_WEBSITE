@@ -91,6 +91,118 @@ export const InstitutionAccordionData = [
   },
 ];
 
+export const resortsAccordionData = [
+  {
+    title: "Custom Installation for Resort Properties",
+    desc: `We design and install EV charging solutions that blend seamlessly with resort aesthetics and landscaping. Our team works around guest schedules to ensure zero disruption to the premium resort experience.`,
+    image: "/hotel/frame.webp",
+  },
+  {
+    title: "Flexible Ownership & Revenue Models",
+    desc: `Choose between resort-owned chargers, revenue-sharing arrangements, or bundled guest packages. Each model is designed to maximize ROI while minimizing upfront investment.`,
+    image: "/hotel/frame.webp",
+  },
+  {
+    title: "Smart Load Management for Resort Infrastructure",
+    desc: `Our intelligent power management ensures EV charging operates efficiently alongside resort amenities—pools, spas, kitchens—without overloading the electrical system.`,
+    image: "/hotel/frame.webp",
+  },
+  {
+    title: "Premium Guest-Facing Charging Experience",
+    desc: `Sleek, branded chargers with intuitive interfaces provide a luxury charging experience that matches the resort's premium positioning and guest expectations.`,
+    image: "/hotel/frame.webp",
+  },
+  {
+    title: "Integration With Resort Management Systems",
+    desc: `RIOD chargers integrate with property management software for room-based billing, guest app access, loyalty programs, and automated usage reporting.`,
+    image: "/hotel/frame.webp",
+  },
+];
+
+export const mallsAccordionData = [
+  {
+    title: "High-Traffic Installation Expertise",
+    desc: `We deploy chargers in high-footfall areas with minimal disruption to retail operations. Our installation process is designed for complex parking structures and multi-tenant venues.`,
+    image: "/hotel/frame.webp",
+  },
+  {
+    title: "Revenue-Generating Charging Stations",
+    desc: `Malls and theatres can monetize EV charging through per-session fees, advertising-supported free charging, or partnership models with EV mobility networks.`,
+    image: "/hotel/frame.webp",
+  },
+  {
+    title: "Scalable Multi-Level Deployment",
+    desc: `Our intelligent load balancing allows dozens of chargers across multiple floors and zones, optimizing power distribution without costly electrical infrastructure upgrades.`,
+    image: "/hotel/frame.webp",
+  },
+  {
+    title: "Wayfinding & Digital Signage Integration",
+    desc: `RIOD chargers can integrate with mall navigation apps and digital signage, guiding drivers to available charging spots and promoting nearby stores and offers.`,
+    image: "/hotel/frame.webp",
+  },
+  {
+    title: "Real-Time Analytics & Management Dashboard",
+    desc: `Track charger usage, revenue, peak hours, and maintenance needs through a centralized cloud dashboard—enabling data-driven facility management.`,
+    image: "/hotel/frame.webp",
+  },
+];
+
+export const hospitalsAccordionData = [
+  {
+    title: "Non-Disruptive Hospital Installation",
+    desc: `We install EV charging infrastructure with zero impact on hospital operations, emergency access routes, and patient care areas. Safety and compliance are our top priorities.`,
+    image: "/hotel/frame.webp",
+  },
+  {
+    title: "Staff & Visitor Charging Solutions",
+    desc: `Dedicated charging zones for healthcare workers, outpatients, and visitors ensure convenient access based on stay duration and user type.`,
+    image: "/hotel/frame.webp",
+  },
+  {
+    title: "Critical Power Management",
+    desc: `Our smart load balancing ensures EV charging never interferes with critical hospital power systems—operating safely alongside life-saving medical equipment.`,
+    image: "/hotel/frame.webp",
+  },
+  {
+    title: "Fleet Electrification Support",
+    desc: `RIOD provides charging solutions for hospital ambulances, patient transport vehicles, and administrative fleets transitioning to electric vehicles.`,
+    image: "/hotel/frame.webp",
+  },
+  {
+    title: "Integration With Hospital Systems",
+    desc: `Our chargers can integrate with employee ID systems, visitor management platforms, and hospital billing software for seamless access control and usage tracking.`,
+    image: "/hotel/frame.webp",
+  },
+];
+
+export const parkingAccordionData = [
+  {
+    title: "Large-Scale Parking Installation",
+    desc: `We deploy EV chargers across multi-level and open parking facilities with optimized cable routing, power distribution, and minimal structural changes.`,
+    image: "/hotel/frame.webp",
+  },
+  {
+    title: "Flexible Commercial Models",
+    desc: `Choose from operator-owned, revenue-sharing, or third-party managed models. Each option is tailored to maximize returns for parking facility owners and operators.`,
+    image: "/hotel/frame.webp",
+  },
+  {
+    title: "Intelligent Load Balancing at Scale",
+    desc: `RIOD's smart power management allows 50+ chargers to operate simultaneously from existing electrical infrastructure, avoiding expensive capacity upgrades.`,
+    image: "/hotel/frame.webp",
+  },
+  {
+    title: "Integrated Payment & Access Systems",
+    desc: `Seamless integration with parking meters, boom barriers, RFID access, and mobile payment platforms for a unified parking and charging experience.`,
+    image: "/hotel/frame.webp",
+  },
+  {
+    title: "Real-Time Monitoring & Maintenance",
+    desc: `Cloud-based dashboards provide live charger status, usage analytics, revenue tracking, and predictive maintenance alerts for efficient facility management.`,
+    image: "/hotel/frame.webp",
+  },
+];
+
 export const homeAccordionData = [
   {
     title: " Hassle-Free Home Installation ",
