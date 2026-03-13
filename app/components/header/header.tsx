@@ -43,7 +43,8 @@ const Header = () => {
     pathname === "/insights" ||
     pathname === "/contact" ||
     pathname === "/careers" ||
-    pathname === "/applications";
+    pathname === "/applications" ||
+    pathname === "/ev-charger-selection-guide";
 
   useEffect(() => {
     if (forceDarkHeader) return;

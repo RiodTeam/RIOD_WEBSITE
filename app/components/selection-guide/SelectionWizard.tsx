@@ -77,7 +77,7 @@ export default function SelectionWizard() {
 
   if (recommendation) {
     return (
-      <section className="bg-white pt-16 md:pt-[6.8rem] pb-16 md:pb-[6.8rem]">
+      <section className="bg-white pt-32 md:pt-40 pb-16 md:pb-[6.8rem]">
         <div className="w-[90%] max-w-[1400px] mx-auto">
           <WizardResult
             recommendation={recommendation}
@@ -96,8 +96,19 @@ export default function SelectionWizard() {
   }
 
   return (
-    <section className="bg-white pt-16 md:pt-[6.8rem] pb-16 md:pb-[6.8rem]">
+    <section className="bg-white pt-32 md:pt-40 pb-16 md:pb-[6.8rem]">
       <div className="w-[90%] max-w-[900px] mx-auto">
+        <MotionWrapper>
+          <h1 className="text-3xl md:text-4xl lg:text-[2.8rem] font-medium text-[#1b1b1b] font-inter leading-tight mb-3">
+            Find the Right EV Charger
+          </h1>
+          <p className="para-text text-[#626262] max-w-xl mb-12 md:mb-16">
+            Not sure which charger fits your needs? Tell us about your location,
+            expected usage, and budget. We&apos;ll recommend the best RIOD
+            charger for you.
+          </p>
+        </MotionWrapper>
+
         <StepProgress currentStep={step} totalSteps={TOTAL_STEPS} />
 
         <MotionWrapper key={step}>
