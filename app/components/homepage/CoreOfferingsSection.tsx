@@ -10,8 +10,8 @@ const offerings = [
     title: "Charging\nStations",
     description:
       "Full-spectrum EV charging hardware including AC wallboxes, DC fast chargers, and high-power charging stations engineered for reliability, scalability, and global certification compliance.",
-    cta: "Explore Products",
-    href: "/products",
+    cta: "Explore Chargers",
+    href: "/products/ev-chargers",
     image: "/home/hero.webp",
   },
   {
@@ -19,8 +19,8 @@ const offerings = [
     title: "Technology\nSolutions",
     description:
       "End-to-end technology stack covering embedded firmware, CPMS platforms, mobile applications, energy management systems, and V2G-ready architectures for the modern charging ecosystem.",
-    cta: "Discover Solutions",
-    href: "#solutions",
+    cta: "Explore Technology",
+    href: "/technology",
     image: "/home/hero.webp",
   },
 ];

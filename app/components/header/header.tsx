@@ -24,6 +24,7 @@ const Header = () => {
   // Mobile accordion states
   const [isProductsOpen, setIsProductsOpen] = useState(false);
   const [isApplicationsOpen, setIsApplicationsOpen] = useState(false);
+  const [isResourcesOpen, setIsResourcesOpen] = useState(false);
 
   // Desktop Applications flyout
   const [showAppsFlyout, setShowAppsFlyout] = useState(false);
@@ -71,6 +72,7 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
     setIsProductsOpen(false);
     setIsApplicationsOpen(false);
+    setIsResourcesOpen(false);
   };
 
   return (
@@ -82,8 +84,8 @@ const Header = () => {
       >
         <div className="relative w-[95%] sm:w-[90%] xl:w-[89.7%] mx-auto">
           <div className="flex items-center justify-between">
-            {/* LOGO */}
-            <div className="flex items-center">
+            {/* LOGO + ABOUT (near logo) */}
+            <div className="flex items-center gap-6 xl:gap-8">
               <Link
                 href="/"
                 className="w-22 h-22 xl:w-20 xl:h-20 relative block"
@@ -95,18 +97,16 @@ const Header = () => {
                   className="object-contain"
                 />
               </Link>
+              <Link
+                href="/about"
+                className={`para-text ${textColor} font-[350]! font-inter hidden lg:block`}
+              >
+                About
+              </Link>
             </div>
 
             {/* DESKTOP NAV */}
             <nav className="hidden lg:flex items-center space-x-8 xl:space-x-12 2xl:space-x-12">
-              {/* About */}
-              <Link
-                href="/about"
-                className={`para-text ${textColor} font-[350]! font-inter`}
-              >
-                About
-              </Link>
-
               {/* Products Dropdown */}
               <div className="relative group">
                 <Link
@@ -213,41 +213,66 @@ const Header = () => {
                 Future of EV Energy
               </Link>
 
-              {/* Insights */}
-              <Link
-                href="/insights"
-                className={`para-text ${textColor} font-[350]! font-inter`}
-              >
-                Insights
-              </Link>
+              {/* Resources Dropdown */}
+              <div className="relative group">
+                <span
+                  className={`para-text ${textColor} font-[350]! font-inter cursor-pointer inline-flex items-center gap-1.5`}
+                >
+                  Resources
+                  <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
+                </span>
 
-              {/* Case Studies */}
-              <Link
-                href="/case-studies"
-                className={`para-text ${textColor} font-[350]! font-inter`}
-              >
-                Case Studies
-              </Link>
+                <div
+                  className="
+                    absolute top-full left-0 mt-7
+                    w-[220px]
+                    bg-[#1e1e1e]/95 backdrop-blur-[16px]
+                    opacity-0 invisible
+                    group-hover:opacity-100 group-hover:visible
+                    transition-all duration-200
+                    rounded-lg
+                    border border-white/10
+                  "
+                >
+                  <Link
+                    href="/resources"
+                    className="block px-6 py-4 text-white text-sm font-inter font-medium hover:bg-white/10 transition"
+                  >
+                    Downloads
+                    <span className="block text-xs text-[#9a99a2] font-normal mt-0.5">
+                      Brochures & datasheets
+                    </span>
+                  </Link>
+                  <Link
+                    href="/insights"
+                    className="block px-6 py-4 text-white text-sm font-inter font-medium hover:bg-white/10 transition border-t border-white/10"
+                  >
+                    Insights
+                    <span className="block text-xs text-[#9a99a2] font-normal mt-0.5">
+                      Articles & industry trends
+                    </span>
+                  </Link>
+                  <Link
+                    href="/case-studies"
+                    className="block px-6 py-4 text-white text-sm font-inter font-medium hover:bg-white/10 transition border-t border-white/10"
+                  >
+                    Case Studies
+                    <span className="block text-xs text-[#9a99a2] font-normal mt-0.5">
+                      Real-world deployments
+                    </span>
+                  </Link>
+                </div>
+              </div>
+            </nav>
 
-              {/* Resources */}
-              <Link
-                href="/resources"
-                className={`para-text ${textColor} font-[350]! font-inter`}
-              >
-                Resources
-              </Link>
-
-              {/* Contact Us */}
+            {/* RIGHT SIDE: Contact Us + Support + Mobile menu */}
+            <div className="flex items-center space-x-5 xl:gap-5 lg:-mr-4">
               <Link
                 href="/contact"
-                className={`para-text ${textColor} font-[350]! font-inter`}
+                className={`para-text ${textColor} font-[350]! font-inter hidden lg:block`}
               >
                 Contact Us
               </Link>
-            </nav>
-
-            {/* ICONS */}
-            <div className="flex items-center space-x-5 xl:gap-5 lg:-mr-4">
               <a
                 href="https://support.riod.in"
                 target="_blank"
@@ -419,32 +444,46 @@ const Header = () => {
               Future of EV Energy
             </Link>
 
-            {/* Insights */}
-            <Link
-              href="/insights"
-              onClick={toggleMenu}
-              className="text-white text-lg font-medium py-6 pl-7 border-b border-white/10"
-            >
-              Insights
-            </Link>
+            {/* Resources (Accordion) */}
+            <div className="border-b border-white/10">
+              <button
+                onClick={() => setIsResourcesOpen(!isResourcesOpen)}
+                className="w-full flex justify-between items-center text-white text-lg font-medium py-6 pl-7 pr-6"
+              >
+                Resources
+                <ChevronDown
+                  className={`w-5 h-5 transform transition-transform ${
+                    isResourcesOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
 
-            {/* Case Studies */}
-            <Link
-              href="/case-studies"
-              onClick={toggleMenu}
-              className="text-white text-lg font-medium py-6 pl-7 border-b border-white/10"
-            >
-              Case Studies
-            </Link>
-
-            {/* Resources */}
-            <Link
-              href="/resources"
-              onClick={toggleMenu}
-              className="text-white text-lg font-medium py-6 pl-7 border-b border-white/10"
-            >
-              Resources
-            </Link>
+              {isResourcesOpen && (
+                <div className="bg-[#171717]">
+                  <Link
+                    href="/resources"
+                    onClick={toggleMenu}
+                    className="block text-white py-4 pl-12 text-base hover:text-[#cdf80a] border-b border-white/10 transition"
+                  >
+                    Downloads
+                  </Link>
+                  <Link
+                    href="/insights"
+                    onClick={toggleMenu}
+                    className="block text-white py-4 pl-12 text-base hover:text-[#cdf80a] border-b border-white/10 transition"
+                  >
+                    Insights
+                  </Link>
+                  <Link
+                    href="/case-studies"
+                    onClick={toggleMenu}
+                    className="block text-white py-4 pl-12 text-base hover:text-[#cdf80a] border-b border-white/10 transition"
+                  >
+                    Case Studies
+                  </Link>
+                </div>
+              )}
+            </div>
 
             {/* Contact Us */}
             <Link

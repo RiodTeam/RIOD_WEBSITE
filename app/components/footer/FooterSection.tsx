@@ -15,19 +15,18 @@ const productLinks = [
 ];
 
 const solutionLinks = [
-  { label: "Charging Hardware", href: "/products" },
-  { label: "CPMS & Cloud Platform", href: "/products" },
-  { label: "Mobile Applications", href: "/products" },
-  { label: "Firmware & Embedded", href: "/products" },
-  { label: "Energy Management", href: "/products" },
+  { label: "EV Chargers", href: "/products/ev-chargers" },
+  { label: "Energy Solutions", href: "/products/energy" },
+  { label: "Applications", href: "/applications" },
+  { label: "Technology", href: "/technology" },
+  { label: "Find Your Charger", href: "/ev-charger-selection-guide" },
 ];
 
 const companyLinks = [
   { label: "About Us", href: "/about" },
   { label: "Insights & Blogs", href: "/insights" },
   { label: "Case Studies", href: "/case-studies" },
-  { label: "Resources", href: "/resources" },
-  { label: "Find Your Charger", href: "/ev-charger-selection-guide" },
+  { label: "Downloads", href: "/resources" },
   { label: "Partners", href: "/partners" },
   { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
