@@ -141,12 +141,12 @@ export default function PowerMasterClient() {
 
             {/* Product Image */}
             <MotionWrapper delay={0.2}>
-              <div className="mt-12 md:mt-16 relative w-full aspect-[16/9] rounded-2xl overflow-hidden">
+              <div className="mt-12 md:mt-16 relative w-full max-w-[800px] mx-auto aspect-[5/4] rounded-2xl overflow-hidden bg-[#f0f0f0]">
                 <Image
                   src="/products/power-master-product.webp"
                   alt="RIOD Power Master Unit"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
             </MotionWrapper>

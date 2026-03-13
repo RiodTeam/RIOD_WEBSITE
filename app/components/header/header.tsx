@@ -266,7 +266,7 @@ const Header = () => {
             </nav>
 
             {/* RIGHT SIDE: Contact Us + Support + Mobile menu */}
-            <div className="flex items-center space-x-5 xl:gap-5 lg:-mr-4">
+            <div className="flex items-center gap-5 xl:gap-6">
               <Link
                 href="/contact"
                 className={`para-text ${textColor} font-[350]! font-inter hidden lg:block`}

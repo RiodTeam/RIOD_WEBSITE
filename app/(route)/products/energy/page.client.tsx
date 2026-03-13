@@ -27,6 +27,7 @@ const products = [
     ],
     href: "/products/energy/power-master",
     image: "/products/power-master-unit.webp",
+    containImage: true,
     imagePlaceholder: "Power Master Unit",
   },
   {
@@ -123,12 +124,12 @@ export default function EnergyClient() {
                   <div className={!isEven ? "lg:[direction:ltr]" : ""}>
                     <MotionWrapper delay={0.15}>
                       {product.image ? (
-                        <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
+                        <div className={`relative w-full aspect-[4/3] rounded-2xl overflow-hidden ${product.containImage ? "bg-[#f0f0f0]" : ""}`}>
                           <Image
                             src={product.image}
                             alt={product.title}
                             fill
-                            className="object-cover"
+                            className={product.containImage ? "object-contain p-6" : "object-cover"}
                           />
                         </div>
                       ) : (
