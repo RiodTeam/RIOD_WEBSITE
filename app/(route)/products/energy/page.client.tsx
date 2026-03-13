@@ -57,6 +57,7 @@ const products = [
       "Digital asset records with geo-tagged imagery",
     ],
     href: "/products/energy/infrastructure-monitoring",
+    image: "/products/drone-inspection.webp",
     imagePlaceholder: "Drone Inspection",
   },
 ];
@@ -67,7 +68,7 @@ export default function EnergyClient() {
       <main>
         {/* HERO */}
         <HeroSection
-          backgroundImage="/home/hero.webp"
+          backgroundImage="/heroes/energy-hero.webp"
           title="Energy Solutions"
           description="Hardware and software for buildings, factories, and commercial infrastructure. From dynamic load balancing to AI-powered monitoring."
           overlayOpacity={0.5}

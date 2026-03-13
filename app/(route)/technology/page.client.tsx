@@ -10,7 +10,7 @@ export default function TechnologyPageClient() {
     <ReactLenis root>
       <main>
         <HeroSection
-          backgroundImage="/technology/hero.jpg"
+          backgroundImage="/technology/tech-hero.webp"
           title="Our<br />Technology"
           description="We engineer the complete technology stack for EV charging — from power electronics and embedded firmware to cloud platforms, AI analytics, and payment systems."
           overlayOpacity={0.45}
