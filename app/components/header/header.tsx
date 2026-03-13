@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { MessageCircle, X, ChevronDown, ChevronRight } from "lucide-react";
+import { Headset, X, ChevronDown, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -252,15 +252,9 @@ const Header = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${textColor} hover:text-gray-300 transition-colors hidden lg:block`}
+                title="Support"
               >
-                <div className="lg:w-6 lg:h-3 relative">
-                  <Image
-                    src="/header/vector2.svg"
-                    alt="Support"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+                <Headset className="w-5 h-5 xl:w-[22px] xl:h-[22px]" />
               </a>
 
               {/* MOBILE MENU BUTTON */}
@@ -469,7 +463,7 @@ const Header = () => {
               rel="noopener noreferrer"
               className="text-white hover:text-gray-300 transition-colors"
             >
-              <MessageCircle size={24} />
+              <Headset size={24} />
             </a>
           </div>
         </div>
