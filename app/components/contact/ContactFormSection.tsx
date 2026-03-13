@@ -140,12 +140,21 @@ export default function ContactFormSection() {
         <div className="flex flex-col justify-start md:pl-6 lg:pl-20 lg:border-l-[0.5px] lg:border-white">
           <h2 className="section-heading mb-6 ">What Do You Need Help With?</h2>
 
-          <p className="text-[#9a99a2] leading-9! normal-text">
+          <p className="text-[#9a99a2] leading-9! normal-text mb-10">
             Connect with RIOD for all inquiries related to our EV charging
             stations and IoT solutions. Share your details through the form
             below, and our experts will reach out with tailored information and
             next steps.
           </p>
+
+          <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
+            <Image
+              src="/contact/office.webp"
+              alt="RIOD Office"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>
