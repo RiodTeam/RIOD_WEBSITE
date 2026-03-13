@@ -39,7 +39,7 @@ export default function CMSPartners() {
                   partner.dark ? "bg-[#1b1b1b]" : "bg-white"
                 }`}
               >
-                <div className="relative w-full h-[60px] md:h-[80px] grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="relative w-full h-[30px] md:h-[40px] grayscale hover:grayscale-0 transition-all duration-300">
                   <Image
                     src={partner.logo}
                     alt={partner.name}

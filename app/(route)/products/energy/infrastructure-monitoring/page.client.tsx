@@ -87,7 +87,7 @@ export default function InfraMonitoringClient() {
     <ReactLenis root>
       <main>
         <HeroSection
-          backgroundImage="/home/hero.webp"
+          backgroundImage="/heroes/infra-monitoring-hero.webp"
           title="Infrastructure Monitoring"
           description="Vision AI and drone technology for energy infrastructure inspection and predictive maintenance."
           overlayOpacity={0.55}

@@ -26,6 +26,7 @@ const products = [
       "DG generator communication and switchover",
     ],
     href: "/products/energy/power-master",
+    image: "/products/power-master-unit.webp",
     imagePlaceholder: "Power Master Unit",
   },
   {

@@ -20,6 +20,7 @@ import {
   Zap,
   BarChart3,
 } from "lucide-react";
+import Image from "next/image";
 import HeroSection from "@/app/components/common/Hero";
 import MotionWrapper from "@/app/components/common/MotionWrapper";
 import PowerMasterArchitecture from "@/app/components/energy/PowerMasterArchitecture";
@@ -101,7 +102,7 @@ export default function PowerMasterClient() {
       <main>
         {/* HERO */}
         <HeroSection
-          backgroundImage="/home/hero.webp"
+          backgroundImage="/heroes/power-master-hero.webp"
           title="Power Master"
           description="Dynamic load balancing system. Hardware with integrated software, built to control what matters."
           overlayOpacity={0.55}
@@ -137,6 +138,18 @@ export default function PowerMasterClient() {
                 </p>
               </MotionWrapper>
             </div>
+
+            {/* Product Image */}
+            <MotionWrapper delay={0.2}>
+              <div className="mt-12 md:mt-16 relative w-full aspect-[16/9] rounded-2xl overflow-hidden">
+                <Image
+                  src="/products/power-master-product.webp"
+                  alt="RIOD Power Master Unit"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </MotionWrapper>
           </div>
         </section>
 

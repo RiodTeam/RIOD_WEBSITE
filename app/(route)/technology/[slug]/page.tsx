@@ -32,7 +32,6 @@ export default async function TechnologyDetailPage({ params }: Props) {
     <TechnologyDetailClient
       name={tech.name}
       tagline={tech.tagline}
-      heroImage={tech.heroImage}
       sections={tech.sections}
     />
   );
