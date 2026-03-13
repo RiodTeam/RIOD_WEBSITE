@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { Phone, MessageCircle, X, ChevronDown, ChevronRight } from "lucide-react";
+import { MessageCircle, X, ChevronDown, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -42,7 +42,8 @@ const Header = () => {
     pathname === "/future-of-ev-energy" ||
     pathname === "/insights" ||
     pathname === "/contact" ||
-    pathname === "/careers";
+    pathname === "/careers" ||
+    pathname === "/applications";
 
   useEffect(() => {
     if (forceDarkHeader) return;
@@ -152,7 +153,10 @@ const Header = () => {
                     onMouseEnter={() => setShowAppsFlyout(true)}
                     onMouseLeave={() => setShowAppsFlyout(false)}
                   >
-                    <div className="flex items-center justify-between px-6 py-4 text-white text-sm font-inter font-medium hover:bg-white/10 transition cursor-pointer">
+                    <Link
+                      href="/applications"
+                      className="flex items-center justify-between px-6 py-4 text-white text-sm font-inter font-medium hover:bg-white/10 transition cursor-pointer"
+                    >
                       <div>
                         Applications
                         <span className="block text-xs text-[#9a99a2] font-normal mt-0.5">
@@ -160,7 +164,7 @@ const Header = () => {
                         </span>
                       </div>
                       <ChevronRight className="w-4 h-4 text-[#9a99a2]" />
-                    </div>
+                    </Link>
 
                     {/* Flyout submenu */}
                     {showAppsFlyout && (
@@ -242,31 +246,21 @@ const Header = () => {
 
             {/* ICONS */}
             <div className="flex items-center space-x-5 xl:gap-5 lg:-mr-4">
-              <button
-                className={`${textColor} hover:text-gray-300 transition-colors hidden lg:block`}
-              >
-                <div className="lg:w-5 lg:h-5 xl:w-6 xl:h-6 relative">
-                  <Image
-                    src="/header/vector1.svg"
-                    alt="Call"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </button>
-
-              <button
+              <a
+                href="https://support.riod.in"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`${textColor} hover:text-gray-300 transition-colors hidden lg:block`}
               >
                 <div className="lg:w-6 lg:h-3 relative">
                   <Image
                     src="/header/vector2.svg"
-                    alt="Message"
+                    alt="Support"
                     fill
                     className="object-cover"
                   />
                 </div>
-              </button>
+              </a>
 
               {/* MOBILE MENU BUTTON */}
               <button
@@ -468,12 +462,14 @@ const Header = () => {
 
           {/* MOBILE CONTACT ICONS */}
           <div className="mt-12 ml-7 flex items-center space-x-6 pb-12">
-            <button className="text-white hover:text-gray-300 transition-colors">
-              <Phone size={24} />
-            </button>
-            <button className="text-white hover:text-gray-300 transition-colors">
+            <a
+              href="https://support.riod.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-300 transition-colors"
+            >
               <MessageCircle size={24} />
-            </button>
+            </a>
           </div>
         </div>
       </div>

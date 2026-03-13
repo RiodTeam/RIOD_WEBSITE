@@ -15,7 +15,7 @@ interface TeamMember {
 const team: TeamMember[] = [
   {
     name: "Akhil Joy",
-    title: "Director of Projects",
+    title: "Product & Strategy",
     description:
       "Leads product strategy and project execution across RIOD's EV and energy verticals. Drives the roadmap from concept through production with a focus on system-level thinking.",
     photo: "/about/akhil.jfif",
@@ -23,7 +23,7 @@ const team: TeamMember[] = [
   },
   {
     name: "Anees PK",
-    title: "Director of Technical Hardware",
+    title: "Hardware Engineering",
     description:
       "Heads hardware engineering at RIOD's Hardware Development Center. Responsible for PCB design, power electronics, and manufacturing-ready hardware for EV chargers and energy systems.",
     photo: "/about/anees.webp",
@@ -31,7 +31,7 @@ const team: TeamMember[] = [
   },
   {
     name: "Deepu Joy",
-    title: "Delivery Director",
+    title: "Delivery & Operations",
     description:
       "Oversees delivery across all engineering verticals. Ensures products ship on time, meet quality standards, and work reliably in real-world deployments across multiple countries.",
     photo: "/about/deepu.webp",
@@ -39,7 +39,7 @@ const team: TeamMember[] = [
   },
   {
     name: "Kailash CS",
-    title: "Business Director",
+    title: "Business Development",
     description:
       "Drives business development and client partnerships. Builds long-term relationships with partners across India, Europe, and the Middle East.",
     photo: "/about/kailash.jfif",

@@ -9,6 +9,7 @@ import PlatformSection from "@/app/components/common/Platform";
 import ServicesSection from "@/app/components/ev-chargers/Services";
 import HotelAccordion from "@/app/components/ev-chargers/HowWeHelp";
 import IdealProductsSection from "@/app/components/ev-chargers/IdealProductsSection";
+import FindYourCharger from "@/app/components/ev-chargers/FindYourCharger";
 
 import { hospitalsAccordionData } from "@/app/components/data/hotelAccordionData";
 import { idealProductsDataHospitals } from "@/app/components/data/idealProductsData";
@@ -40,6 +41,8 @@ export default function PageClient() {
         />
 
         <IdealProductsSection data={idealProductsDataHospitals} />
+
+        <FindYourCharger />
 
       </div>
     </ReactLenis>
