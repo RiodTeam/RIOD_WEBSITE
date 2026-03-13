@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Monitor, Users, Receipt, BarChart3 } from "lucide-react";
 import MotionWrapper from "../common/MotionWrapper";
 
@@ -90,17 +91,15 @@ export default function CommunitySuite() {
             </div>
           </div>
 
-          {/* Right — Mockup Placeholder */}
+          {/* Right — Dashboard Image */}
           <MotionWrapper delay={0.2}>
-            <div className="relative w-full h-[400px] md:h-[560px] bg-[#252525] rounded-xl flex items-center justify-center overflow-hidden lg:mt-8">
-              <div className="text-center px-8">
-                <div className="w-16 h-16 rounded-full bg-[#cdf80a]/10 flex items-center justify-center mx-auto mb-4">
-                  <Monitor className="w-8 h-8 text-[#cdf80a]" />
-                </div>
-                <p className="text-[#9a99a2] text-sm">
-                  Dashboard mockup placeholder
-                </p>
-              </div>
+            <div className="relative w-full h-[400px] md:h-[560px] rounded-xl overflow-hidden lg:mt-8">
+              <Image
+                src="/products/csuite2.webp"
+                alt="RIOD Community Charging Suite Dashboard"
+                fill
+                className="object-cover rounded-xl"
+              />
             </div>
           </MotionWrapper>
         </div>

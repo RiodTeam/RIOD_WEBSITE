@@ -41,6 +41,7 @@ const products = [
       "Multi-site benchmarking and reporting",
     ],
     href: "/products/energy/energy-management",
+    image: "/products/ems1.webp",
     imagePlaceholder: "Energy Dashboard",
   },
   {
@@ -116,19 +117,30 @@ export default function EnergyClient() {
                     </MotionWrapper>
                   </div>
 
-                  {/* Image Placeholder */}
+                  {/* Image */}
                   <div className={!isEven ? "lg:[direction:ltr]" : ""}>
                     <MotionWrapper delay={0.15}>
-                      <div className="relative w-full aspect-[4/3] bg-[#e8e8e8] rounded-2xl overflow-hidden flex items-center justify-center">
-                        <div className="text-center">
-                          <div className="w-16 h-16 rounded-2xl bg-[#1b1b1b] flex items-center justify-center mx-auto mb-4">
-                            <Icon className="w-7 h-7 text-[#cdf80a]" />
-                          </div>
-                          <p className="text-sm font-medium text-[#9a99a2] font-inter">
-                            {product.imagePlaceholder}
-                          </p>
+                      {product.image ? (
+                        <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
+                          <Image
+                            src={product.image}
+                            alt={product.title}
+                            fill
+                            className="object-cover"
+                          />
                         </div>
-                      </div>
+                      ) : (
+                        <div className="relative w-full aspect-[4/3] bg-[#e8e8e8] rounded-2xl overflow-hidden flex items-center justify-center">
+                          <div className="text-center">
+                            <div className="w-16 h-16 rounded-2xl bg-[#1b1b1b] flex items-center justify-center mx-auto mb-4">
+                              <Icon className="w-7 h-7 text-[#cdf80a]" />
+                            </div>
+                            <p className="text-sm font-medium text-[#9a99a2] font-inter">
+                              {product.imagePlaceholder}
+                            </p>
+                          </div>
+                        </div>
+                      )}
                     </MotionWrapper>
                   </div>
                 </div>

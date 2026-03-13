@@ -74,7 +74,7 @@ export default function VehicleScroll() {
               key={`${vehicle.name}-${i}`}
               className="flex items-center justify-center mx-6 md:mx-10 shrink-0"
             >
-              <div className="relative w-[75px] h-[52px] md:w-[105px] md:h-[68px] grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+              <div className="relative w-[150px] h-[100px] md:w-[200px] md:h-[130px] grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
                 <Image
                   src={vehicle.logo}
                   alt={vehicle.name}
