@@ -74,7 +74,7 @@ function TeamCard({
               <h3 className="text-base font-medium text-[#1b1b1b] font-inter">
                 {member.name}
               </h3>
-              <p className="text-sm text-[#cdf80a] bg-[#1b1b1b] inline-block px-2 py-0.5 rounded mt-1.5 font-inter">
+              <p className="text-[13px] text-[#9a99a2] font-inter mt-1 tracking-wide uppercase">
                 {member.title}
               </p>
             </div>
