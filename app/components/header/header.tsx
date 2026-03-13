@@ -84,8 +84,8 @@ const Header = () => {
       >
         <div className="relative w-[95%] sm:w-[90%] xl:w-[89.7%] mx-auto">
           <div className="flex items-center justify-between">
-            {/* LOGO + ABOUT (near logo) */}
-            <div className="flex items-center gap-6 xl:gap-8">
+            {/* LOGO */}
+            <div className="flex items-center">
               <Link
                 href="/"
                 className="w-22 h-22 xl:w-20 xl:h-20 relative block"
@@ -97,16 +97,18 @@ const Header = () => {
                   className="object-contain"
                 />
               </Link>
-              <Link
-                href="/about"
-                className={`para-text ${textColor} font-[350]! font-inter hidden lg:block`}
-              >
-                About
-              </Link>
             </div>
 
             {/* DESKTOP NAV */}
             <nav className="hidden lg:flex items-center space-x-8 xl:space-x-12 2xl:space-x-12">
+              {/* About */}
+              <Link
+                href="/about"
+                className={`para-text ${textColor} font-[350]! font-inter`}
+              >
+                About
+              </Link>
+
               {/* Products Dropdown */}
               <div className="relative group">
                 <Link
