@@ -35,9 +35,9 @@ export const metadata: Metadata = {
   title: "RIOD",
   description: "RIOD - EV Charging & Energy Technology",
   icons: {
-    icon: "/header/logo.svg",
-    shortcut: "/header/logo.svg",
-    apple: "/header/logo.svg",
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
   },
 };
 
