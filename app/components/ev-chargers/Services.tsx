@@ -43,7 +43,7 @@ export default function ServicesSection({ products }: Props) {
                                 </div>
 
                                 {/* TITLE */}
-                                <h3 className="mt-4 text-[20px] font-medium text-[#404040]">
+                                <h3 className="mt-4 text-[20px] font-medium text-[#1b1b1b]">
                                     {p.title}
                                 </h3>
 
@@ -68,7 +68,7 @@ export default function ServicesSection({ products }: Props) {
 
                                 {/* TITLE */}
                                 <MotionWrapper>
-                                    <h3 className="mt-4 regular-heading text-[#404040] font-inter">
+                                    <h3 className="mt-4 regular-heading text-[#1b1b1b] font-inter">
                                         {p.title}
                                     </h3>
                                 </MotionWrapper>

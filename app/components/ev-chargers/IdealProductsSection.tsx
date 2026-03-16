@@ -48,7 +48,7 @@ export default function IdealProductsSection({ data }: Props) {
                   <Link
                     key={product.name}
                     href={product.href}
-                    className="flex items-center gap-4 bg-[#f6f6f6] hover:bg-[#eef6d0] border border-[#e8e8e8] rounded-xl px-5 py-4 transition-colors group"
+                    className="flex items-center gap-4 bg-[#f6f6f6] hover:bg-[#f0f7d4] border border-[#e8e8e8] rounded-xl px-5 py-4 transition-colors group"
                   >
                     <div className="relative w-12 h-12 shrink-0">
                       <Image

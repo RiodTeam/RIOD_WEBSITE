@@ -45,7 +45,7 @@ export default function NextArticlesSection({ articles }: { articles: InsightTyp
                 </div>
 
                 {/* TITLE */}
-                <h3 className="regular-heading text-[#404040] font-inter mt-5 leading-[1.3]! cursor-pointer">
+                <h3 className="regular-heading text-[#1b1b1b] font-inter mt-5 leading-[1.3]! cursor-pointer">
                   {item.title}
                 </h3>
 
@@ -75,7 +75,7 @@ export default function NextArticlesSection({ articles }: { articles: InsightTyp
                     </span>
                   </div>
 
-                  <h3 className="regular-heading text-[#404040] font-inter mt-3 leading-normal cursor-pointer">
+                  <h3 className="regular-heading text-[#1b1b1b] font-inter mt-3 leading-normal cursor-pointer">
                     {item.title}
                   </h3>
 

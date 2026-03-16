@@ -27,7 +27,7 @@
 body {
   background: white;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), "Inter", sans-serif;
 }
 
 .hero-title {
@@ -137,7 +137,7 @@ body {
   font-size: 22px; /* mobile size */
   line-height: 24px; /* good for mobile readability */
   letter-spacing: 0; /* matches spec */
-  color: #404040;
+  color: #1b1b1b;
 }
 
 @media (min-width: 1280px) {

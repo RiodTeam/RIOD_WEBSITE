@@ -58,7 +58,7 @@ export default function FeatureGridSection() {
 
                 {/* TITLE */}
                 <MotionWrapper>
-                  <h3 className="regular-heading font-inter text-[#404040] mb-5 md:mb-3">
+                  <h3 className="regular-heading font-inter text-[#1b1b1b] mb-5 md:mb-3">
                     {item.title}
                   </h3>
                 </MotionWrapper>

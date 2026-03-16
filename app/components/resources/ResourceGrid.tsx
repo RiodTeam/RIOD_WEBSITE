@@ -58,7 +58,7 @@ function ResourceCard({
           </span>
           <button
             onClick={() => onDownload(resource)}
-            className={`inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium font-inter transition-colors duration-300 ${resource.isLeadMagnet ? "bg-[#cdf80a] text-[#1b1b1b] hover:bg-[#d8f540]" : "bg-[#1b1b1b] text-[#cdf80a] hover:bg-[#cdf80a] hover:text-[#1b1b1b]"}`}
+            className={`inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium font-inter transition-colors duration-300 ${resource.isLeadMagnet ? "bg-[#cdf80a] text-[#1b1b1b] hover:bg-[#b8e000]" : "bg-[#1b1b1b] text-[#cdf80a] hover:bg-[#cdf80a] hover:text-[#1b1b1b]"}`}
           >
             <Download className="w-4 h-4" />
             Download

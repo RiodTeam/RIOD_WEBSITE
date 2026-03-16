@@ -154,7 +154,7 @@ export default function VehicleScroll() {
                           : "bg-[#f6f6f6]"
                       }`}
                     >
-                      <Check className="w-4 h-4 text-[#22c55e] shrink-0" />
+                      <Check className="w-4 h-4 text-[#cdf80a] shrink-0" />
                       <span className="text-sm font-inter text-[#1b1b1b]">
                         {selectedManufacturer} {vehicle}
                       </span>
@@ -163,7 +163,7 @@ export default function VehicleScroll() {
                 </div>
                 {selectedVehicle && (
                   <div className="mt-4 pt-4 border-t border-[#e8e8e8] flex items-center gap-2">
-                    <div className="w-6 h-6 rounded-full bg-[#22c55e] flex items-center justify-center">
+                    <div className="w-6 h-6 rounded-full bg-[#cdf80a] flex items-center justify-center">
                       <Check className="w-4 h-4 text-white" />
                     </div>
                     <span className="text-sm font-medium font-inter text-[#1b1b1b]">

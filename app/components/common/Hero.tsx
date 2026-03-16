@@ -60,7 +60,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
            
               {buttonText && (
                 <Link href={buttonHref}>
-                  <button className="flex justify-center items-center rounded-full mt-3 px-6 md:px-8 h-[50px] md:h-14 bg-[#00E17B] text-black font-medium text-sm md:text-base hover:bg-[#00c96b] transition-colors">
+                  <button className="flex justify-center items-center rounded-full mt-3 px-6 md:px-8 h-[50px] md:h-14 bg-[#cdf80a] text-black font-medium text-sm md:text-base hover:bg-[#b8e000] transition-colors">
                     {buttonText}
                   </button>
                 </Link>

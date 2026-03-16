@@ -177,7 +177,7 @@ export default function CaseStudyDetail({ data }: { data: CaseStudy }) {
               Let&apos;s talk about how RIOD can solve it. Our team has delivered results across industries and geographies.
             </p>
             <Link href="/contact">
-              <button className="mt-8 px-8 py-4 bg-[#cdf80a] text-[#1b1b1b] rounded-full text-[14px] md:text-[15px] font-inter font-medium hover:bg-[#b8e009] transition-colors">
+              <button className="mt-8 px-8 py-4 bg-[#cdf80a] text-[#1b1b1b] rounded-full text-[14px] md:text-[15px] font-inter font-medium hover:bg-[#b8e000] transition-colors">
                 Get in Touch
               </button>
             </Link>

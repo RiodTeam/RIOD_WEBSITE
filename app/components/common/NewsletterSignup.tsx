@@ -81,7 +81,7 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
             <button
               type="submit"
               disabled={status === "loading"}
-              className="h-[38px] px-4 bg-[#cdf80a] text-[#1b1b1b] text-[13px] font-medium font-inter rounded-md hover:bg-[#d8ff2a] transition-colors disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+              className="h-[38px] px-4 bg-[#cdf80a] text-[#1b1b1b] text-[13px] font-medium font-inter rounded-md hover:bg-[#b8e000] transition-colors disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
             >
               {status === "loading" ? (
                 <span className="inline-block w-4 h-4 border-2 border-[#1b1b1b]/30 border-t-[#1b1b1b] rounded-full animate-spin" />

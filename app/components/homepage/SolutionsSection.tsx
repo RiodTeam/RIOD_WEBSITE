@@ -122,7 +122,7 @@ export default function SolutionsSection() {
                   {solution.bullets.map((bullet) => (
                     <li
                       key={bullet}
-                      className="flex items-start gap-2 text-sm text-[#404040]"
+                      className="flex items-start gap-2 text-sm text-[#1b1b1b]"
                     >
                       <span
                         className="w-1.5 h-1.5 rounded-full mt-1.5 shrink-0"
