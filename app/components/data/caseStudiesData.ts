@@ -24,7 +24,7 @@ export const caseStudiesData: CaseStudy[] = [
     client: "Unnamed European utility (Greece-based)",
     industry: "Energy & Utilities",
     location: "Greece",
-    image: "/home/hero.webp",
+    image: "/case-studies/energy-management-greek-utility.webp",
     summary:
       "Deployed a unified energy management platform across 200+ distributed sites, replacing manual reporting with real-time dashboards and consumption analytics.",
     challenge: [
@@ -61,7 +61,7 @@ export const caseStudiesData: CaseStudy[] = [
     client: "Major multinational with 500+ vehicle fleet",
     industry: "Corporate Fleet Management",
     location: "Global (12 campuses)",
-    image: "/home/hero.webp",
+    image: "/case-studies/dc-charger-multinational-fleet.webp",
     summary:
       "Installed 40+ DC fast chargers across 12 corporate campuses with dynamic load balancing, achieving zero grid upgrades and 95% uptime.",
     challenge: [
@@ -129,7 +129,7 @@ export const caseStudiesData: CaseStudy[] = [
     client: "Major Indian power distribution utility",
     industry: "Energy & Utilities",
     location: "India",
-    image: "/home/hero.webp",
+    image: "/case-studies/ocpp-implementation-indian-utility.webp",
     summary:
       "Deployed 800+ public EV chargers with OCPP 1.6J backend, centralized monitoring, and multiple authentication methods for a national utility.",
     challenge: [
@@ -160,7 +160,7 @@ export const caseStudiesData: CaseStudy[] = [
     client: "Premium hotel chain with 15 properties across India",
     industry: "Hospitality",
     location: "India",
-    image: "/home/hero.webp",
+    image: "/case-studies/energy-management-hotel-chain.webp",
     summary:
       "Reduced energy costs by 18% across 15 hotel properties while adding EV charging as a premium guest amenity through integrated monitoring.",
     challenge: [

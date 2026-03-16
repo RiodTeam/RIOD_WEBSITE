@@ -23,7 +23,7 @@ export const insightsData: InsightType[] = [
     title: "The Rise of V2G Technology in India",
     tag: "Technology",
     date: "February 15, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/rise-of-v2g-technology-in-india.webp",
     intro: [
       "Vehicle-to-Grid (V2G) technology is emerging as one of the most transformative concepts in India's EV ecosystem. By enabling electric vehicles to feed stored energy back into the power grid during peak demand, V2G converts parked EVs into distributed energy assets — fundamentally changing the relationship between transportation and power infrastructure.",
     ],
@@ -67,7 +67,7 @@ export const insightsData: InsightType[] = [
     title: "OCPP 2.0.1: What Operators Need to Know",
     tag: "Standards",
     date: "January 28, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/ocpp-2-what-operators-need-to-know.webp",
     intro: [
       "OCPP 2.0.1 is the latest version of the Open Charge Point Protocol — the global communication standard between EV chargers and central management systems. For charge point operators in India, understanding OCPP 2.0.1 is no longer optional — it's essential for interoperability, security, and future-proofing your network.",
     ],
@@ -104,7 +104,7 @@ export const insightsData: InsightType[] = [
     title: "Building Scalable CPMS Platforms",
     tag: "Software",
     date: "January 12, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/building-scalable-cpms-platforms.webp",
     intro: [
       "A Charge Point Management System (CPMS) is the software brain behind every EV charging network. As networks scale from dozens to thousands of chargers, the architecture of the CPMS determines whether operators can manage growth gracefully or drown in operational complexity.",
     ],
@@ -141,7 +141,7 @@ export const insightsData: InsightType[] = [
     title: "DC Fast Charging: Hardware Design Deep Dive",
     tag: "Engineering",
     date: "December 20, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/dc-fast-charging-hardware-design-deep-dive.webp",
     intro: [
       "DC fast chargers are the most technically complex pieces of EV charging hardware. Unlike AC chargers that rely on the vehicle's onboard converter, DC chargers perform the AC-to-DC conversion externally and push high-power DC directly into the battery — requiring precision power electronics, thermal management, and robust safety systems.",
     ],
@@ -179,7 +179,7 @@ export const insightsData: InsightType[] = [
     title: "Energy Management for Multi-Point Charging",
     tag: "Solutions",
     date: "December 5, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/energy-management-for-multi-point-charging.webp",
     intro: [
       "When a building deploys 10, 50, or 100 EV chargers, the electrical infrastructure faces a challenge that individual charger installations never encounter: aggregate load management. Without intelligent energy management, multi-point charging can overwhelm transformers, trip breakers, and cause costly demand charges.",
     ],
@@ -217,7 +217,7 @@ export const insightsData: InsightType[] = [
     title: "ISO 15118 Plug & Charge Implementation",
     tag: "Standards",
     date: "November 22, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/iso-15118-plug-and-charge-implementation.webp",
     intro: [
       "ISO 15118 defines the communication protocol between electric vehicles and charging stations, enabling the revolutionary Plug & Charge feature — where a driver simply plugs in and the charger automatically identifies the vehicle, authenticates the user, and starts a billing-enabled charging session with zero manual interaction.",
     ],
@@ -255,7 +255,7 @@ export const insightsData: InsightType[] = [
     title: "Fleet Electrification: Complete Guide",
     tag: "Industry",
     date: "November 8, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/fleet-electrification-complete-guide.webp",
     intro: [
       "Fleet electrification is one of the fastest-moving segments of India's EV transition. From last-mile delivery vehicles to corporate car fleets, organizations are discovering that electric fleets offer lower total cost of ownership, reduced emissions, and operational advantages that diesel and petrol vehicles simply cannot match.",
     ],
@@ -293,7 +293,7 @@ export const insightsData: InsightType[] = [
     title: "Smart Grid Integration for EV Charging",
     tag: "Technology",
     date: "October 25, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/smart-grid-integration-for-ev-charging.webp",
     intro: [
       "As India adds millions of EVs to its roads, the power grid faces a challenge and an opportunity. Unmanaged EV charging can strain distribution networks and cause localized outages. But intelligently managed charging — integrated with grid signals, renewable generation, and dynamic tariffs — can actually strengthen the grid while reducing costs for everyone.",
     ],
@@ -332,7 +332,7 @@ export const insightsData: InsightType[] = [
       "RIOD is Collaborating With CPO’s to Solve EV Charging Infrastructure Problem",
     tag: "EV Charging",
     date: "March 20, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/riod-collaborating-with-cpos-to-solve-ev-charging-infrastructure-problem.webp",
 
     intro: [
       "RIOD designs, develops and manufactures EV charging infrastructure for public, buildings, commercial entities and residential homes. We are an Indian company that has a good expertise and one of the few companies in India that is an OEM (Original Equipment Manufacturer) Charging Station Manufacturer. We build on our strong history of successfully integrating hardware, software and systems engineering to create innovative solutions for electric transportation infrastructure.",
@@ -367,7 +367,7 @@ export const insightsData: InsightType[] = [
     title: "Importance of temperature monitoring in Pharma companies",
     tag: "Technology",
     date: "April 10, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/importance-of-temperature-monitoring-in-pharma-companies.webp",
     intro: [
       "Temperature monitoring is a critical process in most industries, from pharmaceuticals to food production. It can help prevent spoilage, product failure and loss of revenue. Temperature monitoring provides critical information and alerts that can reduce costs and ensure compliance with regulatory agencies.",
       "If you’re working in the pharma industry or any other where temperature monitoring is important, this guide will walk you through the different aspects of choosing a temperature monitoring solution",
@@ -449,7 +449,7 @@ export const insightsData: InsightType[] = [
       "Monitoring Your Hatchery & Know how Temperature, Humidity and KPI affects the Hatchability",
     tag: "Sustainability",
     date: "May 05, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/monitoring-hatchery-temperature-humidity-kpi-hatchability.webp",
 
     intro: [
       "We were approached by a hatchery owner during the covid 19 period. he lost a batch due to unstable temperature in one of their hatchery unit. Later the issue was identified with the cabling of the heater, resulted in a big loss.",
@@ -532,7 +532,7 @@ export const insightsData: InsightType[] = [
     title: "Elive - Energy Management Solution",
     tag: "Sustainability",
     date: "May 05, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/elive-energy-management-solution.webp",
 
     intro: [
       "Are you worried about your business chain Energy consumption bills ?",
@@ -599,7 +599,7 @@ export const insightsData: InsightType[] = [
     title: "The Future of Two-Way Energy Communication",
     tag: "Technology",
     date: "January 15, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/future-of-two-way-energy-communication.webp",
 
     intro: [
       "Electric vehicles are no longer just consumers of electricity. With bidirectional charging, an EV can push energy back to the grid, your home, or a building. This fundamentally changes the relationship between vehicles and the energy system.",
@@ -671,7 +671,7 @@ export const insightsData: InsightType[] = [
     title: "Home Energy Management Systems Explained",
     tag: "Technology",
     date: "February 10, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/home-energy-management-systems-explained.webp",
 
     intro: [
       "A Home Energy Management System (HEMS) coordinates all the energy-consuming and energy-producing devices in a household. Solar panels, batteries, EV chargers, heat pumps, and even smart appliances can all be orchestrated through a single system.",
@@ -734,7 +734,7 @@ export const insightsData: InsightType[] = [
     title: "Wireless EV Charging: Where We Are and What's Next",
     tag: "EV Charging",
     date: "March 05, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/wireless-ev-charging-status-and-future.webp",
 
     intro: [
       "Wireless EV charging eliminates the cable entirely. You park over a pad, and the car charges. The technology uses inductive power transfer, the same principle that charges your phone on a wireless pad, but scaled up to handle kilowatts instead of watts.",
@@ -810,7 +810,7 @@ export const insightsData: InsightType[] = [
     title: "How EV Charging Works: AC vs DC Explained",
     tag: "EV Charging",
     date: "June 15, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/ev-charging-ac-vs-dc-explained.webp",
 
     intro: [
       "Every EV charger falls into one of two categories: AC or DC. The difference is not just speed. It affects cost, installation requirements, use cases, and how the electricity actually gets into your battery. Understanding this distinction is the foundation for making any EV charging decision.",
@@ -870,7 +870,7 @@ export const insightsData: InsightType[] = [
     title: "What is OCPP and Why Does It Matter",
     tag: "Technology",
     date: "June 28, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/what-is-ocpp-and-why-it-matters.webp",
 
     intro: [
       "OCPP stands for Open Charge Point Protocol. It is the communication standard that lets EV chargers talk to a central management system. Without it, every charger manufacturer would use a proprietary protocol, locking operators into a single vendor's ecosystem.",
@@ -924,7 +924,7 @@ export const insightsData: InsightType[] = [
     title: "How to Choose the Right EV Charger for Your Home",
     tag: "EV Charging",
     date: "July 10, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/choose-right-ev-charger-for-home.webp",
 
     intro: [
       "Buying a home EV charger is not complicated, but there are a few decisions that will affect your daily experience for years. Power level, connector type, smart features, and your electrical setup all play a role. This guide walks through each factor so you can make the right call.",
@@ -989,7 +989,7 @@ export const insightsData: InsightType[] = [
     title: "EV Charging for Apartments: A Complete Guide",
     tag: "EV Charging",
     date: "July 25, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/ev-charging-apartments-complete-guide.webp",
 
     intro: [
       "Installing an EV charger in an apartment is harder than in an independent house. You are dealing with shared electrical infrastructure, parking that may not be assigned, resident welfare association (RWA) approvals, and billing that needs to be fair to everyone. But it is solvable. Thousands of apartment complexes in India are already doing it.",
@@ -1048,7 +1048,7 @@ export const insightsData: InsightType[] = [
     title: "Setting Up EV Charging at Your Workplace",
     tag: "EV Charging",
     date: "August 08, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/ev-charging-workplace-setup-guide.webp",
 
     intro: [
       "Workplace EV charging is one of the fastest-growing segments in India. Employees spend 8-10 hours at the office, which is plenty of time for even a slow AC charger to fully charge a vehicle. For employers, it is a tangible employee benefit that also signals commitment to sustainability.",
@@ -1103,7 +1103,7 @@ export const insightsData: InsightType[] = [
     title: "Understanding Load Balancing in EV Charging",
     tag: "Technology",
     date: "August 22, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/load-balancing-ev-charging-explained.webp",
 
     intro: [
       "Load balancing is what prevents your electrical system from overloading when multiple EV chargers operate simultaneously. Without it, adding chargers to a building or parking lot requires expensive electrical upgrades. With it, you can serve more vehicles on the same infrastructure.",
@@ -1157,7 +1157,7 @@ export const insightsData: InsightType[] = [
     title: "Smart Charger vs Dumb Charger: What's the Difference",
     tag: "EV Charging",
     date: "September 05, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/smart-charger-vs-dumb-charger.webp",
 
     intro: [
       "A dumb charger delivers power to your EV. A smart charger does that plus everything else: scheduling, monitoring, remote control, load management, and integration with energy systems. The price gap between them has narrowed significantly. Here is what each option gives you and when each makes sense.",
@@ -1214,7 +1214,7 @@ export const insightsData: InsightType[] = [
     title: "EV Charging Costs: What to Expect in India",
     tag: "EV Charging",
     date: "September 18, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/ev-charging-costs-india.webp",
 
     intro: [
       "One of the biggest reasons people switch to EVs is fuel cost savings. But how much does it actually cost to charge an EV in India? The answer depends on where you charge, when you charge, and what kind of charger you use. This article breaks down the real numbers.",
@@ -1269,7 +1269,7 @@ export const insightsData: InsightType[] = [
     title: "How Solar and EV Charging Work Together",
     tag: "Sustainability",
     date: "October 02, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/solar-ev-charging-integration.webp",
 
     intro: [
       "Rooftop solar and EV charging are a natural pair. Solar panels produce power during the day, and your car is often parked at home or at the office during those same hours. Connecting the two means you can drive on sunlight instead of grid electricity, cutting both costs and carbon emissions.",
@@ -1324,7 +1324,7 @@ export const insightsData: InsightType[] = [
     title: "EV Battery Health: Charging Best Practices",
     tag: "EV Charging",
     date: "October 15, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/ev-battery-health-charging-best-practices.webp",
 
     intro: [
       "EV batteries degrade over time. That is a fact of lithium-ion chemistry. But how you charge has a measurable impact on how fast that degradation happens. Following a few straightforward practices can keep your battery healthy well past the warranty period.",
@@ -1384,7 +1384,7 @@ export const insightsData: InsightType[] = [
     title: "Public vs Private EV Charging: Key Differences",
     tag: "EV Charging",
     date: "October 30, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/public-vs-private-ev-charging.webp",
 
     intro: [
       "Public and private EV charging serve different needs, use different business models, and have different technical requirements. Understanding the distinction helps whether you are an EV owner deciding where to charge or a business considering installing chargers.",
@@ -1439,7 +1439,7 @@ export const insightsData: InsightType[] = [
     title: "Three-Phase vs Single-Phase EV Charging",
     tag: "Technology",
     date: "November 12, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/three-phase-vs-single-phase-charging.webp",
 
     intro: [
       "Your electrical supply type determines how fast your EV can charge at home or work. Single-phase and three-phase are two different ways of delivering AC power, and they have very different implications for EV charging speed, cost, and installation.",
@@ -1494,7 +1494,7 @@ export const insightsData: InsightType[] = [
     title: "RFID vs App-Based EV Charger Authentication",
     tag: "Technology",
     date: "November 25, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/rfid-vs-app-ev-charger-auth.webp",
 
     intro: [
       "Every shared or public EV charger needs a way to identify who is charging. The two main methods are RFID cards and mobile apps. Each has trade-offs in convenience, cost, and reliability. The right choice depends on your use case.",
@@ -1554,7 +1554,7 @@ export const insightsData: InsightType[] = [
     title: "What is Dynamic Load Management for EV Charging",
     tag: "Technology",
     date: "December 08, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/dynamic-load-management-ev-charging.webp",
 
     intro: [
       "Dynamic Load Management (DLM) adjusts EV charging power in real time based on total site electricity consumption. It is the technology that lets you install more chargers than your electrical capacity would normally allow, because not all chargers need full power simultaneously.",
@@ -1609,7 +1609,7 @@ export const insightsData: InsightType[] = [
     title: "EV Charging Station Installation: What You Need to Know",
     tag: "EV Charging",
     date: "December 20, 2025",
-    image: "/home/hero.webp",
+    image: "/insights/ev-charging-station-installation-guide.webp",
 
     intro: [
       "Installing an EV charger is not just plugging a box into the wall. It involves site assessment, electrical planning, safety compliance, and choosing the right equipment. Getting it right the first time saves money and headaches. This guide covers the essentials for residential and small commercial installations.",
@@ -1676,7 +1676,7 @@ export const insightsData: InsightType[] = [
     title: "Type 2 vs CCS2: EV Connector Guide for India",
     tag: "EV Charging",
     date: "January 05, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/type-2-vs-ccs2-ev-connector-guide-india.webp",
 
     intro: [
       "EV connectors are not universal. Different connector types serve different charging speeds and use cases. In India, Type 2 and CCS2 are the dominant standards, but knowing when each applies and why they exist prevents expensive mistakes when buying chargers or vehicles.",
@@ -1737,7 +1737,7 @@ export const insightsData: InsightType[] = [
     title: "Why Indian-Made EV Chargers Matter",
     tag: "EV Charging",
     date: "January 20, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/why-indian-made-ev-chargers-matter.webp",
 
     intro: [
       "India's EV charging market is flooded with imported chargers, mostly from China. They are cheap upfront, but the long-term costs of poor after-sales support, incompatible firmware, and supply chain fragility add up. Indian-manufactured chargers built by OEMs like RIOD offer a fundamentally different value proposition.",
@@ -1799,7 +1799,7 @@ export const insightsData: InsightType[] = [
     title: "Why Charging in Theaters and Public Parking Works",
     tag: "EV Charging",
     date: "February 05, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/ev-charging-theaters-public-parking.webp",
 
     intro: [
       "Movie theaters, malls, and public parking lots share one trait that makes them perfect for EV charging: predictable dwell time. A moviegoer parks for two to three hours. A shopper parks for one to two. That window lines up neatly with AC charging speeds, turning idle parking bays into revenue-generating assets without any behavior change from the driver.",
@@ -1854,7 +1854,7 @@ export const insightsData: InsightType[] = [
     title: "AC vs DC Charging for Apartments",
     tag: "EV Charging",
     date: "February 12, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/ac-vs-dc-charging-apartments.webp",
 
     intro: [
       "When apartment societies evaluate EV charging, the AC vs DC question comes up fast. The short answer for most residential complexes: AC charging wins on nearly every practical metric. The cars sit in parking spots for 8-12 hours overnight. You do not need to blast energy into a battery in 30 minutes when you have the whole night. But there are edge cases where DC has a role, and it is worth understanding both.",
@@ -1908,7 +1908,7 @@ export const insightsData: InsightType[] = [
     title: "Which EV Charger is Best for Apartment Societies",
     tag: "EV Charging",
     date: "February 20, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/best-ev-charger-for-apartment-societies.webp",
 
     intro: [
       "Apartment societies face a unique set of constraints when choosing EV chargers. The RWA has to balance cost, fairness in billing, electrical capacity, and the varying needs of residents who drive different EVs. Picking the wrong charger or the wrong deployment model leads to disputes, wasted money, and infrastructure that does not scale. Here is what actually works.",
@@ -1962,7 +1962,7 @@ export const insightsData: InsightType[] = [
     title: "EV Charging Solutions for Parking Lots",
     tag: "EV Charging",
     date: "February 28, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/ev-charging-solutions-parking-lots.webp",
 
     intro: [
       "Parking lots at malls, airports, metro stations, and commercial buildings are prime real estate for EV charging. They have existing electrical infrastructure, security, lighting, and a steady stream of vehicles with predictable dwell times. The question is not whether to install chargers but how to design a deployment that maximizes revenue and utilization while keeping costs under control.",
@@ -2016,7 +2016,7 @@ export const insightsData: InsightType[] = [
     title: "Key Specifications to Look for in an EV Charger",
     tag: "EV Charging",
     date: "March 05, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/key-specifications-ev-charger.webp",
 
     intro: [
       "Buying an EV charger based on brand name alone is a mistake. Specifications determine whether a charger is safe, compatible, durable, and future-proof. Most buyers focus on power rating and price, but there are half a dozen other specs that matter just as much. Here is what to actually look at before signing a purchase order.",
@@ -2071,7 +2071,7 @@ export const insightsData: InsightType[] = [
     title: "Home EV Charging: What Works Best",
     tag: "EV Charging",
     date: "March 10, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/home-ev-charging-what-works-best.webp",
 
     intro: [
       "Most EV charging happens at home. It is the most convenient and cheapest way to keep your car topped up. But the range of home charger options can be confusing. Do you need 3.3 kW or 22 kW? Single phase or three phase? Plug-and-play or hardwired? The right answer depends on your car, your electrical setup, and how you drive.",
@@ -2122,7 +2122,7 @@ export const insightsData: InsightType[] = [
     title: "Reducing Installation Cost of EV Charging Stations",
     tag: "EV Charging",
     date: "March 15, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/reducing-ev-charger-installation-cost.webp",
 
     intro: [
       "The charger is often the smaller part of the total cost. Installation, including cabling, civil work, electrical panel upgrades, and trenching, can equal or exceed the hardware cost. Smart planning at the design stage eliminates unnecessary expenses. Here are practical ways to bring installation costs down without cutting corners on safety or quality.",
@@ -2177,7 +2177,7 @@ export const insightsData: InsightType[] = [
     title: "Resettable RCDs in EV Chargers: What You Need to Know",
     tag: "Technology",
     date: "March 20, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/resettable-rcds-ev-chargers.webp",
 
     intro: [
       "Residual Current Devices (RCDs) are the frontline safety component in every EV charger. They detect current leakage and disconnect the circuit before someone gets electrocuted or a fire starts. But not all RCDs are equal, and the choice between resettable and non-resettable, Type A and Type B, has real implications for safety, uptime, and maintenance costs.",
@@ -2232,7 +2232,7 @@ export const insightsData: InsightType[] = [
     title: "Operations Best Practices for Charge Point Operators",
     tag: "EV Charging",
     date: "March 25, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/operations-best-practices-cpos.webp",
 
     intro: [
       "Running EV chargers is not a set-and-forget business. CPOs who treat operations as an afterthought end up with low uptime, angry customers, and thin margins. The difference between a profitable CPO and a struggling one often comes down to operational discipline. Here is what good charger operations actually look like on the ground.",
@@ -2287,7 +2287,7 @@ export const insightsData: InsightType[] = [
     title: "How to Detect Faulty EV Chargers",
     tag: "Technology",
     date: "March 28, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/how-to-detect-faulty-ev-chargers.webp",
 
     intro: [
       "A faulty charger is worse than no charger at all. It damages your reputation, wastes a driver's time, and in the worst case poses a safety hazard. The good news is that most charger failures give warning signs before they become complete outages. Knowing what to look for, both on-site and through remote diagnostics, keeps your network healthy and your users happy.",
@@ -2343,7 +2343,7 @@ export const insightsData: InsightType[] = [
     title: "Extending the Life of EV Charging Stations",
     tag: "EV Charging",
     date: "April 02, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/extending-life-ev-charging-stations.webp",
 
     intro: [
       "An EV charger is a capital investment. Whether you paid for a single home unit or a fleet of commercial chargers, you want them to last. The good news is that chargers are not inherently short-lived products. With proper care, a quality unit should deliver 8-10+ years of reliable service. The bad news is that neglect, poor installation, and harsh environments shorten that lifespan dramatically.",
@@ -2398,7 +2398,7 @@ export const insightsData: InsightType[] = [
     title: "Preventing Parking Misuse at Charging Stations",
     tag: "EV Charging",
     date: "April 08, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/preventing-parking-misuse-charging-stations.webp",
 
     intro: [
       "You have invested in charging infrastructure, but a petrol car is parked in the charging bay. Or an EV that finished charging two hours ago is still occupying the spot. Parking misuse, known as ICE-ing when non-EVs block charger spots, is one of the most frustrating operational challenges for CPOs and site owners. It kills utilization, annoys drivers, and wastes revenue potential. Here is how to fight it.",
@@ -2453,7 +2453,7 @@ export const insightsData: InsightType[] = [
     title: "Improving Charger Utilization for CPOs",
     tag: "EV Charging",
     date: "April 14, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/improving-charger-utilization-cpos.webp",
 
     intro: [
       "Utilization is the number that determines whether a CPO makes money or bleeds it. A charger sitting idle 90% of the day is not generating revenue but is still depreciating, consuming standby power, and requiring maintenance. Moving utilization from 10% to 30% can be the difference between a loss-making network and a profitable one. Here is how to get there.",
@@ -2508,7 +2508,7 @@ export const insightsData: InsightType[] = [
     title: "Optimizing Charging Infrastructure for Utilities",
     tag: "Technology",
     date: "April 20, 2026",
-    image: "/home/hero.webp",
+    image: "/insights/optimizing-charging-infrastructure-utilities.webp",
 
     intro: [
       "As EV adoption scales, the charging load on the electrical grid becomes a utility-level concern. Unmanaged charging, where every EV owner plugs in at 7 PM when they get home, creates demand peaks that strain transformers, feeders, and generation capacity. But managed intelligently, EV charging is actually a grid asset. It is a flexible, shiftable load that can respond to grid signals, absorb excess renewable generation, and even feed power back during peaks.",
