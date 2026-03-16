@@ -39,7 +39,7 @@ export const technologies: Technology[] = [
     tagline:
       "Automatic residual current protection that resets without manual intervention, minimizing charger downtime at unmanned locations.",
     icon: ShieldCheck,
-    heroImage: "/technology/self-resettable-rcd.jpg",
+    heroImage: "/technology/self-resettable-rcd.webp",
     sections: [
       {
         heading: "Automatic Fault Recovery",
@@ -51,7 +51,7 @@ export const technologies: Technology[] = [
           "Configurable reset delay and retry thresholds",
           "Automatic ticket creation in Operations Suite when fault persists",
         ],
-        image: "/technology/rcd-fault-recovery.jpg",
+        image: "/technology/rcd-fault-recovery.webp",
       },
       {
         heading: "Designed for Unmanned Locations",
@@ -63,7 +63,7 @@ export const technologies: Technology[] = [
           "Suitable for both AC wallbox and DC fast charger applications",
           "Integrated with charger firmware for coordinated protection",
         ],
-        image: "/technology/rcd-unmanned.jpg",
+        image: "/technology/rcd-unmanned.webp",
       },
     ],
   },
@@ -73,7 +73,7 @@ export const technologies: Technology[] = [
     tagline:
       "Intelligent power distribution across multiple chargers without a central controller. For advanced site-level energy management, see Power Master.",
     icon: Network,
-    heroImage: "/technology/decentralized-load-balancer.jpg",
+    heroImage: "/technology/decentralized-load-balancer.webp",
     sections: [
       {
         heading: "Peer-to-Peer Power Sharing",
@@ -85,7 +85,7 @@ export const technologies: Technology[] = [
           "Supports mixed AC and DC charger deployments",
           "Scales from 2 to 50+ charge points per site",
         ],
-        image: "/technology/load-balancer-p2p.jpg",
+        image: "/technology/load-balancer-p2p.webp",
       },
       {
         heading: "Smart Grid Integration",
@@ -97,7 +97,7 @@ export const technologies: Technology[] = [
           "Solar and battery storage integration support",
           "Seamless upgrade path to Power Master for advanced control",
         ],
-        image: "/technology/load-balancer-grid.jpg",
+        image: "/technology/load-balancer-grid.webp",
       },
       {
         heading: "Zero Infrastructure Overhead",
@@ -109,7 +109,7 @@ export const technologies: Technology[] = [
           "Plug-and-play commissioning with auto-discovery",
           "OTA updates for algorithm improvements",
         ],
-        image: "/technology/load-balancer-infra.jpg",
+        image: "/technology/load-balancer-infra.webp",
       },
     ],
   },
@@ -119,7 +119,7 @@ export const technologies: Technology[] = [
     tagline:
       "Three-tier operations platform — from real-time monitoring to AI-powered predictive maintenance. Observe, Operate, and Optimize your charger network.",
     icon: Monitor,
-    heroImage: "/technology/operations-suite.jpg",
+    heroImage: "/technology/operations-suite.webp",
     sections: [
       {
         heading: "EVSE Observe — Live Operational View",
@@ -131,7 +131,7 @@ export const technologies: Technology[] = [
           "Live operational dashboards with configurable alerts",
           "Multi-site visibility from a single pane of glass",
         ],
-        image: "/technology/ops-observe.jpg",
+        image: "/technology/ops-observe.webp",
       },
       {
         heading: "EVSE Operate — Managed Charger Operations",
@@ -143,7 +143,7 @@ export const technologies: Technology[] = [
           "SLA tracking and maintenance workflow management",
           "Remote start/stop, configuration, and firmware updates",
         ],
-        image: "/technology/ops-operate.jpg",
+        image: "/technology/ops-operate.webp",
       },
       {
         heading: "EVSE Operate Plus — Advanced Intelligence Modules",
@@ -157,7 +157,7 @@ export const technologies: Technology[] = [
           "Idle Blocking & Overstay Detection via Vision AI",
           "EVSE Diagnostic Tool for field technicians",
         ],
-        image: "/technology/ops-plus.jpg",
+        image: "/technology/ops-plus.webp",
       },
     ],
   },
@@ -167,7 +167,7 @@ export const technologies: Technology[] = [
     tagline:
       "Modular power conversion unit designed for rapid deployment of DC charging infrastructure at any location.",
     icon: BatteryCharging,
-    heroImage: "/technology/powerbox.jpg",
+    heroImage: "/technology/powerbox.webp",
     sections: [
       {
         heading: "Modular Power Architecture",
@@ -179,7 +179,7 @@ export const technologies: Technology[] = [
           "400V and 800V battery voltage support",
           "Compact form factor for space-constrained installations",
         ],
-        image: "/technology/powerbox-modular.jpg",
+        image: "/technology/powerbox-modular.webp",
       },
       {
         heading: "Rapid Site Deployment",
@@ -191,7 +191,7 @@ export const technologies: Technology[] = [
           "Plug-and-play connectivity with RIOD dispensers",
           "IP54 rated enclosure for outdoor deployment",
         ],
-        image: "/technology/powerbox-deploy.jpg",
+        image: "/technology/powerbox-deploy.webp",
       },
     ],
   },
@@ -202,7 +202,7 @@ export const technologies: Technology[] = [
       "Vehicle-to-grid technology enabling EVs to feed energy back to the grid, turning every parked vehicle into a distributed energy asset.",
     icon: ArrowLeftRight,
     upcoming: true,
-    heroImage: "/technology/v2g.jpg",
+    heroImage: "/technology/v2g.webp",
     sections: [
       {
         heading: "Vehicle-to-Grid Energy Flow",
@@ -214,7 +214,7 @@ export const technologies: Technology[] = [
           "Grid-synchronized power export with anti-islanding protection",
           "Configurable discharge limits to preserve battery health",
         ],
-        image: "/technology/v2g-flow.jpg",
+        image: "/technology/v2g-flow.webp",
       },
       {
         heading: "Energy Arbitrage & Grid Services",
@@ -226,7 +226,7 @@ export const technologies: Technology[] = [
           "Fleet-aware scheduling that prioritizes departure readiness",
           "Revenue tracking for energy exported to the grid",
         ],
-        image: "/technology/v2g-arbitrage.jpg",
+        image: "/technology/v2g-arbitrage.webp",
       },
     ],
   },
@@ -236,7 +236,7 @@ export const technologies: Technology[] = [
     tagline:
       "AI-powered predictive maintenance, analytics, and vehicle battery profiling that anticipate failures before they cause downtime.",
     icon: Brain,
-    heroImage: "/technology/charger-intelligence.jpg",
+    heroImage: "/technology/charger-intelligence.webp",
     sections: [
       {
         heading: "Predictive Maintenance",
@@ -248,7 +248,7 @@ export const technologies: Technology[] = [
           "Automated maintenance ticket generation and scheduling",
           "Continuous model improvement with fleet-wide learning",
         ],
-        image: "/technology/intelligence-predictive.jpg",
+        image: "/technology/intelligence-predictive.webp",
       },
       {
         heading: "Charging Port Analytics",
@@ -260,7 +260,7 @@ export const technologies: Technology[] = [
           "Utilization heatmaps by location, time, and connector type",
           "Benchmarking across sites for performance optimization",
         ],
-        image: "/technology/intelligence-analytics.jpg",
+        image: "/technology/intelligence-analytics.webp",
       },
       {
         heading: "Operational Intelligence Dashboard",
@@ -272,7 +272,7 @@ export const technologies: Technology[] = [
           "Spare parts demand forecasting",
           "Monthly reliability and uptime reports",
         ],
-        image: "/technology/intelligence-dashboard.jpg",
+        image: "/technology/intelligence-dashboard.webp",
       },
       {
         heading: "Vehicle Battery Profile as a Service",
@@ -284,7 +284,7 @@ export const technologies: Technology[] = [
           "Fleet-level battery health benchmarking and reporting",
           "API-ready data for OEMs, fleet operators, and insurance providers",
         ],
-        image: "/technology/intelligence-battery.jpg",
+        image: "/technology/intelligence-battery.webp",
       },
     ],
   },
@@ -294,7 +294,7 @@ export const technologies: Technology[] = [
     tagline:
       "Comprehensive platform for managing electric fleet charging — depot scheduling, route optimization, and energy cost management.",
     icon: Truck,
-    heroImage: "/technology/fleet-management.jpg",
+    heroImage: "/technology/fleet-management.webp",
     sections: [
       {
         heading: "Depot Charging Orchestration",
@@ -306,7 +306,7 @@ export const technologies: Technology[] = [
           "Integration with fleet telematics and dispatch systems",
           "Overnight valley charging for minimum energy costs",
         ],
-        image: "/technology/fleet-depot.jpg",
+        image: "/technology/fleet-depot.webp",
       },
       {
         heading: "Energy Cost Optimization",
@@ -318,7 +318,7 @@ export const technologies: Technology[] = [
           "Solar self-consumption maximization at depot sites",
           "Total cost of energy reporting per vehicle and route",
         ],
-        image: "/technology/fleet-energy.jpg",
+        image: "/technology/fleet-energy.webp",
       },
       {
         heading: "Fleet Analytics & Reporting",
@@ -330,7 +330,7 @@ export const technologies: Technology[] = [
           "Charger utilization and availability by depot",
           "SLA compliance and uptime reporting",
         ],
-        image: "/technology/fleet-analytics.jpg",
+        image: "/technology/fleet-analytics.webp",
       },
     ],
   },
@@ -340,7 +340,7 @@ export const technologies: Technology[] = [
     tagline:
       "Integrated UPI and NFC payment hardware enabling cashless, card-free transactions at every charge point.",
     icon: CreditCard,
-    heroImage: "/technology/payment-terminals.jpg",
+    heroImage: "/technology/payment-terminals.webp",
     sections: [
       {
         heading: "UPI & NFC Integration",
@@ -352,7 +352,7 @@ export const technologies: Technology[] = [
           "Real-time payment confirmation with session auto-start",
           "Offline transaction queuing with automatic reconciliation",
         ],
-        image: "/technology/payment-upi.jpg",
+        image: "/technology/payment-upi.webp",
       },
       {
         heading: "Secure & Certified",
@@ -364,7 +364,7 @@ export const technologies: Technology[] = [
           "Tamper-evident hardware with intrusion detection",
           "Automated settlement and reconciliation with payment gateways",
         ],
-        image: "/technology/payment-secure.jpg",
+        image: "/technology/payment-secure.webp",
       },
     ],
   },
@@ -375,7 +375,7 @@ export const technologies: Technology[] = [
       "High-performance embedded controller managing DC fast charging power electronics, safety systems, and communication protocols.",
     icon: Cpu,
     upcoming: true,
-    heroImage: "/technology/dc-controller.jpg",
+    heroImage: "/technology/dc-controller.webp",
     sections: [
       {
         heading: "Power Electronics Control",
@@ -387,7 +387,7 @@ export const technologies: Technology[] = [
           "Wide output range: 150V to 1000V DC",
           "Thermal derating with graceful power reduction",
         ],
-        image: "/technology/dc-controller-power.jpg",
+        image: "/technology/dc-controller-power.webp",
       },
       {
         heading: "Safety & Protocol Stack",
@@ -399,7 +399,7 @@ export const technologies: Technology[] = [
           "Ground fault, over-voltage, and over-current protection",
           "Pre-charge and insulation monitoring sequences",
         ],
-        image: "/technology/dc-controller-safety.jpg",
+        image: "/technology/dc-controller-safety.webp",
       },
     ],
   },
@@ -409,7 +409,7 @@ export const technologies: Technology[] = [
     tagline:
       "Integrated vision-based parking occupancy detection with EV charging management for optimal space and energy utilization.",
     icon: ParkingSquare,
-    heroImage: "/technology/smart-parking.jpg",
+    heroImage: "/technology/smart-parking.webp",
     sections: [
       {
         heading: "Vision-Based Occupancy Detection",
@@ -421,7 +421,7 @@ export const technologies: Technology[] = [
           "License plate recognition for automated access control",
           "Works in indoor, outdoor, and low-light conditions",
         ],
-        image: "/technology/parking-vision.jpg",
+        image: "/technology/parking-vision.webp",
       },
       {
         heading: "Integrated Charging Management",
@@ -433,7 +433,7 @@ export const technologies: Technology[] = [
           "Parking duration tracking with overstay management",
           "Combined parking and charging billing",
         ],
-        image: "/technology/parking-charging.jpg",
+        image: "/technology/parking-charging.webp",
       },
       {
         heading: "Analytics & Space Optimization",
@@ -445,7 +445,7 @@ export const technologies: Technology[] = [
           "Revenue reporting for combined parking and charging",
           "API integration with parking management platforms",
         ],
-        image: "/technology/parking-analytics.jpg",
+        image: "/technology/parking-analytics.webp",
       },
     ],
   },
@@ -456,7 +456,7 @@ export const technologies: Technology[] = [
     tagline:
       "Complete hardware engineering platform — from power architecture and mechanical design to production tooling and certification support.",
     icon: HardDrive,
-    heroImage: "/technology/hardware-bundle.jpg",
+    heroImage: "/technology/hardware-bundle.webp",
     sections: [
       {
         heading: "EVSE Hardware Core",
@@ -468,7 +468,7 @@ export const technologies: Technology[] = [
           "Compliance-ready design for IEC, CE, and UL standards",
           "Modular PCB layout for variant configurability",
         ],
-        image: "/technology/hardware-core.jpg",
+        image: "/technology/hardware-core.webp",
       },
       {
         heading: "EVSE Mechanical Casing & Production",
@@ -480,7 +480,7 @@ export const technologies: Technology[] = [
           "Golden Sample and Reference Build Control",
           "Pilot and mass production support",
         ],
-        image: "/technology/hardware-casing.jpg",
+        image: "/technology/hardware-casing.webp",
       },
       {
         heading: "EVSE Hardware Extensions",
@@ -492,7 +492,7 @@ export const technologies: Technology[] = [
           "Supply chain risk assessment and alternate BOM strategy",
           "After-sales RCA, technical support, and mass troubleshooting guidelines",
         ],
-        image: "/technology/hardware-extensions.jpg",
+        image: "/technology/hardware-extensions.webp",
       },
     ],
   },
@@ -502,7 +502,7 @@ export const technologies: Technology[] = [
     tagline:
       "Complete charging management for residential communities — from user onboarding and shared scheduling to billing and intelligent load balancing.",
     icon: Users,
-    heroImage: "/technology/community-suite.jpg",
+    heroImage: "/technology/community-suite.webp",
     sections: [
       {
         heading: "EVSE Access Manager",
@@ -514,7 +514,7 @@ export const technologies: Technology[] = [
           "Charger assignment and usage quota management",
           "Detailed usage logs and audit trails",
         ],
-        image: "/technology/community-access.jpg",
+        image: "/technology/community-access.webp",
       },
       {
         heading: "EVSE Share & Bill",
@@ -526,7 +526,7 @@ export const technologies: Technology[] = [
           "Integrated payment collection and reconciliation",
           "Visitor charging module with guest billing",
         ],
-        image: "/technology/community-billing.jpg",
+        image: "/technology/community-billing.webp",
       },
       {
         heading: "EVSE Community Intelligence",
@@ -538,7 +538,7 @@ export const technologies: Technology[] = [
           "Community Load Balancer — prevents electrical overload",
           "Usage Transparency Dashboard — reduces resident disputes",
         ],
-        image: "/technology/community-intelligence.jpg",
+        image: "/technology/community-intelligence.webp",
       },
     ],
   },
@@ -548,7 +548,7 @@ export const technologies: Technology[] = [
     tagline:
       "Three-tier fleet charging platform — track, optimize, and intelligently manage your electric fleet from depot to route.",
     icon: Truck,
-    heroImage: "/technology/evse-fleet.jpg",
+    heroImage: "/technology/evse-fleet.webp",
     sections: [
       {
         heading: "EVSE Fleet Track",
@@ -560,7 +560,7 @@ export const technologies: Technology[] = [
           "Depot-level dashboards with utilization metrics",
           "Integration with fleet telematics systems",
         ],
-        image: "/technology/evse-fleet-track.jpg",
+        image: "/technology/evse-fleet-track.webp",
       },
       {
         heading: "EVSE Fleet Optimize",
@@ -572,7 +572,7 @@ export const technologies: Technology[] = [
           "Peak demand avoidance and time-of-use optimization",
           "Total cost of energy tracking per vehicle and route",
         ],
-        image: "/technology/evse-fleet-optimize.jpg",
+        image: "/technology/evse-fleet-optimize.webp",
       },
       {
         heading: "EVSE Fleet Intelligence",
@@ -584,7 +584,7 @@ export const technologies: Technology[] = [
           "Battery Health Correlation — links charging behaviour to battery life",
           "Fleet ESG & Carbon Reports — CO₂ and sustainability tracking",
         ],
-        image: "/technology/evse-fleet-intelligence.jpg",
+        image: "/technology/evse-fleet-intelligence.webp",
       },
     ],
   },
@@ -594,7 +594,7 @@ export const technologies: Technology[] = [
     tagline:
       "Charge Point Management System — from OCPP connectivity and remote control to billing, payments, and revenue growth modules.",
     icon: LayoutGrid,
-    heroImage: "/technology/cms-suite.jpg",
+    heroImage: "/technology/cms-suite.webp",
     sections: [
       {
         heading: "EVSE Control Hub",
@@ -606,7 +606,7 @@ export const technologies: Technology[] = [
           "Site and charger hierarchy with multi-tenant support",
           "Role-based access with granular permissions for CPO ops teams",
         ],
-        image: "/technology/cms-control.jpg",
+        image: "/technology/cms-control.webp",
       },
       {
         heading: "EVSE Commerce Engine",
@@ -618,7 +618,7 @@ export const technologies: Technology[] = [
           "Integrated wallets, subscriptions, and payment processing",
           "GST-compliant billing with automated reconciliation",
         ],
-        image: "/technology/cms-commerce.jpg",
+        image: "/technology/cms-commerce.webp",
       },
       {
         heading: "EVSE Growth Modules",
@@ -630,7 +630,7 @@ export const technologies: Technology[] = [
           "Multi-Entity Settlement — revenue split between CPO, landlord, fleet",
           "Revenue Leakage Monitor — detects failed or unpaid sessions",
         ],
-        image: "/technology/cms-growth.jpg",
+        image: "/technology/cms-growth.webp",
       },
     ],
   },
