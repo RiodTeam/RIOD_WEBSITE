@@ -41,7 +41,7 @@ const team: TeamMember[] = [
     name: "Kailash CS",
     title: "Business Development",
     description:
-      "Drives business development and client partnerships. Builds long-term relationships with partners across India, Europe, and the Middle East.",
+      "Drives business development and client partnerships. Builds long-term relationships with customers and channel partners across India.",
     photo: "/about/kailash.jfif",
     linkedin: "https://www.linkedin.com/in/kailash-cs/",
   },

@@ -14,7 +14,7 @@ const MotionWrapper: React.FC<MotionWrapperProps> = ({ children, delay = 0, clas
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.05 }}
       transition={{ duration: 0.8, delay, ease: "easeInOut" }} 
       className={className}
     >

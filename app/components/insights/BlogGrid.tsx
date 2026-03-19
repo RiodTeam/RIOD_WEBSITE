@@ -79,7 +79,7 @@ export default function BlogGrid() {
               className="group cursor-pointer"
             >
               <MotionWrapper>
-                <div className="w-full h-[270px] md:h-[300px] xl:h-[530px] relative overflow-hidden group">
+                <div className="w-full h-[240px] md:h-[280px] lg:h-[360px] xl:h-[440px] relative overflow-hidden group">
                   <Image
                     src={blog.image}
                     alt={blog.title}

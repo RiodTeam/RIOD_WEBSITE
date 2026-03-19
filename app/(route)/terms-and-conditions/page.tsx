@@ -315,10 +315,10 @@ export default function TermsAndConditionsPage() {
               <p>
                 Email:{" "}
                 <a
-                  href="mailto:info@riod.in"
+                  href="mailto:hello@riod.in"
                   className="text-black underline hover:text-[#cdf80a] transition-colors"
                 >
-                  info@riod.in
+                  hello@riod.in
                 </a>
               </p>
               <p>

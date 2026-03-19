@@ -2,9 +2,9 @@ import React from "react";
 import PageClient from "./page.client";
 
 export const metadata = {
-  title: "About RIOD | Powering the Future of Electric Mobility",
+  title: "About RIOD | Built in India. Engineered for the World.",
   description:
-    "Reliable, fast, and smart EV charging solutions for home, business, and commercial spaces. Designed to empower your journey towards a greener, smarter future.",
+    "RIOD is an Indian EV charging and energy management company built by engineers. Learn about our story, our team, and our mission to make clean energy infrastructure smarter and more accessible.",
 };
 
 export default function Page() {

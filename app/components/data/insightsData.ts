@@ -252,7 +252,7 @@ export const insightsData: InsightType[] = [
   {
     id: 45,
     slug: "fleet-electrification-complete-guide",
-    title: "Fleet Electrification: Complete Guide",
+    title: "Fleet Electrification: Depot Infrastructure, Charging Strategy, and Operations",
     tag: "Industry",
     date: "November 8, 2025",
     image: "/insights/fleet-electrification-complete-guide.webp",
@@ -668,7 +668,7 @@ export const insightsData: InsightType[] = [
   {
     id: 6,
     slug: "home-energy-management-systems-explained",
-    title: "Home Energy Management Systems Explained",
+    title: "Home Energy Management Systems and Their Role in EV Charging",
     tag: "Technology",
     date: "February 10, 2026",
     image: "/insights/home-energy-management-systems-explained.webp",
@@ -921,7 +921,7 @@ export const insightsData: InsightType[] = [
   {
     id: 10,
     slug: "choose-right-ev-charger-for-home",
-    title: "How to Choose the Right EV Charger for Your Home",
+    title: "Picking a Home EV Charger: What the Specs Actually Mean",
     tag: "EV Charging",
     date: "July 10, 2025",
     image: "/insights/choose-right-ev-charger-for-home.webp",
@@ -986,7 +986,7 @@ export const insightsData: InsightType[] = [
   {
     id: 11,
     slug: "ev-charging-apartments-complete-guide",
-    title: "EV Charging for Apartments: A Complete Guide",
+    title: "EV Charging in Residential Societies: Infrastructure, Billing, and Access",
     tag: "EV Charging",
     date: "July 25, 2025",
     image: "/insights/ev-charging-apartments-complete-guide.webp",
@@ -1045,7 +1045,7 @@ export const insightsData: InsightType[] = [
   {
     id: 12,
     slug: "ev-charging-workplace-setup-guide",
-    title: "Setting Up EV Charging at Your Workplace",
+    title: "Deploying EV Charging at Workplaces: Load, Access, and Billing Considerations",
     tag: "EV Charging",
     date: "August 08, 2025",
     image: "/insights/ev-charging-workplace-setup-guide.webp",
@@ -1100,7 +1100,7 @@ export const insightsData: InsightType[] = [
   {
     id: 13,
     slug: "load-balancing-ev-charging-explained",
-    title: "Understanding Load Balancing in EV Charging",
+    title: "Load Balancing in EV Charging: Static, Dynamic, and Decentralized Approaches",
     tag: "Technology",
     date: "August 22, 2025",
     image: "/insights/load-balancing-ev-charging-explained.webp",
@@ -1154,7 +1154,7 @@ export const insightsData: InsightType[] = [
   {
     id: 14,
     slug: "smart-charger-vs-dumb-charger",
-    title: "Smart Charger vs Dumb Charger: What's the Difference",
+    title: "Networked vs Non-Networked EV Chargers: A Practical Comparison",
     tag: "EV Charging",
     date: "September 05, 2025",
     image: "/insights/smart-charger-vs-dumb-charger.webp",
@@ -1321,7 +1321,7 @@ export const insightsData: InsightType[] = [
   {
     id: 17,
     slug: "ev-battery-health-charging-best-practices",
-    title: "EV Battery Health: Charging Best Practices",
+    title: "How Charging Behaviour Affects EV Battery Degradation",
     tag: "EV Charging",
     date: "October 15, 2025",
     image: "/insights/ev-battery-health-charging-best-practices.webp",
@@ -1606,7 +1606,7 @@ export const insightsData: InsightType[] = [
   {
     id: 22,
     slug: "ev-charging-station-installation-guide",
-    title: "EV Charging Station Installation: What You Need to Know",
+    title: "EV Charger Installation: Civil, Electrical, and Commissioning Requirements",
     tag: "EV Charging",
     date: "December 20, 2025",
     image: "/insights/ev-charging-station-installation-guide.webp",
@@ -2013,7 +2013,7 @@ export const insightsData: InsightType[] = [
   {
     id: 29,
     slug: "key-specifications-ev-charger",
-    title: "Key Specifications to Look for in an EV Charger",
+    title: "EV Charger Specifications That Actually Matter for Buyers",
     tag: "EV Charging",
     date: "March 05, 2026",
     image: "/insights/key-specifications-ev-charger.webp",

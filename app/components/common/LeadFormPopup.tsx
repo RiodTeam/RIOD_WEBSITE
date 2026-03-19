@@ -36,14 +36,12 @@ interface FormData {
   name: string;
   email: string;
   phone: string;
-  message: string;
 }
 
 const initialFormData: FormData = {
   name: "",
   email: "",
   phone: "",
-  message: "",
 };
 
 const LeadFormPopup: React.FC<LeadFormPopupProps> = ({ isOpen, onClose }) => {
@@ -104,7 +102,7 @@ const LeadFormPopup: React.FC<LeadFormPopupProps> = ({ isOpen, onClose }) => {
           name: formData.name.trim(),
           email: formData.email.trim(),
           phone: formData.phone.trim(),
-          message: formData.message.trim() || "Lead form submission",
+          message: "Lead form submission",
           formSource: "lead-popup",
         }),
       });
@@ -256,24 +254,6 @@ const LeadFormPopup: React.FC<LeadFormPopupProps> = ({ isOpen, onClose }) => {
                     placeholder="+91 00000 00000"
                     required
                     className={inputClasses}
-                  />
-                </div>
-
-                {/* Message */}
-                <div>
-                  <label className="block font-inter text-[13px] text-[#626262] mb-1.5">
-                    Message{" "}
-                    <span className="text-[#9a99a2] font-normal">
-                      (optional)
-                    </span>
-                  </label>
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Tell us a bit about what you need..."
-                    rows={4}
-                    className="w-full px-4 py-3 bg-white border border-[#e8e8e8] rounded-lg text-[15px] text-[#1b1b1b] placeholder:text-[#9a99a2] font-inter outline-none focus:border-[#1b1b1b] transition-colors resize-none"
                   />
                 </div>
 

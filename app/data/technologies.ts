@@ -71,43 +71,43 @@ export const technologies: Technology[] = [
     name: "Decentralized Load Balancer",
     slug: "decentralized-load-balancer",
     tagline:
-      "Intelligent power distribution across multiple chargers without a central controller. For advanced site-level energy management, see Power Master.",
+      "Firmware-embedded load balancing that distributes available power across chargers in real time — no central controller or separate hardware required.",
     icon: Network,
     heroImage: "/technology/decentralized-load-balancer.webp",
     sections: [
       {
-        heading: "Peer-to-Peer Power Sharing",
+        heading: "Embedded Power Sharing Across Chargers",
         description:
-          "Each charger communicates directly with its neighbors to dynamically allocate available power, ensuring optimal utilization of the site's electrical capacity. This is the embedded counterpart to RIOD's Power Master hardware — designed for sites that need load balancing without additional infrastructure.",
+          "The Decentralized Load Balancer runs as firmware inside each RIOD charger. Chargers monitor the site's available capacity and redistribute power among themselves in real time as vehicles connect and disconnect — without any central controller, gateway, or server. It is the per-charger intelligence layer that sits beneath Power Master in a full energy management deployment.",
         points: [
-          "No single point of failure — fully distributed architecture",
-          "Real-time power rebalancing as vehicles connect and disconnect",
-          "Supports mixed AC and DC charger deployments",
-          "Scales from 2 to 50+ charge points per site",
+          "Fully distributed — each charger participates in load decisions",
+          "Real-time power rebalancing as sessions start and end",
+          "Supports mixed AC and DC charger deployments on the same site",
+          "Operates independently; optionally receives limits from Power Master",
         ],
-        image: "/technology/load-balancer-p2p.webp",
+        image: "/products/power-master-product.webp",
       },
       {
-        heading: "Smart Grid Integration",
+        heading: "Grid-Aware Dynamic Allocation",
         description:
-          "The load balancer interfaces with building energy management systems and utility demand-response signals to keep site power within contracted limits. For full site-level energy orchestration including solar, HVAC, and BESS integration, see Power Master.",
+          "The DLB firmware responds to the site's contracted grid capacity and keeps total charger draw within safe limits. When a new vehicle connects, power is redistributed from existing sessions proportionally. When a session ends, the freed capacity is reallocated immediately. The algorithm runs continuously on the charger's own processor with no cloud dependency.",
         points: [
-          "Dynamic capacity limits based on real-time grid signals",
-          "Priority charging for emergency or fleet vehicles",
-          "Solar and battery storage integration support",
-          "Seamless upgrade path to Power Master for advanced control",
+          "Enforces site-level maximum load threshold across all chargers",
+          "Proportional power redistribution when sessions start or stop",
+          "Priority levels can be configured per charger or per RFID group",
+          "Functions without internet — fully local, on-device logic",
         ],
         image: "/technology/load-balancer-grid.webp",
       },
       {
-        heading: "Zero Infrastructure Overhead",
+        heading: "Power Master as the Control Layer",
         description:
-          "Runs entirely on the charger's embedded hardware — no additional servers, gateways, or network infrastructure required.",
+          "For sites that require full energy orchestration — including solar, BESS, HVAC, and DG integration — Power Master is the hardware controller that sits above the DLB. Power Master monitors grid consumption and renewable generation in real time, and dynamically adjusts the available capacity limit sent to the chargers' DLB firmware. Together, they form a two-layer energy management stack: Power Master handles site-level decisions, the DLB handles per-charger execution.",
         points: [
-          "Firmware-level implementation with minimal resource footprint",
-          "Mesh communication over Wi-Fi, Ethernet, or RS-485",
-          "Plug-and-play commissioning with auto-discovery",
-          "OTA updates for algorithm improvements",
+          "Power Master sets dynamic capacity limits; DLB enforces them per charger",
+          "Communicates via OCPP or EEBUS from Power Master to charger fleet",
+          "DLB sites can be upgraded to full Power Master control without hardware changes to chargers",
+          "Chargers with DLB continue to operate independently if Power Master is offline",
         ],
         image: "/technology/load-balancer-infra.webp",
       },

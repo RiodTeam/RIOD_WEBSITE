@@ -1,4 +1,4 @@
-import { MailIcon, MapPin, PhoneIcon } from "lucide-react";
+import { MailIcon, MapPin, MessageCircle, PhoneIcon } from "lucide-react";
 
 export default function ContactDetailsSection() {
   return (
@@ -11,9 +11,7 @@ export default function ContactDetailsSection() {
           </h2>
 
           <p className="para-text max-w-md leading-6.5! text-[#9A99A2] font-inter">
-            To accelerate India’s shift towards sustainable electric mobility
-            through cutting-edge EV charging infrastructure that’s intelligent,
-            reliable, and accessible.
+            We’re based at Infopark Koratty, Kerala. Whether you have a technical question, a deployment enquiry, or just want to talk — reach out and we’ll get back to you.
           </p>
         </div>
 
@@ -23,19 +21,19 @@ export default function ContactDetailsSection() {
             Contact Details
           </h3>
           <p className="para-text leading-6.5! text-[#9A99A2] mb-18 max-w-132 ">
-            To accelerate India’s shift towards sustainable electric mobility
-            through cutting-edge EV charging infrastructure that is intelligent.
+            Our team typically responds within 1 business day.
           </p>
 
           <div className="border-b-[0.5px] flex gap-x-4.5 border-[#9A99A2] pb-[1.2rem] mb-8">
-            <MapPin strokeWidth={0.7} className=" size-18 -mt-5 lg:size-13 text-black " />
+            <MapPin strokeWidth={0.7} className="size-5 lg:size-6 mt-0.5 shrink-0 text-black" />
             <div>
               <h4 className="regular-heading font-normal! flex items-center gap-2 mb-2">
                 Address
               </h4>
               <p className="normal-text text-[#9A99A2] leading-[1.9]!">
-                RIOD LOGIC PVT LTD 11/334-H, 2nd Floor, Kallely Tower, Vengoor,
-                Kidangoor P.O, Angamaly Kochi, Kerala India - 683572
+                RIOD SDC, Office No. 4A-8, A-Wing, 4th Floor,<br />
+                Indeevaram Building, Infopark Thrissur,<br />
+                Koratty P.O, Kerala — 680 308
               </p>
             </div>
           </div>
@@ -46,7 +44,20 @@ export default function ContactDetailsSection() {
               <h4 className="regular-heading font-normal! flex items-center gap-2 mb-2">
                 Phone
               </h4>
-              <p className="normal-text text-[#9A99A2]">+91 9067090165</p>
+              <div className="flex items-center gap-4">
+                <a href="tel:+919067090165" className="normal-text text-[#9A99A2] hover:text-black transition-colors">
+                  +91 9067090165
+                </a>
+                <a
+                  href="https://wa.me/919067090165"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-sm font-medium text-[#25D366] hover:opacity-80 transition-opacity"
+                >
+                  <MessageCircle className="size-4" />
+                  WhatsApp
+                </a>
+              </div>
             </div>
           </div>
 
@@ -56,7 +67,7 @@ export default function ContactDetailsSection() {
               <h4 className="regular-heading font-normal! flex items-center gap-2 mb-2">
                 Email
               </h4>
-              <p className="normal-text text-[#9A99A2]">info@riod.in</p>
+              <p className="normal-text text-[#9A99A2]">hello@riod.in</p>
             </div>
           </div>
         </div>

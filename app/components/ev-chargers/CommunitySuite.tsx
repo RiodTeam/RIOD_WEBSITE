@@ -93,7 +93,7 @@ export default function CommunitySuite() {
 
           {/* Right — Dashboard Image */}
           <MotionWrapper delay={0.2}>
-            <div className="relative w-full h-[400px] md:h-[560px] rounded-xl overflow-hidden lg:mt-8">
+            <div className="relative w-full h-[260px] sm:h-[340px] md:h-[460px] lg:h-[560px] rounded-xl overflow-hidden lg:mt-8">
               <Image
                 src="/products/csuite2.webp"
                 alt="RIOD Community Charging Suite Dashboard"

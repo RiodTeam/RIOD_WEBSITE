@@ -7,18 +7,18 @@ import { ArrowRight } from "lucide-react";
 const offerings = [
   {
     number: "01",
-    title: "Charging\nStations",
+    title: "EV Charging\nStations",
     description:
-      "Full-spectrum EV charging hardware including AC wallboxes, DC fast chargers, and high-power charging stations engineered for reliability, scalability, and global certification compliance.",
+      "AC PowerPods, DC fast chargers, and high-power charging stations — designed and manufactured in-house for homes, businesses, and public infrastructure.",
     cta: "Explore Chargers",
     href: "/products/ev-chargers",
     image: "/home/hero.webp",
   },
   {
     number: "02",
-    title: "Technology\nSolutions",
+    title: "Technology",
     description:
-      "End-to-end technology stack covering embedded firmware, CPMS platforms, mobile applications, energy management systems, and V2G-ready architectures for the modern charging ecosystem.",
+      "Embedded firmware, CPMS platforms, mobile apps, and energy management systems — built by the same team that makes the hardware.",
     cta: "Explore Technology",
     href: "/technology",
     image: "/home/hero.webp",
@@ -33,7 +33,7 @@ export default function CoreOfferingsSection() {
           {offerings.map((item, index) => (
             <MotionWrapper key={item.number} delay={index * 0.15}>
               <Link href={item.href} className="group block">
-                <div className="relative h-[400px] md:h-[520px] lg:h-[600px] rounded-2xl overflow-hidden">
+                <div className="relative h-[260px] sm:h-[320px] md:h-[440px] lg:h-[540px] xl:h-[600px] rounded-2xl overflow-hidden">
                   {/* Background image */}
                   <div
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
@@ -50,7 +50,7 @@ export default function CoreOfferingsSection() {
                     >
                       {item.number}
                     </span>
-                    <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-normal leading-tight whitespace-pre-line mb-4">
+                    <h2 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal leading-tight whitespace-pre-line mb-4">
                       {item.title}
                     </h2>
                     <p className="para-text text-white/70 max-w-[480px] mb-6">

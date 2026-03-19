@@ -26,13 +26,10 @@ export default function ContactCTASection() {
                 <Zap className="w-5 h-5 text-[#cdf80a]" />
               </div>
               <h3 className="text-xl md:text-2xl font-normal text-[#1b1b1b] mb-3">
-                For EV Charging Stations
+                For EV Chargers
               </h3>
               <p className="para-text text-[#626262] mb-8">
-                Whether you need AC wallboxes for residential complexes, DC
-                fast chargers for retail locations, or high-power charging
-                stations for highways, we have the hardware and expertise to
-                match your requirements.
+                Whether you need an AC PowerPod for a residential complex, a DC fast charger for a retail location, or a high-power station for a highway corridor — tell us what you're building.
               </p>
               <Link
                 href="/contact?type=ev-charging"
@@ -50,13 +47,10 @@ export default function ContactCTASection() {
                 <Code className="w-5 h-5 text-[#cdf80a]" />
               </div>
               <h3 className="text-xl md:text-2xl font-normal text-[#1b1b1b] mb-3">
-                For Technology Solutions
+                For Technology
               </h3>
               <p className="para-text text-[#626262] mb-8">
-                From CPMS platforms and mobile applications to embedded
-                firmware and energy management systems, our technology team
-                delivers end-to-end solutions for the modern charging
-                ecosystem.
+                From CPMS platforms and mobile apps to embedded firmware and energy management — talk to our engineers about what you need built.
               </p>
               <Link
                 href="/contact?type=technology"

@@ -55,7 +55,7 @@ export default function ContactFormSection() {
     }
   };
   return (
-    <section className="w-full bg-[#1C1C1C] text-white pt-36 md:pt-48 pb-[6.2rem]">
+    <section className="w-full bg-[#1C1C1C] text-white pt-24 md:pt-36 lg:pt-48 pb-[6.2rem]">
       <div className="w-[90%] max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
         {/* LEFT FORM */}
         <div className="mt-6">
@@ -111,7 +111,7 @@ export default function ContactFormSection() {
             onChange={handleChange}
             maxLength={500}
             placeholder="Type Your Message"
-            className="w-full h-40 bg-transparent border-[0.5px] border-white placeholder:text-[13px] px-4 py-3 focus:outline-none resize-none"
+            className="w-full h-32 md:h-40 bg-transparent border-[0.5px] border-white placeholder:text-[13px] px-4 py-3 focus:outline-none resize-none"
           />
           {error && <p className="text-red-500 font-inter mt-4">{error}</p>}
           {success && (
@@ -141,10 +141,7 @@ export default function ContactFormSection() {
           <h2 className="section-heading mb-6 ">What Do You Need Help With?</h2>
 
           <p className="text-[#9a99a2] leading-9! normal-text mb-10">
-            Connect with RIOD for all inquiries related to our EV charging
-            stations and IoT solutions. Share your details through the form
-            below, and our experts will reach out with tailored information and
-            next steps.
+            Tell us what you're working on — a new charging deployment, a technology integration, or a product enquiry. We'll get back to you within 1 business day.
           </p>
 
           <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">

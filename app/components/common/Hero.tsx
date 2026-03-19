@@ -24,7 +24,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   return (
     <section className="relative text-white">
       {/* Background Image */}
-      <div className="relative w-full h-svh min-h-140 md:min-h-[450px] lg:min-h-[580px] lg:h-lvh">
+      <div className="relative w-full min-h-[380px] sm:min-h-[420px] md:min-h-[450px] lg:min-h-[580px] lg:h-lvh">
         <Image
           src={backgroundImage}
           alt="Hero background"

@@ -223,10 +223,10 @@ export default function PrivacyPolicyPage() {
             <p className="mt-3">
               To exercise any of these rights, please contact us at{" "}
               <a
-                href="mailto:info@riod.in"
+                href="mailto:hello@riod.in"
                 className="text-black underline hover:text-[#cdf80a] transition-colors"
               >
-                info@riod.in
+                hello@riod.in
               </a>
               .
             </p>
@@ -285,10 +285,10 @@ export default function PrivacyPolicyPage() {
               <p>
                 Email:{" "}
                 <a
-                  href="mailto:info@riod.in"
+                  href="mailto:hello@riod.in"
                   className="text-black underline hover:text-[#cdf80a] transition-colors"
                 >
-                  info@riod.in
+                  hello@riod.in
                 </a>
               </p>
               <p>

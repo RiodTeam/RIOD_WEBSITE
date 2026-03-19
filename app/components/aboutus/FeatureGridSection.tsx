@@ -37,7 +37,7 @@ export default function FeatureGridSection() {
       <div className="w-[90%] max-w-[1400px] mx-auto">
 
         {/* GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 md:gap-x-12 md:gap-y-16 lg:gap-x-16 lg:gap-y-20">
 
           {features.map((item, index) => (
             <div key={index}>

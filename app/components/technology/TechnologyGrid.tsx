@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
 import MotionWrapper from "../common/MotionWrapper";
 import { type Technology } from "@/app/data/technologies";
 
@@ -22,9 +24,7 @@ export default function TechnologyGrid({
             the Charging Ecosystem
           </h2>
           <p className="para-text text-[#626262] max-w-[620px] mb-12 md:mb-16">
-            From embedded firmware and power electronics to cloud platforms and
-            AI-driven analytics, we build the full technology stack for EV
-            charging infrastructure.
+            Every technology on this page is built in-house — hardware, firmware, cloud, and software — and deployed in real charging installations across India.
           </p>
         </MotionWrapper>
 
@@ -76,6 +76,47 @@ export default function TechnologyGrid({
               </Link>
             </MotionWrapper>
           ))}
+
+          {/* RnD Square — Custom Engineering Tile */}
+          <MotionWrapper delay={technologies.length * 0.06}>
+            <a
+              href="https://rndsquare.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block h-full"
+            >
+              <div className="relative rounded-xl overflow-hidden h-full min-h-[260px] group cursor-pointer">
+                {/* Background image */}
+                <Image
+                  src="/technology/tech-hero.webp"
+                  alt="RnD Square — Custom Engineering"
+                  fill
+                  className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                />
+                {/* Dark overlay */}
+                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-colors duration-500" />
+                {/* Accent line */}
+                <div className="absolute top-0 left-0 right-0 h-[3px]" style={{ backgroundColor: "#cdf80a" }} />
+
+                {/* Content */}
+                <div className="relative z-10 h-full flex flex-col justify-end p-6 md:p-7">
+                  <span className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: "#cdf80a" }}>
+                    Service Division
+                  </span>
+                  <h3 className="text-lg font-medium text-white mb-2 font-inter leading-snug">
+                    Looking for Custom Engineering?
+                  </h3>
+                  <p className="text-sm text-white/60 leading-relaxed mb-5">
+                    Explore RnD Square — our product engineering division for bespoke hardware, firmware, and software development.
+                  </p>
+                  <div className="flex items-center gap-1.5 text-sm font-medium text-white group-hover:text-[#cdf80a] transition-colors">
+                    Visit RnD Square
+                    <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </MotionWrapper>
         </div>
       </div>
     </section>
