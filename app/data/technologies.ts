@@ -384,43 +384,43 @@ export const technologies: Technology[] = [
     name: "Smart Parking & Charging (IVQ)",
     slug: "smart-parking-ivq",
     tagline:
-      "Integrated vision-based parking occupancy detection with EV charging management for optimal space and energy utilization.",
+      "Vision-based parking occupancy detection integrated with EV charging management to prevent ICE-blocking and maximise bay utilisation.",
     icon: ParkingSquare,
     heroImage: "/technology/smart-parking.webp",
     sections: [
       {
         heading: "Vision-Based Occupancy Detection",
         description:
-          "Camera-based AI system that detects vehicle presence, type, and charging status in real-time without ground-mounted sensors.",
+          "Camera-based AI that identifies vehicle presence, type, and charging status in real time. No ground sensors or loop detectors required. Runs on edge hardware installed at each bay or zone.",
         points: [
-          "Edge AI processing on low-cost camera modules",
+          "Edge AI on low-cost camera modules, no server required",
           "EV vs ICE vehicle classification for enforcement",
-          "License plate recognition for automated access control",
-          "Works in indoor, outdoor, and low-light conditions",
+          "License plate recognition for access control and logging",
+          "Operates in indoor, outdoor, and low-light conditions",
         ],
         image: "/technology/parking-vision.webp",
       },
       {
-        heading: "Integrated Charging Management",
+        heading: "Charging-Aware Bay Management",
         description:
-          "Connects parking occupancy data with charger management to automate session allocation and prevent ICE-blocking of charging bays.",
+          "Occupancy data feeds directly into the charger management system to automate session allocation and enforce EV-only bay policies. When an ICE vehicle is detected in a charging bay, an alert is raised automatically.",
         points: [
-          "Automatic charger reservation when EV is detected in bay",
+          "Automatic session reservation when an EV is detected",
           "ICE vehicle alerts and enforcement notifications",
-          "Parking duration tracking with overstay management",
-          "Combined parking and charging billing",
+          "Overstay detection with configurable penalty triggers",
+          "Combined parking and charging billing from one system",
         ],
         image: "/technology/parking-charging.webp",
       },
       {
-        heading: "Analytics & Space Optimization",
+        heading: "Utilisation Analytics",
         description:
-          "Data-driven insights on parking utilization, peak hours, and charging demand patterns to optimize space allocation.",
+          "Aggregated occupancy and charging data across all bays and zones, giving site operators clear visibility into peak demand patterns and revenue performance.",
         points: [
           "Occupancy heatmaps by time, day, and zone",
-          "Charging demand forecasting for infrastructure planning",
-          "Revenue reporting for combined parking and charging",
-          "API integration with parking management platforms",
+          "Charging demand data for infrastructure planning",
+          "Revenue reporting for parking and charging combined",
+          "API integration with existing parking platforms",
         ],
         image: "/technology/parking-analytics.webp",
       },

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTechnologyBySlug, getAllTechnologySlugs } from "@/app/data/technologies";
 import TechnologyDetailClient from "./page.client";
+import OperationsSuiteLanding from "@/app/components/technology/OperationsSuiteLanding";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -26,6 +27,11 @@ export default async function TechnologyDetailPage({ params }: Props) {
   const { slug } = await params;
   const tech = getTechnologyBySlug(slug);
   if (!tech) notFound();
+
+  // Operations Suite gets its own full landing page
+  if (slug === "ev-charging-operations-suite") {
+    return <OperationsSuiteLanding />;
+  }
 
   // Pass only serializable data (exclude icon which is a component)
   return (
