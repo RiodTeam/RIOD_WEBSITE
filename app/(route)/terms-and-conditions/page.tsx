@@ -214,8 +214,8 @@ export default function TermsAndConditionsPage() {
               7. Intellectual Property
             </h2>
             <p>
-              All content on this website — including text, graphics, logos,
-              product designs, software, and documentation — is the property of
+              All content on this website, including text, graphics, logos,
+              product designs, software, and documentation, is the property of
               RnD Square Pvt. Ltd. and is protected by Indian and international
               intellectual property laws. The RIOD brand name, logo, and
               product names (Powerpod, Powerpod Go, Powerpod City, Power

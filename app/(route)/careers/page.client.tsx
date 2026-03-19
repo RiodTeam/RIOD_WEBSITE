@@ -18,7 +18,7 @@ const values = [
     icon: Cpu,
     title: "Full-Stack Engineering",
     description:
-      "Work across hardware, firmware, cloud, and mobile — building every layer of the EV charging stack in-house.",
+      "Work across hardware, firmware, cloud, and mobile, building every layer of the EV charging stack in-house.",
   },
   {
     icon: Zap,
@@ -30,7 +30,7 @@ const values = [
     icon: Cloud,
     title: "Cutting-Edge Tech",
     description:
-      "From OCPP protocols and energy management to IoT and cloud platforms — tackle challenging engineering problems daily.",
+      "From OCPP protocols and energy management to IoT and cloud platforms, tackle challenging engineering problems daily.",
   },
   {
     icon: Rocket,
@@ -48,7 +48,7 @@ const values = [
     icon: Globe,
     title: "Built for India",
     description:
-      "We design for Indian conditions — heat, dust, voltage fluctuations, and the unique demands of Indian infrastructure.",
+      "We design for Indian conditions: heat, dust, voltage fluctuations, and the unique demands of Indian infrastructure.",
   },
 ];
 
@@ -101,7 +101,7 @@ export default function PageClient() {
               </h1>
               <p className="hero-desc text-white/70 mt-6 max-w-[600px]">
                 Join a team of engineers, designers, and innovators building
-                India&apos;s most advanced EV charging infrastructure — from hardware
+                India&apos;s most advanced EV charging infrastructure, from hardware
                 to cloud.
               </p>
             </MotionWrapper>
@@ -114,7 +114,7 @@ export default function PageClient() {
             <MotionWrapper>
               <h2 className="section-heading text-black mb-4">Why Join RIOD</h2>
               <p className="para-text text-[#9a99a2] max-w-[600px] mb-16 md:mb-20">
-                We&apos;re not just installing chargers — we&apos;re engineering
+                We&apos;re not just installing chargers; we&apos;re engineering
                 every layer of the EV charging ecosystem. Here&apos;s what makes
                 working at RIOD different.
               </p>
@@ -148,7 +148,7 @@ export default function PageClient() {
               <h2 className="section-heading text-black mb-4">Open Positions</h2>
               <p className="para-text text-[#9a99a2] max-w-[600px] mb-16 md:mb-20">
                 We&apos;re always looking for passionate people. If you don&apos;t
-                see a role that fits, reach out anyway — we&apos;d love to hear from
+                see a role that fits, reach out anyway; we&apos;d love to hear from
                 you.
               </p>
             </MotionWrapper>

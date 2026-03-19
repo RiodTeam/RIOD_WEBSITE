@@ -1,6 +1,8 @@
 "use client";
 
 import { ReactLenis } from "lenis/react";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import MotionWrapper from "@/app/components/common/MotionWrapper";
 import TechnologySectionComponent from "@/app/components/technology/TechnologySection";
 import { type TechnologySection } from "@/app/data/technologies";
@@ -41,6 +43,27 @@ export default function TechnologyDetailClient({
             sectionNumber={`0${index + 1}`}
           />
         ))}
+
+        {/* CTA */}
+        <section style={{ backgroundColor: "#cdf80a" }} className="py-16 md:py-[6.8rem]">
+          <div className="w-[90%] max-w-[1400px] mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+            <div>
+              <h2 className="section-heading text-black">
+                Want to know more?
+              </h2>
+              <p className="para-text text-black/60 mt-4 max-w-[520px]">
+                Talk to our engineers about how this technology fits your deployment.
+              </p>
+            </div>
+            <Link
+              href="/contact"
+              className="flex items-center gap-2 bg-black text-white px-7 py-4 rounded-full text-sm font-medium hover:bg-[#1b1b1b] transition-colors shrink-0 group self-start md:self-auto"
+            >
+              Talk to Our Engineers
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+        </section>
       </main>
     </ReactLenis>
   );

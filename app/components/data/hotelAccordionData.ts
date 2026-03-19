@@ -104,7 +104,7 @@ export const resortsAccordionData = [
   },
   {
     title: "Smart Load Management for Resort Infrastructure",
-    desc: `Our intelligent power management ensures EV charging operates efficiently alongside resort amenities—pools, spas, kitchens—without overloading the electrical system.`,
+    desc: `Our intelligent power management ensures EV charging operates efficiently alongside resort amenities (pools, spas, kitchens) without overloading the electrical system.`,
     image: "/hotel/frame.webp",
   },
   {
@@ -142,7 +142,7 @@ export const mallsAccordionData = [
   },
   {
     title: "Real-Time Analytics & Management Dashboard",
-    desc: `Track charger usage, revenue, peak hours, and maintenance needs through a centralized cloud dashboard—enabling data-driven facility management.`,
+    desc: `Track charger usage, revenue, peak hours, and maintenance needs through a centralized cloud dashboard, enabling data-driven facility management.`,
     image: "/hotel/frame.webp",
   },
 ];
@@ -160,7 +160,7 @@ export const hospitalsAccordionData = [
   },
   {
     title: "Critical Power Management",
-    desc: `Our smart load balancing ensures EV charging never interferes with critical hospital power systems—operating safely alongside life-saving medical equipment.`,
+    desc: `Our smart load balancing ensures EV charging never interferes with critical hospital power systems, operating safely alongside life-saving medical equipment.`,
     image: "/hotel/frame.webp",
   },
   {

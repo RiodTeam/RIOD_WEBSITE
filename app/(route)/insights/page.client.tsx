@@ -22,7 +22,7 @@ export default function PageClient() {
                 Have a Charging Project<br />in Mind?
               </h2>
               <p className="para-text text-black/60 mt-4 max-w-[480px]">
-                Talk to our engineers — whether it's a new deployment, an integration, or a product question.
+                Talk to our engineers, whether it's a new deployment, an integration, or a product question.
               </p>
             </div>
             <Link

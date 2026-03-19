@@ -44,7 +44,7 @@ export const technologies: Technology[] = [
       {
         heading: "Automatic Fault Recovery",
         description:
-          "Our self-resettable RCD technology detects residual current faults and automatically restores operation after the fault clears. If the fault cannot be recovered, a service ticket is automatically registered in the EVSE Operations Suite for investigation — no manual intervention required.",
+          "Our self-resettable RCD technology detects residual current faults and automatically restores operation after the fault clears. If the fault cannot be recovered, a service ticket is automatically registered in the EVSE Operations Suite for investigation, with no manual intervention required.",
         points: [
           "Automatic reset after transient earth leakage faults",
           "Type A and Type B RCD support for DC fault detection",
@@ -71,16 +71,16 @@ export const technologies: Technology[] = [
     name: "Decentralized Load Balancer",
     slug: "decentralized-load-balancer",
     tagline:
-      "Firmware-embedded load balancing that distributes available power across chargers in real time — no central controller or separate hardware required.",
+      "Firmware-embedded load balancing that distributes available power across chargers in real time, with no central controller or separate hardware required.",
     icon: Network,
     heroImage: "/technology/decentralized-load-balancer.webp",
     sections: [
       {
         heading: "Embedded Power Sharing Across Chargers",
         description:
-          "The Decentralized Load Balancer runs as firmware inside each RIOD charger. Chargers monitor the site's available capacity and redistribute power among themselves in real time as vehicles connect and disconnect — without any central controller, gateway, or server. It is the per-charger intelligence layer that sits beneath Power Master in a full energy management deployment.",
+          "The Decentralized Load Balancer runs as firmware inside each RIOD charger. Chargers monitor the site's available capacity and redistribute power among themselves in real time as vehicles connect and disconnect, without any central controller, gateway, or server. It is the per-charger intelligence layer that sits beneath Power Master in a full energy management deployment.",
         points: [
-          "Fully distributed — each charger participates in load decisions",
+          "Fully distributed: each charger participates in load decisions",
           "Real-time power rebalancing as sessions start and end",
           "Supports mixed AC and DC charger deployments on the same site",
           "Operates independently; optionally receives limits from Power Master",
@@ -95,19 +95,19 @@ export const technologies: Technology[] = [
           "Enforces site-level maximum load threshold across all chargers",
           "Proportional power redistribution when sessions start or stop",
           "Priority levels can be configured per charger or per RFID group",
-          "Functions without internet — fully local, on-device logic",
+          "Functions without internet, fully local, on-device logic",
         ],
         image: "/technology/load-balancer-grid.webp",
       },
       {
-        heading: "Power Master as the Control Layer",
+        heading: "Priority Tiers and Failsafe Operation",
         description:
-          "For sites that require full energy orchestration — including solar, BESS, HVAC, and DG integration — Power Master is the hardware controller that sits above the DLB. Power Master monitors grid consumption and renewable generation in real time, and dynamically adjusts the available capacity limit sent to the chargers' DLB firmware. Together, they form a two-layer energy management stack: Power Master handles site-level decisions, the DLB handles per-charger execution.",
+          "The DLB firmware supports configurable priority tiers per charger and per RFID group, so fleet vehicles or reserved bays always receive charge first under capacity constraints. Because all logic runs on the charger's own processor, the DLB continues to operate and balance load even when the internet is unavailable or the cloud platform is unreachable. Configuration is pushed remotely via the EVSE Operations Suite and stored locally on each charger.",
         points: [
-          "Power Master sets dynamic capacity limits; DLB enforces them per charger",
-          "Communicates via OCPP or EEBUS from Power Master to charger fleet",
-          "DLB sites can be upgraded to full Power Master control without hardware changes to chargers",
-          "Chargers with DLB continue to operate independently if Power Master is offline",
+          "Per-charger and per-RFID-group priority levels",
+          "Remote configuration via EVSE Operations Suite, stored locally",
+          "Continues balancing offline: no cloud dependency for load decisions",
+          "Graceful degradation: each charger falls back to its own local limit if peers are unreachable",
         ],
         image: "/technology/load-balancer-infra.webp",
       },
@@ -117,12 +117,12 @@ export const technologies: Technology[] = [
     name: "EVSE Operations Suite",
     slug: "ev-charging-operations-suite",
     tagline:
-      "Three-tier operations platform — from real-time monitoring to AI-powered predictive maintenance. Observe, Operate, and Optimize your charger network.",
+      "Three-tier operations platform: from real-time monitoring to AI-powered predictive maintenance. Observe, Operate, and Optimize your charger network.",
     icon: Monitor,
     heroImage: "/technology/operations-suite.webp",
     sections: [
       {
-        heading: "EVSE Observe — Live Operational View",
+        heading: "EVSE Observe: Live Operational View",
         description:
           "The base layer that gives operators continuous visibility into charger health and performance. See everything that is happening across your network before issues impact users.",
         points: [
@@ -134,9 +134,9 @@ export const technologies: Technology[] = [
         image: "/technology/ops-observe.webp",
       },
       {
-        heading: "EVSE Operate — Managed Charger Operations",
+        heading: "EVSE Operate: Managed Charger Operations",
         description:
-          "The core operations layer that transforms charger data into service tickets, maintenance actions, and SLAs. Self-recovery is attempted automatically based on fault type — if recovery fails, a ticket is created for the operations team.",
+          "The core operations layer that transforms charger data into service tickets, maintenance actions, and SLAs. Self-recovery is attempted automatically based on fault type; if recovery fails, a ticket is created for the operations team.",
         points: [
           "Automated service ticket creation from fault events",
           "Self-recovery attempts before escalating to technicians",
@@ -146,13 +146,13 @@ export const technologies: Technology[] = [
         image: "/technology/ops-operate.webp",
       },
       {
-        heading: "EVSE Operate Plus — Advanced Intelligence Modules",
+        heading: "EVSE Operate Plus: Advanced Intelligence Modules",
         description:
           "Advanced AI and analytics modules that layer on top of Operate. Includes predictive fault engine, auto-RCA, smart ticket intelligence, maintenance optimizer, downtime cost analyzer, technician efficiency tracking, idle blocking detection, and failure pattern library.",
         points: [
-          "Predictive Fault Engine — predict failures before they occur",
-          "Auto-RCA Engine — automatic root cause and next best action",
-          "Smart Ticket Intelligence — auto-prioritize by severity and SLA",
+          "Predictive Fault Engine: predict failures before they occur",
+          "Auto-RCA Engine: automatic root cause and next best action",
+          "Smart Ticket Intelligence: auto-prioritize by severity and SLA",
           "Maintenance Optimizer, Downtime Cost Analyzer, and Technician Tracker",
           "Idle Blocking & Overstay Detection via Vision AI",
           "EVSE Diagnostic Tool for field technicians",
@@ -167,6 +167,7 @@ export const technologies: Technology[] = [
     tagline:
       "Modular power conversion unit designed for rapid deployment of DC charging infrastructure at any location.",
     icon: BatteryCharging,
+    upcoming: true,
     heroImage: "/technology/powerbox.webp",
     sections: [
       {
@@ -251,30 +252,6 @@ export const technologies: Technology[] = [
         image: "/technology/intelligence-predictive.webp",
       },
       {
-        heading: "Charging Port Analytics",
-        description:
-          "Deep analytics on connector health, usage patterns, and degradation trends across your entire charging network.",
-        points: [
-          "Connector wear tracking based on insertion cycle counts",
-          "Session success rate and failure root-cause analysis",
-          "Utilization heatmaps by location, time, and connector type",
-          "Benchmarking across sites for performance optimization",
-        ],
-        image: "/technology/intelligence-analytics.webp",
-      },
-      {
-        heading: "Operational Intelligence Dashboard",
-        description:
-          "Unified view of network health with actionable insights, alerts, and recommendations for operations teams.",
-        points: [
-          "Real-time health score for every charger in the network",
-          "Alert prioritization based on business impact",
-          "Spare parts demand forecasting",
-          "Monthly reliability and uptime reports",
-        ],
-        image: "/technology/intelligence-dashboard.webp",
-      },
-      {
         heading: "Vehicle Battery Profile as a Service",
         description:
           "Builds charging profiles for individual vehicles over time, correlating charging behaviour with battery health indicators to offer battery-as-a-service insights.",
@@ -292,7 +269,7 @@ export const technologies: Technology[] = [
     name: "Fleet Management Suite",
     slug: "fleet-management-suite",
     tagline:
-      "Comprehensive platform for managing electric fleet charging — depot scheduling, route optimization, and energy cost management.",
+      "Comprehensive platform for managing electric fleet charging: depot scheduling, route optimization, and energy cost management.",
     icon: Truck,
     heroImage: "/technology/fleet-management.webp",
     sections: [
@@ -323,7 +300,7 @@ export const technologies: Technology[] = [
       {
         heading: "Fleet Analytics & Reporting",
         description:
-          "Comprehensive reporting on fleet electrification metrics — energy consumption, cost savings, emissions reduction, and charger utilization.",
+          "Comprehensive reporting on fleet electrification metrics: energy consumption, cost savings, emissions reduction, and charger utilization.",
         points: [
           "Per-vehicle energy consumption and cost tracking",
           "CO2 savings calculator with exportable reports",
@@ -454,7 +431,7 @@ export const technologies: Technology[] = [
     name: "EVSE Hardware Bundle",
     slug: "evse-hardware-bundle",
     tagline:
-      "Complete hardware engineering platform — from power architecture and mechanical design to production tooling and certification support.",
+      "Complete hardware engineering platform: from power architecture and mechanical design to production tooling and certification support.",
     icon: HardDrive,
     heroImage: "/technology/hardware-bundle.webp",
     sections: [
@@ -500,7 +477,7 @@ export const technologies: Technology[] = [
     name: "EVSE Community Suite",
     slug: "evse-community-suite",
     tagline:
-      "Complete charging management for residential communities — from user onboarding and shared scheduling to billing and intelligent load balancing.",
+      "Complete charging management for residential communities: from user onboarding and shared scheduling to billing and intelligent load balancing.",
     icon: Users,
     heroImage: "/technology/community-suite.webp",
     sections: [
@@ -533,10 +510,10 @@ export const technologies: Technology[] = [
         description:
           "Smart modules purpose-built for residential and community charging. Includes slot reservation, overstay penalties, community load balancing, and a transparency dashboard to reduce disputes.",
         points: [
-          "Slot Reservation Engine — avoids charging time conflicts",
-          "Overstay & Penalty Engine — discourages idle blocking",
-          "Community Load Balancer — prevents electrical overload",
-          "Usage Transparency Dashboard — reduces resident disputes",
+          "Slot Reservation Engine: avoids charging time conflicts",
+          "Overstay & Penalty Engine: discourages idle blocking",
+          "Community Load Balancer: prevents electrical overload",
+          "Usage Transparency Dashboard: reduces resident disputes",
         ],
         image: "/technology/community-intelligence.webp",
       },
@@ -546,7 +523,7 @@ export const technologies: Technology[] = [
     name: "EVSE Fleet Management Suite",
     slug: "evse-fleet-management-suite",
     tagline:
-      "Three-tier fleet charging platform — track, optimize, and intelligently manage your electric fleet from depot to route.",
+      "Three-tier fleet charging platform: track, optimize, and intelligently manage your electric fleet from depot to route.",
     icon: Truck,
     heroImage: "/technology/evse-fleet.webp",
     sections: [
@@ -579,10 +556,10 @@ export const technologies: Technology[] = [
         description:
           "Advanced analytics layer with driver charging discipline tracking, route-aware charging planning, battery health correlation, depot energy optimization, and ESG carbon reporting.",
         points: [
-          "Driver Charging Discipline — prevents idle blocking and misuse",
-          "Route-Aware Charging Planner — predicts charging needs from routes",
-          "Battery Health Correlation — links charging behaviour to battery life",
-          "Fleet ESG & Carbon Reports — CO₂ and sustainability tracking",
+          "Driver Charging Discipline: prevents idle blocking and misuse",
+          "Route-Aware Charging Planner: predicts charging needs from routes",
+          "Battery Health Correlation: links charging behaviour to battery life",
+          "Fleet ESG & Carbon Reports: CO₂ and sustainability tracking",
         ],
         image: "/technology/evse-fleet-intelligence.webp",
       },
@@ -592,7 +569,7 @@ export const technologies: Technology[] = [
     name: "EVSE CMS Suite",
     slug: "evse-cms-suite",
     tagline:
-      "Charge Point Management System — from OCPP connectivity and remote control to billing, payments, and revenue growth modules.",
+      "Charge Point Management System: from OCPP connectivity and remote control to billing, payments, and revenue growth modules.",
     icon: LayoutGrid,
     heroImage: "/technology/cms-suite.webp",
     sections: [
@@ -614,7 +591,7 @@ export const technologies: Technology[] = [
           "End-to-end commerce platform covering user mobile app, session lifecycle, tariff management, billing, wallets, payments, and reconciliation for CPOs, finance teams, and end users.",
         points: [
           "User mobile app with charger discovery and session management",
-          "Flexible tariff engine — time-based, energy-based, and flat-rate",
+          "Flexible tariff engine: time-based, energy-based, and flat-rate",
           "Integrated wallets, subscriptions, and payment processing",
           "GST-compliant billing with automated reconciliation",
         ],
@@ -625,10 +602,10 @@ export const technologies: Technology[] = [
         description:
           "Revenue expansion modules including roaming and interoperability (OCPI), dynamic pricing, multi-entity settlement, tax compliance reporting, and revenue leakage monitoring.",
         points: [
-          "Roaming & Interoperability Gateway — cross-network charging via OCPI",
-          "Dynamic Pricing Engine — peak-hour and demand-based pricing",
-          "Multi-Entity Settlement — revenue split between CPO, landlord, fleet",
-          "Revenue Leakage Monitor — detects failed or unpaid sessions",
+          "Roaming & Interoperability Gateway: cross-network charging via OCPI",
+          "Dynamic Pricing Engine: peak-hour and demand-based pricing",
+          "Multi-Entity Settlement: revenue split between CPO, landlord, fleet",
+          "Revenue Leakage Monitor: detects failed or unpaid sessions",
         ],
         image: "/technology/cms-growth.webp",
       },

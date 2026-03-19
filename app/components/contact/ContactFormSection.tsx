@@ -138,10 +138,10 @@ export default function ContactFormSection() {
 
         {/* RIGHT TEXT BLOCK */}
         <div className="flex flex-col justify-start md:pl-6 lg:pl-20 lg:border-l-[0.5px] lg:border-white">
-          <h2 className="section-heading mb-6 ">What Do You Need Help With?</h2>
+          <h2 className="section-heading mb-6 ">Let&apos;s Connect</h2>
 
           <p className="text-[#9a99a2] leading-9! normal-text mb-10">
-            Tell us what you're working on — a new charging deployment, a technology integration, or a product enquiry. We'll get back to you within 1 business day.
+            Tell us what you're working on: a new charging deployment, a technology integration, or a product enquiry. We'll get back to you within 1 business day.
           </p>
 
           <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">

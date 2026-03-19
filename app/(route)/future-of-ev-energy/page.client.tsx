@@ -29,7 +29,7 @@ const keyTrends = [
     icon: Network,
     title: "Vehicle-to-Grid (V2G)",
     description:
-      "EVs become mobile power plants — feeding stored energy back into the grid during peak demand and earning revenue for owners.",
+      "EVs become mobile power plants, feeding stored energy back into the grid during peak demand and earning revenue for owners.",
   },
   {
     icon: Sun,
@@ -47,7 +47,7 @@ const keyTrends = [
     icon: Building2,
     title: "Charging-as-a-Service",
     description:
-      "Hardware, software, and maintenance bundled into zero-capex subscription models — making EV infrastructure accessible to every property owner.",
+      "Hardware, software, and maintenance bundled into zero-capex subscription models, making EV infrastructure accessible to every property owner.",
   },
   {
     icon: TrendingUp,
@@ -67,11 +67,11 @@ const marketStats = [
 const gatedSections = [
   {
     title: "The RIOD Approach: Full-Stack Energy Infrastructure",
-    content: `RIOD builds every layer of the charging stack in-house — from power electronics and embedded firmware to OCPP-compliant cloud platforms and AI-powered energy management. This vertical integration eliminates vendor lock-in, accelerates innovation cycles, and ensures that every component is optimized for Indian grid conditions.\n\nOur hardware is designed for ambient temperatures exceeding 45°C, voltage fluctuations of ±20%, and dust ingress common across the subcontinent. The firmware supports over-the-air updates, remote diagnostics, and adaptive power management that responds to grid signals in real time.`,
+    content: `RIOD builds every layer of the charging stack in-house, from power electronics and embedded firmware to OCPP-compliant cloud platforms and AI-powered energy management. This vertical integration eliminates vendor lock-in, accelerates innovation cycles, and ensures that every component is optimized for Indian grid conditions.\n\nOur hardware is designed for ambient temperatures exceeding 45°C, voltage fluctuations of ±20%, and dust ingress common across the subcontinent. The firmware supports over-the-air updates, remote diagnostics, and adaptive power management that responds to grid signals in real time.`,
   },
   {
     title: "Smart Energy Management: Beyond Just Charging",
-    content: `The future of EV infrastructure isn't just about pushing electrons into batteries — it's about intelligent energy orchestration. RIOD's energy management platform monitors solar generation, battery storage levels, grid tariffs, and charger demand simultaneously.\n\nDynamic load balancing distributes available power across multiple chargers without tripping breakers or requiring expensive electrical upgrades. Time-of-use optimization shifts non-urgent charging to off-peak windows, reducing electricity costs by up to 40%. And with V2G-ready architecture, RIOD chargers are prepared for the bilateral energy flows that will define tomorrow's grid.`,
+    content: `The future of EV infrastructure isn't just about pushing electrons into batteries; it's about intelligent energy orchestration. RIOD's energy management platform monitors solar generation, battery storage levels, grid tariffs, and charger demand simultaneously.\n\nDynamic load balancing distributes available power across multiple chargers without tripping breakers or requiring expensive electrical upgrades. Time-of-use optimization shifts non-urgent charging to off-peak windows, reducing electricity costs by up to 40%. And with V2G-ready architecture, RIOD chargers are prepared for the bilateral energy flows that will define tomorrow's grid.`,
   },
   {
     title: "The Policy Landscape: Incentives & Regulations",
@@ -79,7 +79,7 @@ const gatedSections = [
   },
   {
     title: "Roadmap 2025-2030: What's Next",
-    content: `RIOD's roadmap is anchored in three pillars: deeper hardware intelligence, broader energy platform capabilities, and wider geographic reach.\n\nNear-term (2025): Launch of DC fast chargers (30 kW–120 kW), expansion of the OCPP cloud to support 50,000+ endpoints, and integration with major payment gateways for seamless public charging.\n\nMid-term (2026-2027): V2G-capable bidirectional chargers, AI-based predictive maintenance that flags component failures before they happen, and a white-label SaaS platform for charge point operators.\n\nLong-term (2028-2030): Autonomous energy micro-grids combining solar, storage, and EV charging in a single turnkey package — deployed at scale across highways, commercial complexes, and residential townships.`,
+    content: `RIOD's roadmap is anchored in three pillars: deeper hardware intelligence, broader energy platform capabilities, and wider geographic reach.\n\nNear-term (2025): Launch of DC fast chargers (30 kW-120 kW), expansion of the OCPP cloud to support 50,000+ endpoints, and integration with major payment gateways for seamless public charging.\n\nMid-term (2026-2027): V2G-capable bidirectional chargers, AI-based predictive maintenance that flags component failures before they happen, and a white-label SaaS platform for charge point operators.\n\nLong-term (2028-2030): Autonomous energy micro-grids combining solar, storage, and EV charging in a single turnkey package, deployed at scale across highways, commercial complexes, and residential townships.`,
   },
 ];
 
@@ -136,7 +136,7 @@ export default function FutureOfEVEnergyClient() {
               <p className="text-white/70 text-base md:text-lg mt-6 max-w-[640px] leading-relaxed font-inter">
                 A comprehensive look at the technologies, policies, and market
                 forces shaping India&apos;s electric vehicle charging
-                infrastructure — and how RIOD is engineering the road ahead.
+                infrastructure, and how RIOD is engineering the road ahead.
               </p>
             </MotionWrapper>
           </div>
@@ -207,9 +207,9 @@ export default function FutureOfEVEnergyClient() {
                 </div>
                 <div className="text-[#444] text-base leading-relaxed font-inter space-y-4">
                   <p>
-                    India has roughly 12,000 public charging stations today — a fraction of the
+                    India has roughly 12,000 public charging stations today, a fraction of the
                     4,00,000+ needed to support projected EV adoption by 2030. The bottleneck
-                    isn&apos;t just hardware — it&apos;s the lack of integrated solutions that combine
+                    isn&apos;t just hardware; it&apos;s the lack of integrated solutions that combine
                     reliable chargers, intelligent software, and sustainable energy management.
                   </p>
                   <p>
@@ -217,7 +217,7 @@ export default function FutureOfEVEnergyClient() {
                     properties want revenue from chargers but lack the platforms to manage billing.
                     Highway corridors need fast chargers that stay online in harsh conditions.
                     Each use case demands a different combination of hardware, software, and energy
-                    design — and that&apos;s exactly what RIOD builds.
+                    design, and that&apos;s exactly what RIOD builds.
                   </p>
                 </div>
               </div>
@@ -362,7 +362,7 @@ export default function FutureOfEVEnergyClient() {
               </h2>
               <p className="text-white/60 text-base md:text-lg max-w-[560px] mx-auto mb-8 font-inter">
                 Whether you&apos;re a property developer, fleet operator, or charge point
-                investor — talk to our team about deploying RIOD infrastructure.
+                investor, talk to our team about deploying RIOD infrastructure.
               </p>
               <Link
                 href="/contact"

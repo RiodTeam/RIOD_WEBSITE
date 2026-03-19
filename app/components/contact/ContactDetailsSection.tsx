@@ -11,7 +11,7 @@ export default function ContactDetailsSection() {
           </h2>
 
           <p className="para-text max-w-md leading-6.5! text-[#9A99A2] font-inter">
-            We’re based at Infopark Koratty, Kerala. Whether you have a technical question, a deployment enquiry, or just want to talk — reach out and we’ll get back to you.
+            We’re based at Infopark Koratty, Kerala. Whether you have a technical question, a deployment enquiry, or just want to talk, reach out and we’ll get back to you.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ export default function ContactDetailsSection() {
               <p className="normal-text text-[#9A99A2] leading-[1.9]!">
                 RIOD SDC, Office No. 4A-8, A-Wing, 4th Floor,<br />
                 Indeevaram Building, Infopark Thrissur,<br />
-                Koratty P.O, Kerala — 680 308
+                Koratty P.O, Kerala 680 308
               </p>
             </div>
           </div>

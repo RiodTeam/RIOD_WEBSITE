@@ -31,7 +31,7 @@ export default function VisionMissionSection() {
 
             <MotionWrapper>
               <p className="para-text font-inter text-[#9a99a2] leading-[1.7] lg:max-w-[620px]">
-                Our vision is to lead India’s EV charging and energy management innovation — building smart,
+                Our vision is to lead India’s EV charging and energy management innovation, building smart,
                 reliable, and sustainable infrastructure that powers the transition to clean mobility.
                 We aspire to make intelligent charging and energy solutions accessible to every business,
                 fleet, and community across India and beyond.

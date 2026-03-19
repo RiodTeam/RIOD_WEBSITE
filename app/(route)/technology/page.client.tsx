@@ -14,7 +14,7 @@ export default function TechnologyPageClient() {
         <HeroSection
           backgroundImage="/technology/tech-hero.webp"
           title="Our<br />Technology"
-          description="Every component in our charging infrastructure is built by our own engineers — from the power board inside the charger to the cloud platform managing thousands of sessions."
+          description="Every component in our charging infrastructure is built by our own engineers, from the power board inside the charger to the cloud platform managing thousands of sessions."
           overlayOpacity={0.45}
         />
         <TechnologyGrid technologies={technologies} />
@@ -27,7 +27,7 @@ export default function TechnologyPageClient() {
                 Want to Discuss a<br />Technology Project?
               </h2>
               <p className="para-text text-black/60 mt-4 max-w-[520px]">
-                Whether you need a custom integration, a specific protocol, or a complete charging platform — talk to our engineers directly.
+                Whether you need a custom integration, a specific protocol, or a complete charging platform, talk to our engineers directly.
               </p>
             </div>
             <Link

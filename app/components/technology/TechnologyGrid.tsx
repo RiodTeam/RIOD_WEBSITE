@@ -24,56 +24,75 @@ export default function TechnologyGrid({
             the Charging Ecosystem
           </h2>
           <p className="para-text text-[#626262] max-w-[620px] mb-12 md:mb-16">
-            Every technology on this page is built in-house — hardware, firmware, cloud, and software — and deployed in real charging installations across India.
+            Every technology on this page is built in-house: hardware, firmware, cloud, and software, deployed in real charging installations across India.
           </p>
         </MotionWrapper>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {technologies.map((tech, index) => (
             <MotionWrapper key={tech.slug} delay={index * 0.06}>
-              <Link href={`/technology/${tech.slug}`} className="block h-full">
-                <div className="relative bg-[#f8f8f8] rounded-xl p-6 md:p-7 h-full flex flex-col group hover:bg-[#f0f0f0] transition-colors border border-transparent hover:border-[#e0e0e0]">
-                  {/* Upcoming badge */}
-                  {tech.upcoming && (
-                    <span className="absolute top-4 right-4 text-[10px] font-semibold tracking-wider uppercase px-2.5 py-1 rounded-full bg-[#cdf80a] text-black">
+              {tech.upcoming ? (
+                <div className="block h-full cursor-default">
+                  <div className="relative bg-[#f4f4f4] rounded-xl p-7 md:p-8 h-full flex flex-col min-h-[260px] border border-[#e8e8e8]">
+                    {/* Upcoming badge */}
+                    <span className="absolute top-4 right-4 text-[10px] font-semibold tracking-wider uppercase px-2.5 py-1 rounded-full bg-[#e0e0e0] text-[#888]">
                       Upcoming
                     </span>
-                  )}
 
-                  {/* Icon */}
-                  <div className="w-12 h-12 rounded-full bg-[#cdf80a] flex items-center justify-center mb-5">
-                    <tech.icon className="w-5 h-5 text-black" />
-                  </div>
+                    {/* Icon — grayed */}
+                    <div className="w-12 h-12 rounded-full bg-[#e0e0e0] flex items-center justify-center mb-5">
+                      <tech.icon className="w-5 h-5 text-[#aaa]" />
+                    </div>
 
-                  {/* Name */}
-                  <h3 className="text-lg font-medium text-black mb-2 font-inter">
-                    {tech.name}
-                  </h3>
+                    {/* Name */}
+                    <h3 className="text-lg font-medium text-[#aaa] mb-2 font-inter">
+                      {tech.name}
+                    </h3>
 
-                  {/* Tagline */}
-                  <p className="para-text2 text-[#626262] mt-auto leading-relaxed">
-                    {tech.tagline}
-                  </p>
-
-                  {/* Arrow indicator */}
-                  <div className="mt-5 flex items-center gap-1.5 text-sm font-medium text-black opacity-0 group-hover:opacity-100 transition-opacity">
-                    Learn more
-                    <svg
-                      className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
+                    {/* Tagline */}
+                    <p className="para-text2 text-[#bbb] mt-auto leading-relaxed">
+                      {tech.tagline}
+                    </p>
                   </div>
                 </div>
-              </Link>
+              ) : (
+                <Link href={`/technology/${tech.slug}`} className="block h-full">
+                  <div className="relative bg-[#f8f8f8] rounded-xl p-7 md:p-8 h-full flex flex-col min-h-[260px] group hover:bg-[#f0f0f0] transition-colors border border-transparent hover:border-[#e0e0e0]">
+                    {/* Icon */}
+                    <div className="w-12 h-12 rounded-full bg-[#cdf80a] flex items-center justify-center mb-5">
+                      <tech.icon className="w-5 h-5 text-black" />
+                    </div>
+
+                    {/* Name */}
+                    <h3 className="text-lg font-medium text-black mb-2 font-inter">
+                      {tech.name}
+                    </h3>
+
+                    {/* Tagline */}
+                    <p className="para-text2 text-[#626262] mt-auto leading-relaxed">
+                      {tech.tagline}
+                    </p>
+
+                    {/* Arrow indicator */}
+                    <div className="mt-5 flex items-center gap-1.5 text-sm font-medium text-black opacity-0 group-hover:opacity-100 transition-opacity">
+                      Learn more
+                      <svg
+                        className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </Link>
+              )}
             </MotionWrapper>
           ))}
 
@@ -89,7 +108,7 @@ export default function TechnologyGrid({
                 {/* Background image */}
                 <Image
                   src="/technology/tech-hero.webp"
-                  alt="RnD Square — Custom Engineering"
+                  alt="RnD Square Custom Engineering"
                   fill
                   className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 />
@@ -107,7 +126,7 @@ export default function TechnologyGrid({
                     Looking for Custom Engineering?
                   </h3>
                   <p className="text-sm text-white/60 leading-relaxed mb-5">
-                    Explore RnD Square — our product engineering division for bespoke hardware, firmware, and software development.
+                    Explore RnD Square, our product engineering division for bespoke hardware, firmware, and software development.
                   </p>
                   <div className="flex items-center gap-1.5 text-sm font-medium text-white group-hover:text-[#cdf80a] transition-colors">
                     Visit RnD Square

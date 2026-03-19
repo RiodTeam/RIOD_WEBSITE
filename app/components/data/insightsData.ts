@@ -25,13 +25,13 @@ export const insightsData: InsightType[] = [
     date: "February 15, 2026",
     image: "/insights/rise-of-v2g-technology-in-india.webp",
     intro: [
-      "Vehicle-to-Grid (V2G) technology is emerging as one of the most transformative concepts in India's EV ecosystem. By enabling electric vehicles to feed stored energy back into the power grid during peak demand, V2G converts parked EVs into distributed energy assets — fundamentally changing the relationship between transportation and power infrastructure.",
+      "Vehicle-to-Grid (V2G) technology is emerging as one of the most transformative concepts in India's EV ecosystem. By enabling electric vehicles to feed stored energy back into the power grid during peak demand, V2G converts parked EVs into distributed energy assets, fundamentally changing the relationship between transportation and power infrastructure.",
     ],
     sections: [
       {
         heading: "What Is V2G and Why Does It Matter?",
         paragraphs: [
-          "V2G refers to bidirectional charging technology that allows EVs to not only draw power from the grid but also return it. During peak demand hours — typically 6 PM to 10 PM in India — parked EVs with sufficient charge can export energy back to the grid, reducing the need for expensive peaker plants and stabilizing supply.",
+          "V2G refers to bidirectional charging technology that allows EVs to not only draw power from the grid but also return it. During peak demand hours (typically 6 PM to 10 PM in India), parked EVs with sufficient charge can export energy back to the grid, reducing the need for expensive peaker plants and stabilizing supply.",
           "For a country like India, where distribution infrastructure is under immense pressure and renewable energy generation is growing rapidly, V2G offers a compelling solution: millions of mobile batteries that can absorb surplus solar energy during the day and release it when demand peaks in the evening.",
         ],
       },
@@ -69,14 +69,14 @@ export const insightsData: InsightType[] = [
     date: "January 28, 2026",
     image: "/insights/ocpp-2-what-operators-need-to-know.webp",
     intro: [
-      "OCPP 2.0.1 is the latest version of the Open Charge Point Protocol — the global communication standard between EV chargers and central management systems. For charge point operators in India, understanding OCPP 2.0.1 is no longer optional — it's essential for interoperability, security, and future-proofing your network.",
+      "OCPP 2.0.1 is the latest version of the Open Charge Point Protocol, the global communication standard between EV chargers and central management systems. For charge point operators in India, understanding OCPP 2.0.1 is no longer optional; it's essential for interoperability, security, and future-proofing your network.",
     ],
     sections: [
       {
         heading: "What Changed From OCPP 1.6J to 2.0.1?",
         paragraphs: [
           "OCPP 2.0.1 introduces device management, improved security with TLS and certificate-based authentication, support for ISO 15118 (Plug & Charge), and a modular architecture that separates functional blocks like authorization, metering, and smart charging.",
-          "The protocol also adds support for bidirectional charging (V2G), display messaging, and local authorization management — features that were either absent or bolted on in OCPP 1.6J.",
+          "The protocol also adds support for bidirectional charging (V2G), display messaging, and local authorization management, features that were either absent or bolted on in OCPP 1.6J.",
         ],
       },
       {
@@ -89,7 +89,7 @@ export const insightsData: InsightType[] = [
       {
         heading: "Migration Strategy",
         paragraphs: [
-          "Operators running OCPP 1.6J networks don't need to replace hardware overnight. A phased migration — starting with new installations on OCPP 2.0.1 and firmware-upgrading compatible existing chargers — is the pragmatic path. RIOD's chargers support both OCPP 1.6J and 2.0.1, with cloud-managed firmware updates that simplify the transition.",
+          "Operators running OCPP 1.6J networks don't need to replace hardware overnight. A phased migration, starting with new installations on OCPP 2.0.1 and firmware-upgrading compatible existing chargers, is the pragmatic path. RIOD's chargers support both OCPP 1.6J and 2.0.1, with cloud-managed firmware updates that simplify the transition.",
         ],
       },
     ],
@@ -112,21 +112,21 @@ export const insightsData: InsightType[] = [
       {
         heading: "Core Architecture Principles",
         paragraphs: [
-          "Scalable CPMS platforms are built on microservices architectures that separate charger communication, user management, billing, energy management, and analytics into independent services. This allows each component to scale independently based on load — the billing engine doesn't need to scale at the same rate as the WebSocket handler managing 10,000 concurrent charger connections.",
-          "Event-driven architectures with message queues ensure that transaction data is never lost during traffic spikes. A charger completing a session generates events that are processed asynchronously — metering data flows to billing, usage data flows to analytics, and status updates flow to the operator dashboard.",
+          "Scalable CPMS platforms are built on microservices architectures that separate charger communication, user management, billing, energy management, and analytics into independent services. This allows each component to scale independently based on load; the billing engine doesn't need to scale at the same rate as the WebSocket handler managing 10,000 concurrent charger connections.",
+          "Event-driven architectures with message queues ensure that transaction data is never lost during traffic spikes. A charger completing a session generates events that are processed asynchronously: metering data flows to billing, usage data flows to analytics, and status updates flow to the operator dashboard.",
         ],
       },
       {
         heading: "Real-Time Communication at Scale",
         paragraphs: [
-          "OCPP communication requires persistent WebSocket connections between each charger and the backend. At 10,000 chargers, that's 10,000 concurrent connections — each exchanging heartbeats, status notifications, and transaction messages. The CPMS must handle connection management, reconnection logic, and message queuing without dropping data.",
+          "OCPP communication requires persistent WebSocket connections between each charger and the backend. At 10,000 chargers, that's 10,000 concurrent connections, each exchanging heartbeats, status notifications, and transaction messages. The CPMS must handle connection management, reconnection logic, and message queuing without dropping data.",
           "RIOD's cloud platform uses horizontally scalable WebSocket gateways with sticky sessions and automatic failover, ensuring 99.9% uptime even as the network grows.",
         ],
       },
       {
         heading: "Multi-Tenant and White-Label Support",
         paragraphs: [
-          "As charging networks diversify, CPMS platforms must support multi-tenancy — where a single platform serves multiple operators with isolated data, branding, and billing rules. White-label capabilities allow charge point operators to present a branded experience to their end users while leveraging shared infrastructure.",
+          "As charging networks diversify, CPMS platforms must support multi-tenancy, where a single platform serves multiple operators with isolated data, branding, and billing rules. White-label capabilities allow charge point operators to present a branded experience to their end users while leveraging shared infrastructure.",
         ],
       },
     ],
@@ -143,14 +143,14 @@ export const insightsData: InsightType[] = [
     date: "December 20, 2025",
     image: "/insights/dc-fast-charging-hardware-design-deep-dive.webp",
     intro: [
-      "DC fast chargers are the most technically complex pieces of EV charging hardware. Unlike AC chargers that rely on the vehicle's onboard converter, DC chargers perform the AC-to-DC conversion externally and push high-power DC directly into the battery — requiring precision power electronics, thermal management, and robust safety systems.",
+      "DC fast chargers are the most technically complex pieces of EV charging hardware. Unlike AC chargers that rely on the vehicle's onboard converter, DC chargers perform the AC-to-DC conversion externally and push high-power DC directly into the battery, requiring precision power electronics, thermal management, and robust safety systems.",
     ],
     sections: [
       {
         heading: "Power Electronics Architecture",
         paragraphs: [
           "A DC fast charger typically consists of an AC input stage (rectification and power factor correction), an isolated DC-DC converter stage, and an output stage with voltage and current regulation. Modern designs use silicon carbide (SiC) MOSFETs in the converter stage for higher efficiency and reduced heat generation at high switching frequencies.",
-          "The power factor correction (PFC) stage ensures the charger draws clean power from the grid — a critical requirement for high-power installations where harmonic distortion can affect neighbouring equipment and violate grid codes.",
+          "The power factor correction (PFC) stage ensures the charger draws clean power from the grid, a critical requirement for high-power installations where harmonic distortion can affect neighbouring equipment and violate grid codes.",
         ],
       },
       {
@@ -187,15 +187,15 @@ export const insightsData: InsightType[] = [
       {
         heading: "The Load Problem at Scale",
         paragraphs: [
-          "A single 7.4 kW AC charger draws modest power — comparable to two air conditioners. But 20 chargers in an apartment basement draw 148 kW simultaneously if unmanaged. Add that to the building's existing load during evening peak hours, and you're likely exceeding the sanctioned electrical capacity.",
-          "The conventional solution — upgrading transformers and cables — is expensive and time-consuming. A 500 kVA transformer upgrade in a commercial building can cost as much as the chargers themselves. Smart energy management avoids this by dynamically distributing available power across active charging sessions.",
+          "A single 7.4 kW AC charger draws modest power, comparable to two air conditioners. But 20 chargers in an apartment basement draw 148 kW simultaneously if unmanaged. Add that to the building's existing load during evening peak hours, and you're likely exceeding the sanctioned electrical capacity.",
+          "The conventional solution of upgrading transformers and cables is expensive and time-consuming. A 500 kVA transformer upgrade in a commercial building can cost as much as the chargers themselves. Smart energy management avoids this by dynamically distributing available power across active charging sessions.",
         ],
       },
       {
         heading: "Dynamic Load Balancing",
         paragraphs: [
           "Dynamic load balancing monitors the building's total power consumption in real time and allocates remaining capacity to EV chargers. If the building load drops (lights off, ACs reduced at night), more power flows to chargers. If demand spikes (all ACs on during a hot afternoon), chargers throttle back automatically.",
-          "RIOD's load balancing system uses CT clamp sensors on the building's main supply to measure real-time consumption. The algorithm distributes available headroom across active chargers using priority rules — first-come-first-served, VIP priority, departure-time optimization, or equal distribution.",
+          "RIOD's load balancing system uses CT clamp sensors on the building's main supply to measure real-time consumption. The algorithm distributes available headroom across active chargers using priority rules: first-come-first-served, VIP priority, departure-time optimization, or equal distribution.",
         ],
       },
       {
@@ -219,20 +219,20 @@ export const insightsData: InsightType[] = [
     date: "November 22, 2025",
     image: "/insights/iso-15118-plug-and-charge-implementation.webp",
     intro: [
-      "ISO 15118 defines the communication protocol between electric vehicles and charging stations, enabling the revolutionary Plug & Charge feature — where a driver simply plugs in and the charger automatically identifies the vehicle, authenticates the user, and starts a billing-enabled charging session with zero manual interaction.",
+      "ISO 15118 defines the communication protocol between electric vehicles and charging stations, enabling the revolutionary Plug & Charge feature, where a driver simply plugs in and the charger automatically identifies the vehicle, authenticates the user, and starts a billing-enabled charging session with zero manual interaction.",
     ],
     sections: [
       {
         heading: "How Plug & Charge Works",
         paragraphs: [
-          "Plug & Charge uses a Public Key Infrastructure (PKI) where the vehicle carries a digital certificate installed by the automaker. When the EV connects to a charger, they exchange certificates over a TLS-encrypted powerline communication (PLC) channel. The charger validates the vehicle's certificate against the mobility operator's root certificate, authorizes the session, and charging begins — all in under 5 seconds.",
+          "Plug & Charge uses a Public Key Infrastructure (PKI) where the vehicle carries a digital certificate installed by the automaker. When the EV connects to a charger, they exchange certificates over a TLS-encrypted powerline communication (PLC) channel. The charger validates the vehicle's certificate against the mobility operator's root certificate, authorizes the session, and charging begins, all in under 5 seconds.",
           "The beauty of this approach is that no app, RFID card, or credit card is needed. The vehicle itself is the authentication token. Billing flows through the e-mobility service provider linked to the vehicle's contract certificate.",
         ],
       },
       {
         heading: "The PKI Ecosystem",
         paragraphs: [
-          "Implementing Plug & Charge requires a trust chain: the vehicle OEM issues contract certificates, the charge point operator provisions the charger with its own certificate, and a root certificate authority (like Hubject) anchors the trust chain. Each party must manage certificate lifecycle — issuance, renewal, and revocation.",
+          "Implementing Plug & Charge requires a trust chain: the vehicle OEM issues contract certificates, the charge point operator provisions the charger with its own certificate, and a root certificate authority (like Hubject) anchors the trust chain. Each party must manage certificate lifecycle: issuance, renewal, and revocation.",
           "This is where most implementations stumble. The PKI infrastructure is complex, and interoperability between different OEMs, operators, and certificate authorities requires careful coordination. Standards bodies are working to simplify this, but early implementations require significant integration effort.",
         ],
       },
@@ -270,14 +270,14 @@ export const insightsData: InsightType[] = [
       {
         heading: "Charging Infrastructure for Fleets",
         paragraphs: [
-          "Fleet charging differs fundamentally from personal EV charging. Vehicles have fixed routes, predictable daily mileage, and centralized overnight parking — creating opportunities for optimized depot charging that personal charging cannot match.",
+          "Fleet charging differs fundamentally from personal EV charging. Vehicles have fixed routes, predictable daily mileage, and centralized overnight parking, creating opportunities for optimized depot charging that personal charging cannot match.",
           "A well-designed fleet charging depot uses a mix of AC chargers for overnight charging (8-10 hours for full charge) and DC fast chargers for midday top-ups or vehicles that return with low state of charge. RIOD's fleet solutions include depot design, power capacity planning, charger deployment, and cloud-based fleet energy management.",
         ],
       },
       {
         heading: "Fleet Management Integration",
         paragraphs: [
-          "Modern fleet electrification isn't just about chargers — it's about integrating charging data with fleet management software. Vehicle telematics, route optimization, driver assignment, and energy cost allocation need to work together.",
+          "Modern fleet electrification isn't just about chargers; it's about integrating charging data with fleet management software. Vehicle telematics, route optimization, driver assignment, and energy cost allocation need to work together.",
           "RIOD's fleet platform provides APIs that connect charger data with popular fleet management systems, enabling automated reporting on per-vehicle energy costs, charging compliance, and carbon reduction metrics.",
         ],
       },
@@ -295,28 +295,28 @@ export const insightsData: InsightType[] = [
     date: "October 25, 2025",
     image: "/insights/smart-grid-integration-for-ev-charging.webp",
     intro: [
-      "As India adds millions of EVs to its roads, the power grid faces a challenge and an opportunity. Unmanaged EV charging can strain distribution networks and cause localized outages. But intelligently managed charging — integrated with grid signals, renewable generation, and dynamic tariffs — can actually strengthen the grid while reducing costs for everyone.",
+      "As India adds millions of EVs to its roads, the power grid faces a challenge and an opportunity. Unmanaged EV charging can strain distribution networks and cause localized outages. But intelligently managed charging, integrated with grid signals, renewable generation, and dynamic tariffs, can actually strengthen the grid while reducing costs for everyone.",
     ],
     sections: [
       {
         heading: "The Grid Impact of Unmanaged Charging",
         paragraphs: [
-          "If every EV owner plugs in when they arrive home at 7 PM, the evening demand peak — already the highest point of the day — gets a significant additional load. A neighbourhood with 50 EVs charging simultaneously at 7.4 kW adds 370 kW to the local transformer, potentially exceeding its rating.",
-          "This 'coincidence factor' — the percentage of chargers active simultaneously — determines whether the grid needs expensive upgrades. Without management, coincidence factors can reach 70-80%. With smart charging, they drop to 20-30%, deferring billions in grid infrastructure investment.",
+          "If every EV owner plugs in when they arrive home at 7 PM, the evening demand peak, already the highest point of the day, gets a significant additional load. A neighbourhood with 50 EVs charging simultaneously at 7.4 kW adds 370 kW to the local transformer, potentially exceeding its rating.",
+          "This 'coincidence factor', the percentage of chargers active simultaneously, determines whether the grid needs expensive upgrades. Without management, coincidence factors can reach 70-80%. With smart charging, they drop to 20-30%, deferring billions in grid infrastructure investment.",
         ],
       },
       {
         heading: "Demand Response and Smart Charging",
         paragraphs: [
-          "Smart charging shifts EV demand to times when the grid has surplus capacity — typically late night to early morning. The charger receives signals from the grid operator or energy management system and adjusts its power output accordingly. Drivers set their departure time and minimum charge requirement; the system handles the rest.",
+          "Smart charging shifts EV demand to times when the grid has surplus capacity, typically late night to early morning. The charger receives signals from the grid operator or energy management system and adjusts its power output accordingly. Drivers set their departure time and minimum charge requirement; the system handles the rest.",
           "RIOD's chargers support OCPP smart charging profiles that enable remote power adjustment by the backend system. Grid operators can send demand response signals through the CPMS, which distributes power reduction commands across the charger network based on priority rules.",
         ],
       },
       {
         heading: "Renewable Energy Alignment",
         paragraphs: [
-          "India's solar generation peaks between 10 AM and 3 PM — when many EVs sit in office parking lots. Aligning workplace charging with solar peaks reduces grid dependency and absorbs renewable energy that might otherwise be curtailed.",
-          "RIOD's energy management platform integrates with solar inverter APIs to monitor real-time generation. When solar output is high, the system automatically increases charging power across connected EVs. When clouds reduce output, it throttles back gracefully — all invisible to the vehicle owner.",
+          "India's solar generation peaks between 10 AM and 3 PM, when many EVs sit in office parking lots. Aligning workplace charging with solar peaks reduces grid dependency and absorbs renewable energy that might otherwise be curtailed.",
+          "RIOD's energy management platform integrates with solar inverter APIs to monitor real-time generation. When solar output is high, the system automatically increases charging power across connected EVs. When clouds reduce output, it throttles back gracefully, all invisible to the vehicle owner.",
         ],
       },
     ],
@@ -480,7 +480,7 @@ export const insightsData: InsightType[] = [
           "Tracking Temperature and Humidity Across Multiple Incubators to Increase Hatchery Efficiency",
         paragraphs: [
           "Temperature and humidity control are vital to successful hatchery management, as they can impact embryo viability, chick quality and overall hatchability. In this section we will look at how you can use technology to optimize your temperature and humidity levels across multiple incubators in order to increase your hatchery efficiency.",
-          "The online indicates that the machines is running and the data in the software is live. You will get live hatchery information like – Running temperature, Running Humidity, Safety Sensor Reading, Egg tray turning delay, No of turn rotations from your Hatchery Monitoring Software",
+          "The online indicates that the machines is running and the data in the software is live. You will get live hatchery information like: Running temperature, Running Humidity, Safety Sensor Reading, Egg tray turning delay, No of turn rotations from your Hatchery Monitoring Software",
         ],
       },
 

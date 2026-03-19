@@ -32,7 +32,7 @@ const applications = [
   {
     title: "Homes",
     description:
-      "Safe, compact chargers designed for everyday convenience — charge overnight, drive all day.",
+      "Safe, compact chargers designed for everyday convenience. Charge overnight, drive all day.",
     href: "/ev-chargers-home",
     image: "/home2/hero.webp",
   },
@@ -73,7 +73,7 @@ export default function ApplicationsClient() {
         <HeroSection
           backgroundImage="/heroes/ev-chargers-hero.webp"
           title="Applications"
-          description="Industry-specific EV charging solutions engineered for every environment — from hotel lobbies to hospital parking, malls to residential complexes."
+          description="Industry-specific EV charging solutions engineered for every environment: from hotel lobbies to hospital parking, malls to residential complexes."
           overlayOpacity={0.55}
         />
 

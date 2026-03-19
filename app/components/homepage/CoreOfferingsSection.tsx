@@ -9,7 +9,7 @@ const offerings = [
     number: "01",
     title: "EV Charging\nStations",
     description:
-      "AC PowerPods, DC fast chargers, and high-power charging stations — designed and manufactured in-house for homes, businesses, and public infrastructure.",
+      "AC PowerPods, DC fast chargers, and high-power charging stations, designed and manufactured in-house for homes, businesses, and public infrastructure.",
     cta: "Explore Chargers",
     href: "/products/ev-chargers",
     image: "/home/hero.webp",
@@ -18,7 +18,7 @@ const offerings = [
     number: "02",
     title: "Technology",
     description:
-      "Embedded firmware, CPMS platforms, mobile apps, and energy management systems — built by the same team that makes the hardware.",
+      "Embedded firmware, CPMS platforms, mobile apps, and energy management systems, built by the same team that makes the hardware.",
     cta: "Explore Technology",
     href: "/technology",
     image: "/home/hero.webp",

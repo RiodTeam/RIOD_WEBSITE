@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy | RIOD",
   description:
-    "RIOD's privacy policy — how we collect, use, and protect your personal information across our EV charging and energy management platforms.",
+    "RIOD's privacy policy: how we collect, use, and protect your personal information across our EV charging and energy management platforms.",
 };
 
 export default function PrivacyPolicyPage() {

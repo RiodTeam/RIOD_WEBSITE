@@ -158,7 +158,7 @@ export const servicesProductsMalls = [
   {
     id: 1,
     title: "Increase Footfall & Dwell Time",
-    desc: "EV drivers spend 30-60 minutes charging—time they'll spend shopping, dining, or watching movies at your venue.",
+    desc: "EV drivers spend 30-60 minutes charging, time they'll spend shopping, dining, or watching movies at your venue.",
     image: "/office/o1.webp",
   },
   {
@@ -254,7 +254,7 @@ export const servicesProductsParking = [
   {
     id: 4,
     title: "Enable Pay-Per-Use Models",
-    desc: "Integrated payment and billing systems allow parking operators to offer flexible pricing—hourly, per-kWh, or subscription-based.",
+    desc: "Integrated payment and billing systems allow parking operators to offer flexible pricing: hourly, per-kWh, or subscription-based.",
     image: "/home2/h4.webp",
   },
   {
@@ -266,7 +266,7 @@ export const servicesProductsParking = [
   {
     id: 6,
     title: "Smart Occupancy & Usage Analytics",
-    desc: "RIOD's cloud platform provides real-time data on charger usage, occupancy patterns, and revenue—enabling data-driven facility management.",
+    desc: "RIOD's cloud platform provides real-time data on charger usage, occupancy patterns, and revenue, enabling data-driven facility management.",
     image: "/home2/h6.webp",
   },
 ];
