@@ -1,13 +1,20 @@
 "use client";
 import { useState } from "react";
-import CountryCodeSelect from "./CountrySelector";
 import Image from "next/image";
 
+const countryCodes = [
+  { label: "India", code: "+91" },
+  { label: "UAE", code: "+971" },
+  { label: "USA", code: "+1" },
+  { label: "UK", code: "+44" },
+  { label: "France", code: "+33" },
+];
 
 export default function ContactFormSection() {
   const [form, setForm] = useState({
     name: "",
     email: "",
+    countryCode: "+91",
     phone: "",
     message: "",
   });
@@ -17,7 +24,7 @@ export default function ContactFormSection() {
   const [error, setError] = useState("");
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
@@ -30,23 +37,19 @@ export default function ContactFormSection() {
     try {
       const res = await fetch(`/api/contact`, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(form),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: `${form.countryCode} ${form.phone}`,
+          message: form.message,
+        }),
       });
 
-      if (!res.ok) {
-        throw new Error("Submission failed");
-      }
+      if (!res.ok) throw new Error("Submission failed");
 
       setSuccess(true);
-      setForm({
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
+      setForm({ name: "", email: "", countryCode: "+91", phone: "", message: "" });
     } catch (err) {
       setError("Something went wrong. Please try again.");
       console.error(err);
@@ -54,13 +57,15 @@ export default function ContactFormSection() {
       setLoading(false);
     }
   };
+
   return (
-    <section className="w-full bg-[#1C1C1C] text-white pt-24 md:pt-36 lg:pt-48 pb-[6.2rem]">
-      <div className="w-[90%] max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+    <section className="w-full bg-[#1C1C1C] text-white pt-16 md:pt-36 lg:pt-48 pb-[6.2rem]">
+      <div className="w-[90%] max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+
         {/* LEFT FORM */}
-        <div className="mt-6">
-          <label className="block mb-3 para-text2">
-            Name <span className="text-red-600">*</span>
+        <div>
+          <label className="block mb-2 para-text2">
+            Name <span className="text-red-500">*</span>
           </label>
           <input
             type="text"
@@ -68,11 +73,11 @@ export default function ContactFormSection() {
             value={form.name}
             onChange={handleChange}
             placeholder="Enter Your Name"
-            className="w-full bg-transparent border-[0.5px] border-white px-4 py-[11px] mb-7 placeholder:text-[13px] focus:outline-none"
+            className="w-full bg-transparent border-[0.5px] border-white px-4 py-[10px] mb-4 md:mb-6 placeholder:text-[13px] focus:outline-none"
           />
 
-          <label className="block mb-3 para-text2">
-            Primary Email <span className="text-red-600">*</span>
+          <label className="block mb-2 para-text2">
+            Email <span className="text-red-500">*</span>
           </label>
           <input
             type="email"
@@ -80,52 +85,62 @@ export default function ContactFormSection() {
             value={form.email}
             onChange={handleChange}
             placeholder="Corporate E-mail"
-            className="w-full bg-transparent border-[0.5px] border-white px-4 py-[11px] mb-7 placeholder:text-[13px] focus:outline-none"
+            className="w-full bg-transparent border-[0.5px] border-white px-4 py-[10px] mb-4 md:mb-6 placeholder:text-[13px] focus:outline-none"
           />
 
-          <label className="block mb-3 para-text2">
-            Primary Contact Number <span className="text-red-600">*</span>
+          <label className="block mb-2 para-text2">
+            Phone Number <span className="text-red-500">*</span>
           </label>
-          <div className="flex gap-0 mb-6">
-            <CountryCodeSelect />
+          <div className="flex gap-0 mb-4 md:mb-6">
+            {/* Native select — uses system picker on mobile */}
+            <select
+              name="countryCode"
+              value={form.countryCode}
+              onChange={handleChange}
+              className="bg-[#1C1C1C] text-white border-[0.5px] border-white px-2 py-[10px] text-sm focus:outline-none appearance-none cursor-pointer shrink-0"
+              style={{ minWidth: "80px" }}
+            >
+              {countryCodes.map((c) => (
+                <option key={c.code} value={c.code} className="bg-[#1C1C1C]">
+                  {c.code} {c.label}
+                </option>
+              ))}
+            </select>
 
             <input
-              type="text"
+              type="tel"
               name="phone"
               value={form.phone}
               onChange={handleChange}
               placeholder="Phone number"
-              className="w-full bg-transparent border-[0.5px] border-white placeholder:text-[13px] px-4 py-[11px] focus:outline-none"
+              className="flex-1 bg-transparent border-[0.5px] border-l-0 border-white px-4 py-[10px] placeholder:text-[13px] focus:outline-none"
             />
           </div>
 
-          <div className="flex justify-between items-center mb-3 mt-12">
-            <label className="para-text2">Tell Us About You</label>
-
-            <span className="text-[12px] text-[#9A99A2]">0 / 500</span>
-          </div>
-
+          <label className="block mb-2 para-text2">Message</label>
           <textarea
             name="message"
             value={form.message}
             onChange={handleChange}
             maxLength={500}
-            placeholder="Type Your Message"
-            className="w-full h-32 md:h-40 bg-transparent border-[0.5px] border-white placeholder:text-[13px] px-4 py-3 focus:outline-none resize-none"
+            placeholder="Tell us what you're working on"
+            className="w-full h-20 md:h-32 bg-transparent border-[0.5px] border-white placeholder:text-[13px] px-4 py-3 focus:outline-none resize-none"
           />
-          {error && <p className="text-red-500 font-inter mt-4">{error}</p>}
-          {success && (
-            <p className="text-green-500 font-inter mt-4">Submitted successfully</p>
-          )}
+          <div className="flex justify-end mb-1">
+            <span className="text-[11px] text-[#9A99A2]">{form.message.length} / 500</span>
+          </div>
+
+          {error && <p className="text-red-500 font-inter mt-2 text-sm">{error}</p>}
+          {success && <p className="text-green-400 font-inter mt-2 text-sm">Submitted successfully</p>}
 
           <button
             disabled={loading}
             onClick={handleSubmit}
-            className="mt-[4.3rem] w-full bg-white text-black px-8 py-[1.2rem] flex justify-between font-medium hover:opacity-80 transition"
+            className="mt-4 md:mt-8 w-full bg-white text-black px-8 py-[1.1rem] flex justify-between font-medium hover:opacity-80 transition"
           >
             <p className="text-md font-inter font-normal">
               {loading ? "Submitting..." : "CONTACT US"}
-            </p>{" "}
+            </p>
             <Image
               src="/footer/arrow.svg"
               alt="arrow"
@@ -138,10 +153,10 @@ export default function ContactFormSection() {
 
         {/* RIGHT TEXT BLOCK */}
         <div className="flex flex-col justify-start md:pl-6 lg:pl-20 lg:border-l-[0.5px] lg:border-white">
-          <h2 className="section-heading mb-6 ">Let&apos;s Connect</h2>
+          <h2 className="section-heading mb-6">Let&apos;s Connect</h2>
 
           <p className="text-[#9a99a2] leading-9! normal-text mb-10">
-            Tell us what you're working on: a new charging deployment, a technology integration, or a product enquiry. We'll get back to you within 1 business day.
+            Tell us what you&apos;re working on: a new charging deployment, a technology integration, or a product enquiry. We&apos;ll get back to you within 1 business day.
           </p>
 
           <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
