@@ -21,7 +21,7 @@ const offerings = [
       "Embedded firmware, CPMS platforms, mobile apps, and energy management systems, built by the same team that makes the hardware.",
     cta: "Explore Technology",
     href: "/technology",
-    image: "/home/hero.webp",
+    image: "/technology/payment-terminals.webp",
   },
 ];
 
