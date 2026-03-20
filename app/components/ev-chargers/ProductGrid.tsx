@@ -34,7 +34,10 @@ interface ProductGridProps {
 function ProductCard({ product, index }: { product: Product; index: number }) {
   return (
     <MotionWrapper key={`${product.name}-${product.power}`} delay={index * 0.1}>
-      <div className="group flex flex-col h-full border-2 border-transparent hover:border-[#cdf80a] rounded-xl transition-colors duration-300">
+      <Link
+        href={product.shopUrl}
+        className="group flex flex-col h-full border-2 border-transparent hover:border-[#cdf80a] rounded-xl transition-colors duration-300"
+      >
         {/* Image */}
         <div className="relative w-full aspect-square bg-[#f6f6f6] rounded-t-xl overflow-hidden">
           <Image
@@ -57,15 +60,12 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
             {product.description}
           </p>
 
-          <Link
-            href={product.shopUrl}
-            className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-black hover:text-[#626262] transition-colors"
-          >
+          <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-black group-hover:text-[#626262] transition-colors">
             {product.ctaLabel ?? "Learn More"}
             <ArrowUpRight className="w-4 h-4" />
-          </Link>
+          </span>
         </div>
-      </div>
+      </Link>
     </MotionWrapper>
   );
 }

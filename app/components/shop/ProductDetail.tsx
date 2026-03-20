@@ -153,7 +153,7 @@ export default function ProductDetail({ product }: { product: ShopifyProduct }) 
 
         {/* Trust badges */}
         <div className="flex flex-wrap gap-4 mb-8 pb-8 border-b border-[#e8e8e8]">
-          {["Free shipping across India", "OCPP 1.6J certified", "3-year warranty"].map((b) => (
+          {["Shipping across India", "OCPP 1.6J", "2-year warranty"].map((b) => (
             <div key={b} className="flex items-center gap-1.5 text-sm text-[#626262]">
               <Check className="w-3.5 h-3.5 text-[#cdf80a] shrink-0" style={{ color: "#1b1b1b" }} />
               {b}

@@ -6,12 +6,10 @@ import MotionWrapper from "../common/MotionWrapper";
 import NewsletterSignup from "../common/NewsletterSignup";
 
 const productLinks = [
-  { label: "AC Powerpod 3.4kW", href: "/products" },
-  { label: "AC Powerpod 7.4kW", href: "/products" },
-  { label: "AC Powerpod 22kW", href: "/products" },
-  { label: "AC Powerpod Go 3.4kW", href: "/products" },
-  { label: "AC Powerpod Go 7.4kW", href: "/products" },
-  { label: "AC Powerpod Go 22kW", href: "/products" },
+  { label: "AC Powerpod", href: "/products/ev-chargers/powerpod" },
+  { label: "AC Powerpod Go", href: "/products/ev-chargers/powerpod-go" },
+  { label: "AC PowerPod City", href: "/products/ev-chargers/powerpod-city" },
+  { label: "Store", href: "/shop" },
 ];
 
 const solutionLinks = [
