@@ -2,13 +2,6 @@
 import { useState } from "react";
 import Image from "next/image";
 
-const countryCodes = [
-  { label: "India", code: "+91" },
-  { label: "UAE", code: "+971" },
-  { label: "USA", code: "+1" },
-  { label: "UK", code: "+44" },
-  { label: "France", code: "+33" },
-];
 
 export default function ContactFormSection() {
   const [form, setForm] = useState({
@@ -92,20 +85,15 @@ export default function ContactFormSection() {
             Phone Number <span className="text-red-500">*</span>
           </label>
           <div className="flex gap-0 mb-4 md:mb-6">
-            {/* Native select — uses system picker on mobile */}
-            <select
+            {/* Editable code — type any country code */}
+            <input
+              type="text"
               name="countryCode"
               value={form.countryCode}
               onChange={handleChange}
-              className="bg-[#1C1C1C] text-white border-[0.5px] border-white px-2 py-[10px] text-sm focus:outline-none appearance-none cursor-pointer shrink-0"
-              style={{ minWidth: "80px" }}
-            >
-              {countryCodes.map((c) => (
-                <option key={c.code} value={c.code} className="bg-[#1C1C1C]">
-                  {c.code} {c.label}
-                </option>
-              ))}
-            </select>
+              className="bg-transparent text-white border-[0.5px] border-white px-3 py-[10px] text-sm focus:outline-none text-center shrink-0"
+              style={{ width: "68px" }}
+            />
 
             <input
               type="tel"
