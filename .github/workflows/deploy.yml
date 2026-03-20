@@ -23,6 +23,12 @@ jobs:
             # Pull latest code
             git pull origin main
 
+            # Write environment variables to .env.local
+            cat > .env.local << 'ENVEOF'
+            NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN=${{ secrets.SHOPIFY_STORE_DOMAIN }}
+            NEXT_PUBLIC_SHOPIFY_STOREFRONT_TOKEN=${{ secrets.SHOPIFY_STOREFRONT_TOKEN }}
+            ENVEOF
+
             # Install dependencies
             npm install
 
