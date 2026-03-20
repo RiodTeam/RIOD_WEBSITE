@@ -5,6 +5,8 @@ import { Headset, X, ChevronDown, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import CartIcon from "@/app/components/shop/CartIcon";
+import { useCart } from "@/app/context/CartContext";
 
 const applicationLinks = [
   { name: "Hotels", href: "/ev-chargers-hotels" },
@@ -20,6 +22,7 @@ const applicationLinks = [
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { totalQuantity } = useCart();
 
   // Mobile accordion states
   const [isProductsOpen, setIsProductsOpen] = useState(false);
@@ -46,7 +49,9 @@ const Header = () => {
     pathname === "/careers" ||
     pathname === "/applications" ||
     pathname === "/ev-charger-selection-guide" ||
-    pathname.startsWith("/technology/");
+    pathname.startsWith("/technology/") ||
+    pathname.startsWith("/shop") ||
+    pathname === "/thank-you";
 
   useEffect(() => {
     if (forceDarkHeader) return;
@@ -285,6 +290,13 @@ const Header = () => {
                 <Headset className="w-5 h-5 xl:w-[22px] xl:h-[22px]" />
               </a>
 
+              {/* CART ICON — desktop only, shown when items in cart */}
+              {totalQuantity > 0 && (
+                <div className="hidden lg:block">
+                  <CartIcon />
+                </div>
+              )}
+
               {/* MOBILE MENU BUTTON */}
               <button
                 onClick={toggleMenu}
@@ -507,6 +519,7 @@ const Header = () => {
             >
               <Headset size={24} />
             </a>
+            {totalQuantity > 0 && <CartIcon />}
           </div>
         </div>
       </div>
