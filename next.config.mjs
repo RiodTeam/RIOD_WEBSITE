@@ -23,6 +23,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: '*.amazonaws.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'cdn.shopify.com',
+      },
     ],
   },
   webpack: (webpackConfig) => {

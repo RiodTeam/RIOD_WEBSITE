@@ -4,6 +4,9 @@ import "../globals.css";
 import Header from "../components/header/header";
 import FooterSection from "../components/footer/FooterSection";
 import AutoLeadPopup from "../components/common/AutoLeadPopup";
+import { CartProvider } from "../context/CartContext";
+import CartDrawer from "../components/shop/CartDrawer";
+import WhatsAppButton from "../components/common/WhatsAppButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,10 +42,14 @@ export default function FrontendLayout({
         <div
           className={`${geistSans.variable} ${inter.variable} antialiased`}
         >
-          <Header />
-          {children}
-          <FooterSection />
-          <AutoLeadPopup />
+          <CartProvider>
+            <Header />
+            {children}
+            <FooterSection />
+            <AutoLeadPopup />
+            <CartDrawer />
+            <WhatsAppButton />
+          </CartProvider>
         </div>
       </body>
     </html>
