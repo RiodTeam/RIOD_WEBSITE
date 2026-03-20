@@ -83,6 +83,7 @@ export default function ContactFormSection() {
 
           <label className="block mb-2 para-text2">
             Phone Number <span className="text-red-500">*</span>
+            <span className="text-[11px] text-[#9a99a2] font-normal ml-2 normal-case tracking-normal">tap code to change</span>
           </label>
           <div className="flex gap-0 mb-4 md:mb-6">
             {/* Editable code — type any country code */}
@@ -91,7 +92,7 @@ export default function ContactFormSection() {
               name="countryCode"
               value={form.countryCode}
               onChange={handleChange}
-              className="bg-transparent text-white border-[0.5px] border-white px-3 py-[10px] text-sm focus:outline-none text-center shrink-0"
+              className="bg-transparent text-white border-[0.5px] border-white px-3 py-[10px] text-sm focus:outline-none text-center shrink-0 focus:bg-white/10 transition-colors"
               style={{ width: "68px" }}
             />
 
