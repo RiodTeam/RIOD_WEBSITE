@@ -11,6 +11,7 @@ type Product = {
   description: string;
   image: string;
   shopUrl: string;
+  ctaLabel?: string;
 };
 
 type ProductGroup = {
@@ -56,15 +57,13 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
             {product.description}
           </p>
 
-          <a
+          <Link
             href={product.shopUrl}
-            target="_blank"
-            rel="noopener noreferrer"
             className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-black hover:text-[#626262] transition-colors"
           >
-            Shop Now
+            {product.ctaLabel ?? "Learn More"}
             <ArrowUpRight className="w-4 h-4" />
-          </a>
+          </Link>
         </div>
       </div>
     </MotionWrapper>

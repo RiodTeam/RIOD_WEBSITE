@@ -16,7 +16,7 @@ const privateChargers = [
     description:
       "Single-phase home charger for overnight charging. Smart scheduling, energy monitoring, and Wi-Fi connectivity.",
     image: "/products/powerpod.png",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/products/ev-chargers/powerpod",
   },
   {
     name: "RIOD AC Powerpod",
@@ -24,7 +24,7 @@ const privateChargers = [
     description:
       "Fast single-phase home charger. Cuts charging time in half compared to 3.4kW. Ideal for daily commuters.",
     image: "/products/powerpod.png",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/products/ev-chargers/powerpod",
   },
   {
     name: "RIOD AC Powerpod",
@@ -32,7 +32,7 @@ const privateChargers = [
     description:
       "Three-phase AC charger for the fastest home charging. Full charge in under 2 hours for most EVs.",
     image: "/products/powerpod.png",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/products/ev-chargers/powerpod",
   },
 ];
 
@@ -44,7 +44,7 @@ const edgeChargers = [
     description:
       "Compact shared charger with RFID access, 4G connectivity, and OCPP cloud management for apartments and offices.",
     image: "/products/powerpod.png",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/products/ev-chargers/powerpod-go",
   },
   {
     name: "RIOD AC Powerpod Go",
@@ -52,7 +52,7 @@ const edgeChargers = [
     description:
       "Mid-range community charger with payment terminal support, user authentication, and remote monitoring.",
     image: "/products/powerpod.png",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/products/ev-chargers/powerpod-go",
   },
   {
     name: "RIOD AC Powerpod Go",
@@ -60,7 +60,7 @@ const edgeChargers = [
     description:
       "High-power shared AC charger for commercial spaces. Supports multiple payment methods and load balancing.",
     image: "/products/powerpod.png",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/products/ev-chargers/powerpod-go",
   },
 ];
 
@@ -71,7 +71,7 @@ const cityChargers = [
     description:
       "Dual-gun public charger with RFID access, 4G connectivity, and OCPP cloud management for apartments and offices.",
     image: "/products/powerpod-city.png",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/products/ev-chargers/powerpod-city",
   },
   {
     name: "RIOD AC PowerPod City",
@@ -79,7 +79,7 @@ const cityChargers = [
     description:
       "Mid-range dual-gun charger with payment terminal support, user authentication, and remote monitoring.",
     image: "/products/powerpod-city.png",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/products/ev-chargers/powerpod-city",
   },
   {
     name: "RIOD AC PowerPod City",
@@ -87,7 +87,7 @@ const cityChargers = [
     description:
       "High-power dual-gun charger for commercial spaces. Supports multiple payment methods and load balancing.",
     image: "/products/powerpod-city.png",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/products/ev-chargers/powerpod-city",
   },
 ];
 
@@ -98,7 +98,8 @@ const dcChargers = [
     description:
       "Entry-level DC fast charger for retail locations and small businesses. CCS2 connector, 10-80% in ~80 minutes.",
     image: "/products/powerpod-city.png",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/contact",
+    ctaLabel: "Contact Us",
   },
   {
     name: "RIOD DC Fast",
@@ -106,7 +107,8 @@ const dcChargers = [
     description:
       "Mid-range DC charger for fuel stations and fleet depots. Dual connector option, OCPP 1.6J compliant.",
     image: "/products/powerpod-city.png",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/contact",
+    ctaLabel: "Contact Us",
   },
   {
     name: "RIOD DC Fast",
@@ -114,7 +116,8 @@ const dcChargers = [
     description:
       "High-power DC charger for highways and public charging hubs. Rapid top-up in under 30 minutes for most EVs.",
     image: "/products/powerpod-city.png",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/contact",
+    ctaLabel: "Contact Us",
   },
 ];
 
