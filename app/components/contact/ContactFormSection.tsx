@@ -52,7 +52,7 @@ export default function ContactFormSection() {
   };
 
   return (
-    <section className="w-full bg-[#1C1C1C] text-white pt-16 md:pt-36 lg:pt-48 pb-[6.2rem]">
+    <section className="w-full bg-[#1C1C1C] text-white pt-16 md:pt-24 lg:pt-28 pb-16 md:pb-[6.2rem]">
       <div className="w-[90%] max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
 
         {/* LEFT FORM */}
@@ -66,7 +66,7 @@ export default function ContactFormSection() {
             value={form.name}
             onChange={handleChange}
             placeholder="Enter Your Name"
-            className="w-full bg-transparent border-[0.5px] border-white px-4 py-[10px] mb-4 md:mb-6 placeholder:text-[13px] focus:outline-none"
+            className="w-full bg-transparent border-[0.5px] border-white px-4 py-[10px] mb-3 md:mb-4 placeholder:text-[13px] focus:outline-none"
           />
 
           <label className="block mb-2 para-text2">
@@ -78,14 +78,14 @@ export default function ContactFormSection() {
             value={form.email}
             onChange={handleChange}
             placeholder="Corporate E-mail"
-            className="w-full bg-transparent border-[0.5px] border-white px-4 py-[10px] mb-4 md:mb-6 placeholder:text-[13px] focus:outline-none"
+            className="w-full bg-transparent border-[0.5px] border-white px-4 py-[10px] mb-3 md:mb-4 placeholder:text-[13px] focus:outline-none"
           />
 
           <label className="block mb-2 para-text2">
             Phone Number <span className="text-red-500">*</span>
             <span className="text-[11px] text-[#9a99a2] font-normal ml-2 normal-case tracking-normal">tap code to change</span>
           </label>
-          <div className="flex gap-0 mb-4 md:mb-6">
+          <div className="flex gap-0 mb-3 md:mb-4">
             {/* Editable code — type any country code */}
             <input
               type="text"
@@ -113,7 +113,7 @@ export default function ContactFormSection() {
             onChange={handleChange}
             maxLength={500}
             placeholder="Tell us what you're working on"
-            className="w-full h-20 md:h-32 bg-transparent border-[0.5px] border-white placeholder:text-[13px] px-4 py-3 focus:outline-none resize-none"
+            className="w-full h-20 md:h-24 bg-transparent border-[0.5px] border-white placeholder:text-[13px] px-4 py-3 focus:outline-none resize-none"
           />
           <div className="flex justify-end mb-1">
             <span className="text-[11px] text-[#9A99A2]">{form.message.length} / 500</span>
@@ -125,7 +125,7 @@ export default function ContactFormSection() {
           <button
             disabled={loading}
             onClick={handleSubmit}
-            className="mt-4 md:mt-8 w-full bg-white text-black px-8 py-[1.1rem] flex justify-between font-medium hover:opacity-80 transition"
+            className="mt-4 md:mt-5 w-full bg-white text-black px-8 py-[1.1rem] flex justify-between font-medium hover:opacity-80 transition"
           >
             <p className="text-md font-inter font-normal">
               {loading ? "Submitting..." : "CONTACT US"}
