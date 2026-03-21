@@ -252,10 +252,9 @@ export default function FutureOfEVEnergyClient() {
 
             <MotionWrapper>
               <p className="text-[#999] text-sm font-inter mt-8 max-w-[640px]">
-                The full briefing names every player, maps their supply chain
-                dependencies, and identifies the structural weaknesses in each
-                approach. Some of the largest deployments have fundamental
-                architecture decisions that will limit them within 3 years.
+                The full briefing covers the architecture choices behind each
+                approach, the trade-offs they accepted, and what the next wave
+                of infrastructure will need to do differently.
               </p>
             </MotionWrapper>
           </div>
@@ -410,12 +409,13 @@ export default function FutureOfEVEnergyClient() {
             <MotionWrapper>
               <Zap className="w-10 h-10 text-[#cdf80a] mx-auto mb-6" />
               <h2 className="text-[1.8rem] md:text-[2.5rem] font-inter font-semibold text-white leading-tight mb-4">
-                Your Competitors Are Moving.<br />Are You?
+                Building the Infrastructure<br />Behind the Transition
               </h2>
               <p className="text-white/60 text-base md:text-lg max-w-[600px] mx-auto mb-8 font-inter">
-                Whether you manage commercial real estate, operate vehicle fleets,
-                or run facility infrastructure, talk to our team about deploying
-                EV charging that pays for itself.
+                RIOD engineers full-stack energy and charging technology for
+                enterprises, fleet operators, and infrastructure providers.
+                From hardware design to cloud platforms, we build the systems
+                that power what comes next.
               </p>
               <Link
                 href="/contact"
