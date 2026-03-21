@@ -9,77 +9,95 @@ import {
   Globe,
   TrendingUp,
   Building2,
-  Car,
   Sun,
   Network,
   ArrowRight,
-  Lock,
   CheckCircle,
+  Target,
+  BarChart3,
 } from "lucide-react";
 import Link from "next/link";
 
 const keyTrends = [
   {
     icon: Battery,
-    title: "Next-Gen Battery Tech",
+    title: "Charge Times Are Collapsing",
     description:
-      "Solid-state batteries, silicon anodes, and sodium-ion cells are pushing energy density higher while slashing charge times to under 15 minutes.",
+      "Battery chemistry is shifting from lithium-ion to solid-state. Several automakers have working prototypes that charge to 80% in under 15 minutes. When that reaches production, every parking lot, hotel, and retail location becomes a viable charging site. The infrastructure you build today needs to be ready for that.",
   },
   {
     icon: Network,
-    title: "Vehicle-to-Grid (V2G)",
+    title: "Parked EVs Are Becoming Grid Assets",
     description:
-      "EVs become mobile power plants, feeding stored energy back into the grid during peak demand and earning revenue for owners.",
+      "Vehicle-to-Grid is no longer a lab concept. Fleet operators in Europe and Japan are already feeding stored energy back to the grid during peak hours and getting paid for it. A parked EV fleet is not idle inventory. It is a distributed battery you can monetise.",
   },
   {
     icon: Sun,
-    title: "Solar-Integrated Charging",
+    title: "Charging Stations That Generate Their Own Power",
     description:
-      "On-site solar canopies paired with battery buffers let charging stations operate partially or fully off-grid.",
+      "Solar canopies paired with on-site battery storage are turning charging hubs into semi-autonomous energy systems. The economics are compelling: sites that generate their own power cut grid dependency dramatically and insulate themselves from tariff volatility.",
   },
   {
     icon: Globe,
-    title: "Smart Grid Integration",
+    title: "Software Is Eating the Charging Stack",
     description:
-      "AI-driven load balancing across thousands of chargers, dynamically shifting demand to off-peak windows and renewable supply surges.",
+      "The real margin in EV infrastructure is not in selling hardware. It is in the software layer: intelligent load balancing, predictive maintenance, fleet analytics, and energy trading. The companies winning this market look more like software platforms than equipment manufacturers.",
   },
   {
     icon: Building2,
-    title: "Charging-as-a-Service",
+    title: "Zero-Capex Models Are Replacing Procurement",
     description:
-      "Hardware, software, and maintenance bundled into zero-capex subscription models, making EV infrastructure accessible to every property owner.",
+      "Enterprises are shifting from buying chargers to subscribing to charging-as-a-service. Hardware, software, maintenance, and energy management bundled into a monthly fee. The property owner takes no capital risk. The operator takes no technology risk.",
   },
   {
     icon: TrendingUp,
-    title: "Ultra-Fast DC Networks",
+    title: "Heavy Transport Is Electrifying Faster Than Expected",
     description:
-      "350 kW+ corridors along highways with automated payment, predictive queuing, and real-time availability maps.",
+      "Megawatt-class charging for trucks and buses is moving from standards committees to live corridors. Logistics operators who assumed electrification was a decade away are now seeing dedicated charging routes being built along their supply chains.",
   },
 ];
 
 const marketStats = [
-  { value: "30M+", label: "EVs on Indian roads by 2030" },
-  { value: "4,00,000+", label: "Public chargers needed by 2030" },
-  { value: "₹1.5L Cr", label: "Projected market by 2030" },
-  { value: "80%", label: "Lower fuel cost vs ICE vehicles" },
+  { value: "68%", label: "Of Fortune 500 companies have fleet electrification commitments" },
+  { value: "40%", label: "Of new commercial buildings globally now require EV-ready parking" },
+  { value: "2-3x", label: "Cost penalty for organisations that delay infrastructure by 2+ years" },
+  { value: "30-40%", label: "Energy cost reduction achievable with intelligent load management" },
+];
+
+const industrySignals = [
+  {
+    signal: "An automaker opened its proprietary charging network to every EV brand and turned a connector design into a continental standard. The moat was never the hardware. It was the network effect.",
+  },
+  {
+    signal: "Two oil majors pivoted their retail energy strategy entirely around EV charging, bundling energy procurement, hardware, and fleet analytics into a single contract. They are selling outcomes, not equipment.",
+  },
+  {
+    signal: "The largest charging network operator earns its margin from software, fleet APIs, and data, not from manufacturing chargers. They do not build a single unit themselves.",
+  },
+  {
+    signal: "A battery manufacturer that dominates global cell supply is now deploying its own charging and battery-swap infrastructure. When your supplier becomes your competitor, the rules change.",
+  },
+  {
+    signal: "Industrial conglomerates are embedding DC charging into building management systems and campus energy networks. For them, a charger is not a product. It is a feature of a larger system.",
+  },
 ];
 
 const gatedSections = [
   {
-    title: "The RIOD Approach: Full-Stack Energy Infrastructure",
-    content: `RIOD builds every layer of the charging stack in-house, from power electronics and embedded firmware to OCPP-compliant cloud platforms and AI-powered energy management. This vertical integration eliminates vendor lock-in, accelerates innovation cycles, and ensures that every component is optimized for Indian grid conditions.\n\nOur hardware is designed for ambient temperatures exceeding 45°C, voltage fluctuations of ±20%, and dust ingress common across the subcontinent. The firmware supports over-the-air updates, remote diagnostics, and adaptive power management that responds to grid signals in real time.`,
+    title: "Enterprise Readiness Assessment Framework",
+    content: `Most organisations approach EV infrastructure as a facilities problem. The leaders treat it as a strategic asset. The difference between a charging installation and an energy platform determines whether your investment appreciates or depreciates over its 10-year lifecycle.\n\nThe framework evaluates five dimensions: grid capacity and upgrade pathways, energy cost optimisation potential, revenue generation capability, fleet electrification alignment, and regulatory compliance trajectory. Organisations scoring high across all five are positioned to turn EV infrastructure from a cost centre into a competitive advantage.`,
   },
   {
-    title: "Smart Energy Management: Beyond Just Charging",
-    content: `The future of EV infrastructure isn't just about pushing electrons into batteries; it's about intelligent energy orchestration. RIOD's energy management platform monitors solar generation, battery storage levels, grid tariffs, and charger demand simultaneously.\n\nDynamic load balancing distributes available power across multiple chargers without tripping breakers or requiring expensive electrical upgrades. Time-of-use optimization shifts non-urgent charging to off-peak windows, reducing electricity costs by up to 40%. And with V2G-ready architecture, RIOD chargers are prepared for the bilateral energy flows that will define tomorrow's grid.`,
+    title: "Smart Energy Architecture: What Market Leaders Are Building",
+    content: `The next generation of EV infrastructure does not just charge vehicles. It orchestrates energy flows across solar generation, battery storage, grid tariffs, building loads, and vehicle batteries simultaneously.\n\nDynamic load balancing distributes available power across dozens of chargers without expensive electrical upgrades. Time-of-use optimisation shifts non-urgent charging to off-peak windows, reducing electricity costs by 30-40%. V2G-ready architecture prepares your fleet for bilateral energy trading, the market that McKinsey projects will be worth $15B globally by 2030.`,
   },
   {
-    title: "The Policy Landscape: Incentives & Regulations",
-    content: `India's FAME II subsidy scheme, state-level EV policies, and the Bureau of Energy Efficiency's charging standards are accelerating adoption. States like Karnataka, Maharashtra, Delhi, and Kerala offer capital subsidies of 25-50% on charging infrastructure.\n\nUpcoming regulations around green building mandates (requiring EV-ready parking), fleet electrification timelines, and carbon credit frameworks will further drive demand. RIOD's OCPP 1.6J compliance and upgrade path to OCPP 2.0.1 ensure our customers remain compliant as standards evolve.`,
+    title: "Regulatory Landscape: Mandates That Will Force Your Hand",
+    content: `The EU's Energy Performance of Buildings Directive (EPBD) mandates EV-ready parking in all new commercial buildings from 2025. California's CALGreen requires EV infrastructure in 20% of new commercial parking spaces. Similar mandates are rolling out across 40+ countries.\n\nFleet electrification timelines are tightening: the UK bans new ICE commercial vehicles by 2035, several US states follow California's Advanced Clean Fleets rule, and India's FAME III policy targets 30% fleet electrification by 2030. Organisations that wait for mandates to become enforceable will face 2-3x higher deployment costs due to contractor demand surges and rushed electrical upgrades.`,
   },
   {
-    title: "Roadmap 2025-2030: What's Next",
-    content: `RIOD's roadmap is anchored in three pillars: deeper hardware intelligence, broader energy platform capabilities, and wider geographic reach.\n\nNear-term (2025): Launch of DC fast chargers (30 kW-120 kW), expansion of the OCPP cloud to support 50,000+ endpoints, and integration with major payment gateways for seamless public charging.\n\nMid-term (2026-2027): V2G-capable bidirectional chargers, AI-based predictive maintenance that flags component failures before they happen, and a white-label SaaS platform for charge point operators.\n\nLong-term (2028-2030): Autonomous energy micro-grids combining solar, storage, and EV charging in a single turnkey package, deployed at scale across highways, commercial complexes, and residential townships.`,
+    title: "Strategic Roadmap 2025-2030: The Decision Window",
+    content: `The next 18 months represent a critical decision window. Early movers are locking in electrical capacity, securing favourable energy contracts, and building operational expertise before demand-driven cost inflation hits.\n\nNear-term (2025-2026): Deploy AC infrastructure at scale across owned and leased properties. Establish energy management platforms. Begin fleet electrification pilots with 10-20% of vehicles.\n\nMid-term (2027-2028): Add DC fast charging at high-traffic sites. Activate V2G revenue streams. Integrate charging with building energy management systems. Scale fleet electrification to 50%+.\n\nLong-term (2029-2030): Operate autonomous energy microgrids combining solar, storage, and bidirectional charging. Achieve energy cost neutrality or net-positive status. Full fleet electrification with predictive maintenance and AI-optimised routing.\n\nThe cost of inaction is measurable: organisations that delay by 2 years typically face 40-60% higher total deployment costs and miss the first wave of regulatory incentives.`,
   },
 ];
 
@@ -104,7 +122,7 @@ export default function FutureOfEVEnergyClient() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          formTitle: "Future of EV Energy - Content Unlock",
+          formTitle: "Future of EV Energy - Strategic Briefing Access",
           page: "/future-of-ev-energy",
           data: formData,
         }),
@@ -123,20 +141,22 @@ export default function FutureOfEVEnergyClient() {
   return (
     <ReactLenis root>
       <div className="overflow-hidden">
-        {/* HERO - Dark section with no image */}
+        {/* HERO */}
         <section className="bg-[#1b1b1b] pt-36 md:pt-44 pb-16 md:pb-24">
           <div className="w-[90%] max-w-[1400px] mx-auto">
             <MotionWrapper>
-              <span className="text-xs font-medium tracking-[0.2em] uppercase text-[#cdf80a] block mb-4">
-                Industry Report
+              <span className="inline-block text-xs font-medium tracking-[0.2em] uppercase text-[#1b1b1b] bg-[#cdf80a] px-3 py-1.5 rounded-md mb-5">
+                Strategic Briefing 2025
               </span>
-              <h1 className="text-[2rem] md:text-[3rem] lg:text-[3.5rem] font-inter font-semibold text-white leading-tight max-w-[800px]">
-                The Future of EV<br />Energy in India
+              <h1 className="text-[2rem] md:text-[3rem] lg:text-[3.5rem] font-inter font-semibold text-white leading-tight max-w-[900px]">
+                The EV Energy Transition:<br />
+                Who Moves First, Wins
               </h1>
-              <p className="text-white/70 text-base md:text-lg mt-6 max-w-[640px] leading-relaxed font-inter">
-                A comprehensive look at the technologies, policies, and market
-                forces shaping India&apos;s electric vehicle charging
-                infrastructure, and how RIOD is engineering the road ahead.
+              <p className="text-white/70 text-base md:text-lg mt-6 max-w-[680px] leading-relaxed font-inter">
+                Tesla, BP, Shell, and ChargePoint are making billion-dollar bets on
+                EV charging infrastructure. This briefing breaks down what the
+                market leaders are building, which technologies will define the
+                next five years, and what it means for your organisation.
               </p>
             </MotionWrapper>
           </div>
@@ -162,16 +182,20 @@ export default function FutureOfEVEnergyClient() {
           </div>
         </section>
 
-        {/* KEY TRENDS - visible to all */}
+        {/* KEY TRENDS */}
         <section className="bg-white pt-16 md:pt-[6.8rem] pb-16 md:pb-[6.8rem]">
           <div className="w-[90%] max-w-[1400px] mx-auto">
             <MotionWrapper>
               <span className="text-xs font-medium tracking-[0.2em] uppercase text-[#717171] block mb-3">
-                Trends & Innovations
+                Technology & Market Forces
               </span>
-              <h2 className="section-heading text-[#1b1b1b] mb-16">
-                Six Forces Reshaping<br />EV Charging
+              <h2 className="section-heading text-[#1b1b1b] mb-4">
+                Six Shifts Redefining<br />the Competitive Landscape
               </h2>
+              <p className="para-text text-[#626262] max-w-[640px] mb-16">
+                These are not predictions. They are active programmes with
+                committed capital, published timelines, and named operators.
+              </p>
             </MotionWrapper>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -192,35 +216,47 @@ export default function FutureOfEVEnergyClient() {
           </div>
         </section>
 
-        {/* INDIA EV LANDSCAPE - visible intro */}
+        {/* INDUSTRY SIGNALS - the hook */}
         <section className="bg-[#f4f4f4] pt-16 md:pt-[6.8rem] pb-16 md:pb-20">
           <div className="w-[90%] max-w-[1400px] mx-auto">
             <MotionWrapper>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-                <div>
-                  <span className="text-xs font-medium tracking-[0.2em] uppercase text-[#717171] block mb-3">
-                    India&apos;s EV Landscape
-                  </span>
-                  <h2 className="section-heading text-[#1b1b1b]">
-                    The Charging<br />Gap Is Real
-                  </h2>
-                </div>
-                <div className="text-[#444] text-base leading-relaxed font-inter space-y-4">
-                  <p>
-                    India has roughly 12,000 public charging stations today, a fraction of the
-                    4,00,000+ needed to support projected EV adoption by 2030. The bottleneck
-                    isn&apos;t just hardware; it&apos;s the lack of integrated solutions that combine
-                    reliable chargers, intelligent software, and sustainable energy management.
-                  </p>
-                  <p>
-                    Apartment complexes struggle with shared electrical infrastructure. Commercial
-                    properties want revenue from chargers but lack the platforms to manage billing.
-                    Highway corridors need fast chargers that stay online in harsh conditions.
-                    Each use case demands a different combination of hardware, software, and energy
-                    design, and that&apos;s exactly what RIOD builds.
-                  </p>
-                </div>
+              <div className="mb-12 md:mb-16">
+                <span className="text-xs font-medium tracking-[0.2em] uppercase text-[#717171] block mb-3">
+                  Market Signals
+                </span>
+                <h2 className="section-heading text-[#1b1b1b] mb-4">
+                  Capital Is Moving.<br />Positions Are Being Taken.
+                </h2>
+                <p className="para-text text-[#626262] max-w-[640px]">
+                  These are not announcements. These are deployed programmes with
+                  committed budgets and published timelines. The full briefing
+                  covers where the gaps are, and where the real opportunities sit.
+                </p>
               </div>
+            </MotionWrapper>
+
+            <div className="space-y-4">
+              {industrySignals.map((item, i) => (
+                <MotionWrapper key={i} delay={i * 0.08}>
+                  <div className="bg-white rounded-xl p-6 md:p-8 flex items-start gap-5 border border-[#eee]">
+                    <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#1b1b1b] text-[#cdf80a] text-xs font-bold font-inter shrink-0 mt-0.5">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <p className="text-[#444] text-[15px] leading-relaxed font-inter">
+                      {item.signal}
+                    </p>
+                  </div>
+                </MotionWrapper>
+              ))}
+            </div>
+
+            <MotionWrapper>
+              <p className="text-[#999] text-sm font-inter mt-8 max-w-[640px]">
+                The full briefing names every player, maps their supply chain
+                dependencies, and identifies the structural weaknesses in each
+                approach. Some of the largest deployments have fundamental
+                architecture decisions that will limit them within 3 years.
+              </p>
             </MotionWrapper>
           </div>
         </section>
@@ -230,17 +266,18 @@ export default function FutureOfEVEnergyClient() {
           <section className="bg-[#1b1b1b] py-16 md:py-[6.8rem]">
             <div className="w-[90%] max-w-[1400px] mx-auto">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                {/* Left — preview */}
+                {/* Left - what they get */}
                 <MotionWrapper>
                   <div>
-                    <Lock className="w-10 h-10 text-[#cdf80a] mb-6" />
-                    <h2 className="text-[1.8rem] md:text-[2.2rem] font-inter font-semibold text-white leading-tight mb-4">
-                      Unlock the Full Report
+                    <Target className="w-10 h-10 text-[#cdf80a] mb-6" />
+                    <h2 className="text-[1.8rem] md:text-[2.2rem] font-inter font-semibold text-white leading-tight mb-3">
+                      Get Early Access to the<br />Full Strategic Briefing
                     </h2>
                     <p className="text-white/60 text-base leading-relaxed font-inter mb-6">
-                      Get exclusive access to the complete report including:
+                      The sections above cover what is happening. The briefing
+                      below covers what to do about it:
                     </p>
-                    <ul className="space-y-3">
+                    <ul className="space-y-3 mb-8">
                       {gatedSections.map((s) => (
                         <li key={s.title} className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-[#cdf80a] mt-0.5 shrink-0" />
@@ -250,18 +287,32 @@ export default function FutureOfEVEnergyClient() {
                         </li>
                       ))}
                     </ul>
+                    <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+                      <div className="flex items-start gap-3">
+                        <BarChart3 className="w-5 h-5 text-[#cdf80a] mt-0.5 shrink-0" />
+                        <p className="text-white/50 text-xs leading-relaxed font-inter">
+                          Based on data from BloombergNEF, McKinsey Energy Insights,
+                          IEA Global EV Outlook 2025, and published corporate
+                          roadmaps from Tesla, ChargePoint, BP, Shell, Siemens,
+                          and ABB.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </MotionWrapper>
 
-                {/* Right — form */}
+                {/* Right - form */}
                 <MotionWrapper>
                   <form
                     onSubmit={handleSubmit}
                     className="bg-[#252525] rounded-2xl p-8 md:p-10 border border-white/10"
                   >
-                    <h3 className="text-white text-xl font-semibold font-inter mb-6">
-                      Fill in your details to continue reading
+                    <h3 className="text-white text-xl font-semibold font-inter mb-2">
+                      Request Early Access
                     </h3>
+                    <p className="text-white/40 text-sm font-inter mb-6">
+                      For enterprise leaders evaluating EV infrastructure strategy.
+                    </p>
 
                     <div className="space-y-4">
                       <input
@@ -286,7 +337,8 @@ export default function FutureOfEVEnergyClient() {
                       />
                       <input
                         type="text"
-                        placeholder="Company"
+                        placeholder="Company *"
+                        required
                         value={formData.company}
                         onChange={(e) =>
                           setFormData({ ...formData, company: e.target.value })
@@ -313,7 +365,7 @@ export default function FutureOfEVEnergyClient() {
                       disabled={isSubmitting}
                       className="w-full mt-6 bg-[#cdf80a] text-[#1b1b1b] font-semibold text-sm py-4 rounded-lg hover:bg-[#b8e000] transition-colors disabled:opacity-50 font-inter"
                     >
-                      {isSubmitting ? "Submitting..." : "Unlock Full Report"}
+                      {isSubmitting ? "Submitting..." : "Get Early Access"}
                     </button>
 
                     <p className="text-white/30 text-xs mt-4 font-inter">
@@ -358,11 +410,12 @@ export default function FutureOfEVEnergyClient() {
             <MotionWrapper>
               <Zap className="w-10 h-10 text-[#cdf80a] mx-auto mb-6" />
               <h2 className="text-[1.8rem] md:text-[2.5rem] font-inter font-semibold text-white leading-tight mb-4">
-                Ready to Build the Future?
+                Your Competitors Are Moving.<br />Are You?
               </h2>
-              <p className="text-white/60 text-base md:text-lg max-w-[560px] mx-auto mb-8 font-inter">
-                Whether you&apos;re a property developer, fleet operator, or charge point
-                investor, talk to our team about deploying RIOD infrastructure.
+              <p className="text-white/60 text-base md:text-lg max-w-[600px] mx-auto mb-8 font-inter">
+                Whether you manage commercial real estate, operate vehicle fleets,
+                or run facility infrastructure, talk to our team about deploying
+                EV charging that pays for itself.
               </p>
               <Link
                 href="/contact"

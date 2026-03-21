@@ -69,32 +69,50 @@ const operationsSuite = {
   link: "/technology/ev-charging-operations-suite",
 };
 
+const powerpodStoreUrls: Record<string, string> = {
+  "3.4 kW": "/products/ev-chargers/powerpod",
+  "7.4 kW": "/store/powerpod-home-7-4-kw",
+  "22 kW": "/store/powerpod-home-22kw-ev-charger",
+};
+
+const goStoreUrls: Record<string, string> = {
+  "3.4 kW": "/store/3-3kw-ocpp-ev-charger",
+  "7.4 kW": "/store/powerpod-go-7-4kw-fast-ev-charger",
+  "22 kW": "/store/powerpod-go-22kw-fast-ev-charger",
+};
+
+const cityStoreUrls: Record<string, string> = {
+  "3.3 kW": "/store/riod-powerpod-city-3-3kw-dual-gun-ev-charger-ocpp-rfid-4g-public-charging-station-india",
+  "7.4 kW": "/store/powerpod-city-hybrid-ev-charging-station",
+  "22 kW": "/store/powerpod-city-22kw-dual-port-fast-ev-charger",
+};
+
 const powerpod = (power: string): ChargerRec => ({
   name: `RIOD AC Powerpod ${power}`,
   power,
   image: "/products/powerpod.png",
-  shopUrl: "/store",
+  shopUrl: powerpodStoreUrls[power] || "/store",
 });
 
 const edge = (power: string): ChargerRec => ({
   name: `RIOD AC Powerpod Go ${power}`,
   power,
   image: "/products/powerpod.png",
-  shopUrl: "/store",
+  shopUrl: goStoreUrls[power] || "/store",
 });
 
 const city = (power: string): ChargerRec => ({
   name: `RIOD AC PowerPod City ${power}`,
   power,
   image: "/products/powerpod.png",
-  shopUrl: "/store",
+  shopUrl: cityStoreUrls[power] || "/store",
 });
 
 const dcFast = (power: string): ChargerRec => ({
   name: `RIOD DC Fast ${power}`,
   power,
   image: "/products/powerpod-city.png",
-  shopUrl: "/store",
+  shopUrl: "/contact",
 });
 
 function isHighBudget(budget?: BudgetRange): boolean {
