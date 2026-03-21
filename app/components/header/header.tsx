@@ -5,7 +5,7 @@ import { Headset, X, ChevronDown, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import CartIcon from "@/app/components/shop/CartIcon";
+import CartIcon from "@/app/components/store/CartIcon";
 import { useCart } from "@/app/context/CartContext";
 
 const applicationLinks = [
@@ -50,7 +50,7 @@ const Header = () => {
     pathname === "/applications" ||
     pathname === "/ev-charger-selection-guide" ||
     pathname.startsWith("/technology/") ||
-    pathname.startsWith("/shop") ||
+    pathname.startsWith("/store") ||
     pathname === "/thank-you";
 
   useEffect(() => {

@@ -10,7 +10,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: BASE_URL, lastModified: new Date(), priority: 1.0, changeFrequency: "weekly" },
     { url: `${BASE_URL}/about`, lastModified: new Date(), priority: 0.8, changeFrequency: "monthly" },
     { url: `${BASE_URL}/technology`, lastModified: new Date(), priority: 0.8, changeFrequency: "monthly" },
-    { url: `${BASE_URL}/shop`, lastModified: new Date(), priority: 0.9, changeFrequency: "weekly" },
+    { url: `${BASE_URL}/store`, lastModified: new Date(), priority: 0.9, changeFrequency: "weekly" },
     { url: `${BASE_URL}/contact`, lastModified: new Date(), priority: 0.7, changeFrequency: "monthly" },
     { url: `${BASE_URL}/insights`, lastModified: new Date(), priority: 0.7, changeFrequency: "weekly" },
     { url: `${BASE_URL}/case-studies`, lastModified: new Date(), priority: 0.7, changeFrequency: "monthly" },
@@ -25,7 +25,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       ALL_PRODUCTS_QUERY
     );
     productPages = data.products.edges.map((e) => ({
-      url: `${BASE_URL}/shop/${e.node.handle}`,
+      url: `${BASE_URL}/store/${e.node.handle}`,
       lastModified: new Date(),
       priority: 0.8,
       changeFrequency: "weekly" as const,

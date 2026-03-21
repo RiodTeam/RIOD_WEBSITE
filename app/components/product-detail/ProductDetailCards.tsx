@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import type { ProductVariant } from "@/app/data/powerpodData";
 import { Ruler, Target, Sparkles } from "lucide-react";
 import MotionWrapper from "../common/MotionWrapper";
@@ -89,6 +90,16 @@ export default function ProductDetailCards({
                   </div>
 
                   <div className="flex flex-wrap gap-3 lg:flex-col lg:items-end lg:min-w-[180px]">
+                    <Link
+                      href={v.storeUrl ?? "/contact"}
+                      className={`inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-medium font-inter transition-colors w-full lg:w-auto ${
+                        v.storeUrl
+                          ? "bg-[#cdf80a] text-[#1b1b1b] hover:bg-[#b8e000]"
+                          : "border border-[#d0d0d0] text-[#1b1b1b] hover:bg-[#f0f7d4]"
+                      }`}
+                    >
+                      {v.storeUrl ? "Buy Now" : "Contact Us"}
+                    </Link>
                     <div className="bg-[#cdf80a]/15 border border-[#cdf80a]/30 rounded-lg px-4 py-2.5">
                       <p className="text-xs text-[#1b1b1b]/50 font-inter">
                         Connector

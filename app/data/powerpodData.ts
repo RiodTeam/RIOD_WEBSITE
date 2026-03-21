@@ -10,6 +10,7 @@ export interface ProductVariant {
   bestFor: string;
   keyFeature?: string;
   description: string;
+  storeUrl?: string;
 }
 
 export interface ProductFamily {
@@ -192,7 +193,7 @@ export const productFamilies: ProductFamily[] = [
     ],
     commonSpecs,
     vehiclesSupported,
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/store",
   },
   {
     slug: "powerpod-go",
@@ -298,7 +299,7 @@ export const productFamilies: ProductFamily[] = [
       { label: "Protocol", value: "OCPP 1.6J" },
     ],
     vehiclesSupported,
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/store",
   },
   {
     slug: "powerpod-city",
@@ -416,7 +417,7 @@ export const productFamilies: ProductFamily[] = [
       { label: "Protocol", value: "OCPP 1.6J" },
     ],
     vehiclesSupported,
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/store",
   },
 ];
 

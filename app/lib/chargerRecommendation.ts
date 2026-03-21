@@ -73,28 +73,28 @@ const powerpod = (power: string): ChargerRec => ({
   name: `RIOD AC Powerpod ${power}`,
   power,
   image: "/products/powerpod.png",
-  shopUrl: "https://shop.riod.in",
+  shopUrl: "/store",
 });
 
 const edge = (power: string): ChargerRec => ({
   name: `RIOD AC Powerpod Go ${power}`,
   power,
   image: "/products/powerpod.png",
-  shopUrl: "https://shop.riod.in",
+  shopUrl: "/store",
 });
 
 const city = (power: string): ChargerRec => ({
   name: `RIOD AC PowerPod City ${power}`,
   power,
   image: "/products/powerpod.png",
-  shopUrl: "https://shop.riod.in",
+  shopUrl: "/store",
 });
 
 const dcFast = (power: string): ChargerRec => ({
   name: `RIOD DC Fast ${power}`,
   power,
   image: "/products/powerpod-city.png",
-  shopUrl: "https://shop.riod.in",
+  shopUrl: "/store",
 });
 
 function isHighBudget(budget?: BudgetRange): boolean {

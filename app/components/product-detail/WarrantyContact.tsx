@@ -68,15 +68,13 @@ export default function WarrantyContact({ shopUrl }: WarrantyContactProps) {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <a
+                <Link
                   href={shopUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-[#cdf80a] text-[#1b1b1b] px-6 py-3 rounded-full font-inter font-medium text-sm hover:bg-[#b8e000] transition-colors"
                 >
-                  Shop Now
+                  Buy Now
                   <ArrowRight className="w-4 h-4" />
-                </a>
+                </Link>
                 <Link
                   href="/contact"
                   className="inline-flex items-center gap-2 border border-white/20 text-white px-6 py-3 rounded-full font-inter font-medium text-sm hover:bg-white/10 transition-colors"

@@ -14,7 +14,7 @@ export default function ProductCard({ product }: { product: ShopifyProduct }) {
 
   return (
     <Link
-      href={`/shop/${product.handle}`}
+      href={`/store/${product.handle}`}
       className="group bg-[#f8f8f8] rounded-2xl overflow-hidden flex flex-col hover:shadow-lg transition-shadow duration-300"
     >
       {/* Image */}

@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { shopifyFetch } from "@/app/lib/shopify";
 import { ALL_PRODUCTS_QUERY, type ShopifyProduct } from "@/app/lib/shopify-queries";
-import ProductCard from "@/app/components/shop/ProductCard";
+import ProductCard from "@/app/components/store/ProductCard";
 
 export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: "Buy EV Chargers Online India | PowerPod by RIOD",
   description:
-    "Shop PowerPod AC EV chargers for home and commercial use. 3.3kW to 22kW. Type 2, OCPP, RFID. Free shipping across India.",
+    "Buy PowerPod AC EV chargers for home and commercial use. 3.3kW to 22kW. Type 2, OCPP, RFID. Shipping across India.",
 };
 
 export default async function ShopPage() {

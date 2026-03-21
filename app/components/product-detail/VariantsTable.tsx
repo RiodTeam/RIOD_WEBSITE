@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import type { ProductVariant } from "@/app/data/powerpodData";
 import MotionWrapper from "../common/MotionWrapper";
 
@@ -41,9 +42,10 @@ export default function VariantsTable({ variants }: VariantsTableProps) {
                   <th className="pb-4 pr-6 text-sm font-medium text-white/50 font-inter">
                     Mount
                   </th>
-                  <th className="pb-4 text-sm font-medium text-white/50 font-inter">
+                  <th className="pb-4 pr-6 text-sm font-medium text-white/50 font-inter">
                     Authentication
                   </th>
+                  <th className="pb-4 text-sm font-medium text-white/50 font-inter"></th>
                 </tr>
               </thead>
               <tbody>
@@ -67,8 +69,20 @@ export default function VariantsTable({ variants }: VariantsTableProps) {
                     <td className="py-5 pr-6 text-[15px] text-white/70 font-inter">
                       {v.mount}
                     </td>
-                    <td className="py-5 text-[15px] text-white/70 font-inter">
+                    <td className="py-5 pr-6 text-[15px] text-white/70 font-inter">
                       {v.auth}
+                    </td>
+                    <td className="py-5">
+                      <Link
+                        href={v.storeUrl ?? "/contact"}
+                        className={`inline-flex items-center px-4 py-1.5 rounded-full text-sm font-medium font-inter transition-colors whitespace-nowrap ${
+                          v.storeUrl
+                            ? "bg-[#cdf80a] text-[#1b1b1b] hover:bg-[#b8e000]"
+                            : "border border-white/20 text-white hover:bg-white/10"
+                        }`}
+                      >
+                        {v.storeUrl ? "Buy Now" : "Contact Us"}
+                      </Link>
                     </td>
                   </tr>
                 ))}
@@ -108,6 +122,16 @@ export default function VariantsTable({ variants }: VariantsTableProps) {
                     <p className="text-sm text-white/70">{v.auth}</p>
                   </div>
                 </div>
+                <Link
+                  href={v.storeUrl ?? "/contact"}
+                  className={`mt-2 inline-flex items-center px-5 py-2 rounded-full text-sm font-medium font-inter transition-colors ${
+                    v.storeUrl
+                      ? "bg-[#cdf80a] text-[#1b1b1b] hover:bg-[#b8e000]"
+                      : "border border-white/20 text-white hover:bg-white/10"
+                  }`}
+                >
+                  {v.storeUrl ? "Buy Now" : "Contact Us"}
+                </Link>
               </div>
             </MotionWrapper>
           ))}

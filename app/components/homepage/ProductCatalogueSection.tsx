@@ -13,7 +13,7 @@ const products = [
     power: "3.4 kW",
     description:
       "Compact single-phase home charger with smart scheduling, Wi-Fi connectivity, and energy monitoring.",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/store",
   },
   {
     type: "AC",
@@ -22,7 +22,7 @@ const products = [
     power: "7.4 kW",
     description:
       "Fast home charging with OCPP 1.6J, BLE connectivity, dynamic load balancing, and app control.",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/store",
   },
   {
     type: "AC",
@@ -31,7 +31,7 @@ const products = [
     power: "22 kW",
     description:
       "Three-phase private charger for villas and premium residences with integrated energy metering.",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/store",
   },
   // Community / Public Charging
   {
@@ -41,7 +41,7 @@ const products = [
     power: "3.4 kW",
     description:
       "Networked community charger with RFID authentication, billing support, and remote management.",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/store",
   },
   {
     type: "AC",
@@ -50,7 +50,7 @@ const products = [
     power: "7.4 kW",
     description:
       "Public-ready wallbox with 4G, RFID, payment terminal integration, and OCPP cloud connectivity.",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/store",
   },
   {
     type: "AC",
@@ -59,7 +59,7 @@ const products = [
     power: "22 kW",
     description:
       "High-power public AC charger with dual sockets, smart queuing, and integrated energy metering.",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/store",
   },
   // DC Fast Charging
   {
@@ -69,7 +69,7 @@ const products = [
     power: "30 kW",
     description:
       "Compact DC fast charger with CCS2 connector, ideal for retail locations and fleet depots.",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/store",
   },
   {
     type: "DC",
@@ -78,7 +78,7 @@ const products = [
     power: "60 kW",
     description:
       "Dual-gun rapid charger with dynamic power sharing, payment terminal, and cloud management.",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/store",
   },
   {
     type: "DC",
@@ -87,7 +87,7 @@ const products = [
     power: "120 kW",
     description:
       "High-power DC charger for highways and fleet hubs with liquid-cooled cables and 400V/800V support.",
-    shopUrl: "https://shop.riod.in",
+    shopUrl: "/store",
   },
 ];
 

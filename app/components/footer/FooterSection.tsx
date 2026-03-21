@@ -9,7 +9,7 @@ const productLinks = [
   { label: "AC Powerpod", href: "/products/ev-chargers/powerpod" },
   { label: "AC Powerpod Go", href: "/products/ev-chargers/powerpod-go" },
   { label: "AC PowerPod City", href: "/products/ev-chargers/powerpod-city" },
-  { label: "Store", href: "/shop" },
+  { label: "Store", href: "/store" },
 ];
 
 const solutionLinks = [

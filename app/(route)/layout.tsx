@@ -5,7 +5,7 @@ import Header from "../components/header/header";
 import FooterSection from "../components/footer/FooterSection";
 import AutoLeadPopup from "../components/common/AutoLeadPopup";
 import { CartProvider } from "../context/CartContext";
-import CartDrawer from "../components/shop/CartDrawer";
+import CartDrawer from "../components/store/CartDrawer";
 import WhatsAppButton from "../components/common/WhatsAppButton";
 
 const geistSans = Geist({

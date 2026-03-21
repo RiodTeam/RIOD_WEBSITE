@@ -25,7 +25,7 @@ export default function ThankYouPage() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
-            href="/shop"
+            href="/store"
             className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-[#cdf80a] text-[#1b1b1b] font-semibold hover:bg-[#b8e000] transition-colors"
           >
             Continue Shopping

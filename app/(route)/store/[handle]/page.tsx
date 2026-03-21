@@ -6,7 +6,7 @@ import {
   ALL_PRODUCTS_QUERY,
   type ShopifyProduct,
 } from "@/app/lib/shopify-queries";
-import ProductDetail from "@/app/components/shop/ProductDetail";
+import ProductDetail from "@/app/components/store/ProductDetail";
 
 export const revalidate = 60;
 
