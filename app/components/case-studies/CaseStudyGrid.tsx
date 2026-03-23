@@ -4,17 +4,17 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import MotionWrapper from "../common/MotionWrapper";
-import { caseStudiesData } from "../data/caseStudiesData";
+import type { CaseStudy } from "../data/caseStudiesData";
 
 const categories = ["All", "EV Charging", "Energy Management"];
 
-export default function CaseStudyGrid() {
+export default function CaseStudyGrid({ caseStudies }: { caseStudies: CaseStudy[] }) {
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filtered =
     activeCategory === "All"
-      ? caseStudiesData
-      : caseStudiesData.filter((cs) => cs.tag === activeCategory);
+      ? caseStudies
+      : caseStudies.filter((cs) => cs.tag === activeCategory);
 
   return (
     <section className="w-full bg-white pt-30 pb-32 md:pb-[12.3rem]">

@@ -6,13 +6,14 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import BlogGrid from "@/app/components/insights/BlogGrid";
+import type { InsightType } from "@/app/components/data/insightsData";
 
-export default function PageClient() {
+export default function PageClient({ insights }: { insights: InsightType[] }) {
   return (
     <ReactLenis root>
       <div className="overflow-hidden">
 
-        <BlogGrid />
+        <BlogGrid insights={insights} />
 
         {/* CTA */}
         <section style={{ backgroundColor: "#cdf80a" }} className="py-16 md:py-[6.8rem]">

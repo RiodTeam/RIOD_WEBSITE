@@ -3,12 +3,11 @@
 import MotionWrapper from "../common/MotionWrapper";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { insightsData } from "../data/insightsData";
+import type { InsightType } from "../data/insightsData";
 
-const insights = insightsData.slice(0, 8);
-
-export default function InsightsScrollSection() {
-  const duplicatedInsights = [...insights, ...insights];
+export default function InsightsScrollSection({ insights }: { insights: InsightType[] }) {
+  const items = insights.slice(0, 8);
+  const duplicatedInsights = [...items, ...items];
 
   return (
     <section className="bg-black text-white pt-16 md:pt-[6.8rem] pb-16 md:pb-[6.8rem] overflow-hidden">

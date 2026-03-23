@@ -233,6 +233,69 @@ export const CaseStudies: CollectionConfig = {
       ],
     },
     {
+      name: 'tag',
+      label: 'Category Tag',
+      type: 'select',
+      required: true,
+      options: [
+        { label: 'EV Charging', value: 'EV Charging' },
+        { label: 'Energy Management', value: 'Energy Management' },
+      ],
+      admin: {
+        position: 'sidebar',
+        description: 'Used for filtering on the case studies listing page.',
+      },
+    },
+    {
+      name: 'client',
+      label: 'Client',
+      type: 'text',
+      required: true,
+      admin: {
+        description: 'e.g. "Major multinational with 500+ vehicle fleet"',
+      },
+    },
+    {
+      name: 'location',
+      label: 'Location',
+      type: 'text',
+      required: true,
+      admin: {
+        description: 'e.g. "Greece", "Global (12 campuses)"',
+      },
+    },
+    {
+      name: 'summary',
+      label: 'Summary',
+      type: 'textarea',
+      required: true,
+      admin: {
+        description: 'Short summary shown on the case study listing cards.',
+      },
+    },
+    {
+      name: 'testimonial',
+      label: 'Testimonial',
+      type: 'group',
+      fields: [
+        {
+          name: 'quote',
+          label: 'Quote',
+          type: 'textarea',
+        },
+        {
+          name: 'author',
+          label: 'Author',
+          type: 'text',
+        },
+        {
+          name: 'role',
+          label: 'Role / Title',
+          type: 'text',
+        },
+      ],
+    },
+    {
       name: 'slug',
       label: 'Slug',
       type: 'text',

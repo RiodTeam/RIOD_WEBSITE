@@ -4,17 +4,17 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import MotionWrapper from "../common/MotionWrapper";
-import { insightsData } from "../data/insightsData";
+import type { InsightType } from "../data/insightsData";
 
-const categories = ["View All", ...Array.from(new Set(insightsData.map((b) => b.tag)))];
-
-export default function BlogGrid() {
+export default function BlogGrid({ insights }: { insights: InsightType[] }) {
   const [activeCategory, setActiveCategory] = useState("View All");
+
+  const categories = ["View All", ...Array.from(new Set(insights.map((b) => b.tag)))];
 
   const filteredBlogs =
     activeCategory === "View All"
-      ? insightsData
-      : insightsData.filter((b) => b.tag === activeCategory);
+      ? insights
+      : insights.filter((b) => b.tag === activeCategory);
 
   return (
     <section className="w-full bg-white pt-36 md:pt-44 pb-32 md:pb-[12.3rem]">

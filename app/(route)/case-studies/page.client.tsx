@@ -3,8 +3,9 @@
 import ReactLenis from "lenis/react";
 import HeroSection from "@/app/components/common/Hero";
 import CaseStudyGrid from "@/app/components/case-studies/CaseStudyGrid";
+import type { CaseStudy } from "@/app/components/data/caseStudiesData";
 
-export default function PageClient() {
+export default function PageClient({ caseStudies }: { caseStudies: CaseStudy[] }) {
   return (
     <ReactLenis root>
       <div className="overflow-hidden">
@@ -14,7 +15,7 @@ export default function PageClient() {
           description="Real results from real deployments. See how RIOD solutions work in the field."
           overlayOpacity={0.55}
         />
-        <CaseStudyGrid />
+        <CaseStudyGrid caseStudies={caseStudies} />
       </div>
     </ReactLenis>
   );

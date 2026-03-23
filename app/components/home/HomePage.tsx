@@ -10,8 +10,9 @@ import TrustedBySection from "@/app/components/homepage/TrustedBySection";
 import InsightsScrollSection from "@/app/components/homepage/InsightsScrollSection";
 import SolutionsSection from "@/app/components/homepage/SolutionsSection";
 import ContactCTASection from "@/app/components/homepage/ContactCTASection";
+import type { InsightType } from "@/app/components/data/insightsData";
 
-export default function HomePage() {
+export default function HomePage({ insights }: { insights: InsightType[] }) {
   useLenis(() => {
     // smooth scroll callback
   });
@@ -25,7 +26,7 @@ export default function HomePage() {
         <CoreOfferingsSection />
         <ProductCatalogueSection />
         <TrustedBySection />
-        <InsightsScrollSection />
+        <InsightsScrollSection insights={insights} />
         <SolutionsSection />
         <ContactCTASection />
       </div>

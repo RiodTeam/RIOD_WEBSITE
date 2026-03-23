@@ -1,18 +1,18 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
-import { caseStudiesData } from "@/app/components/data/caseStudiesData";
 import PageClient from "./page.client";
+import { getCaseStudy, getAllCaseStudySlugs } from "@/app/lib/contentProviders";
 
-type Props = {
-  params: Promise<{ slug: string }>;
-};
+type Props = { params: Promise<{ slug: string }> };
+
+export async function generateStaticParams() {
+  const slugs = await getAllCaseStudySlugs();
+  return slugs.map((slug) => ({ slug }));
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-
-  const caseStudy = caseStudiesData.find(
-    (item) => item.slug.trim().toLowerCase() === slug.trim().toLowerCase()
-  );
+  const caseStudy = await getCaseStudy(slug);
 
   if (!caseStudy) {
     return {
@@ -29,14 +29,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function CaseStudyPage({ params }: Props) {
   const { slug } = await params;
-
-  const caseStudy = caseStudiesData.find(
-    (item) => item.slug.trim().toLowerCase() === slug.trim().toLowerCase()
-  );
+  const caseStudy = await getCaseStudy(slug);
 
   if (!caseStudy) {
     notFound();
   }
 
-  return <PageClient slug={slug} />;
+  return <PageClient caseStudy={caseStudy} />;
 }
