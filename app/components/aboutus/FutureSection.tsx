@@ -7,21 +7,21 @@ import MotionWrapper from "../common/MotionWrapper";
 const milestones = [
   {
     icon: Zap,
-    title: "DC Fast Charging",
+    title: "Develop Technology IPs for Growing EV & Energy Needs",
     description:
-      "30 kW to 120 kW DC fast chargers for highways and public charging hubs. CCS2 connectors, rapid top-up in under 30 minutes.",
+      "Building proprietary technology across charging hardware, energy management, and grid intelligence. Every product we ship creates IP that compounds over time.",
   },
   {
     icon: Globe,
-    title: "Global Expansion",
+    title: "Take Indian Engineering Global",
     description:
-      "Expanding operations across Netherlands, Germany, UK, UAE, and Australia. Making RIOD charging infrastructure available worldwide.",
+      "Expanding into Europe, Middle East, and Asia-Pacific. The infrastructure we have built for Indian conditions is designed to work everywhere.",
   },
   {
     icon: Building2,
-    title: "Smart Grid Integration",
+    title: "Shape the Energy Transition",
     description:
-      "Vehicle-to-grid (V2G) technology, dynamic load balancing, and renewable energy integration for the next generation of charging infrastructure.",
+      "EV charging is just the starting point. We are building the technology layer that connects vehicles, buildings, and the grid into one intelligent energy network.",
   },
 ];
 
@@ -39,10 +39,9 @@ export default function FutureSection() {
               The Road Ahead
             </h2>
             <p className="para-text text-[#9a99a2] leading-relaxed mb-8">
-              The EV transition is not coming. It is here. RIOD is building the
-              infrastructure that makes it work, from home garages to national
-              highway corridors. The roadmap is clear, and the engineering is
-              underway.
+              The shift to electric mobility and distributed energy is
+              accelerating. RIOD is building the technology and infrastructure
+              that makes this transition practical, scalable, and lasting.
             </p>
 
             <div className="flex flex-wrap gap-4">

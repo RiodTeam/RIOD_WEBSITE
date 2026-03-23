@@ -106,14 +106,6 @@ const Header = () => {
 
             {/* DESKTOP NAV */}
             <nav className="hidden lg:flex items-center space-x-8 xl:space-x-12 2xl:space-x-12">
-              {/* About */}
-              <Link
-                href="/about"
-                className={`para-text ${textColor} font-[350]! font-inter`}
-              >
-                About
-              </Link>
-
               {/* Products Dropdown */}
               <div className="relative group">
                 <Link

@@ -4,7 +4,7 @@ import MotionWrapper from "../common/MotionWrapper";
 
 export default function VisionMissionSection() {
   return (
-    <section className="w-full bg-white py-20 md:py-28 lg:pt-30 lg:pb-50">
+    <section className="w-full bg-white py-20 md:py-28 lg:pt-30 lg:pb-28">
       <div className="w-[90%] max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-[40%_50%] xl:grid-cols-[47%_50%] gap-16 lg:gap-24">
 
         {/* LEFT SIDE — MAIN HEADING */}

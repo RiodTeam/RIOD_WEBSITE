@@ -13,39 +13,39 @@ import MotionWrapper from "../common/MotionWrapper";
 const pillars = [
   {
     icon: Cpu,
-    title: "Full-Stack Engineering",
+    title: "Own the Full Stack",
     description:
-      "Hardware, firmware, connectivity, and cloud built by one team under one roof. When something needs fixing, we trace it end to end. No finger-pointing between vendors.",
+      "We design the hardware, write the firmware, build the cloud, and own the outcome. One team, one responsibility. No gaps between vendors.",
   },
   {
     icon: Shield,
-    title: "Built for Indian Conditions",
+    title: "Built for Real Conditions",
     description:
-      "Voltage fluctuations between 180V and 265V. Humidity up to 95%. Temperatures from -30\u00B0C to 55\u00B0C. IP65 rated enclosures. All standard. All built in.",
+      "Our products are tested against the environments they actually operate in. Extreme heat, humidity, unstable power grids. If it works here, it works anywhere.",
   },
   {
     icon: Wifi,
-    title: "OCPP Compliant",
+    title: "Open Standards, No Lock-in",
     description:
-      "Commercial models speak OCPP 1.6J out of the box. Connect to any standards-compliant central management system. No vendor lock-in.",
+      "We build on open protocols so our customers are never locked into a single vendor. Your infrastructure stays yours.",
   },
   {
     icon: Gauge,
-    title: "In-built Energy Metering",
+    title: "Intelligence at the Edge",
     description:
-      "Class 1 accuracy energy meter inside every unit. No external meter boxes. No additional cost. Precision measurement from day one.",
+      "Every device we ship thinks for itself. Real-time metering, predictive diagnostics, and autonomous decision-making built into the hardware.",
   },
   {
     icon: Zap,
-    title: "Dual Connectivity",
+    title: "Always Connected",
     description:
-      "Wi-Fi and 4G LTE with support for all major Indian carriers. SIM slot built in. No external routers needed. Always connected.",
+      "Connectivity is not an add-on. Every unit ships with multiple communication options so remote monitoring and management work from day one.",
   },
   {
     icon: Wrench,
     title: "Engineered, Not Assembled",
     description:
-      "No outsourced modules. No white-labelled boards. Every component designed and tested in-house. This is what sets RIOD apart.",
+      "We do not rebrand other people's hardware. Every component is designed, tested, and manufactured under our roof. That is the difference.",
   },
 ];
 
