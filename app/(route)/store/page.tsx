@@ -18,7 +18,9 @@ export default async function ShopPage() {
     const data = await shopifyFetch<{ products: { edges: { node: ShopifyProduct }[] } }>(
       ALL_PRODUCTS_QUERY
     );
-    products = data.products.edges.map((e) => e.node);
+    products = data.products.edges
+      .map((e) => e.node)
+      .filter((p) => !p.handle.includes("climate") && !p.handle.includes("rd280"));
   } catch {
     // Shopify not configured yet — show placeholder
   }

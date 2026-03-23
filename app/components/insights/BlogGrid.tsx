@@ -57,6 +57,7 @@ export default function BlogGrid({ insights }: { insights: InsightType[] }) {
                     fill
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                   />
+                  <div className="absolute inset-0 bg-black/15 pointer-events-none" />
                 </div>
                 <div className="flex justify-between mt-5 text-[12px] text-black font-inter">
                   <span className="px-4 py-2 bg-[#eeeeee] rounded-full">{blog.tag}</span>
@@ -86,6 +87,7 @@ export default function BlogGrid({ insights }: { insights: InsightType[] }) {
                     fill
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                   />
+                  <div className="absolute inset-0 bg-black/15 pointer-events-none" />
                 </div>
               </MotionWrapper>
               <MotionWrapper>

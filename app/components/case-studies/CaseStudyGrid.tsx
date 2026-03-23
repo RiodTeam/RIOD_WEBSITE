@@ -58,6 +58,7 @@ export default function CaseStudyGrid({ caseStudies }: { caseStudies: CaseStudy[
                     fill
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                   />
+                  <div className="absolute inset-0 bg-black/15 pointer-events-none" />
                 </div>
 
                 {/* TAG */}
@@ -103,6 +104,7 @@ export default function CaseStudyGrid({ caseStudies }: { caseStudies: CaseStudy[
                     fill
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                   />
+                  <div className="absolute inset-0 bg-black/15 pointer-events-none" />
                 </div>
               </MotionWrapper>
 

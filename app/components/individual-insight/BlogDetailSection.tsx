@@ -44,6 +44,7 @@ export default function BlogDetailSection({ data }: { data: InsightType }) {
         <MotionWrapper>
           <div className="relative w-full h-[260px] sm:h-[350px] md:h-[420px] lg:h-[500px] xl:h-[650px] mt-12">
             <Image src={data.image} alt={data.title} fill className="object-cover" />
+            <div className="absolute inset-0 bg-black/15 pointer-events-none" />
           </div>
         </MotionWrapper>
 

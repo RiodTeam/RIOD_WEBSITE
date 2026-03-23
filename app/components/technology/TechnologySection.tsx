@@ -41,6 +41,7 @@ export default function TechnologySection({
                 fill
                 className="object-cover"
               />
+              <div className="absolute inset-0 bg-black/15 pointer-events-none" />
             </div>
           </MotionWrapper>
 

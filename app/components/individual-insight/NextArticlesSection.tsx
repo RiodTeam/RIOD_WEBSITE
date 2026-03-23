@@ -32,6 +32,7 @@ export default function NextArticlesSection({ articles }: { articles: InsightTyp
                 <div className="relative w-full h-[260px] overflow-hidden group">
                   <Image src={item.image} alt={item.title} fill className="object-cover transition-transform duration-500 ease-out
             group-hover:scale-110" />
+                  <div className="absolute inset-0 bg-black/15 pointer-events-none" />
                 </div>
 
                 {/* META */}
@@ -64,6 +65,7 @@ export default function NextArticlesSection({ articles }: { articles: InsightTyp
                   <div className="relative w-full h-[260px] sm:h-[280px] md:h-[420px] xl:h-[530px] overflow-hidden group">
                     <Image src={item.image} alt={item.title} fill className="object-cover transition-transform duration-500 ease-out
             group-hover:scale-110" />
+                    <div className="absolute inset-0 bg-black/15 pointer-events-none" />
                   </div>
 
                   <div className="flex items-center justify-between mt-5">
