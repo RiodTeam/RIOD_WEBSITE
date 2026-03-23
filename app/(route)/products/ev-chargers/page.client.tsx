@@ -11,7 +11,7 @@ import ChargingFAQ from "@/app/components/ev-chargers/ChargingFAQ";
 /* ─── Section 1: Private Charging & Community ─── */
 const privateChargers = [
   {
-    name: "RIOD AC Powerpod",
+    name: "RIOD AC PowerPod Lite",
     power: "3.4 kW",
     description:
       "Single-phase home charger for overnight charging. Smart scheduling, energy monitoring, and Wi-Fi connectivity.",
@@ -19,7 +19,7 @@ const privateChargers = [
     shopUrl: "/products/ev-chargers/powerpod",
   },
   {
-    name: "RIOD AC Powerpod",
+    name: "RIOD AC PowerPod Lite",
     power: "7.4 kW",
     description:
       "Fast single-phase home charger. Cuts charging time in half compared to 3.4kW. Ideal for daily commuters.",
@@ -27,7 +27,7 @@ const privateChargers = [
     shopUrl: "/products/ev-chargers/powerpod",
   },
   {
-    name: "RIOD AC Powerpod",
+    name: "RIOD AC PowerPod Lite",
     power: "22 kW",
     description:
       "Three-phase AC charger for the fastest home charging. Full charge in under 2 hours for most EVs.",
@@ -39,7 +39,7 @@ const privateChargers = [
 /* ─── Section 3: Public Charging ─── */
 const edgeChargers = [
   {
-    name: "RIOD AC Powerpod Go",
+    name: "RIOD AC PowerPod Go",
     power: "3.4 kW",
     description:
       "Compact shared charger with RFID access, 4G connectivity, and OCPP cloud management for apartments and offices.",
@@ -47,7 +47,7 @@ const edgeChargers = [
     shopUrl: "/products/ev-chargers/powerpod-go",
   },
   {
-    name: "RIOD AC Powerpod Go",
+    name: "RIOD AC PowerPod Go",
     power: "7.4 kW",
     description:
       "Mid-range community charger with payment terminal support, user authentication, and remote monitoring.",
@@ -55,7 +55,7 @@ const edgeChargers = [
     shopUrl: "/products/ev-chargers/powerpod-go",
   },
   {
-    name: "RIOD AC Powerpod Go",
+    name: "RIOD AC PowerPod Go",
     power: "22 kW",
     description:
       "High-power shared AC charger for commercial spaces. Supports multiple payment methods and load balancing.",
@@ -153,7 +153,7 @@ export default function EVChargersClient() {
           bg="gray"
           labelHighlight
           groups={[
-            { subHeading: "RIOD AC Powerpod Go", products: edgeChargers, specUrl: "/products/ev-chargers/powerpod-go" },
+            { subHeading: "RIOD AC PowerPod Go", products: edgeChargers, specUrl: "/products/ev-chargers/powerpod-go" },
             { subHeading: "RIOD AC PowerPod City (Dual Gun)", products: cityChargers, specUrl: "/products/ev-chargers/powerpod-city" },
             { subHeading: "RIOD DC Fast", products: dcChargers },
           ]}
