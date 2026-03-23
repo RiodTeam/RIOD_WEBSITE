@@ -29,6 +29,30 @@ export const metadata: Metadata = {
     shortcut: "/icon.png",
     apple: "/icon.png",
   },
+  openGraph: {
+    title: "RIOD - EV Charging & Energy Technology",
+    description:
+      "Every layer of charging infrastructure, built in-house: from the hardware and firmware that powers the device, to the cloud platforms and energy systems that keep it all running.",
+    url: "https://riod.energy",
+    siteName: "RIOD",
+    images: [
+      {
+        url: "/heroes/ev-chargers-hero.webp",
+        width: 1400,
+        height: 800,
+        alt: "RIOD EV Charging Infrastructure",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "RIOD - EV Charging & Energy Technology",
+    description:
+      "Every layer of charging infrastructure, built in-house: from the hardware and firmware that powers the device, to the cloud platforms and energy systems that keep it all running.",
+    images: ["/heroes/ev-chargers-hero.webp"],
+  },
 };
 
 export default function FrontendLayout({
