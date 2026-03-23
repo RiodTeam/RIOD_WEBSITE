@@ -270,16 +270,18 @@ const Header = () => {
                   </Link>
                 </div>
               </div>
-            </nav>
 
-            {/* RIGHT SIDE: Contact Us + Support + Mobile menu */}
-            <div className="flex items-center gap-5 xl:gap-6">
+              {/* Contact Us */}
               <Link
                 href="/contact"
-                className={`para-text ${textColor} font-[350]! font-inter hidden lg:block`}
+                className={`para-text ${textColor} font-[350]! font-inter`}
               >
                 Contact Us
               </Link>
+            </nav>
+
+            {/* RIGHT SIDE: Support + Cart + Mobile menu */}
+            <div className="flex items-center gap-5 xl:gap-6">
               <a
                 href="https://support.riod.in"
                 target="_blank"

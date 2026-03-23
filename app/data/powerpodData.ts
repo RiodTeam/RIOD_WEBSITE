@@ -69,7 +69,7 @@ const vehiclesSupported = [
 export const productFamilies: ProductFamily[] = [
   {
     slug: "powerpod",
-    name: "RIOD AC Powerpod Specifications",
+    name: "RIOD AC PowerPod Lite",
     tagline: "Engineered to charge where you park.",
     heroImage: "/products/powerpod.png",
     intro:
@@ -130,55 +130,7 @@ export const productFamilies: ProductFamily[] = [
     ],
     variants: [
       {
-        name: "PowerPod 3.3 kW Commercial",
-        power: "3.3 kW",
-        supply: "Single Phase 230V",
-        current: "16A",
-        connector: "3-Pin Socket",
-        mount: "Wall",
-        auth: "RFID, App",
-        dimensions: "350mm x 230mm x 170mm",
-        bestFor:
-          "Office parking, apartment 2W bays, retail outlets, fleet depots with electric scooters and three-wheelers.",
-        description:
-          "Entry-level commercial charger designed for 2-wheeler and 3-wheeler EV fleets. The 16A 3-pin power socket accommodates standard charging cables. Compact wall-mount form factor fits tight spaces in parking structures.",
-        storeUrl: "/store/3-3kw-ocpp-ev-charger",
-      },
-      {
-        name: "PowerPod 7.2 kW Home",
-        power: "7.2 kW",
-        supply: "Single Phase 230V",
-        current: "32A",
-        connector: "Type 2 Gun",
-        mount: "Wall",
-        auth: "RFID / Plug & Play",
-        dimensions: "Compact wall-mount unit",
-        bestFor: "Home garages, villa parking, individual parking bays in apartments.",
-        keyFeature:
-          "Plug-and-play mode. No network dependency. Works even without internet.",
-        description:
-          "Home charging made simple. Plug-and-play operation with no app or network needed. Just plug in and charging starts automatically. RFID mode available for shared parking. Configurable between 3.3 kW and 7.2 kW to match your electrical supply.",
-        storeUrl: "/store/powerpod-home-7-4-kw",
-      },
-      {
-        name: "PowerPod 7.2 kW OCPP",
-        power: "7.2 kW",
-        supply: "Single Phase 230V",
-        current: "32A",
-        connector: "Type 2 Gun",
-        mount: "Wall",
-        auth: "RFID, Server",
-        dimensions: "Compact wall-mount unit",
-        bestFor:
-          "Managed residential complexes, small commercial installations, fleet charging with central monitoring.",
-        keyFeature:
-          "OCPP 1.6J compliance. Remote management capable. Configurable 3.3/7.2 kW output.",
-        description:
-          "Network-connected version of the 7.2 kW with full OCPP 1.6J support. Connects to any OCPP-compliant central management system. Supports remote start/stop, RFID authentication, and server-based control.",
-        storeUrl: "/store/powerpod-go-7-4kw-fast-ev-charger",
-      },
-      {
-        name: "PowerPod 22 kW Home",
+        name: "PowerPod Lite 22kW/11kW",
         power: "22 kW",
         supply: "Three Phase 415V",
         current: "32A/phase",
@@ -193,6 +145,37 @@ export const productFamilies: ProductFamily[] = [
         description:
           "High-power home charger for three-phase electrical supplies. Delivers the fastest AC charging speed available for residential use. Supports both RFID and plug-and-play modes. Configurable charging current via web interface.",
         storeUrl: "/store/powerpod-home-22kw-ev-charger",
+      },
+      {
+        name: "PowerPod Lite 7.4kW",
+        power: "7.4 kW",
+        supply: "Single Phase 230V",
+        current: "32A",
+        connector: "Type 2 Gun",
+        mount: "Wall",
+        auth: "RFID / Plug & Play",
+        dimensions: "Compact wall-mount unit",
+        bestFor: "Home garages, villa parking, individual parking bays in apartments.",
+        keyFeature:
+          "Plug-and-play mode. No network dependency. Works even without internet.",
+        description:
+          "Single-phase RFID Type 2 wall charger. Plug-and-play operation with no app or network needed. Just plug in and charging starts automatically. RFID mode available for shared parking.",
+        storeUrl: "/store/powerpod-home-7-4-kw",
+      },
+      {
+        name: "PowerPod Lite 3.3kW",
+        power: "3.3 kW",
+        supply: "Single Phase 230V",
+        current: "16A",
+        connector: "3-Pin Socket",
+        mount: "Wall",
+        auth: "RFID / Plug & Play",
+        dimensions: "350mm x 230mm x 170mm",
+        bestFor:
+          "Home garages, apartment 2W bays, retail outlets, fleet depots with electric scooters and three-wheelers.",
+        description:
+          "RFID plug-and-play AC wall charger for 2-wheeler and 3-wheeler EVs. Compact wall-mount form factor fits tight spaces in parking structures.",
+        storeUrl: "/store/3-3kw-ocpp-ev-charger",
       },
     ],
     commonSpecs,
@@ -262,24 +245,7 @@ export const productFamilies: ProductFamily[] = [
     ],
     variants: [
       {
-        name: "Powerpod Go 7.4 kW",
-        power: "7.4 kW",
-        supply: "Single Phase 230V",
-        current: "32A",
-        connector: "Type 2 Gun",
-        mount: "Wall",
-        auth: "RFID, App",
-        dimensions: "350mm x 230mm x 170mm",
-        bestFor:
-          "Corporate parking, hotels, shopping centres, public semi-fast charging.",
-        keyFeature:
-          "Payment-enabled. Revenue-generating capability for commercial operators.",
-        description:
-          "The workhorse of the Powerpod Go commercial range. 32A single-phase output through a Type 2 connector. RFID and app-based authentication with integrated payment via TelioEV. Built-in 4G LTE and Wi-Fi.",
-        storeUrl: "/store/powerpod-go-7-4kw-fast-ev-charger",
-      },
-      {
-        name: "Powerpod Go 22 kW",
+        name: "PowerPod Go 22kW/11kW",
         power: "22 kW",
         supply: "Three Phase 415V",
         current: "32A/phase",
@@ -292,8 +258,42 @@ export const productFamilies: ProductFamily[] = [
         keyFeature:
           "22 kW fast AC charging with revenue generation capability.",
         description:
-          "Maximum AC charging speed in a wall-mount commercial package. Full OCPP support, RFID + app authentication, and integrated payment. The fastest wall-mounted Powerpod Go for commercial deployments.",
+          "Maximum AC charging speed in a wall-mount commercial package. Full OCPP support, RFID + app authentication, and integrated payment. The fastest wall-mounted PowerPod Go for commercial deployments.",
         storeUrl: "/store/powerpod-go-22kw-fast-ev-charger",
+      },
+      {
+        name: "PowerPod Go 7.4kW",
+        power: "7.4 kW",
+        supply: "Single Phase 230V",
+        current: "32A",
+        connector: "Type 2 Gun",
+        mount: "Wall",
+        auth: "RFID, App",
+        dimensions: "350mm x 230mm x 170mm",
+        bestFor:
+          "Corporate parking, hotels, shopping centres, public semi-fast charging.",
+        keyFeature:
+          "Payment-enabled. Revenue-generating capability for commercial operators.",
+        description:
+          "OCPP RFID 4G WiFi smart charger for commercial use. 32A single-phase output through a Type 2 connector. RFID and app-based authentication with integrated payment via TelioEV. Built-in 4G LTE and Wi-Fi.",
+        storeUrl: "/store/powerpod-go-7-4kw-fast-ev-charger",
+      },
+      {
+        name: "PowerPod Go 3.3kW",
+        power: "3.3 kW",
+        supply: "Single Phase 230V",
+        current: "16A",
+        connector: "3-Pin Socket",
+        mount: "Wall",
+        auth: "RFID, App",
+        dimensions: "350mm x 230mm x 170mm",
+        bestFor:
+          "Office parking, apartment 2W bays, retail outlets, fleet depots with electric scooters and three-wheelers.",
+        keyFeature:
+          "OCPP 1.6J with 4G and WiFi connectivity for smart commercial charging.",
+        description:
+          "Smart commercial charger with OCPP, RFID, 4G, and WiFi. Designed for 2-wheeler and 3-wheeler EV fleets. Compact wall-mount form factor with full remote management capability.",
+        storeUrl: "/store/3-3kw-ocpp-ev-charger",
       },
     ],
     commonSpecs: [
@@ -370,22 +370,24 @@ export const productFamilies: ProductFamily[] = [
     ],
     variants: [
       {
-        name: "PowerPod City 3.3 kW",
-        power: "3.3 kW x2",
-        supply: "Single Phase 230V",
-        current: "16A x2",
-        connector: "3-Pin Socket x2",
+        name: "PowerPod City 22kW/11kW",
+        power: "22 kW x2",
+        supply: "Three Phase 415V",
+        current: "32A/phase x2",
+        connector: "Type 2 Gun x2",
         mount: "Floor",
         auth: "RFID, App",
         dimensions: "100cm x 23cm x 17cm",
         bestFor:
-          "Public 2W/3W charging stations, municipal parking, bus stops, metro stations.",
+          "High-traffic public stations, premium destination charging, fleet fast-charging, highway corridors.",
+        keyFeature:
+          "44 kW total capacity across two connectors. Maximum vehicles served per hour.",
         description:
-          "Floor-standing public charging station with two independent 3.3 kW connectors. Each connector has its own RFID reader, energy meter, and authentication. Serves two vehicles simultaneously.",
-        storeUrl: "/store/riod-powerpod-city-3-3kw-dual-gun-ev-charger-ocpp-rfid-4g-public-charging-station-india",
+          "The flagship PowerPod City. Two independent 22 kW connectors in a floor-standing enclosure. Each connector delivers full 22 kW three-phase charging. Maximum throughput for high-demand public charging locations.",
+        storeUrl: "/store/powerpod-city-22kw-dual-port-fast-ev-charger",
       },
       {
-        name: "PowerPod City 7.4 kW",
+        name: "PowerPod City 7.4kW",
         power: "7.4 kW x2",
         supply: "Single Phase 230V",
         current: "32A x2",
@@ -400,21 +402,19 @@ export const productFamilies: ProductFamily[] = [
         storeUrl: "/store/powerpod-city-hybrid-ev-charging-station",
       },
       {
-        name: "PowerPod City 22 kW",
-        power: "22 kW x2",
-        supply: "Three Phase 415V",
-        current: "32A/phase x2",
-        connector: "Type 2 Gun x2",
+        name: "PowerPod City 3.3kW",
+        power: "3.3 kW x2",
+        supply: "Single Phase 230V",
+        current: "16A x2",
+        connector: "3-Pin Socket x2",
         mount: "Floor",
         auth: "RFID, App",
         dimensions: "100cm x 23cm x 17cm",
         bestFor:
-          "High-traffic public stations, premium destination charging, fleet fast-charging, highway corridors.",
-        keyFeature:
-          "44 kW total capacity across two connectors. Maximum vehicles served per hour.",
+          "Public 2W/3W charging stations, municipal parking, bus stops, metro stations.",
         description:
-          "The flagship PowerPod. Two independent 22 kW connectors in a floor-standing enclosure. Each connector delivers full 22 kW three-phase charging. Maximum throughput for high-demand public charging locations.",
-        storeUrl: "/store/powerpod-city-22kw-dual-port-fast-ev-charger",
+          "Floor-standing public charging station with two independent 3.3 kW connectors. Each connector has its own RFID reader, energy meter, and authentication. Serves two vehicles simultaneously.",
+        storeUrl: "/store/riod-powerpod-city-3-3kw-dual-gun-ev-charger-ocpp-rfid-4g-public-charging-station-india",
       },
     ],
     commonSpecs: [
