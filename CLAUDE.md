@@ -4,7 +4,7 @@
 - **Brand**: RIOD (by RnD Square Pvt. Ltd.)
 - **Domain**: riod.in
 - **Industry**: EV charging infrastructure, energy management
-- **Location**: Hyderabad, India
+- **Location**: Infopark Koratty, Kerala, India
 - **Contact**: info@riod.in
 - **Production URL**: 65.0.238.126:3000 (auto-deploys from main via GitHub Actions)
 

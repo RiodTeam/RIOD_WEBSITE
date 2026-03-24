@@ -7,6 +7,7 @@ import AutoLeadPopup from "../components/common/AutoLeadPopup";
 import { CartProvider } from "../context/CartContext";
 import CartDrawer from "../components/store/CartDrawer";
 import WhatsAppButton from "../components/common/WhatsAppButton";
+import GoogleAnalytics from "../components/common/GoogleAnalytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -62,6 +63,9 @@ export default function FrontendLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body>
         <div
           className={`${geistSans.variable} ${inter.variable} antialiased`}

@@ -19,7 +19,7 @@ const orgSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "RIOD",
-  legalName: "RnD Square Pvt. Ltd.",
+  legalName: "RIOD",
   url: "https://riod.in",
   logo: "https://riod.in/header/logo.svg",
   description:
@@ -27,12 +27,15 @@ const orgSchema = {
   foundingDate: "2019",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Hyderabad",
+    streetAddress: "Office No. 4A-8, A-Wing, 4th Floor, Indeevaram Building, Infopark Thrissur",
+    addressLocality: "Koratty",
+    addressRegion: "Kerala",
+    postalCode: "680308",
     addressCountry: "IN",
   },
   contactPoint: {
     "@type": "ContactPoint",
-    email: "info@riod.in",
+    email: "hello@riod.in",
     contactType: "sales",
   },
   sameAs: [
