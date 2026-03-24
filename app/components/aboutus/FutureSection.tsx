@@ -9,19 +9,19 @@ const milestones = [
     icon: Zap,
     title: "Develop Technology IPs for Growing EV & Energy Needs",
     description:
-      "Building proprietary technology across charging hardware, energy management, and grid intelligence. Every product we ship creates IP that compounds over time.",
+      "We are building proprietary technology across charging, energy management, and connected infrastructure. Every product we ship adds to a growing portfolio of intellectual property that strengthens our platform.",
   },
   {
     icon: Globe,
-    title: "Take Indian Engineering Global",
+    title: "Bring Indian Innovation to Global Markets",
     description:
-      "Expanding into Europe, Middle East, and Asia-Pacific. The infrastructure we have built for Indian conditions is designed to work everywhere.",
+      "What we build for Indian conditions, extreme heat, unstable grids, diverse vehicles, works everywhere. We are taking that engineering advantage into new markets and partnerships worldwide.",
   },
   {
     icon: Building2,
-    title: "Shape the Energy Transition",
+    title: "Enable the Broader Energy Transition",
     description:
-      "EV charging is just the starting point. We are building the technology layer that connects vehicles, buildings, and the grid into one intelligent energy network.",
+      "EV charging is where we started. The opportunity ahead is much larger: connecting vehicles, buildings, and energy systems into a single intelligent layer that makes clean energy practical at scale.",
   },
 ];
 

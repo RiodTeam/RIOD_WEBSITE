@@ -12,7 +12,7 @@ import ChargingFAQ from "@/app/components/ev-chargers/ChargingFAQ";
 const privateChargers = [
   {
     name: "RIOD AC PowerPod Lite",
-    power: "3.4 kW",
+    power: "3.3 kW",
     description:
       "Single-phase home charger for overnight charging. Smart scheduling, energy monitoring, and Wi-Fi connectivity.",
     image: "/products/powerpod.png",
@@ -22,7 +22,7 @@ const privateChargers = [
     name: "RIOD AC PowerPod Lite",
     power: "7.4 kW",
     description:
-      "Fast single-phase home charger. Cuts charging time in half compared to 3.4kW. Ideal for daily commuters.",
+      "Fast single-phase home charger. Cuts charging time in half compared to 3.3kW. Ideal for daily commuters.",
     image: "/products/powerpod.png",
     shopUrl: "/products/ev-chargers/powerpod",
   },
@@ -40,7 +40,7 @@ const privateChargers = [
 const edgeChargers = [
   {
     name: "RIOD AC PowerPod Go",
-    power: "3.4 kW",
+    power: "3.3 kW",
     description:
       "Compact shared charger with RFID access, 4G connectivity, and OCPP cloud management for apartments and offices.",
     image: "/products/powerpod.png",
@@ -67,7 +67,7 @@ const edgeChargers = [
 const cityChargers = [
   {
     name: "RIOD AC PowerPod City",
-    power: "3.4 kW",
+    power: "3.3 kW",
     description:
       "Dual-gun public charger with RFID access, 4G connectivity, and OCPP cloud management for apartments and offices.",
     image: "/products/powerpod-city.png",

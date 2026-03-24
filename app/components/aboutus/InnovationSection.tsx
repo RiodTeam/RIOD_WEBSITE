@@ -51,7 +51,7 @@ const pillars = [
 
 export default function InnovationSection() {
   return (
-    <section className="py-16 md:py-[6.8rem] bg-white">
+    <section className="pt-8 md:pt-12 pb-16 md:pb-[6.8rem] bg-white">
       <div className="w-[90%] max-w-[1400px] mx-auto">
         <MotionWrapper>
           <p className="text-sm font-medium tracking-[0.2em] uppercase text-[#1b1b1b]/50 font-inter mb-3">

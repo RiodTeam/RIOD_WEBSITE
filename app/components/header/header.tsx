@@ -358,15 +358,6 @@ const Header = () => {
 
           {/* MOBILE MENU ITEMS */}
           <nav className="flex flex-col">
-            {/* About */}
-            <Link
-              href="/about"
-              onClick={toggleMenu}
-              className="text-white text-lg font-medium py-6 pl-7 border-b border-white/10"
-            >
-              About
-            </Link>
-
             {/* Products (Accordion) */}
             <div className="border-b border-white/10">
               <button
