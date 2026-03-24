@@ -12,7 +12,7 @@ const offerings = [
       "AC PowerPods, DC fast chargers, and high-power charging stations, designed and manufactured in-house for homes, businesses, and public infrastructure.",
     cta: "Explore Chargers",
     href: "/products/ev-chargers",
-    image: "/home/hero.webp",
+    image: "/home/ev-charger-tile.webp",
   },
   {
     number: "02",

@@ -93,43 +93,7 @@ export default function HeroVideoSection() {
           </div>
         </div>
 
-        {/* Bottom navigation links */}
-        <div className="w-[90%] max-w-[1400px] mx-auto pb-10 md:pb-14">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-0 md:divide-x md:divide-white/20">
-            {navLinks.map((link, index) => (
-              <motion.div
-                key={link.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 0.5,
-                  delay: 0.6 + index * 0.1,
-                  ease: "easeOut",
-                }}
-              >
-                <Link
-                  href={link.href}
-                  className={`group flex items-start gap-4 py-3 md:py-0 transition-opacity hover:opacity-100 opacity-80 ${
-                    index === 0 ? "md:pr-6" : "md:px-6"
-                  }`}
-                >
-                  <link.icon
-                    className="w-5 h-5 mt-0.5 shrink-0"
-                    style={{ color: "#cdf80a" }}
-                  />
-                  <div>
-                    <span className="text-white/50 text-xs font-light tracking-wider block mb-1">
-                      {link.id}
-                    </span>
-                    <span className="text-white text-sm md:text-base font-normal group-hover:text-[#cdf80a] transition-colors">
-                      {link.label}
-                    </span>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
+        {/* Bottom navigation links — temporarily hidden */}
       </div>
     </section>
   );

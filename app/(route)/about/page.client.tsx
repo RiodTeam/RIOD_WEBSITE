@@ -32,14 +32,14 @@ const PageClient = () => {
         {/* TEAM */}
         <TeamSection />
 
-        {/* GALLERY - Lab, Manufacturing, Deployment */}
-        <GallerySection />
-
         {/* CULTURE */}
         <LifeAtRiod />
 
         {/* THE ROAD AHEAD */}
         <FutureSection />
+
+        {/* GALLERY - Where It All Happens */}
+        <GallerySection />
 
       </main>
     </ReactLenis>
