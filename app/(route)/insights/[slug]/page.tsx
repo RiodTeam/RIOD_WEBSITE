@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import PageClient from "./page.client";
+import JsonLd from "@/app/components/common/JsonLd";
 import {
   getInsight,
   getInsights,
@@ -25,9 +26,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  const description = insight.intro?.[0]?.substring(0, 160) || insight.title;
+
   return {
     title: insight.title,
-    description: insight.intro?.[0]?.substring(0, 160) || insight.title,
+    description,
+    openGraph: {
+      title: insight.title,
+      description,
+      url: `https://riod.in/insights/${slug}`,
+      type: "article",
+      images: insight.image ? [{ url: insight.image, width: 1400, height: 800 }] : [],
+    },
   };
 }
 
@@ -39,11 +49,35 @@ export default async function Page({ params }: Props) {
     notFound();
   }
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: insight.title,
+    description: insight.intro?.[0]?.substring(0, 160) || insight.title,
+    image: insight.image ? `https://riod.in${insight.image}` : undefined,
+    datePublished: insight.date,
+    author: {
+      "@type": "Organization",
+      name: "RIOD",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "RIOD",
+      logo: { "@type": "ImageObject", url: "https://riod.in/header/logo.svg" },
+    },
+    url: `https://riod.in/insights/${slug}`,
+  };
+
   // Get related articles
   const allInsights = await getInsights();
   const relatedArticles = insight.relatedSlugs
     ? allInsights.filter((i) => insight.relatedSlugs?.includes(i.slug))
     : [];
 
-  return <PageClient insight={insight} relatedArticles={relatedArticles} />;
+  return (
+    <>
+      <JsonLd data={articleSchema} />
+      <PageClient insight={insight} relatedArticles={relatedArticles} />
+    </>
+  );
 }

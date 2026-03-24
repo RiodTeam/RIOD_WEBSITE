@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "RIOD - EV Charging & Energy Technology",
     description:
       "Every layer of charging infrastructure, built in-house: from the hardware and firmware that powers the device, to the cloud platforms and energy systems that keep it all running.",
-    url: "https://riod.energy",
+    url: "https://riod.in",
     siteName: "RIOD",
     images: [
       {

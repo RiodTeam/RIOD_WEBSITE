@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import PageClient from "./page.client";
+import JsonLd from "@/app/components/common/JsonLd";
 import { getCaseStudy, getAllCaseStudySlugs } from "@/app/lib/contentProviders";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -24,6 +25,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${caseStudy.title} | RIOD Case Studies`,
     description: caseStudy.summary,
+    openGraph: {
+      title: `${caseStudy.title} | RIOD Case Studies`,
+      description: caseStudy.summary,
+      url: `https://riod.in/case-studies/${slug}`,
+      images: caseStudy.image ? [{ url: caseStudy.image, width: 1400, height: 800 }] : [],
+    },
   };
 }
 
@@ -35,5 +42,28 @@ export default async function CaseStudyPage({ params }: Props) {
     notFound();
   }
 
-  return <PageClient caseStudy={caseStudy} />;
+  const caseStudySchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: caseStudy.title,
+    description: caseStudy.summary,
+    image: caseStudy.image ? `https://riod.in${caseStudy.image}` : undefined,
+    author: {
+      "@type": "Organization",
+      name: "RIOD",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "RIOD",
+      logo: { "@type": "ImageObject", url: "https://riod.in/header/logo.svg" },
+    },
+    url: `https://riod.in/case-studies/${slug}`,
+  };
+
+  return (
+    <>
+      <JsonLd data={caseStudySchema} />
+      <PageClient caseStudy={caseStudy} />
+    </>
+  );
 }
