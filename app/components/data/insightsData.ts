@@ -2556,4 +2556,194 @@ export const insightsData: InsightType[] = [
       "future-of-two-way-energy-communication",
     ],
   },
+  {
+    id: 47,
+    slug: "how-to-fast-charge-your-ev-at-home",
+    title: "How to Fast Charge Your EV at Home",
+    tag: "EV Charging",
+    date: "July 15, 2022",
+    image: "/insights/how-to-fast-charge-your-ev-at-home.webp",
+    intro: [
+      "Most EV owners charge at home. But not all home charging is created equal. The difference between plugging into a wall socket and installing a dedicated Level 2 charger is the difference between waiting all night and being ready in a couple of hours.",
+    ],
+    sections: [
+      {
+        heading: "AC vs DC: What Actually Matters at Home",
+        paragraphs: [
+          "There are two types of EV chargers: AC and DC. DC chargers are faster but impractical for homes due to cost and power requirements. AC chargers are affordable, easy to install, and more than sufficient for overnight home charging.",
+          "The real question is: how fast can your vehicle accept AC power? That depends on the onboard charger. Hyundai Kona and MG ZS support up to 7.2kW. Kia EV6 handles 11kW. Porsche EVs accept up to 22kW AC. Knowing your vehicle's limit is the first step to choosing the right home charger.",
+        ],
+      },
+      {
+        heading: "Single-Phase vs Three-Phase: Know Your Connection",
+        paragraphs: [
+          "Most Indian homes run on a single-phase power connection, which supports up to 7.4kW charging. If your home has a three-phase connection, you can go up to 22kW, cutting charge times dramatically.",
+          "Check your electricity meter or ask your provider. A single-phase connection with a 32A MCB is enough for a 7.4kW charger. Three-phase homes can install a 22kW unit with a 32A supply per phase.",
+        ],
+      },
+      {
+        heading: "Installation Is Simpler Than You Think",
+        paragraphs: [
+          "A Level 2 home charger installation typically requires an additional MCB, power cables, and a dedicated outlet. A qualified electrician can complete the job in a few hours.",
+          "RIOD PowerPod Lite is designed for exactly this: plug-and-play installation, automatic operation, and compatibility with every EV sold in India. No app needed, no complicated setup.",
+        ],
+      },
+    ],
+    relatedSlugs: [
+      "ev-charging-infrastructure-guide-india",
+      "choosing-right-ev-charger-for-your-business",
+    ],
+  },
+  {
+    id: 48,
+    slug: "riod-collaborating-with-cpos-ev-charging",
+    title: "How RIOD Works With Charge Point Operators to Scale EV Charging",
+    tag: "Industry",
+    date: "November 25, 2022",
+    image: "/insights/riod-collaborating-with-cpos-ev-charging.webp",
+    intro: [
+      "India's EV charging network is growing fast, but the real work happens behind the charger. Charge Point Operators handle installation, maintenance, payments, and user experience. The hardware they choose determines how reliably that network runs.",
+    ],
+    sections: [
+      {
+        heading: "What Charge Point Operators Actually Do",
+        paragraphs: [
+          "CPOs are the companies that install, own, and operate public EV charging stations. They handle site selection, electrical infrastructure, payment systems, and ongoing maintenance. Their revenue comes from the energy they sell to EV drivers.",
+          "For CPOs, the charger is not just a device. It is their revenue engine. Uptime, reliability, and backend integration directly affect their bottom line.",
+        ],
+      },
+      {
+        heading: "Why Hardware Partnerships Matter",
+        paragraphs: [
+          "Most CPOs do not manufacture their own chargers. They depend on OEMs for hardware that integrates cleanly with their chosen CMS platform, handles Indian grid conditions, and requires minimal field intervention.",
+          "RIOD works as a technical partner to CPOs across India, providing chargers with OCPP 1.6J support, remote diagnostics, and pre-tested CMS integrations. When a CPO deploys a RIOD charger, the connectivity, configuration, and monitoring stack is ready from day one.",
+        ],
+      },
+      {
+        heading: "Scaling Together",
+        paragraphs: [
+          "The EV charging market in India needs thousands of new charge points every year. That scale only works when OEMs and CPOs operate as a single team, not as buyer and vendor.",
+          "RIOD provides competitive pricing, technical support for site assessments, and end-to-end integration assistance. The goal is simple: make it easy for CPOs to deploy more chargers, faster, with fewer issues.",
+        ],
+      },
+    ],
+    relatedSlugs: [
+      "cms-partners-integration",
+      "ev-charging-infrastructure-guide-india",
+    ],
+  },
+  {
+    id: 49,
+    slug: "elive-energy-management-solution",
+    title: "Elive: Real-Time Energy Management for Businesses",
+    tag: "Energy",
+    date: "December 20, 2022",
+    image: "/insights/elive-energy-management-solution.webp",
+    intro: [
+      "Energy bills are one of the largest operating expenses for any business with physical infrastructure. Most companies know how much they spend on energy. Very few know where that energy actually goes.",
+    ],
+    sections: [
+      {
+        heading: "The Problem: Visibility",
+        paragraphs: [
+          "Facilities with multiple buildings, floors, or equipment zones generate enormous energy consumption. Without granular monitoring, identifying the source of waste is guesswork. A single malfunctioning HVAC unit or an always-on piece of equipment can inflate bills for months before anyone notices.",
+          "Elive solves this by providing real-time energy monitoring at the organizational, location, area, and equipment level. Every watt is tracked, categorized, and visualized.",
+        ],
+      },
+      {
+        heading: "How Elive Works",
+        paragraphs: [
+          "Elive is a hardware and software platform. Sensors installed at key electrical distribution points feed consumption data to a cloud dashboard. The platform consolidates data across multiple locations into a single view.",
+          "Key capabilities include consumption forecasting based on historical patterns, anomaly detection that flags unusual spikes, and peak vs non-peak analysis to optimize when energy-intensive operations run.",
+        ],
+      },
+      {
+        heading: "Where It Applies",
+        paragraphs: [
+          "Elive is used across facility management, smart buildings, manufacturing plants, hospitals, hotels, and industrial sites. Any organization that operates physical infrastructure and pays significant energy bills can benefit.",
+          "The insight is not just about reducing consumption. It is about understanding consumption well enough to make informed decisions about equipment upgrades, operational schedules, and energy procurement strategies.",
+        ],
+      },
+    ],
+    relatedSlugs: [
+      "hotel-energy-consumption-monitoring",
+      "choosing-right-ev-charger-for-your-business",
+    ],
+  },
+  {
+    id: 50,
+    slug: "cms-partners-integration",
+    title: "How RIOD Integrates With India's Leading CMS Platforms",
+    tag: "Technology",
+    date: "March 24, 2023",
+    image: "/insights/cms-partners-integration.webp",
+    intro: [
+      "An EV charger without a backend is just a power outlet. The Charging Management System is what turns hardware into a managed, monetizable charging station. RIOD chargers ship pre-integrated with the CMS platforms that Indian CPOs actually use.",
+    ],
+    sections: [
+      {
+        heading: "Why CMS Integration Is Not Optional",
+        paragraphs: [
+          "For any public or semi-public charging deployment, the CMS handles user authentication, payment processing, session management, remote monitoring, and analytics. Without it, operators cannot charge users, track revenue, or manage their network.",
+          "The charger and CMS need to speak the same language. RIOD uses OCPP 1.6J, the global standard, which means our chargers work with any OCPP-compliant backend without custom firmware or middleware.",
+        ],
+      },
+      {
+        heading: "Tested With the Platforms That Matter",
+        paragraphs: [
+          "RIOD has completed integration testing with major Indian CMS platforms including TelioEV, ElectricPe, Numocity, KazamEV, Wavefuel, EVCFinder, Tata Power, and PlugEasy.",
+          "Each integration goes through configuration, multi-scenario testing, live performance validation, and optimization. By the time a CPO receives a RIOD charger, the CMS handshake is already proven.",
+        ],
+      },
+      {
+        heading: "What This Means for Operators",
+        paragraphs: [
+          "Operators do not need to worry about compatibility issues, custom integrations, or vendor lock-in. Pick your CMS, connect the charger, and the network is live.",
+          "This is what open standards look like in practice: hardware and software from different companies working together without friction. No proprietary protocols, no forced ecosystems.",
+        ],
+      },
+    ],
+    relatedSlugs: [
+      "riod-collaborating-with-cpos-ev-charging",
+      "ev-charging-infrastructure-guide-india",
+    ],
+  },
+  {
+    id: 51,
+    slug: "hotel-energy-consumption-monitoring",
+    title: "How to Monitor Energy Consumption Across Hotel Chains",
+    tag: "Energy",
+    date: "July 15, 2022",
+    image: "/insights/hotel-energy-consumption-monitoring.webp",
+    intro: [
+      "Hotels are among the most energy-intensive commercial buildings. With HVAC running around the clock, kitchens operating at full capacity, and hundreds of guest rooms consuming power simultaneously, energy is often the second largest operating cost after labor.",
+    ],
+    sections: [
+      {
+        heading: "The Challenge of Multi-Property Monitoring",
+        paragraphs: [
+          "Hotel chains face a unique problem: every property is different. Some have one building, others span 40+ buildings across several acres. Equipment varies from property to property. Energy sources differ by location, ranging from diesel generators to solar panels to grid power.",
+          "Traditional energy audits give you a snapshot. What operators need is continuous, real-time visibility across every property in the portfolio, from a single dashboard.",
+        ],
+      },
+      {
+        heading: "What Monitoring Actually Reveals",
+        paragraphs: [
+          "Once you have real-time data, patterns emerge quickly. A refrigerator in a guest room running constantly because of a faulty thermostat. An HVAC system cycling inefficiently because of poor configuration. A generator running during off-peak hours when grid power is cheaper.",
+          "These are the kinds of issues that add up to lakhs in wasted energy every month. Without monitoring, they stay invisible.",
+        ],
+      },
+      {
+        heading: "Cloud-Based Energy Management",
+        paragraphs: [
+          "Elive Energy's cloud platform provides 24/7 monitoring from anywhere. The system tracks consumption across different sources: diesel generators, power grids, and solar installations. Alarm notifications flag critical events like power limit exceedances or supply failures.",
+          "For hotel chains, the value is not just cost savings. It is operational intelligence: knowing exactly where energy goes, identifying savings opportunities before they become problems, and making data-driven decisions about equipment upgrades and procurement.",
+        ],
+      },
+    ],
+    relatedSlugs: [
+      "elive-energy-management-solution",
+      "choosing-right-ev-charger-for-your-business",
+    ],
+  },
 ];
