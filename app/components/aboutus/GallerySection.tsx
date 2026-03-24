@@ -3,12 +3,14 @@
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 
-const TOTAL_IMAGES = 72;
+const SKIP_IMAGES = new Set([22]);
 
-const galleryImages = Array.from({ length: TOTAL_IMAGES }, (_, i) => ({
-  src: `/about/gallery/gallery-${i + 1}.webp`,
-  alt: `RIOD team and workspace ${i + 1}`,
-}));
+const galleryImages = Array.from({ length: 72 }, (_, i) => i + 1)
+  .filter((n) => !SKIP_IMAGES.has(n))
+  .map((n) => ({
+    src: `/about/gallery/gallery-${n}.webp`,
+    alt: `RIOD team and workspace ${n}`,
+  }));
 
 function LazyImage({ src, alt }: { src: string; alt: string }) {
   const ref = useRef<HTMLDivElement>(null);

@@ -38,7 +38,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       </div>
 
       {/* Overlay Content */}
-      <div className="absolute inset-0 flex flex-col justify-end pb-8 md:pb-12 lg:pb-[65px] z-2">
+      <div className="absolute inset-0 flex flex-col justify-end pt-[80px] lg:pt-[100px] pb-8 md:pb-12 lg:pb-[65px] z-2">
         <div className="mx-auto w-[90%] md:w-[90%] 2xl:max-w-[1800px]">
           <div className="max-w-4xl">
             {/* Title */}
