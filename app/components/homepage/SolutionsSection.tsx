@@ -70,11 +70,10 @@ const solutions = [
     icon: BarChart3,
     title: "Energy Management",
     description:
-      "Our energy management solutions enable intelligent load balancing, solar integration, and V2G-ready architectures for optimized charging operations.",
+      "Our energy management solutions enable intelligent load balancing and solar integration for optimized charging operations.",
     bullets: [
       "Dynamic load balancing",
       "Solar & renewable integration",
-      "V2G-ready architecture",
     ],
   },
 ];
