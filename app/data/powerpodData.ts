@@ -120,7 +120,7 @@ export const productFamilies: ProductFamily[] = [
       {
         title: "Small Office Parking",
         description:
-          "The 7.2 kW OCPP model connects to any OCPP-compliant management system for remote start/stop and usage tracking.",
+          "RFID-enabled access control for shared parking bays. No app or internet needed. Just tap and charge.",
       },
       {
         title: "Premium Residences",
@@ -175,7 +175,7 @@ export const productFamilies: ProductFamily[] = [
           "Home garages, apartment 2W bays, retail outlets, fleet depots with electric scooters and three-wheelers.",
         description:
           "RFID plug-and-play AC wall charger for 2-wheeler and 3-wheeler EVs. Compact wall-mount form factor fits tight spaces in parking structures.",
-        storeUrl: "/store/3-3kw-ocpp-ev-charger",
+        storeUrl: "",
       },
     ],
     commonSpecs,

@@ -14,7 +14,7 @@ const privateChargers = [
     name: "RIOD AC PowerPod Lite",
     power: "3.3 kW",
     description:
-      "Single-phase home charger for overnight charging. Smart scheduling, energy monitoring, and Wi-Fi connectivity.",
+      "Single-phase plug-and-play home charger for overnight charging. RFID access with built-in safety protection.",
     image: "/products/powerpod.png",
     shopUrl: "/products/ev-chargers/powerpod",
   },
