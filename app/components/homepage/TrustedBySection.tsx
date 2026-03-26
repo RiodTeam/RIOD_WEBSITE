@@ -32,7 +32,7 @@ export default function TrustedBySection() {
       </div>
 
       <div className="overflow-hidden">
-        <div className="flex items-center gap-20 md:gap-28 animate-logo-scroll">
+        <div className="flex items-center gap-10 md:gap-20 animate-logo-scroll">
           {duplicatedLogos.map((logo, index) => (
             <div
               key={`${logo.name}-${index}`}

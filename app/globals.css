@@ -249,10 +249,16 @@ body {
 }
 
 .animate-logo-scroll {
-  animation: logo-scroll 35s linear infinite;
+  animation: logo-scroll 15s linear infinite;
   will-change: transform;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .animate-logo-scroll {
+    animation-duration: 25s;
+  }
 }
 
 /* underline footer */
@@ -312,10 +318,16 @@ body {
 }
 
 .animate-insights-scroll {
-  animation: insights-scroll 45s linear infinite;
+  animation: insights-scroll 20s linear infinite;
   will-change: transform;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .animate-insights-scroll {
+    animation-duration: 35s;
+  }
 }
 
 .animate-insights-scroll:hover {
