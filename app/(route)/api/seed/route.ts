@@ -240,7 +240,7 @@ export async function POST(req: NextRequest) {
                 : cs.industry.toLowerCase().includes("tech")
                   ? "technology"
                   : "technology",
-          // technology added manually from admin panel
+          technology: cs.technologies.map((t) => ({ name: t })),
           tag: cs.tag,
           client: cs.client,
           location: cs.location,

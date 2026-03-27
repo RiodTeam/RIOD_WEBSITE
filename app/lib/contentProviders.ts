@@ -160,12 +160,11 @@ function payloadCaseStudyToFrontend(doc: any): CaseStudy {
   const technologies: string[] = [];
   if (doc.technology && Array.isArray(doc.technology)) {
     for (const t of doc.technology) {
-      // Convert value to label format
-      const label = t
-        .split("-")
-        .map((w: string) => w.charAt(0).toUpperCase() + w.slice(1))
-        .join(" ");
-      technologies.push(label);
+      if (typeof t === "string") {
+        technologies.push(t);
+      } else if (t?.name) {
+        technologies.push(t.name);
+      }
     }
   }
 
