@@ -23,11 +23,25 @@ jobs:
             # Pull latest code
             git pull origin main
 
-            # Write environment variables to .env.local
-            cat > .env.local << 'ENVEOF'
+            # Write environment variables to .env.local (preserves manually added vars)
+            # First, back up any vars not managed by this workflow
+            touch .env.local
+            grep -v '^NEXT_PUBLIC_SHOPIFY_\|^DISCORD_WEBHOOK_URL\|^NEXT_PUBLIC_GA_MEASUREMENT_ID\|^MONGODB_URI\|^PAYLOAD_SECRET\|^PAYLOAD\b' .env.local > .env.local.keep 2>/dev/null || true
+
+            # Write managed vars
+            cat > .env.local << ENVEOF
             NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN=${{ secrets.SHOPIFY_STORE_DOMAIN }}
             NEXT_PUBLIC_SHOPIFY_STOREFRONT_TOKEN=${{ secrets.SHOPIFY_STOREFRONT_TOKEN }}
+            DISCORD_WEBHOOK_URL=${{ secrets.DISCORD_WEBHOOK_URL }}
+            NEXT_PUBLIC_GA_MEASUREMENT_ID=${{ secrets.GA_MEASUREMENT_ID }}
+            MONGODB_URI=${{ secrets.MONGODB_URI }}
+            PAYLOAD_SECRET=${{ secrets.PAYLOAD_SECRET }}
+            PAYLOAD=true
             ENVEOF
+
+            # Re-append any unmanaged vars
+            cat .env.local.keep >> .env.local 2>/dev/null || true
+            rm -f .env.local.keep
 
             # Install dependencies
             npm install
