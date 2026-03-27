@@ -17,6 +17,7 @@ jobs:
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           command_timeout: 30m
+          envs: DATABASE_URI,PAYLOAD_SECRET,AWS_ACCESS_KEY_ID,AWS_SECRET_ACCESS_KEY,AWS_REGION,S3_BUCKET,SHOPIFY_STORE_DOMAIN,SHOPIFY_STOREFRONT_TOKEN,DISCORD_WEBHOOK_URL,GA_MEASUREMENT_ID
           script: |
             cd ~/RIOD_WEBSITE
 
@@ -24,21 +25,21 @@ jobs:
             git pull origin main
 
             # Write all environment variables to .env.local
-            cat > .env.local << ENVEOF
-            DATABASE_URI=${{ secrets.DATABASE_URI }}
-            PAYLOAD_SECRET=${{ secrets.PAYLOAD_SECRET }}
-            PAYLOAD=true
-            NEXT_PUBLIC_SERVER_URL=https://riod.energy
-            PAYLOAD_PUBLIC_SERVER_URL=https://riod.energy
-            AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }}
-            AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}
-            AWS_REGION=${{ secrets.AWS_REGION }}
-            S3_BUCKET=${{ secrets.S3_BUCKET }}
-            NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN=${{ secrets.SHOPIFY_STORE_DOMAIN }}
-            NEXT_PUBLIC_SHOPIFY_STOREFRONT_TOKEN=${{ secrets.SHOPIFY_STOREFRONT_TOKEN }}
-            DISCORD_WEBHOOK_URL=${{ secrets.DISCORD_WEBHOOK_URL }}
-            NEXT_PUBLIC_GA_MEASUREMENT_ID=${{ secrets.GA_MEASUREMENT_ID }}
-            ENVEOF
+            printf '%s\n' \
+              "DATABASE_URI=${DATABASE_URI}" \
+              "PAYLOAD_SECRET=${PAYLOAD_SECRET}" \
+              "PAYLOAD=true" \
+              "NEXT_PUBLIC_SERVER_URL=https://riod.energy" \
+              "PAYLOAD_PUBLIC_SERVER_URL=https://riod.energy" \
+              "AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}" \
+              "AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}" \
+              "AWS_REGION=${AWS_REGION}" \
+              "S3_BUCKET=${S3_BUCKET}" \
+              "NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN=${SHOPIFY_STORE_DOMAIN}" \
+              "NEXT_PUBLIC_SHOPIFY_STOREFRONT_TOKEN=${SHOPIFY_STOREFRONT_TOKEN}" \
+              "DISCORD_WEBHOOK_URL=${DISCORD_WEBHOOK_URL}" \
+              "NEXT_PUBLIC_GA_MEASUREMENT_ID=${GA_MEASUREMENT_ID}" \
+              > .env.local
 
             # Install dependencies
             npm install
@@ -54,34 +55,14 @@ jobs:
             pm2 restart riod || pm2 start npm --name "riod" --cwd /home/ubuntu/RIOD_WEBSITE -- start
             pm2 save
 
-            # Setup Nginx reverse proxy (idempotent — skips if already configured)
-            if ! command -v nginx &> /dev/null; then
+            # Setup Nginx reverse proxy (idempotent - skips if already configured)
+            if ! command -v nginx > /dev/null 2>&1; then
               sudo apt-get update -y
               sudo apt-get install -y nginx
             fi
 
             if [ ! -f /etc/nginx/sites-available/riod ]; then
-              sudo tee /etc/nginx/sites-available/riod > /dev/null << 'NGINXEOF'
-            server {
-                listen 80;
-                server_name riod.in www.riod.in riod.energy www.riod.energy _;
-
-                client_max_body_size 50M;
-
-                location / {
-                    proxy_pass http://localhost:3000;
-                    proxy_http_version 1.1;
-                    proxy_set_header Upgrade $http_upgrade;
-                    proxy_set_header Connection 'upgrade';
-                    proxy_set_header Host $host;
-                    proxy_set_header X-Real-IP $remote_addr;
-                    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-                    proxy_set_header X-Forwarded-Proto $scheme;
-                    proxy_cache_bypass $http_upgrade;
-                }
-            }
-            NGINXEOF
-
+              printf '%s\n' 'server {' '    listen 80;' '    server_name riod.in www.riod.in riod.energy www.riod.energy _;' '    client_max_body_size 50M;' '    location / {' '        proxy_pass http://localhost:3000;' '        proxy_http_version 1.1;' '        proxy_set_header Upgrade $http_upgrade;' '        proxy_set_header Connection upgrade;' '        proxy_set_header Host $host;' '        proxy_set_header X-Real-IP $remote_addr;' '        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;' '        proxy_set_header X-Forwarded-Proto $scheme;' '        proxy_cache_bypass $http_upgrade;' '    }' '}' | sudo tee /etc/nginx/sites-available/riod > /dev/null
               sudo ln -sf /etc/nginx/sites-available/riod /etc/nginx/sites-enabled/
               sudo rm -f /etc/nginx/sites-enabled/default
               sudo nginx -t && sudo systemctl restart nginx
