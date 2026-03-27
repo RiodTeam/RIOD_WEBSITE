@@ -5,7 +5,7 @@ import { technologies } from "@/app/data/technologies";
 import { insightsData } from "@/app/components/data/insightsData";
 import { caseStudiesData } from "@/app/components/data/caseStudiesData";
 
-const BASE_URL = "https://riod.in";
+const BASE_URL = "https://riod.energy";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();

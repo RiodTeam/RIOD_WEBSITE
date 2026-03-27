@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "EV Chargers | RIOD",
     description:
       "Explore RIOD's full range of AC and DC EV chargers, from home charging pods to commercial DC fast chargers.",
-    url: "https://riod.in/products/ev-chargers",
+    url: "https://riod.energy/products/ev-chargers",
     images: [{ url: "/heroes/ev-chargers-hero.webp", width: 1400, height: 800 }],
   },
 };

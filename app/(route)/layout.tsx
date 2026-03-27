@@ -25,6 +25,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "RIOD",
   description: "RIOD - EV Charging & Energy Technology",
+  metadataBase: new URL("https://riod.energy"),
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: "/icon.png",
     shortcut: "/icon.png",
@@ -34,7 +38,7 @@ export const metadata: Metadata = {
     title: "RIOD - EV Charging & Energy Technology",
     description:
       "Every layer of charging infrastructure, built in-house: from the hardware and firmware that powers the device, to the cloud platforms and energy systems that keep it all running.",
-    url: "https://riod.in",
+    url: "https://riod.energy",
     siteName: "RIOD",
     images: [
       {

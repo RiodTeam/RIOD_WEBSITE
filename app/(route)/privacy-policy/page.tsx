@@ -294,7 +294,7 @@ export default function PrivacyPolicyPage() {
               <p>
                 Website:{" "}
                 <a
-                  href="https://riod.in"
+                  href="https://riod.energy"
                   className="text-black underline hover:text-[#cdf80a] transition-colors"
                 >
                   riod.in

@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${tech.name} | Technology | RIOD`,
       description: tech.tagline,
-      url: `https://riod.in/technology/${slug}`,
+      url: `https://riod.energy/technology/${slug}`,
       images: tech.sections?.[0]?.image
         ? [{ url: tech.sections[0].image, width: 1400, height: 800 }]
         : [],
@@ -43,7 +43,7 @@ export default async function TechnologyDetailPage({ params }: Props) {
     headline: tech.name,
     description: tech.tagline,
     image: tech.sections?.[0]?.image
-      ? `https://riod.in${tech.sections[0].image}`
+      ? `https://riod.energy${tech.sections[0].image}`
       : undefined,
     author: {
       "@type": "Organization",
@@ -52,9 +52,9 @@ export default async function TechnologyDetailPage({ params }: Props) {
     publisher: {
       "@type": "Organization",
       name: "RIOD",
-      logo: { "@type": "ImageObject", url: "https://riod.in/header/logo.svg" },
+      logo: { "@type": "ImageObject", url: "https://riod.energy/header/logo.svg" },
     },
-    url: `https://riod.in/technology/${slug}`,
+    url: `https://riod.energy/technology/${slug}`,
   };
 
   // Operations Suite gets its own full landing page

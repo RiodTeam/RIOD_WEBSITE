@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/admin/"],
       },
     ],
-    sitemap: "https://riod.in/sitemap.xml",
+    sitemap: "https://riod.energy/sitemap.xml",
   };
 }

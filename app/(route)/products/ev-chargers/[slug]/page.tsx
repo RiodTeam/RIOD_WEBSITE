@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${product.name} | RIOD EV Chargers`,
       description: product.tagline,
-      url: `https://riod.in/products/ev-chargers/${slug}`,
+      url: `https://riod.energy/products/ev-chargers/${slug}`,
       images: [{ url: product.heroImage, width: 1400, height: 800 }],
     },
   };
@@ -39,7 +39,7 @@ export default async function ProductDetailPage({ params }: Props) {
     "@type": "Product",
     name: product.name,
     description: product.tagline,
-    image: `https://riod.in${product.heroImage}`,
+    image: `https://riod.energy${product.heroImage}`,
     brand: {
       "@type": "Brand",
       name: "RIOD",
@@ -49,7 +49,7 @@ export default async function ProductDetailPage({ params }: Props) {
       name: "RnD Square Pvt. Ltd.",
     },
     category: "EV Charger",
-    url: `https://riod.in/products/ev-chargers/${slug}`,
+    url: `https://riod.energy/products/ev-chargers/${slug}`,
   };
 
   return (

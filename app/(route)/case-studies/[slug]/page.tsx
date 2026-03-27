@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${caseStudy.title} | RIOD Case Studies`,
       description: caseStudy.summary,
-      url: `https://riod.in/case-studies/${slug}`,
+      url: `https://riod.energy/case-studies/${slug}`,
       images: caseStudy.image ? [{ url: caseStudy.image, width: 1400, height: 800 }] : [],
     },
   };
@@ -47,7 +47,7 @@ export default async function CaseStudyPage({ params }: Props) {
     "@type": "Article",
     headline: caseStudy.title,
     description: caseStudy.summary,
-    image: caseStudy.image ? `https://riod.in${caseStudy.image}` : undefined,
+    image: caseStudy.image ? `https://riod.energy${caseStudy.image}` : undefined,
     author: {
       "@type": "Organization",
       name: "RIOD",
@@ -55,9 +55,9 @@ export default async function CaseStudyPage({ params }: Props) {
     publisher: {
       "@type": "Organization",
       name: "RIOD",
-      logo: { "@type": "ImageObject", url: "https://riod.in/header/logo.svg" },
+      logo: { "@type": "ImageObject", url: "https://riod.energy/header/logo.svg" },
     },
-    url: `https://riod.in/case-studies/${slug}`,
+    url: `https://riod.energy/case-studies/${slug}`,
   };
 
   return (

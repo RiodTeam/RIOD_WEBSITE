@@ -10,7 +10,7 @@ export const metadata = {
     title: "RIOD | EV Charging & Energy Technology",
     description:
       "Smart and reliable EV charging infrastructure built for homes, businesses, and commercial spaces.",
-    url: "https://riod.in",
+    url: "https://riod.energy",
     images: [{ url: "/heroes/ev-chargers-hero.webp", width: 1400, height: 800 }],
   },
 };
@@ -20,8 +20,8 @@ const orgSchema = {
   "@type": "Organization",
   name: "RIOD",
   legalName: "RIOD",
-  url: "https://riod.in",
-  logo: "https://riod.in/header/logo.svg",
+  url: "https://riod.energy",
+  logo: "https://riod.energy/header/logo.svg",
   description:
     "EV charging infrastructure and energy management technology company. Hardware, firmware, and cloud platforms built in-house in India.",
   foundingDate: "2019",
@@ -35,7 +35,7 @@ const orgSchema = {
   },
   contactPoint: {
     "@type": "ContactPoint",
-    email: "hello@riod.in",
+    email: "hello@riod.energy",
     contactType: "sales",
   },
   sameAs: [
@@ -48,7 +48,7 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "RIOD",
-  url: "https://riod.in",
+  url: "https://riod.energy",
 };
 
 export default async function Page() {

@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: insight.title,
       description,
-      url: `https://riod.in/insights/${slug}`,
+      url: `https://riod.energy/insights/${slug}`,
       type: "article",
       images: insight.image ? [{ url: insight.image, width: 1400, height: 800 }] : [],
     },
@@ -54,7 +54,7 @@ export default async function Page({ params }: Props) {
     "@type": "Article",
     headline: insight.title,
     description: insight.intro?.[0]?.substring(0, 160) || insight.title,
-    image: insight.image ? `https://riod.in${insight.image}` : undefined,
+    image: insight.image ? `https://riod.energy${insight.image}` : undefined,
     datePublished: insight.date,
     author: {
       "@type": "Organization",
@@ -63,9 +63,9 @@ export default async function Page({ params }: Props) {
     publisher: {
       "@type": "Organization",
       name: "RIOD",
-      logo: { "@type": "ImageObject", url: "https://riod.in/header/logo.svg" },
+      logo: { "@type": "ImageObject", url: "https://riod.energy/header/logo.svg" },
     },
-    url: `https://riod.in/insights/${slug}`,
+    url: `https://riod.energy/insights/${slug}`,
   };
 
   // Get related articles
