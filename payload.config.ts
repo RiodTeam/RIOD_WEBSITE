@@ -76,13 +76,13 @@ export default buildConfig({
     s3Storage({
       collections: {
         media: {
-          prefix: 'media',
+          prefix: 'RIOD/media',
         },
         blogImage: {
-          prefix: 'blog-images',
+          prefix: 'RIOD/blog-images',
         },
         caseStudyMedia: {
-          prefix: 'case-studies',
+          prefix: 'RIOD/case-studies',
         },
       },
       bucket: process.env.S3_BUCKET!,
