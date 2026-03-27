@@ -37,7 +37,8 @@ jobs:
             npx payload generate:types
             npx payload generate:importmap
 
-            # Build Next.js app
+            # Clean old build cache and build Next.js app
+            rm -rf .next
             npm run build
 
             # Restart PM2 process
