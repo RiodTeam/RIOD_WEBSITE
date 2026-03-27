@@ -131,41 +131,41 @@ export const CaseStudies: CollectionConfig = {
     {
       name: 'displayImage',
       label: 'Display Image',
-      required: true,
+      required: false,
       type: 'upload',
       relationTo: 'caseStudyMedia',
     },
     {
       name: 'bannerImage',
       label: 'Banner Image',
-      required: true,
+      required: false,
       type: 'upload',
       relationTo: 'caseStudyMedia',
     },
     {
       name: 'studyImages',
       label: 'Study Images',
-      required: true,
+      required: false,
       type: 'group',
       fields: [
         {
           name: 'image01',
           label: 'Image 01',
-          required: true,
+          required: false,
           type: 'upload',
           relationTo: 'caseStudyMedia',
         },
         {
           name: 'image02',
           label: 'Image 02',
-          required: true,
+          required: false,
           type: 'upload',
           relationTo: 'caseStudyMedia',
         },
         {
           name: 'image03',
           label: 'Image 03',
-          required: true,
+          required: false,
           type: 'upload',
           relationTo: 'caseStudyMedia',
         },
@@ -187,7 +187,7 @@ export const CaseStudies: CollectionConfig = {
     {
       name: 'technology',
       label: 'Key Technologies (select all that apply)',
-      required: true,
+      required: false,
       type: 'select',
       hasMany: true,
       admin: {

@@ -50,6 +50,7 @@ const Header = () => {
     pathname === "/applications" ||
     pathname === "/ev-charger-selection-guide" ||
     pathname.startsWith("/technology/") ||
+    pathname.startsWith("/case-studies/") ||
     pathname.startsWith("/store") ||
     pathname === "/thank-you";
 
