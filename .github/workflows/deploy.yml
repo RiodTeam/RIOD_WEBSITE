@@ -17,29 +17,18 @@ jobs:
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           command_timeout: 30m
-          envs: DATABASE_URI,PAYLOAD_SECRET,AWS_ACCESS_KEY_ID,AWS_SECRET_ACCESS_KEY,AWS_REGION,S3_BUCKET,SHOPIFY_STORE_DOMAIN,SHOPIFY_STOREFRONT_TOKEN,DISCORD_WEBHOOK_URL,GA_MEASUREMENT_ID
           script: |
             cd ~/RIOD_WEBSITE
 
             # Pull latest code
             git pull origin main
 
-            # Write all environment variables to .env.local
-            printf '%s\n' \
-              "DATABASE_URI=${DATABASE_URI}" \
-              "PAYLOAD_SECRET=${PAYLOAD_SECRET}" \
-              "PAYLOAD=true" \
-              "NEXT_PUBLIC_SERVER_URL=https://riod.energy" \
-              "PAYLOAD_PUBLIC_SERVER_URL=https://riod.energy" \
-              "AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}" \
-              "AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}" \
-              "AWS_REGION=${AWS_REGION}" \
-              "S3_BUCKET=${S3_BUCKET}" \
-              "NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN=${SHOPIFY_STORE_DOMAIN}" \
-              "NEXT_PUBLIC_SHOPIFY_STOREFRONT_TOKEN=${SHOPIFY_STOREFRONT_TOKEN}" \
-              "DISCORD_WEBHOOK_URL=${DISCORD_WEBHOOK_URL}" \
-              "NEXT_PUBLIC_GA_MEASUREMENT_ID=${GA_MEASUREMENT_ID}" \
-              > .env.local
+            # NEVER overwrite .env.local - only create if missing
+            if [ ! -f .env.local ]; then
+              echo "WARNING: .env.local missing! Create it manually on the server."
+              echo "Skipping build."
+              exit 1
+            fi
 
             # Install dependencies
             npm install
