@@ -138,7 +138,7 @@ const LeadFormPopup: React.FC<LeadFormPopupProps> = ({ isOpen, onClose }) => {
       />
 
       {/* Modal */}
-      <div className="relative w-full h-full md:h-auto md:max-h-[90vh] md:max-w-[540px] md:mx-4 bg-white md:rounded-2xl overflow-y-auto z-10">
+      <div className="relative w-full h-full md:h-auto md:max-w-[480px] md:mx-4 bg-white md:rounded-2xl overflow-y-auto z-10">
         {/* Close Button */}
         <button
           type="button"
@@ -161,7 +161,7 @@ const LeadFormPopup: React.FC<LeadFormPopupProps> = ({ isOpen, onClose }) => {
           </svg>
         </button>
 
-        <div className="px-6 py-6 md:px-10 md:py-10">
+        <div className="px-6 py-6 md:px-8 md:py-8">
           {status === "success" ? (
             <MotionWrapper>
               <div className="flex flex-col items-center justify-center min-h-[260px] text-center">
@@ -208,7 +208,7 @@ const LeadFormPopup: React.FC<LeadFormPopupProps> = ({ isOpen, onClose }) => {
               </div>
 
               {/* Form */}
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-3">
                 {/* Name */}
                 <div>
                   <label className="block font-inter text-[13px] text-[#626262] mb-1.5">
