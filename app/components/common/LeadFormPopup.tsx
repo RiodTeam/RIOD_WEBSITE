@@ -127,7 +127,7 @@ const LeadFormPopup: React.FC<LeadFormPopupProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   const inputClasses =
-    "w-full h-[48px] px-4 bg-white border border-[#e8e8e8] rounded-lg text-[15px] text-[#1b1b1b] placeholder:text-[#9a99a2] font-inter outline-none focus:border-[#1b1b1b] transition-colors";
+    "w-full h-[44px] md:h-[48px] px-4 bg-white border border-[#e8e8e8] rounded-lg text-[15px] text-[#1b1b1b] placeholder:text-[#9a99a2] font-inter outline-none focus:border-[#1b1b1b] transition-colors";
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center">
@@ -161,10 +161,10 @@ const LeadFormPopup: React.FC<LeadFormPopupProps> = ({ isOpen, onClose }) => {
           </svg>
         </button>
 
-        <div className="px-6 py-8 md:px-10 md:py-10">
+        <div className="px-6 py-6 md:px-10 md:py-10">
           {status === "success" ? (
             <MotionWrapper>
-              <div className="flex flex-col items-center justify-center min-h-[300px] text-center">
+              <div className="flex flex-col items-center justify-center min-h-[260px] text-center">
                 <div className="w-16 h-16 rounded-full bg-[#cdf80a] flex items-center justify-center mb-6">
                   <svg
                     className="w-8 h-8 text-[#1b1b1b]"
@@ -198,7 +198,7 @@ const LeadFormPopup: React.FC<LeadFormPopupProps> = ({ isOpen, onClose }) => {
           ) : (
             <>
               {/* Header */}
-              <div className="mb-8 pr-8">
+              <div className="mb-5 md:mb-8 pr-8">
                 <h2 className="font-inter text-[#1b1b1b] text-xl md:text-2xl font-semibold mb-2">
                   Get in touch
                 </h2>
@@ -268,7 +268,7 @@ const LeadFormPopup: React.FC<LeadFormPopupProps> = ({ isOpen, onClose }) => {
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  className="w-full h-[52px] bg-[#1b1b1b] text-white text-[15px] font-medium font-inter rounded-full hover:bg-[#333] transition-colors disabled:opacity-50 disabled:cursor-not-allowed mt-2"
+                  className="w-full h-[48px] md:h-[52px] bg-[#1b1b1b] text-white text-[15px] font-medium font-inter rounded-full hover:bg-[#333] transition-colors disabled:opacity-50 disabled:cursor-not-allowed mt-1"
                 >
                   {status === "loading" ? (
                     <span className="inline-flex items-center gap-2">

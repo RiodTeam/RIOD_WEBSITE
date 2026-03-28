@@ -131,6 +131,7 @@ export default function FutureOfEVEnergyClient() {
       if (!res.ok) throw new Error("Failed to submit");
 
       setIsUnlocked(true);
+      setFormData({ name: "", email: "", company: "", phone: "" });
     } catch {
       setSubmitError("Something went wrong. Please try again.");
     } finally {
@@ -377,30 +378,25 @@ export default function FutureOfEVEnergyClient() {
             </div>
           </section>
         ) : (
-          /* UNLOCKED CONTENT */
-          <>
-            {gatedSections.map((section, i) => (
-              <section
-                key={section.title}
-                className={`${
-                  i % 2 === 0 ? "bg-white" : "bg-[#f4f4f4]"
-                } pt-16 md:pt-[6.8rem] pb-16 md:pb-[6.8rem]`}
-              >
-                <div className="w-[90%] max-w-[1400px] mx-auto">
-                  <MotionWrapper>
-                    <h2 className="text-[1.6rem] md:text-[2rem] font-inter font-semibold text-[#1b1b1b] leading-tight mb-8">
-                      {section.title}
-                    </h2>
-                    <div className="max-w-[820px] text-[#444] text-base leading-relaxed font-inter space-y-4">
-                      {section.content.split("\n\n").map((para, j) => (
-                        <p key={j}>{para}</p>
-                      ))}
-                    </div>
-                  </MotionWrapper>
+          /* CONFIRMATION MESSAGE */
+          <section className="bg-[#1b1b1b] py-16 md:py-[6.8rem]">
+            <div className="w-[90%] max-w-[600px] mx-auto text-center">
+              <MotionWrapper>
+                <div className="w-16 h-16 rounded-full bg-[#cdf80a] flex items-center justify-center mx-auto mb-6">
+                  <CheckCircle className="w-8 h-8 text-[#1b1b1b]" />
                 </div>
-              </section>
-            ))}
-          </>
+                <h2 className="text-[1.8rem] md:text-[2.2rem] font-inter font-semibold text-white leading-tight mb-4">
+                  Request Received
+                </h2>
+                <p className="text-white/60 text-base leading-relaxed font-inter mb-3">
+                  Thank you for your interest. Our team will review your request and share the full strategic briefing with you shortly.
+                </p>
+                <p className="text-white/40 text-sm font-inter">
+                  We typically respond within 1 business day.
+                </p>
+              </MotionWrapper>
+            </div>
+          </section>
         )}
 
         {/* CTA Section */}
