@@ -29,7 +29,7 @@ export default function ContactCTASection() {
                 For EV Chargers
               </h3>
               <p className="para-text text-[#626262] mb-8">
-                Whether you need an AC PowerPod for a residential complex, a DC fast charger for a retail location, or a high-power station for a highway corridor, tell us what you're building.
+                Whether you need an AC Powerpod for a residential complex, a DC fast charger for a retail location, or a high-power station for a highway corridor, tell us what you're building.
               </p>
               <Link
                 href="/contact?type=ev-charging"

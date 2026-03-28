@@ -2585,7 +2585,7 @@ export const insightsData: InsightType[] = [
         heading: "Installation Is Simpler Than You Think",
         paragraphs: [
           "A Level 2 home charger installation typically requires an additional MCB, power cables, and a dedicated outlet. A qualified electrician can complete the job in a few hours.",
-          "RIOD PowerPod Lite is designed for exactly this: plug-and-play installation, automatic operation, and compatibility with every EV sold in India. No app needed, no complicated setup.",
+          "RIOD Powerpod Lite is designed for exactly this: plug-and-play installation, automatic operation, and compatibility with every EV sold in India. No app needed, no complicated setup.",
         ],
       },
     ],

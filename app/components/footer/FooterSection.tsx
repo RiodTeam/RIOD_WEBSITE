@@ -6,9 +6,9 @@ import MotionWrapper from "../common/MotionWrapper";
 import NewsletterSignup from "../common/NewsletterSignup";
 
 const productLinks = [
-  { label: "AC PowerPod Lite", href: "/products/ev-chargers/powerpod" },
-  { label: "AC PowerPod Go", href: "/products/ev-chargers/powerpod-go" },
-  { label: "AC PowerPod City", href: "/products/ev-chargers/powerpod-city" },
+  { label: "AC Powerpod Lite", href: "/products/ev-chargers/powerpod" },
+  { label: "AC Powerpod Go", href: "/products/ev-chargers/powerpod-go" },
+  { label: "AC Powerpod City", href: "/products/ev-chargers/powerpod-city" },
   { label: "Store", href: "/store" },
 ];
 

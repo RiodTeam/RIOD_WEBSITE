@@ -14,6 +14,7 @@ export interface Resource {
   filePath: string;
   icon: "FileText" | "Wrench" | "BookOpen" | "BarChart3";
   isLeadMagnet?: boolean;
+
 }
 
 export const resourceCategories: ResourceCategory[] = [
@@ -35,6 +36,7 @@ export const resources: Resource[] = [
     fileSize: "1.2 MB",
     filePath: "/downloads/datasheets/ac-powerpod-3.4kw.pdf",
     icon: "FileText",
+
   },
   {
     id: "ds-ac-powerpod-7.4",
@@ -45,6 +47,7 @@ export const resources: Resource[] = [
     fileSize: "1.3 MB",
     filePath: "/downloads/datasheets/ac-powerpod-7.4kw.pdf",
     icon: "FileText",
+
   },
   {
     id: "ds-ac-powerpod-22",
@@ -55,6 +58,7 @@ export const resources: Resource[] = [
     fileSize: "1.4 MB",
     filePath: "/downloads/datasheets/ac-powerpod-22kw.pdf",
     icon: "FileText",
+
   },
   {
     id: "ds-go-3.4",
@@ -65,6 +69,7 @@ export const resources: Resource[] = [
     fileSize: "1.5 MB",
     filePath: "/downloads/datasheets/ac-powerpod-go-3.4kw.pdf",
     icon: "FileText",
+
   },
   {
     id: "ds-go-7.4",
@@ -75,6 +80,7 @@ export const resources: Resource[] = [
     fileSize: "1.5 MB",
     filePath: "/downloads/datasheets/ac-powerpod-go-7.4kw.pdf",
     icon: "FileText",
+
   },
   {
     id: "ds-go-22",
@@ -85,36 +91,40 @@ export const resources: Resource[] = [
     fileSize: "1.6 MB",
     filePath: "/downloads/datasheets/ac-powerpod-go-22kw.pdf",
     icon: "FileText",
+
   },
   {
     id: "ds-city-3.4",
-    title: "AC PowerPod City 3.4kW Datasheet",
+    title: "AC Powerpod City 3.4kW Datasheet",
     description:
       "Technical data for the dual-gun public charger with RFID and 4G connectivity.",
     category: "Product Datasheets",
     fileSize: "1.7 MB",
     filePath: "/downloads/datasheets/ac-powerpod-city-3.4kw.pdf",
     icon: "FileText",
+
   },
   {
     id: "ds-city-7.4",
-    title: "AC PowerPod City 7.4kW Datasheet",
+    title: "AC Powerpod City 7.4kW Datasheet",
     description:
       "Technical data for the mid-range dual-gun charger with payment and remote monitoring.",
     category: "Product Datasheets",
     fileSize: "1.7 MB",
     filePath: "/downloads/datasheets/ac-powerpod-city-7.4kw.pdf",
     icon: "FileText",
+
   },
   {
     id: "ds-city-22",
-    title: "AC PowerPod City 22kW Datasheet",
+    title: "AC Powerpod City 22kW Datasheet",
     description:
       "Technical data for the high-power dual-gun charger for commercial spaces.",
     category: "Product Datasheets",
     fileSize: "1.8 MB",
     filePath: "/downloads/datasheets/ac-powerpod-city-22kw.pdf",
     icon: "FileText",
+
   },
   {
     id: "ds-dc-30",
@@ -125,6 +135,7 @@ export const resources: Resource[] = [
     fileSize: "2.1 MB",
     filePath: "/downloads/datasheets/dc-fast-30kw.pdf",
     icon: "FileText",
+
   },
   {
     id: "ds-dc-60",
@@ -135,6 +146,7 @@ export const resources: Resource[] = [
     fileSize: "2.3 MB",
     filePath: "/downloads/datasheets/dc-fast-60kw.pdf",
     icon: "FileText",
+
   },
   {
     id: "ds-dc-120",
@@ -145,6 +157,7 @@ export const resources: Resource[] = [
     fileSize: "2.5 MB",
     filePath: "/downloads/datasheets/dc-fast-120kw.pdf",
     icon: "FileText",
+
   },
 
   // Installation Guides
@@ -157,6 +170,7 @@ export const resources: Resource[] = [
     fileSize: "3.2 MB",
     filePath: "/downloads/guides/ac-powerpod-installation.pdf",
     icon: "Wrench",
+
   },
   {
     id: "ig-go-commercial",
@@ -167,16 +181,18 @@ export const resources: Resource[] = [
     fileSize: "3.5 MB",
     filePath: "/downloads/guides/powerpod-go-installation.pdf",
     icon: "Wrench",
+
   },
   {
     id: "ig-city-public",
-    title: "PowerPod City Installation Guide",
+    title: "Powerpod City Installation Guide",
     description:
       "Dual-gun charger installation instructions for public and commercial locations.",
     category: "Installation Guides",
     fileSize: "3.8 MB",
     filePath: "/downloads/guides/powerpod-city-installation.pdf",
     icon: "Wrench",
+
   },
   {
     id: "ig-dc-fast",
@@ -187,6 +203,7 @@ export const resources: Resource[] = [
     fileSize: "4.1 MB",
     filePath: "/downloads/guides/dc-fast-installation.pdf",
     icon: "Wrench",
+
   },
 
   // Brochures
@@ -199,6 +216,7 @@ export const resources: Resource[] = [
     fileSize: "5.8 MB",
     filePath: "/downloads/brochures/riod-product-catalogue-2026.pdf",
     icon: "BookOpen",
+
   },
   {
     id: "br-community-suite",
@@ -209,6 +227,7 @@ export const resources: Resource[] = [
     fileSize: "2.8 MB",
     filePath: "/downloads/brochures/community-suite-brochure.pdf",
     icon: "BookOpen",
+
   },
   {
     id: "br-operations-suite",
@@ -219,6 +238,7 @@ export const resources: Resource[] = [
     fileSize: "3.1 MB",
     filePath: "/downloads/brochures/operations-suite-brochure.pdf",
     icon: "BookOpen",
+
   },
 
   // Comparison Charts
@@ -226,11 +246,12 @@ export const resources: Resource[] = [
     id: "cc-ac-chargers",
     title: "AC Charger Comparison Chart",
     description:
-      "Side-by-side comparison of all RIOD AC chargers: Powerpod, Powerpod Go, and PowerPod City across all power levels.",
+      "Side-by-side comparison of all RIOD AC chargers: Powerpod, Powerpod Go, and Powerpod City across all power levels.",
     category: "Comparison Charts",
     fileSize: "1.1 MB",
     filePath: "/downloads/comparisons/ac-charger-comparison.pdf",
     icon: "BarChart3",
+
   },
   {
     id: "cc-dc-chargers",
@@ -241,6 +262,7 @@ export const resources: Resource[] = [
     fileSize: "0.9 MB",
     filePath: "/downloads/comparisons/dc-charger-comparison.pdf",
     icon: "BarChart3",
+
   },
   {
     id: "cc-ac-vs-dc",
@@ -251,6 +273,7 @@ export const resources: Resource[] = [
     fileSize: "1.4 MB",
     filePath: "/downloads/comparisons/ac-vs-dc-guide.pdf",
     icon: "BarChart3",
+
   },
 
   // Whitepapers & Guides
@@ -263,6 +286,7 @@ export const resources: Resource[] = [
     fileSize: "2.1 MB",
     filePath: "/downloads/whitepapers/10-steps-workplace-ev-charging.pdf",
     icon: "BookOpen",
+
   },
   {
     id: "wp-apartment-6-things",
@@ -273,6 +297,7 @@ export const resources: Resource[] = [
     fileSize: "1.8 MB",
     filePath: "/downloads/whitepapers/6-things-apartment-ev-charging.pdf",
     icon: "BookOpen",
+
   },
   {
     id: "wp-future-energy-infrastructure",
@@ -284,6 +309,7 @@ export const resources: Resource[] = [
     filePath: "/downloads/whitepapers/future-of-energy-infrastructure.pdf",
     icon: "BookOpen",
     isLeadMagnet: true,
+
   },
   {
     id: "wp-ocpp-guide",
@@ -294,6 +320,7 @@ export const resources: Resource[] = [
     fileSize: "1.8 MB",
     filePath: "/downloads/whitepapers/ocpp-1.6j-implementation-guide.pdf",
     icon: "BookOpen",
+
   },
   {
     id: "wp-power-master",
@@ -304,5 +331,6 @@ export const resources: Resource[] = [
     fileSize: "3.0 MB",
     filePath: "/downloads/whitepapers/power-master-whitepaper.pdf",
     icon: "BookOpen",
+
   },
 ];

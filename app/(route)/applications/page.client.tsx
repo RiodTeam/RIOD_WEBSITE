@@ -48,21 +48,21 @@ const applications = [
     description:
       "High-throughput charging that increases footfall and keeps visitors engaged longer.",
     href: "/ev-chargers-malls",
-    image: "/office/hero.webp",
+    image: "/applications/malls-1.webp",
   },
   {
     title: "Hospitals",
     description:
       "Safe, reliable infrastructure for staff, patients, visitors, and emergency fleet vehicles.",
     href: "/ev-chargers-hospitals",
-    image: "/institution/hero.webp",
+    image: "/applications/hospitals-1.webp",
   },
   {
     title: "Parking Complexes",
     description:
       "High-density deployments with smart load management for large-scale parking facilities.",
     href: "/ev-chargers-parking",
-    image: "/home2/hero.webp",
+    image: "/applications/parking-1.webp",
   },
 ];
 

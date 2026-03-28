@@ -9,7 +9,7 @@ const offerings = [
     number: "01",
     title: "EV Charging\nStations",
     description:
-      "AC PowerPods, DC fast chargers, and high-power charging stations, designed and manufactured in-house for homes, businesses, and public infrastructure.",
+      "AC Powerpods, DC fast chargers, and high-power charging stations, designed and manufactured in-house for homes, businesses, and public infrastructure.",
     cta: "Explore Chargers",
     href: "/products/ev-chargers",
     image: "/home/ev-charger-tile.webp",

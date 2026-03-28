@@ -24,7 +24,7 @@ export default function WarrantyContact({ shopUrl }: WarrantyContactProps) {
                   2-Year Standard Warranty
                 </h3>
                 <p className="para-text2 text-[#9a99a2] leading-relaxed mb-3">
-                  Every PowerPod ships with a standard 2-year manufacturer
+                  Every Powerpod ships with a standard 2-year manufacturer
                   warranty covering defects in materials and workmanship. Backed
                   directly by RIOD Logic engineering.
                 </p>
@@ -52,7 +52,7 @@ export default function WarrantyContact({ shopUrl }: WarrantyContactProps) {
               </h3>
               <p className="para-text2 text-[#9a99a2] leading-relaxed mb-6">
                 Direct technical support from the same engineering team that
-                designs and builds the PowerPod. No call centres. No outsourced
+                designs and builds the Powerpod. No call centres. No outsourced
                 support.
               </p>
 

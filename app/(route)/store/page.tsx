@@ -6,9 +6,9 @@ import ProductCard from "@/app/components/store/ProductCard";
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: "Buy EV Chargers Online India | PowerPod by RIOD",
+  title: "Buy EV Chargers Online India | Powerpod by RIOD",
   description:
-    "Buy PowerPod AC EV chargers for home and commercial use. 3.3kW to 22kW. Type 2, OCPP, RFID. Shipping across India.",
+    "Buy Powerpod AC EV chargers for home and commercial use. 3.3kW to 22kW. Type 2, OCPP, RFID. Shipping across India.",
 };
 
 export default async function ShopPage() {
@@ -43,7 +43,7 @@ export default async function ShopPage() {
             Shop
           </span>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium text-white font-inter leading-tight mb-4">
-            PowerPod EV Chargers
+            Powerpod EV Chargers
           </h1>
           <p className="text-[#9a99a2] text-lg max-w-[560px] font-inter">
             Made in India. Designed for Indian EVs. From home wallboxes to

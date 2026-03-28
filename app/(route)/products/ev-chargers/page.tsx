@@ -32,7 +32,7 @@ const faqSchema = {
       name: "Which charger is right for my home?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "For most Indian homes with a single-phase power connection, the RIOD AC PowerPod Lite 3.3kW or 7.4kW is ideal. The 3.3kW charges overnight, while the 7.4kW cuts that time in half. If your home has a three-phase connection, the 22kW PowerPod Lite provides the fastest AC charging.",
+        text: "For most Indian homes with a single-phase power connection, the RIOD AC Powerpod Lite 3.3kW or 7.4kW is ideal. The 3.3kW charges overnight, while the 7.4kW cuts that time in half. If your home has a three-phase connection, the 22kW Powerpod Lite provides the fastest AC charging.",
       },
     },
     {

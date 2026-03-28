@@ -72,7 +72,7 @@ export default function ProductDetail({ product }: { product: ShopifyProduct }) 
       {/* ── Info ── */}
       <div>
         <span className="text-xs font-medium tracking-[0.2em] uppercase text-[#9a99a2] font-inter mb-3 block">
-          RIOD PowerPod
+          RIOD Powerpod
         </span>
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-medium text-[#1b1b1b] font-inter leading-tight mb-4">
           {product.title}

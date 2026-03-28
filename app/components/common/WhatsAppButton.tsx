@@ -1,6 +1,6 @@
 export default function WhatsAppButton() {
   const message = encodeURIComponent(
-    "Hi, I'm interested in PowerPod EV chargers. Can you help?"
+    "Hi, I'm interested in Powerpod EV chargers. Can you help?"
   );
 
   return (

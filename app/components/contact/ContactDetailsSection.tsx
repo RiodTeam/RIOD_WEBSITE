@@ -67,7 +67,7 @@ export default function ContactDetailsSection() {
               <h4 className="regular-heading font-normal! flex items-center gap-2 mb-2">
                 Email
               </h4>
-              <p className="normal-text text-[#9A99A2]">hello@riod.in</p>
+              <a href="mailto:hello@riod.in" className="normal-text text-[#9A99A2] hover:text-black transition-colors">hello@riod.in</a>
             </div>
           </div>
         </div>

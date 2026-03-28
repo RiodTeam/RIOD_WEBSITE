@@ -281,7 +281,7 @@ export default function PrivacyPolicyPage() {
               <p>
                 <strong>RnD Square Pvt. Ltd.</strong>
               </p>
-              <p>Hyderabad, Telangana, India</p>
+              <p>Infopark Koratty, Kerala 680308, India</p>
               <p>
                 Email:{" "}
                 <a

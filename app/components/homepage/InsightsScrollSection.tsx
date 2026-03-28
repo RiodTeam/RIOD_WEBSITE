@@ -38,7 +38,7 @@ export default function InsightsScrollSection({ insights }: { insights: InsightT
           <Link
             key={`${insight.slug}-${index}`}
             href={`/insights/${insight.slug}`}
-            className="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[380px] group"
+            className="flex-shrink-0 w-[240px] sm:w-[320px] md:w-[380px] group"
           >
             <div className="bg-[#141414] border border-[#222] rounded-xl p-6 md:p-8 h-full flex flex-col hover:border-[#cdf80a]/30 transition-colors">
               <div className="flex items-center justify-between mb-6">

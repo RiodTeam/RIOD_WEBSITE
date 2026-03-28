@@ -266,7 +266,7 @@ export default function TermsAndConditionsPage() {
               These Terms shall be governed by and construed in accordance with
               the laws of India. Any disputes arising from these Terms or your
               use of the Services shall be subject to the exclusive
-              jurisdiction of the courts in Hyderabad, Telangana, India.
+              jurisdiction of the courts in Infopark Koratty, Kerala 680308, India.
             </p>
             <p className="mt-3">
               Before initiating legal proceedings, both parties agree to
@@ -311,7 +311,7 @@ export default function TermsAndConditionsPage() {
               <p>
                 <strong>RnD Square Pvt. Ltd.</strong>
               </p>
-              <p>Hyderabad, Telangana, India</p>
+              <p>Infopark Koratty, Kerala 680308, India</p>
               <p>
                 Email:{" "}
                 <a

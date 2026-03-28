@@ -102,7 +102,7 @@ const edge = (power: string): ChargerRec => ({
 });
 
 const city = (power: string): ChargerRec => ({
-  name: `RIOD AC PowerPod City ${power}`,
+  name: `RIOD AC Powerpod City ${power}`,
   power,
   image: "/products/powerpod.png",
   shopUrl: cityStoreUrls[power] || "/store",
@@ -203,7 +203,7 @@ export function getRecommendation(input: WizardInput): Recommendation {
       primary = city("22 kW");
       secondary = edge("7.4 kW");
       reasoning =
-        `For a ${location} with ${userRange} expected vehicles, the PowerPod City dual-gun charger is the best fit. It can charge two vehicles simultaneously from a single unit, effectively doubling your charging capacity. The dual-gun design is more space-efficient than installing two separate chargers. For additional parking spots, the Powerpod Go 7.4kW offers a cost-effective way to expand coverage. In India, power availability is a key factor, and AC chargers work well for locations where vehicles park for extended hours.`;
+        `For a ${location} with ${userRange} expected vehicles, the Powerpod City dual-gun charger is the best fit. It can charge two vehicles simultaneously from a single unit, effectively doubling your charging capacity. The dual-gun design is more space-efficient than installing two separate chargers. For additional parking spots, the Powerpod Go 7.4kW offers a cost-effective way to expand coverage. In India, power availability is a key factor, and AC chargers work well for locations where vehicles park for extended hours.`;
     } else if (parkingDuration === "overnight" || parkingDuration === "4-8h") {
       primary = edge("7.4 kW");
       reasoning =
@@ -233,7 +233,7 @@ export function getRecommendation(input: WizardInput): Recommendation {
       primary = city("22 kW");
       secondary = dcFast("30 kW");
       reasoning =
-        `For a ${location} expecting high guest EV usage, we recommend the PowerPod City 22kW as your primary solution. Its dual-gun design serves two guests from one charger, which is important for maximizing limited parking infrastructure. Adding a 30kW DC fast charger provides a quick top-up option for guests who need a rapid charge during a short visit. This combination covers both overnight stays and quick stops.`;
+        `For a ${location} expecting high guest EV usage, we recommend the Powerpod City 22kW as your primary solution. Its dual-gun design serves two guests from one charger, which is important for maximizing limited parking infrastructure. Adding a 30kW DC fast charger provides a quick top-up option for guests who need a rapid charge during a short visit. This combination covers both overnight stays and quick stops.`;
     } else {
       primary = edge("7.4 kW");
       reasoning =
@@ -264,7 +264,7 @@ export function getRecommendation(input: WizardInput): Recommendation {
       } else {
         primary = city("22 kW");
         reasoning =
-          `For your ${location === "mall" ? "mall or theatre" : "hospital"} with moderate parking times, the PowerPod City 22kW dual-gun charger offers the best balance of speed and cost. It provides a usable charge in about 2 hours and serves two vehicles simultaneously. Its RFID and payment support lets you monetize the charging service or offer it as a customer perk.`;
+          `For your ${location === "mall" ? "mall or theatre" : "hospital"} with moderate parking times, the Powerpod City 22kW dual-gun charger offers the best balance of speed and cost. It provides a usable charge in about 2 hours and serves two vehicles simultaneously. Its RFID and payment support lets you monetize the charging service or offer it as a customer perk.`;
       }
     } else {
       primary = edge("7.4 kW");
@@ -292,11 +292,11 @@ export function getRecommendation(input: WizardInput): Recommendation {
       primary = city("22 kW");
       secondary = dcFast("30 kW");
       reasoning =
-        "For a parking complex with high expected usage, the PowerPod City 22kW dual-gun charger maximizes charger-to-vehicle ratio. Each unit serves two vehicles, so you get double the capacity per installation point. Adding a DC 30kW charger gives visitors a quick-charge option for short stays. RIOD's Decentralized Load Balancer ensures all chargers share available power without exceeding your site's electrical capacity.";
+        "For a parking complex with high expected usage, the Powerpod City 22kW dual-gun charger maximizes charger-to-vehicle ratio. Each unit serves two vehicles, so you get double the capacity per installation point. Adding a DC 30kW charger gives visitors a quick-charge option for short stays. RIOD's Decentralized Load Balancer ensures all chargers share available power without exceeding your site's electrical capacity.";
     } else {
       primary = city("7.4 kW");
       reasoning =
-        "For your parking complex, the PowerPod City 7.4kW dual-gun charger is a smart choice. It serves two vehicles from one unit, keeping installation costs lower while doubling coverage. The 7.4kW power level works well for parking durations of 4+ hours and runs on a standard single-phase 32A supply, making installation straightforward.";
+        "For your parking complex, the Powerpod City 7.4kW dual-gun charger is a smart choice. It serves two vehicles from one unit, keeping installation costs lower while doubling coverage. The 7.4kW power level works well for parking durations of 4+ hours and runs on a standard single-phase 32A supply, making installation straightforward.";
     }
 
     return {

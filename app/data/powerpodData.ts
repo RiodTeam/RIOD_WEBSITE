@@ -69,11 +69,11 @@ const vehiclesSupported = [
 export const productFamilies: ProductFamily[] = [
   {
     slug: "powerpod",
-    name: "RIOD AC PowerPod Lite",
+    name: "RIOD AC Powerpod Lite",
     tagline: "Engineered to charge where you park.",
     heroImage: "/products/powerpod.png",
     intro:
-      "Every PowerPod is designed around one simple idea: your vehicle charges while it is parked, not while you stand around waiting. Whether it is a home garage, a villa, or a private parking bay, the charging infrastructure should fit the location, not the other way around. RIOD builds every PowerPod from the ground up. The hardware, the firmware, the connectivity stack, the energy metering, and the cloud platform. One engineering team. No outsourced modules. No white-labelled boards. This is what it means when we say Engineered, Not Assembled.",
+      "Every Powerpod is designed around one simple idea: your vehicle charges while it is parked, not while you stand around waiting. Whether it is a home garage, a villa, or a private parking bay, the charging infrastructure should fit the location, not the other way around. RIOD builds every Powerpod from the ground up. The hardware, the firmware, the connectivity stack, the energy metering, and the cloud platform. One engineering team. No outsourced modules. No white-labelled boards. This is what it means when we say Engineered, Not Assembled.",
     features: [
       {
         title: "Full-Stack Engineering",
@@ -103,7 +103,7 @@ export const productFamilies: ProductFamily[] = [
       {
         title: "2-Year Standard Warranty",
         description:
-          "Every PowerPod ships with a 2-year manufacturer warranty. Direct support from RIOD engineering, not a third-party call centre.",
+          "Every Powerpod ships with a 2-year manufacturer warranty. Direct support from RIOD engineering, not a third-party call centre.",
       },
     ],
     useCases: [
@@ -130,7 +130,7 @@ export const productFamilies: ProductFamily[] = [
     ],
     variants: [
       {
-        name: "PowerPod Lite 22kW/11kW",
+        name: "Powerpod Lite 22kW/11kW",
         power: "22 kW",
         supply: "Three Phase 415V",
         current: "32A/phase",
@@ -147,7 +147,7 @@ export const productFamilies: ProductFamily[] = [
         storeUrl: "/store/powerpod-home-22kw-ev-charger",
       },
       {
-        name: "PowerPod Lite 7.4kW",
+        name: "Powerpod Lite 7.4kW",
         power: "7.4 kW",
         supply: "Single Phase 230V",
         current: "32A",
@@ -163,7 +163,7 @@ export const productFamilies: ProductFamily[] = [
         storeUrl: "/store/powerpod-home-7-4-kw",
       },
       {
-        name: "PowerPod Lite 3.3kW",
+        name: "Powerpod Lite 3.3kW",
         power: "3.3 kW",
         supply: "Single Phase 230V",
         current: "16A",
@@ -245,7 +245,7 @@ export const productFamilies: ProductFamily[] = [
     ],
     variants: [
       {
-        name: "PowerPod Go 22kW/11kW",
+        name: "Powerpod Go 22kW/11kW",
         power: "22 kW",
         supply: "Three Phase 415V",
         current: "32A/phase",
@@ -258,11 +258,11 @@ export const productFamilies: ProductFamily[] = [
         keyFeature:
           "22 kW fast AC charging with revenue generation capability.",
         description:
-          "Maximum AC charging speed in a wall-mount commercial package. Full OCPP support, RFID + app authentication, and integrated payment. The fastest wall-mounted PowerPod Go for commercial deployments.",
+          "Maximum AC charging speed in a wall-mount commercial package. Full OCPP support, RFID + app authentication, and integrated payment. The fastest wall-mounted Powerpod Go for commercial deployments.",
         storeUrl: "/store/powerpod-go-22kw-fast-ev-charger",
       },
       {
-        name: "PowerPod Go 7.4kW",
+        name: "Powerpod Go 7.4kW",
         power: "7.4 kW",
         supply: "Single Phase 230V",
         current: "32A",
@@ -279,7 +279,7 @@ export const productFamilies: ProductFamily[] = [
         storeUrl: "/store/powerpod-go-7-4kw-fast-ev-charger",
       },
       {
-        name: "PowerPod Go 3.3kW",
+        name: "Powerpod Go 3.3kW",
         power: "3.3 kW",
         supply: "Single Phase 230V",
         current: "16A",
@@ -309,11 +309,11 @@ export const productFamilies: ProductFamily[] = [
   },
   {
     slug: "powerpod-city",
-    name: "RIOD AC PowerPod City",
+    name: "RIOD AC Powerpod City",
     tagline: "Dual-gun public charging. Serve two vehicles at once.",
     heroImage: "/products/powerpod-city.png",
     intro:
-      "PowerPod City is designed for public deployment where throughput matters. Every City model features two independent connectors, each with its own RFID reader, energy meter, and authentication session. Two vehicles charge simultaneously from a single floor-standing unit. High-visibility form factor for open parking areas, public stations, highway rest stops, and fuel station forecourts. Built to handle the highest demand locations in the RIOD charging ecosystem.",
+      "Powerpod City is designed for public deployment where throughput matters. Every City model features two independent connectors, each with its own RFID reader, energy meter, and authentication session. Two vehicles charge simultaneously from a single floor-standing unit. High-visibility form factor for open parking areas, public stations, highway rest stops, and fuel station forecourts. Built to handle the highest demand locations in the RIOD charging ecosystem.",
     features: [
       {
         title: "Dual Independent Connectors",
@@ -370,7 +370,7 @@ export const productFamilies: ProductFamily[] = [
     ],
     variants: [
       {
-        name: "PowerPod City 22kW/11kW",
+        name: "Powerpod City 22kW/11kW",
         power: "22 kW x2",
         supply: "Three Phase 415V",
         current: "32A/phase x2",
@@ -383,11 +383,11 @@ export const productFamilies: ProductFamily[] = [
         keyFeature:
           "44 kW total capacity across two connectors. Maximum vehicles served per hour.",
         description:
-          "The flagship PowerPod City. Two independent 22 kW connectors in a floor-standing enclosure. Each connector delivers full 22 kW three-phase charging. Maximum throughput for high-demand public charging locations.",
+          "The flagship Powerpod City. Two independent 22 kW connectors in a floor-standing enclosure. Each connector delivers full 22 kW three-phase charging. Maximum throughput for high-demand public charging locations.",
         storeUrl: "/store/powerpod-city-22kw-dual-port-fast-ev-charger",
       },
       {
-        name: "PowerPod City 7.4kW",
+        name: "Powerpod City 7.4kW",
         power: "7.4 kW x2",
         supply: "Single Phase 230V",
         current: "32A x2",
@@ -402,7 +402,7 @@ export const productFamilies: ProductFamily[] = [
         storeUrl: "/store/powerpod-city-hybrid-ev-charging-station",
       },
       {
-        name: "PowerPod City 3.3kW",
+        name: "Powerpod City 3.3kW",
         power: "3.3 kW x2",
         supply: "Single Phase 230V",
         current: "16A x2",
