@@ -1,0 +1,133 @@
+# RIOD — EV Charging & Energy Technology
+
+> RIOD designs, develops, and manufactures EV charging infrastructure and energy management technology. Every layer — hardware, firmware, cloud platforms, and energy systems — is built in-house.
+
+## Company
+
+- **Brand**: RIOD
+- **Parent Company**: RnD Square Pvt. Ltd.
+- **Founded**: 2019
+- **Headquarters**: Infopark Koratty, Kerala 680308, India
+- **Website**: https://riod.energy
+- **Store**: https://shop.riod.in
+- **Contact**: hello@riod.in
+- **Industry**: EV Charging Infrastructure, Energy Management, IoT
+
+## Products
+
+### AC EV Chargers
+
+RIOD manufactures three families of AC EV chargers, all designed and assembled in India:
+
+#### Powerpod Lite (Home / Light Commercial)
+- **3.3 kW** — Single-phase, RFID, plug-and-play wall charger
+- **7.4 kW** — Single-phase, RFID, Type 2 connector
+- **22 kW / 11 kW** — Three-phase, RFID, fast AC charger
+- Features: RFID authentication, plug-and-play operation, built-in protections (overcurrent, overvoltage, earth leakage, surge, short circuit)
+- Use case: Homes, small offices, overnight charging
+
+#### Powerpod Go (Commercial / Semi-Public)
+- **3.3 kW** — OCPP 1.6J, RFID, 4G, WiFi
+- **7.4 kW** — OCPP 1.6J, RFID, 4G, WiFi
+- **22 kW / 11 kW** — OCPP 1.6J, RFID, 4G, WiFi
+- Features: Full OCPP 1.6J compliance, remote management, 4G cellular + WiFi connectivity, RFID authentication
+- Use case: Offices, hotels, fleet depots, commercial parking
+
+#### Powerpod City (Public / High-Throughput)
+- **3.3 kW** — Dual-gun, OCPP 1.6J, RFID, 4G
+- **7.4 kW** — Dual-gun, OCPP 1.6J, RFID, 4G
+- **22 kW / 11 kW** — Dual-gun, OCPP 1.6J, RFID, 4G
+- Features: Dual-gun for simultaneous charging, public-grade enclosure, OCPP 1.6J, RFID + app authentication
+- Use case: Malls, public parking, highways, municipal charging stations
+
+### DC Fast Chargers
+- **30 kW, 60 kW, 120 kW** — Available for enquiry
+- CCS2 connector, high-power DC charging for commercial and public deployments
+
+### Energy Products
+
+#### Power Master
+- Centralized energy management and load balancing platform
+- Real-time monitoring of energy consumption across sites
+- Solar integration, demand response, peak shaving
+
+#### Energy Management
+- Multi-point energy monitoring for buildings, campuses, and hotel chains
+- Equipment-level consumption tracking
+- Anomaly detection and consumption forecasting
+
+#### Infrastructure Monitoring
+- Remote monitoring of charging infrastructure health
+- Predictive maintenance alerts
+- Uptime optimization for charge point operators
+
+## Technology
+
+RIOD builds 14 proprietary technology layers for EV charging:
+
+1. **OCPP Implementation** — Full OCPP 1.6J protocol stack for charger-to-CMS communication
+2. **Charger Management Suite (CMS)** — Cloud platform for managing charger networks
+3. **Decentralized Load Balancing** — Dynamic power distribution across multiple chargers without central controller
+4. **Self-Resettable RCD** — Automatic fault recovery for unmanned charging sites
+5. **Payment & Billing Terminals** — Integrated payment processing for public charging
+6. **Fleet Management** — EV fleet charging optimization and scheduling
+7. **EVSE Hardware Core** — In-house PCB design, power electronics, and enclosure engineering
+8. **Community & Residential Charging** — Multi-tenant charging management for apartments and gated communities
+9. **Intelligent Vehicle Queuing** — Queue management for high-demand charging locations
+10. **Charger Intelligence** — Edge computing on chargers for real-time decision making
+11. **Smart Parking Integration** — EV charging integrated with parking management systems
+12. **EVSE Operations Suite** — End-to-end operations platform (Observe, Operate, Operate Plus tiers)
+13. **Battery Intelligence** — Battery health monitoring and optimized charging profiles
+14. **Predictive Analytics** — AI-driven demand forecasting and infrastructure planning
+
+## Applications
+
+RIOD deploys EV charging across these verticals:
+- Hotels & Resorts
+- Offices & Workplaces
+- Malls & Theatres
+- Hospitals & Healthcare
+- Parking Complexes
+- Residential Apartments & Gated Communities
+- Educational Institutions
+- Highway Charging Stations
+
+## Differentiators
+
+- **Full-stack OEM**: Hardware, firmware, cloud software, and energy systems built in-house — not assembled from third-party modules
+- **Made in India**: Designed and manufactured at Infopark Koratty, Kerala
+- **Protocol native**: OCPP 1.6J implemented from scratch, not adapted from libraries
+- **Decentralized architecture**: Load balancing works without central controller — each charger communicates peer-to-peer
+- **Self-resettable protection**: RCDs auto-recover from faults without manual intervention — critical for unmanned sites
+- **CMS-agnostic**: Chargers integrate with any OCPP-compliant CMS (TelioEV, ElectricPe, Numocity, KazamEV, Wavefuel, EVCFinder, Tata Power, PlugEasy)
+
+## Key Pages
+
+- Homepage: https://riod.energy
+- EV Chargers: https://riod.energy/products/ev-chargers
+- Powerpod Lite: https://riod.energy/products/ev-chargers/powerpod
+- Powerpod Go: https://riod.energy/products/ev-chargers/powerpod-go
+- Powerpod City: https://riod.energy/products/ev-chargers/powerpod-city
+- Energy Products: https://riod.energy/products/energy
+- Technology: https://riod.energy/technology
+- Store: https://riod.energy/store
+- Insights / Blog: https://riod.energy/insights
+- Case Studies: https://riod.energy/case-studies
+- About: https://riod.energy/about
+- Contact: https://riod.energy/contact
+- EV Charger Selection Guide: https://riod.energy/ev-charger-selection-guide
+- Future of EV Energy (Strategic Briefing): https://riod.energy/future-of-ev-energy
+
+## Compliance & Standards
+
+- OCPP 1.6J certified
+- IEC 61851 compliant
+- IS 17017 (Indian Standard for EV charging)
+- IP54 / IP65 enclosures (model dependent)
+- Type 2 (IEC 62196) connectors for AC
+- CCS2 connectors for DC
+
+## Social & Press
+
+- LinkedIn: https://www.linkedin.com/company/rilotenergy
+- GitHub: https://github.com/RiodTeam
