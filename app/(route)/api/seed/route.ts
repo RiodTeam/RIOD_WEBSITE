@@ -3,6 +3,8 @@ import { getPayload } from "payload";
 import configPromise from "@payload-config";
 import { insightsData } from "@/app/components/data/insightsData";
 import { caseStudiesData } from "@/app/components/data/caseStudiesData";
+import fs from "fs";
+import path from "path";
 
 // Helper: convert plain text strings to Lexical JSON
 function textToLexical(paragraphs: string[]) {
@@ -124,6 +126,44 @@ function parseDate(dateStr: string): string {
   return new Date().toISOString();
 }
 
+// Upload a local file from public/ to a Payload media collection
+async function uploadLocalImage(
+  payload: any,
+  collection: string,
+  publicPath: string,
+  altText: string
+): Promise<string | null> {
+  try {
+    const fullPath = path.join(process.cwd(), "public", publicPath);
+    if (!fs.existsSync(fullPath)) return null;
+
+    const fileBuffer = fs.readFileSync(fullPath);
+    const ext = path.extname(publicPath).replace(".", "");
+    const mimeMap: Record<string, string> = {
+      webp: "image/webp",
+      jpg: "image/jpeg",
+      jpeg: "image/jpeg",
+      png: "image/png",
+    };
+
+    const media = await payload.create({
+      collection,
+      data: { alt: altText },
+      file: {
+        data: fileBuffer,
+        name: path.basename(publicPath),
+        mimetype: mimeMap[ext] || "image/webp",
+        size: fileBuffer.length,
+      },
+    });
+
+    return media.id as string;
+  } catch (err: any) {
+    console.error(`Failed to upload image ${publicPath}:`, err?.message);
+    return null;
+  }
+}
+
 export async function POST(req: NextRequest) {
   // Protect with a secret
   const { searchParams } = new URL(req.url);
@@ -133,7 +173,10 @@ export async function POST(req: NextRequest) {
   }
 
   const payload = await getPayload({ config: configPromise });
-  const results = { insights: { created: 0, skipped: 0 }, caseStudies: { created: 0, skipped: 0 } };
+  const results = {
+    insights: { created: 0, skipped: 0, imagesUpdated: 0 },
+    caseStudies: { created: 0, skipped: 0, imagesUpdated: 0 },
+  };
 
   // ─── Seed Categories ─────────────────────────────────────────────
   const uniqueTags = [...new Set(insightsData.map((i) => i.tag))];
@@ -166,11 +209,40 @@ export async function POST(req: NextRequest) {
     });
 
     if (existing.docs.length > 0) {
+      // Post exists — check if it needs a heroImage
+      const existingPost = existing.docs[0] as any;
+      if (!existingPost.heroImage && insight.image) {
+        const mediaId = await uploadLocalImage(
+          payload,
+          "media",
+          insight.image,
+          insight.title
+        );
+        if (mediaId) {
+          await payload.update({
+            collection: "posts",
+            id: existingPost.id,
+            data: { heroImage: mediaId } as any,
+          });
+          results.insights.imagesUpdated++;
+        }
+      }
       results.insights.skipped++;
       continue;
     }
 
     const content = insightContentToLexical(insight.intro, insight.sections);
+
+    // Upload hero image
+    let heroImageId: string | null = null;
+    if (insight.image) {
+      heroImageId = await uploadLocalImage(
+        payload,
+        "media",
+        insight.image,
+        insight.title
+      );
+    }
 
     try {
       await payload.create({
@@ -180,6 +252,7 @@ export async function POST(req: NextRequest) {
           slug: insight.slug,
           description: insight.intro[0] || insight.title,
           content,
+          heroImage: heroImageId || undefined,
           categories: categoryMap[insight.tag] || undefined,
           publishedAt: parseDate(insight.date),
           _status: "published",
@@ -200,6 +273,26 @@ export async function POST(req: NextRequest) {
     });
 
     if (existing.docs.length > 0) {
+      // Case study exists — check if it needs images
+      const existingCS = existing.docs[0] as any;
+      if (!existingCS.displayImage) {
+        const displayPath = `/case-studies/${cs.slug}.webp`;
+        const bannerPath = `/case-studies/${cs.slug}-2.webp`;
+        const displayId = await uploadLocalImage(payload, "caseStudyMedia", displayPath, cs.title);
+        const bannerId = await uploadLocalImage(payload, "caseStudyMedia", bannerPath, `${cs.title} banner`);
+
+        if (displayId || bannerId) {
+          await payload.update({
+            collection: "case-studies",
+            id: existingCS.id,
+            data: {
+              ...(displayId ? { displayImage: displayId } : {}),
+              ...(bannerId ? { bannerImage: bannerId } : {}),
+            } as any,
+          });
+          results.caseStudies.imagesUpdated++;
+        }
+      }
       results.caseStudies.skipped++;
       continue;
     }
@@ -214,6 +307,12 @@ export async function POST(req: NextRequest) {
       count: r.value,
       text: r.metric,
     }));
+
+    // Upload case study images
+    const displayPath = `/case-studies/${cs.slug}.webp`;
+    const bannerPath = `/case-studies/${cs.slug}-2.webp`;
+    const displayId = await uploadLocalImage(payload, "caseStudyMedia", displayPath, cs.title);
+    const bannerId = await uploadLocalImage(payload, "caseStudyMedia", bannerPath, `${cs.title} banner`);
 
     try {
       await payload.create({
@@ -231,6 +330,8 @@ export async function POST(req: NextRequest) {
             paraThree,
           },
           counterData,
+          displayImage: displayId || undefined,
+          bannerImage: bannerId || undefined,
           industry: cs.industry.toLowerCase().includes("energy")
             ? "energy"
             : cs.industry.toLowerCase().includes("auto")

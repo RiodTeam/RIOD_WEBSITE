@@ -80,13 +80,19 @@ function extractSectionsFromLexical(lexicalJson: any): {
 function payloadPostToInsight(post: any): InsightType {
   const { intro, sections } = extractSectionsFromLexical(post.content);
 
-  // Resolve hero image URL
+  // Resolve hero image URL — fall back to static data image by slug
   let image = "/insights/placeholder.webp";
   if (post.heroImage) {
     if (typeof post.heroImage === "string") {
       image = post.heroImage;
     } else if (post.heroImage.url) {
       image = post.heroImage.url;
+    }
+  } else {
+    // No hero image in Payload — check if static data has one for this slug
+    const staticMatch = insightsData.find((i) => i.slug === post.slug);
+    if (staticMatch?.image) {
+      image = staticMatch.image;
     }
   }
 
