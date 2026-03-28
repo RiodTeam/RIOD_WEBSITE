@@ -27,18 +27,18 @@ RIOD manufactures three families of AC EV chargers, all designed and assembled i
 - Use case: Homes, small offices, overnight charging
 
 #### Powerpod Go (Commercial / Semi-Public)
-- **3.3 kW** — OCPP 1.6J, RFID, 4G, WiFi
-- **7.4 kW** — OCPP 1.6J, RFID, 4G, WiFi
-- **22 kW / 11 kW** — OCPP 1.6J, RFID, 4G, WiFi
-- Features: Full OCPP 1.6J compliance, remote management, 4G cellular + WiFi connectivity, RFID authentication
-- Use case: Offices, hotels, fleet depots, commercial parking
+- **3.3 kW (RD013)** — OCPP 1.6J, RFID, WiFi (standard), 4G LTE (optional)
+- **7.4 kW (RD014)** — OCPP 1.6J, RFID, WiFi (standard), 4G LTE (optional)
+- **22 kW (RD015)** — OCPP 1.6J, RFID, WiFi (standard), 4G LTE (optional)
+- Features: Full OCPP 1.6J compliance, remote management, WiFi standard, 4G LTE optional, RFID/Plug-and-Play authentication
+- Use case: Commercial spaces, building associations, restaurants, parking lots
 
-#### Powerpod City (Public / High-Throughput)
-- **3.3 kW** — Dual-gun, OCPP 1.6J, RFID, 4G
-- **7.4 kW** — Dual-gun, OCPP 1.6J, RFID, 4G
-- **22 kW / 11 kW** — Dual-gun, OCPP 1.6J, RFID, 4G
-- Features: Dual-gun for simultaneous charging, public-grade enclosure, OCPP 1.6J, RFID + app authentication
-- Use case: Malls, public parking, highways, municipal charging stations
+#### Powerpod City (Public / High-Throughput / Dual-Gun)
+- **3.3 kW Dual (RD016)** — Dual 3.3kW, OCPP 1.6J, RFID, WiFi (standard), 4G LTE (optional)
+- **7.4 kW Dual (RD017)** — Dual 7.4kW, OCPP 1.6J, RFID, WiFi (standard), 4G LTE (optional)
+- **22 kW Dual (RD018)** — Dual 22kW, OCPP 1.6J, RFID, WiFi (standard), 4G LTE (optional)
+- Features: Dual-gun for simultaneous charging, floor-standing/pedestal mount, OCPP 1.6J, RFID/Plug-and-Play authentication
+- Use case: Commercial spaces, building associations, restaurants, parking lots, public stations
 
 ### DC Fast Chargers
 - **30 kW, 60 kW, 120 kW** — Available for enquiry

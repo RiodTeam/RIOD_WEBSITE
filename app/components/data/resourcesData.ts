@@ -26,138 +26,98 @@ export const resourceCategories: ResourceCategory[] = [
 ];
 
 export const resources: Resource[] = [
-  // Product Datasheets
+  // Product Datasheets — Powerpod Lite
   {
-    id: "ds-ac-powerpod-3.4",
-    title: "AC Powerpod 3.4kW Datasheet",
+    id: "ds-lite-3.3",
+    title: "Powerpod Lite 3.3kW (RD010) Datasheet",
     description:
-      "Complete technical specifications, dimensions, and performance data for the RIOD AC Powerpod 3.4kW home charger.",
+      "Complete technical specifications for the RIOD Powerpod Lite 3.3kW home charger. RFID, plug-and-play, IP65.",
     category: "Product Datasheets",
-    fileSize: "1.2 MB",
-    filePath: "/downloads/datasheets/ac-powerpod-3.4kw.pdf",
+    fileSize: "368 KB",
+    filePath: "/downloads/datasheets/RIOD_Powerpod_Lite_3_3kW.docx.pdf",
     icon: "FileText",
-
   },
   {
-    id: "ds-ac-powerpod-7.4",
-    title: "AC Powerpod 7.4kW Datasheet",
+    id: "ds-lite-7.4",
+    title: "Powerpod Lite 7.4kW (RD011) Datasheet",
     description:
-      "Technical specifications for the RIOD AC Powerpod 7.4kW fast single-phase home charger.",
+      "Technical specifications for the RIOD Powerpod Lite 7.4kW single-phase Type 2 home charger.",
     category: "Product Datasheets",
-    fileSize: "1.3 MB",
-    filePath: "/downloads/datasheets/ac-powerpod-7.4kw.pdf",
+    fileSize: "372 KB",
+    filePath: "/downloads/datasheets/RIOD_Powerpod_Lite_7_4kW.docx.pdf",
     icon: "FileText",
-
   },
   {
-    id: "ds-ac-powerpod-22",
-    title: "AC Powerpod 22kW Datasheet",
+    id: "ds-lite-22",
+    title: "Powerpod Lite 22kW (RD012) Datasheet",
     description:
-      "Technical specifications for the three-phase RIOD AC Powerpod 22kW charger.",
+      "Technical specifications for the three-phase RIOD Powerpod Lite 22kW fast AC home charger.",
     category: "Product Datasheets",
-    fileSize: "1.4 MB",
-    filePath: "/downloads/datasheets/ac-powerpod-22kw.pdf",
+    fileSize: "371 KB",
+    filePath: "/downloads/datasheets/RIOD_Powerpod_Lite_22kW.docx.pdf",
     icon: "FileText",
-
   },
+  // Product Datasheets — Powerpod Go
   {
-    id: "ds-go-3.4",
-    title: "AC Powerpod Go 3.4kW Datasheet",
+    id: "ds-go-3.3",
+    title: "Powerpod Go 3.3kW (RD013) Datasheet",
     description:
-      "Specifications for the compact shared charger with RFID access and OCPP cloud management.",
+      "Specifications for the commercial OCPP 1.6J charger with WiFi and optional 4G LTE.",
     category: "Product Datasheets",
-    fileSize: "1.5 MB",
-    filePath: "/downloads/datasheets/ac-powerpod-go-3.4kw.pdf",
+    fileSize: "370 KB",
+    filePath: "/downloads/datasheets/RIOD_Powerpod_Go_3_3kW.docx.pdf",
     icon: "FileText",
-
   },
   {
     id: "ds-go-7.4",
-    title: "AC Powerpod Go 7.4kW Datasheet",
+    title: "Powerpod Go 7.4kW (RD014) Datasheet",
     description:
-      "Specifications for the mid-range community charger with payment terminal support.",
+      "Specifications for the commercial AC fast charger with Type 2 connector and OCPP 1.6J.",
     category: "Product Datasheets",
-    fileSize: "1.5 MB",
-    filePath: "/downloads/datasheets/ac-powerpod-go-7.4kw.pdf",
+    fileSize: "375 KB",
+    filePath: "/downloads/datasheets/RIOD_Powerpod_Go_7_4kW.docx.pdf",
     icon: "FileText",
-
   },
   {
     id: "ds-go-22",
-    title: "AC Powerpod Go 22kW Datasheet",
+    title: "Powerpod Go 22kW (RD015) Datasheet",
     description:
-      "Specifications for the high-power shared AC charger for commercial spaces.",
+      "Specifications for the high-power three-phase commercial AC charger with OCPP 1.6J.",
     category: "Product Datasheets",
-    fileSize: "1.6 MB",
-    filePath: "/downloads/datasheets/ac-powerpod-go-22kw.pdf",
+    fileSize: "375 KB",
+    filePath: "/downloads/datasheets/RIOD_Powerpod_Go_22kW.docx.pdf",
     icon: "FileText",
-
   },
+  // Product Datasheets — Powerpod City
   {
-    id: "ds-city-3.4",
-    title: "AC Powerpod City 3.4kW Datasheet",
+    id: "ds-city-3.3",
+    title: "Powerpod City 3.3kW Dual (RD016) Datasheet",
     description:
-      "Technical data for the dual-gun public charger with RFID and 4G connectivity.",
+      "Technical data for the dual-gun public charger with RFID and OCPP 1.6J.",
     category: "Product Datasheets",
-    fileSize: "1.7 MB",
-    filePath: "/downloads/datasheets/ac-powerpod-city-3.4kw.pdf",
+    fileSize: "371 KB",
+    filePath: "/downloads/datasheets/RIOD_Powerpod_City_3_3kW.docx.pdf",
     icon: "FileText",
-
   },
   {
     id: "ds-city-7.4",
-    title: "AC Powerpod City 7.4kW Datasheet",
+    title: "Powerpod City 7.4kW Dual (RD017) Datasheet",
     description:
-      "Technical data for the mid-range dual-gun charger with payment and remote monitoring.",
+      "Technical data for the dual-gun fast charger with Type 2 connectors and standalone pedestal.",
     category: "Product Datasheets",
-    fileSize: "1.7 MB",
-    filePath: "/downloads/datasheets/ac-powerpod-city-7.4kw.pdf",
+    fileSize: "378 KB",
+    filePath: "/downloads/datasheets/RIOD_Powerpod_City_7_4kW.docx.pdf",
     icon: "FileText",
-
   },
   {
     id: "ds-city-22",
-    title: "AC Powerpod City 22kW Datasheet",
+    title: "Powerpod City 22kW Dual (RD018) Datasheet",
     description:
-      "Technical data for the high-power dual-gun charger for commercial spaces.",
+      "Technical data for the high-power dual-gun three-phase charger for public deployments.",
     category: "Product Datasheets",
-    fileSize: "1.8 MB",
-    filePath: "/downloads/datasheets/ac-powerpod-city-22kw.pdf",
+    fileSize: "376 KB",
+    filePath: "/downloads/datasheets/RIOD_Powerpod_City_22kW.docx.pdf",
     icon: "FileText",
-
-  },
-  {
-    id: "ds-dc-30",
-    title: "DC Fast 30kW Datasheet",
-    description:
-      "Complete specifications for the entry-level DC fast charger with CCS2 connector.",
-    category: "Product Datasheets",
-    fileSize: "2.1 MB",
-    filePath: "/downloads/datasheets/dc-fast-30kw.pdf",
-    icon: "FileText",
-
-  },
-  {
-    id: "ds-dc-60",
-    title: "DC Fast 60kW Datasheet",
-    description:
-      "Technical specifications for the mid-range DC charger with dual connector option.",
-    category: "Product Datasheets",
-    fileSize: "2.3 MB",
-    filePath: "/downloads/datasheets/dc-fast-60kw.pdf",
-    icon: "FileText",
-
-  },
-  {
-    id: "ds-dc-120",
-    title: "DC Fast 120kW Datasheet",
-    description:
-      "Specifications for the high-power DC charger for highways and public charging hubs.",
-    category: "Product Datasheets",
-    fileSize: "2.5 MB",
-    filePath: "/downloads/datasheets/dc-fast-120kw.pdf",
-    icon: "FileText",
-
   },
 
   // Installation Guides
@@ -244,14 +204,13 @@ export const resources: Resource[] = [
   // Comparison Charts
   {
     id: "cc-ac-chargers",
-    title: "AC Charger Comparison Chart",
+    title: "Powerpod Product Comparison Guide",
     description:
-      "Side-by-side comparison of all RIOD AC chargers: Powerpod, Powerpod Go, and Powerpod City across all power levels.",
+      "Side-by-side comparison of all 9 RIOD Powerpod variants: Lite, Go, and City across all power levels (3.3kW, 7.4kW, 22kW).",
     category: "Comparison Charts",
-    fileSize: "1.1 MB",
-    filePath: "/downloads/comparisons/ac-charger-comparison.pdf",
+    fileSize: "443 KB",
+    filePath: "/downloads/datasheets/RIOD_Powerpod_Product_Comparison_Guide.docx.pdf",
     icon: "BarChart3",
-
   },
   {
     id: "cc-dc-chargers",

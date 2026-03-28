@@ -28,24 +28,21 @@ export interface ProductFamily {
 }
 
 const commonSpecs: { label: string; value: string }[] = [
-  { label: "Charging Type", value: "AC Level 2" },
-  {
-    label: "Working Voltage",
-    value: "180V to 265V (per phase with respect to neutral)",
-  },
   {
     label: "Protection",
     value:
-      "Over Voltage, Under Voltage, Over Current, Short Circuit, Surge Protection, Ground Fault, Residual Current",
+      "OV, UV, OC, Short Circuit, Surge, OT, Ground Fault, Residual Current (IGPC5)",
   },
   { label: "Energy Meter", value: "In-built, Class 1 Accuracy" },
   {
     label: "IP Rating",
-    value: "IP65 (dust-tight, protected against water jets from any direction)",
+    value: "IP65",
   },
   { label: "Operating Temperature", value: "-30\u00B0C to 55\u00B0C" },
   { label: "Storage Temperature", value: "-40\u00B0C to 70\u00B0C" },
-  { label: "Humidity", value: "Up to 95%, non-condensing" },
+  { label: "Humidity", value: "< 95%, non-condensing" },
+  { label: "Status Indications", value: "LED Strip (Green\u2013Charging, Orange\u2013Idle, Red\u2013Error)" },
+  { label: "Warranty", value: "24 Months" },
 ];
 
 const vehiclesSupported = [
@@ -83,7 +80,7 @@ export const productFamilies: ProductFamily[] = [
       {
         title: "Built for Indian Conditions",
         description:
-          "Voltage fluctuations between 180V and 265V. Humidity up to 95%. Temperatures from -30\u00B0C to 55\u00B0C. IP65 rated. Surge protection and ground fault detection built in.",
+          "Humidity up to 95%. Operating temperature -30\u00B0C to 55\u00B0C. IP65 rated. Full protection suite (IGPC5) with OV, UV, OC, surge, ground fault, and residual current protection.",
       },
       {
         title: "In-built Energy Metering",
@@ -115,7 +112,7 @@ export const productFamilies: ProductFamily[] = [
       {
         title: "Individual Home Garages",
         description:
-          "Configurable between 3.3 kW and 7.2 kW to match your electrical supply. Works even without internet connectivity.",
+          "Configurable between 3.3 kW and 7.4 kW to match your electrical supply. Works even without internet connectivity.",
       },
       {
         title: "Small Office Parking",
@@ -130,55 +127,60 @@ export const productFamilies: ProductFamily[] = [
     ],
     variants: [
       {
-        name: "Powerpod Lite 22kW/11kW",
+        name: "Powerpod Lite 22kW (RD012)",
         power: "22 kW",
-        supply: "Three Phase 415V",
-        current: "32A/phase",
-        connector: "Type 2 Gun",
-        mount: "Wall",
-        auth: "RFID",
-        dimensions: "350mm x 230mm x 170mm",
+        supply: "Three Phase, 415V 50Hz",
+        current: "32A",
+        connector: "Type 2 (IEC 62196) with 5m Cable",
+        mount: "Wall Mount",
+        auth: "RFID / Plug-and-Play",
+        dimensions: "350 \u00D7 230 \u00D7 170 mm",
         bestFor:
           "Premium residences, villas with three-phase supply, shared basement parking in premium apartments.",
         keyFeature:
           "22 kW output charges most EVs from 20% to 80% in under 2 hours.",
         description:
-          "High-power home charger for three-phase electrical supplies. Delivers the fastest AC charging speed available for residential use. Supports both RFID and plug-and-play modes. Configurable charging current via web interface.",
+          "Full speed. At home. High-power personal EV charging. Three-phase 22 kW fast charging for rapid overnight top-ups.",
         storeUrl: "/store/powerpod-home-22kw-ev-charger",
       },
       {
-        name: "Powerpod Lite 7.4kW",
+        name: "Powerpod Lite 7.4kW (RD011)",
         power: "7.4 kW",
-        supply: "Single Phase 230V",
+        supply: "Single Phase, 230V 50Hz",
         current: "32A",
-        connector: "Type 2 Gun",
-        mount: "Wall",
-        auth: "RFID / Plug & Play",
-        dimensions: "Compact wall-mount unit",
+        connector: "Type 2 (IEC 62196) with 5m Cable",
+        mount: "Wall Mount",
+        auth: "RFID / Plug-and-Play",
+        dimensions: "350 \u00D7 230 \u00D7 170 mm",
         bestFor: "Home garages, villa parking, individual parking bays in apartments.",
         keyFeature:
-          "Plug-and-play mode. No network dependency. Works even without internet.",
+          "Fast home charging. Plug in at night, wake up fully charged.",
         description:
-          "Single-phase RFID Type 2 wall charger. Plug-and-play operation with no app or network needed. Just plug in and charging starts automatically. RFID mode available for shared parking.",
+          "Fast home charging. Effortless. Fast AC charging at home with Type 2 connector. Plug in at night, wake up fully charged.",
         storeUrl: "/store/powerpod-home-7-4-kw",
       },
       {
-        name: "Powerpod Lite 3.3kW",
+        name: "Powerpod Lite 3.3kW (RD010)",
         power: "3.3 kW",
-        supply: "Single Phase 230V",
+        supply: "Single Phase, 230V 50Hz",
         current: "16A",
-        connector: "3-Pin Socket",
-        mount: "Wall",
-        auth: "RFID / Plug & Play",
-        dimensions: "350mm x 230mm x 170mm",
+        connector: "16A 3-PIN Power Socket (with Shutter)",
+        mount: "Wall Mount",
+        auth: "RFID / Plug-and-Play",
+        dimensions: "350 \u00D7 230 \u00D7 170 mm",
         bestFor:
-          "Home garages, apartment 2W bays, retail outlets, fleet depots with electric scooters and three-wheelers.",
+          "Homes, apartments, private offices, villas.",
+        keyFeature:
+          "Affordable. Smart. Always ready.",
         description:
-          "RFID plug-and-play AC wall charger for 2-wheeler and 3-wheeler EVs. Compact wall-mount form factor fits tight spaces in parking structures.",
+          "Compact AC charging dock for home or private parking. Simple plug-and-play with RFID access. Weight: 1.64 kg.",
         storeUrl: "",
       },
     ],
-    commonSpecs,
+    commonSpecs: [
+      { label: "Charging Type", value: "AC Level 1 (3.3kW) / AC Level 2 (7.4kW, 22kW)" },
+      ...commonSpecs,
+    ],
     vehiclesSupported,
     shopUrl: "/store",
   },
@@ -188,7 +190,7 @@ export const productFamilies: ProductFamily[] = [
     tagline: "Commercial charging that pays for itself.",
     heroImage: "/products/powerpod.png",
     intro:
-      "Powerpod Go is built for locations where EV charging is a service, not just a convenience. Corporate parking lots, hotels, shopping centres, and fuel stations need chargers that authenticate users, process payments, and report energy usage to a central platform. Every Powerpod Go unit comes with RFID and app-based authentication, integrated payment via TelioEV, built-in 4G LTE and Wi-Fi, and full OCPP 1.6J compliance. Connect to any standards-compliant charging management system with no vendor lock-in.",
+      "Powerpod Go is built for locations where EV charging is a service, not just a convenience. Corporate parking lots, hotels, shopping centres, and fuel stations need chargers that authenticate users, process payments, and report energy usage to a central platform. Every Powerpod Go unit comes with RFID and plug-and-play authentication, Wi-Fi connectivity (standard), optional 4G LTE, and full OCPP 1.6J compliance. Connect to any standards-compliant charging management system with no vendor lock-in.",
     features: [
       {
         title: "Payment-Enabled",
@@ -201,9 +203,9 @@ export const productFamilies: ProductFamily[] = [
           "Connect to any standards-compliant central management system. No vendor lock-in. Remote start/stop, firmware updates, and usage reporting.",
       },
       {
-        title: "Dual Connectivity",
+        title: "Wi-Fi Standard, 4G Optional",
         description:
-          "Wi-Fi and 4G LTE with support for all major Indian carriers: Jio, Airtel, BSNL, VI. SIM slot built in. No external routers needed.",
+          "Wi-Fi connectivity comes standard. 4G LTE available as an option for remote locations without Wi-Fi infrastructure.",
       },
       {
         title: "RFID + App Authentication",
@@ -213,7 +215,7 @@ export const productFamilies: ProductFamily[] = [
       {
         title: "Built for Indian Conditions",
         description:
-          "Voltage fluctuations between 180V and 265V. Humidity up to 95%. IP65 rated enclosures. Surge protection and ground fault detection standard.",
+          "Humidity up to 95%. Operating temperature -30\u00B0C to 55\u00B0C. IP65 rated enclosures. Full protection suite (IGPC5) standard.",
       },
       {
         title: "2-Year Standard Warranty",
@@ -245,62 +247,63 @@ export const productFamilies: ProductFamily[] = [
     ],
     variants: [
       {
-        name: "Powerpod Go 22kW/11kW",
+        name: "Powerpod Go 22kW (RD015)",
         power: "22 kW",
-        supply: "Three Phase 415V",
-        current: "32A/phase",
-        connector: "Type 2 Gun",
-        mount: "Wall",
-        auth: "RFID, App",
-        dimensions: "350mm x 230mm x 170mm",
+        supply: "Three Phase, 415V 50Hz",
+        current: "32A",
+        connector: "Type 2 (IEC 62196) with 5m Cable",
+        mount: "Wall Mount",
+        auth: "RFID / Plug-and-Play",
+        dimensions: "350 \u00D7 230 \u00D7 170 mm",
         bestFor:
           "Premium commercial parking, destination charging at hotels, corporate executive parking, fast-turnaround retail.",
         keyFeature:
-          "22 kW fast AC charging with revenue generation capability.",
+          "Maximum power. Maximum returns.",
         description:
-          "Maximum AC charging speed in a wall-mount commercial package. Full OCPP support, RFID + app authentication, and integrated payment. The fastest wall-mounted Powerpod Go for commercial deployments.",
+          "High-power commercial AC fast charger. 22 kW three-phase with full OCPP 1.6J and Wi-Fi connectivity. 4G LTE optional.",
         storeUrl: "/store/powerpod-go-22kw-fast-ev-charger",
       },
       {
-        name: "Powerpod Go 7.4kW",
+        name: "Powerpod Go 7.4kW (RD014)",
         power: "7.4 kW",
-        supply: "Single Phase 230V",
+        supply: "Single Phase, 230V 50Hz",
         current: "32A",
-        connector: "Type 2 Gun",
-        mount: "Wall",
-        auth: "RFID, App",
-        dimensions: "350mm x 230mm x 170mm",
+        connector: "Type 2 (IEC 62196) with 5m Cable",
+        mount: "Wall Mount",
+        auth: "RFID / Plug-and-Play",
+        dimensions: "350 \u00D7 230 \u00D7 170 mm",
         bestFor:
           "Corporate parking, hotels, shopping centres, public semi-fast charging.",
         keyFeature:
-          "Payment-enabled. Revenue-generating capability for commercial operators.",
+          "Fast. Smart. Revenue-ready.",
         description:
-          "OCPP RFID 4G WiFi smart charger for commercial use. 32A single-phase output through a Type 2 connector. RFID and app-based authentication with integrated payment via TelioEV. Built-in 4G LTE and Wi-Fi.",
+          "Commercial AC fast charger with Type 2 connector. RFID/Plug-and-Play auth, OCPP 1.6J, Wi-Fi standard, 4G LTE optional.",
         storeUrl: "/store/powerpod-go-7-4kw-fast-ev-charger",
       },
       {
-        name: "Powerpod Go 3.3kW",
+        name: "Powerpod Go 3.3kW (RD013)",
         power: "3.3 kW",
-        supply: "Single Phase 230V",
+        supply: "Single Phase, 230V 50Hz",
         current: "16A",
-        connector: "3-Pin Socket",
-        mount: "Wall",
-        auth: "RFID, App",
-        dimensions: "350mm x 230mm x 170mm",
+        connector: "16A 3-PIN Power Socket",
+        mount: "Wall Mount / Pedestal",
+        auth: "RFID / Plug-and-Play",
+        dimensions: "350 \u00D7 220 \u00D7 110 mm",
         bestFor:
-          "Office parking, apartment 2W bays, retail outlets, fleet depots with electric scooters and three-wheelers.",
+          "Commercial spaces, building associations, restaurants, parking lots.",
         keyFeature:
-          "OCPP 1.6J with 4G and WiFi connectivity for smart commercial charging.",
+          "Deploy anywhere. Earn from every charge.",
         description:
-          "Smart commercial charger with OCPP, RFID, 4G, and WiFi. Designed for 2-wheeler and 3-wheeler EV fleets. Compact wall-mount form factor with full remote management capability.",
+          "Commercial-grade EV charging point with RFID/Plug-and-Play auth and OCPP 1.6J compliance. Wi-Fi standard, 4G LTE optional.",
         storeUrl: "/store/3-3kw-ocpp-ev-charger",
       },
     ],
     commonSpecs: [
+      { label: "Charging Type", value: "AC Level 1 (3.3kW) / AC Level 2 (7.4kW, 22kW)" },
       ...commonSpecs,
       {
         label: "Connectivity",
-        value: "Wi-Fi and 4G LTE (Jio, Airtel, BSNL, VI)",
+        value: "Wi-Fi (Standard), 4G LTE (Optional)",
       },
       { label: "Protocol", value: "OCPP 1.6J" },
     ],
@@ -370,58 +373,63 @@ export const productFamilies: ProductFamily[] = [
     ],
     variants: [
       {
-        name: "Powerpod City 22kW/11kW",
-        power: "22 kW x2",
-        supply: "Three Phase 415V",
-        current: "32A/phase x2",
-        connector: "Type 2 Gun x2",
-        mount: "Floor",
-        auth: "RFID, App",
-        dimensions: "100cm x 23cm x 17cm",
+        name: "Powerpod City 22kW Dual (RD018)",
+        power: "22 kW \u2016 22 kW",
+        supply: "Three Phase, 415V 50Hz",
+        current: "32A \u2016 32A",
+        connector: "Type 2 (IEC 62196) \u2016 Type 2 (IEC 62196) with 5m Cable each",
+        mount: "Floor Mount / Pedestal",
+        auth: "RFID / Plug-and-Play",
+        dimensions: "1000 \u00D7 250 \u00D7 220 mm",
         bestFor:
           "High-traffic public stations, premium destination charging, fleet fast-charging, highway corridors.",
         keyFeature:
-          "44 kW total capacity across two connectors. Maximum vehicles served per hour.",
+          "Dual charging. Double the revenue.",
         description:
-          "The flagship Powerpod City. Two independent 22 kW connectors in a floor-standing enclosure. Each connector delivers full 22 kW three-phase charging. Maximum throughput for high-demand public charging locations.",
+          "High-power dual-connector station for high-demand deployments. Two 22 kW three-phase connectors. LED Strip per connector. Wi-Fi standard, 4G LTE optional.",
         storeUrl: "/store/powerpod-city-22kw-dual-port-fast-ev-charger",
       },
       {
-        name: "Powerpod City 7.4kW",
-        power: "7.4 kW x2",
-        supply: "Single Phase 230V",
-        current: "32A x2",
-        connector: "Type 2 Gun x2",
-        mount: "Floor",
-        auth: "RFID, App",
-        dimensions: "100cm x 23cm x 17cm",
+        name: "Powerpod City 7.4kW Dual (RD017)",
+        power: "7.4 kW \u2016 7.4 kW",
+        supply: "Single Phase, 230V 50Hz",
+        current: "32A \u2016 32A",
+        connector: "Type 2 (IEC 62196) \u2016 Type 2 (IEC 62196) with 5m Cable each",
+        mount: "Standalone Pedestal",
+        auth: "RFID / Plug-and-Play",
+        dimensions: "1000 \u00D7 250 \u00D7 220 mm",
         bestFor:
           "Public charging stations, highway rest stops, fuel station forecourts, large commercial parking.",
+        keyFeature:
+          "Dual fast charging. Compact. Revenue-ready.",
         description:
-          "Floor-standing dual-connector station delivering 7.4 kW to each vehicle independently. High-visibility form factor for public and commercial deployment. Two RFID readers, two Type 2 guns, two independent charging sessions.",
+          "Dual-connector AC fast charging station. Two vehicles simultaneously with Type 2 connectors. LED Strip per connector. Wi-Fi standard, 4G LTE optional.",
         storeUrl: "/store/powerpod-city-hybrid-ev-charging-station",
       },
       {
-        name: "Powerpod City 3.3kW",
-        power: "3.3 kW x2",
-        supply: "Single Phase 230V",
-        current: "16A x2",
-        connector: "3-Pin Socket x2",
-        mount: "Floor",
-        auth: "RFID, App",
-        dimensions: "100cm x 23cm x 17cm",
+        name: "Powerpod City 3.3kW Dual (RD016)",
+        power: "3.3 kW \u2016 3.3 kW",
+        supply: "Single Phase, 230V 50Hz",
+        current: "16A \u2016 16A",
+        connector: "16A 3-PIN \u2016 16A 3-PIN",
+        mount: "Floor Mount / Pedestal",
+        auth: "RFID / Plug-and-Play",
+        dimensions: "1000 \u00D7 250 \u00D7 220 mm",
         bestFor:
-          "Public 2W/3W charging stations, municipal parking, bus stops, metro stations.",
+          "Commercial spaces, building associations, restaurants, parking lots.",
+        keyFeature:
+          "Two chargers. One station. Double the value.",
         description:
-          "Floor-standing public charging station with two independent 3.3 kW connectors. Each connector has its own RFID reader, energy meter, and authentication. Serves two vehicles simultaneously.",
+          "Dual-connector charging station for shared/commercial environments. Two vehicles simultaneously. LED Strip per connector. Wi-Fi standard, 4G LTE optional.",
         storeUrl: "/store/riod-powerpod-city-3-3kw-dual-gun-ev-charger-ocpp-rfid-4g-public-charging-station-india",
       },
     ],
     commonSpecs: [
+      { label: "Charging Type", value: "AC Level 1 (3.3kW) / AC Level 2 (7.4kW, 22kW)" },
       ...commonSpecs,
       {
         label: "Connectivity",
-        value: "Wi-Fi and 4G LTE (Jio, Airtel, BSNL, VI)",
+        value: "Wi-Fi (Standard), 4G LTE (Optional)",
       },
       { label: "Protocol", value: "OCPP 1.6J" },
     ],
