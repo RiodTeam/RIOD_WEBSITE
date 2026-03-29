@@ -169,36 +169,33 @@ export const resources: Resource[] = [
   // Brochures
   {
     id: "br-product-catalog",
-    title: "RIOD Product Catalogue 2026",
+    title: "RIOD Powerpod Product Catalogue",
     description:
-      "Complete product catalogue featuring all RIOD EV chargers, software platforms, and energy solutions.",
+      "Complete product catalogue featuring all RIOD Powerpod EV chargers — Lite, Go, and City families.",
     category: "Brochures",
-    fileSize: "5.8 MB",
-    filePath: "/downloads/brochures/riod-product-catalogue-2026.pdf",
+    fileSize: "502 KB",
+    filePath: "/downloads/datasheets/RIOD_Powerpod_Product_Catalogue.docx.pdf",
     icon: "BookOpen",
-
   },
   {
     id: "br-community-suite",
     title: "Community Charging Suite Brochure",
     description:
-      "Overview of RIOD's free-to-use community charging management platform for apartments and residential complexes.",
+      "Overview of RIOD's community charging management platform for apartments and residential complexes.",
     category: "Brochures",
-    fileSize: "2.8 MB",
-    filePath: "/downloads/brochures/community-suite-brochure.pdf",
+    fileSize: "376 KB",
+    filePath: "/downloads/datasheets/RIOD_Community_Charging_Suite.docx.pdf",
     icon: "BookOpen",
-
   },
   {
     id: "br-operations-suite",
-    title: "Operations Suite Brochure",
+    title: "EVSE Operations Suite Brochure",
     description:
       "Commercial-grade charging management platform for hotels, malls, parking, and fleet operators.",
     category: "Brochures",
-    fileSize: "3.1 MB",
-    filePath: "/downloads/brochures/operations-suite-brochure.pdf",
+    fileSize: "375 KB",
+    filePath: "/downloads/datasheets/RIOD_EVSE_Operations_Suite.docx.pdf",
     icon: "BookOpen",
-
   },
 
   // Comparison Charts
@@ -229,10 +226,9 @@ export const resources: Resource[] = [
     description:
       "When to choose AC vs DC charging: use cases, costs, power requirements, and ROI comparison.",
     category: "Comparison Charts",
-    fileSize: "1.4 MB",
-    filePath: "/downloads/comparisons/ac-vs-dc-guide.pdf",
+    fileSize: "384 KB",
+    filePath: "/downloads/datasheets/RIOD_AC_vs_DC_Charging_Guide.docx.pdf",
     icon: "BarChart3",
-
   },
 
   // Whitepapers & Guides
@@ -242,10 +238,9 @@ export const resources: Resource[] = [
     description:
       "Step-by-step guide for facility managers and HR teams. Covers site assessment, electrical capacity check, charger selection, load balancing, employee billing, and go-live checklist.",
     category: "Whitepapers & Guides",
-    fileSize: "2.1 MB",
-    filePath: "/downloads/whitepapers/10-steps-workplace-ev-charging.pdf",
+    fileSize: "370 KB",
+    filePath: "/downloads/datasheets/RIOD_10_Steps_Workplace_EV_Charging.docx.pdf",
     icon: "BookOpen",
-
   },
   {
     id: "wp-apartment-6-things",
@@ -253,43 +248,38 @@ export const resources: Resource[] = [
     description:
       "Essential guide for RWAs and residents. Covers electrical load assessment, metering and billing, RWA approval process, charger placement, safety compliance, and resident onboarding.",
     category: "Whitepapers & Guides",
-    fileSize: "1.8 MB",
-    filePath: "/downloads/whitepapers/6-things-apartment-ev-charging.pdf",
+    fileSize: "372 KB",
+    filePath: "/downloads/datasheets/RIOD_6_Things_EV_Chargers_Apartments.docx.pdf",
     icon: "BookOpen",
-
-  },
-  {
-    id: "wp-future-energy-infrastructure",
-    title: "The Future of Energy Infrastructure",
-    description:
-      "In-depth whitepaper on the convergence of EV charging, renewable energy, and smart grid technology. Covers V2G, HEMS, dynamic load balancing, and the role of communication protocols in the energy transition.",
-    category: "Whitepapers & Guides",
-    fileSize: "3.2 MB",
-    filePath: "/downloads/whitepapers/future-of-energy-infrastructure.pdf",
-    icon: "BookOpen",
-    isLeadMagnet: true,
-
   },
   {
     id: "wp-ocpp-guide",
-    title: "OCPP 1.6J Implementation Guide",
+    title: "OCPP & App Configuration Guide",
     description:
       "Technical guide for charge point operators on OCPP 1.6J integration. Covers message flows, backend configuration, remote management, and firmware updates.",
     category: "Whitepapers & Guides",
-    fileSize: "1.8 MB",
-    filePath: "/downloads/whitepapers/ocpp-1.6j-implementation-guide.pdf",
+    fileSize: "383 KB",
+    filePath: "/downloads/datasheets/RIOD_OCPP_App_Configuration_Guide.docx.pdf",
     icon: "BookOpen",
-
   },
   {
     id: "wp-power-master",
     title: "Power Master: Dynamic Load Balancing Whitepaper",
     description:
-      "Technical deep-dive into Power Master's architecture, protocol support, and deployment scenarios. Includes case studies from grid-constrained sites.",
+      "Technical deep-dive into Power Master's architecture, protocol support, and deployment scenarios for grid-constrained sites.",
     category: "Whitepapers & Guides",
-    fileSize: "3.0 MB",
-    filePath: "/downloads/whitepapers/power-master-whitepaper.pdf",
+    fileSize: "383 KB",
+    filePath: "/downloads/datasheets/RIOD_Power_Master_DLB_Whitepaper.docx.pdf",
     icon: "BookOpen",
-
+  },
+  {
+    id: "wp-warranty-terms",
+    title: "Powerpod Warranty Terms & Conditions",
+    description:
+      "Official warranty terms and conditions for all RIOD Powerpod EV chargers. Covers coverage period, exclusions, claim process, and support contact.",
+    category: "Whitepapers & Guides",
+    fileSize: "371 KB",
+    filePath: "/downloads/datasheets/RIOD_Powerpod_Warranty_Terms.docx.pdf",
+    icon: "BookOpen",
   },
 ];
