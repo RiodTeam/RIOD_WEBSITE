@@ -135,31 +135,21 @@ async function uploadLocalImage(
 ): Promise<string | null> {
   try {
     const fullPath = path.join(process.cwd(), "public", publicPath);
-    if (!fs.existsSync(fullPath)) return null;
-
-    const fileBuffer = fs.readFileSync(fullPath);
-    const ext = path.extname(publicPath).replace(".", "");
-    const mimeMap: Record<string, string> = {
-      webp: "image/webp",
-      jpg: "image/jpeg",
-      jpeg: "image/jpeg",
-      png: "image/png",
-    };
+    if (!fs.existsSync(fullPath)) {
+      console.log(`Image not found: ${fullPath}`);
+      return null;
+    }
 
     const media = await payload.create({
       collection,
       data: { alt: altText },
-      file: {
-        data: fileBuffer,
-        name: path.basename(publicPath),
-        mimetype: mimeMap[ext] || "image/webp",
-        size: fileBuffer.length,
-      },
+      filePath: fullPath,
     });
 
+    console.log(`Uploaded image: ${publicPath} → ${media.id}`);
     return media.id as string;
   } catch (err: any) {
-    console.error(`Failed to upload image ${publicPath}:`, err?.message);
+    console.error(`Failed to upload image ${publicPath}:`, err?.message || JSON.stringify(err));
     return null;
   }
 }
