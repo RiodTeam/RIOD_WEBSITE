@@ -1,4 +1,5 @@
 import { CollectionConfig } from 'payload'
+import { revalidateCollectionAfterChange, revalidateCollectionAfterDelete } from './Posts/hooks/revalidateCollection'
 import {
   lexicalEditor,
   BoldFeature,
@@ -36,6 +37,22 @@ export const CaseStudies: CollectionConfig = {
     useAsTitle: 'title',
     defaultColumns: ['title', 'industry', 'technology', 'slug'],
     group: 'Case Studies',
+  },
+  hooks: {
+    afterChange: [
+      revalidateCollectionAfterChange((doc) => [
+        '/case-studies',
+        `/case-studies/${doc?.slug}`,
+        '/',
+      ]),
+    ],
+    afterDelete: [
+      revalidateCollectionAfterDelete((doc) => [
+        '/case-studies',
+        `/case-studies/${doc?.slug}`,
+        '/',
+      ]),
+    ],
   },
   access: {
     read: () => true,
