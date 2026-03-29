@@ -5,6 +5,19 @@ export const metadata: Metadata = {
   title: "EV Chargers for Institutions | RIOD",
   description:
     "Smart EV charging solutions designed for institutions, campuses, universities, and public buildings. Fast, reliable, and future-ready infrastructure.",
+  openGraph: {
+    title: "EV Chargers for Institutions | RIOD",
+    description:
+      "Smart EV charging solutions designed for institutions, campuses, universities, and public buildings. Fast, reliable, and future-ready infrastructure.",
+    url: "https://riod.energy/ev-chargers-institution",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EV Chargers for Institutions | RIOD",
+    description:
+      "Smart EV charging solutions designed for institutions, campuses, universities, and public buildings. Fast, reliable, and future-ready infrastructure.",
+  },
 };
 
 export default function Page() {

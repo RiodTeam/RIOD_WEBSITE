@@ -80,7 +80,7 @@ function extractSectionsFromLexical(lexicalJson: any): {
 function payloadPostToInsight(post: any): InsightType {
   const { intro, sections } = extractSectionsFromLexical(post.content);
 
-  // Resolve hero image URL — fall back to static data image by slug
+  // Resolve hero image URL - fall back to static data image by slug
   let image = "/insights/placeholder.webp";
   if (post.heroImage) {
     if (typeof post.heroImage === "string") {
@@ -89,7 +89,7 @@ function payloadPostToInsight(post: any): InsightType {
       image = post.heroImage.url;
     }
   } else {
-    // No hero image in Payload — check if static data has one for this slug
+    // No hero image in Payload - check if static data has one for this slug
     const staticMatch = insightsData.find((i) => i.slug === post.slug);
     if (staticMatch?.image) {
       image = staticMatch.image;
@@ -224,7 +224,7 @@ export async function getInsights(): Promise<InsightType[]> {
       return [...payloadInsights, ...staticOnly];
     }
   } catch {
-    // Payload not available — fall back to static
+    // Payload not available - fall back to static
   }
   return insightsData;
 }

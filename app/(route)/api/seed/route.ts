@@ -199,7 +199,7 @@ export async function POST(req: NextRequest) {
     });
 
     if (existing.docs.length > 0) {
-      // Post exists — check if it needs a heroImage
+      // Post exists - check if it needs a heroImage
       const existingPost = existing.docs[0] as any;
       if (!existingPost.heroImage && insight.image) {
         const mediaId = await uploadLocalImage(
@@ -263,7 +263,7 @@ export async function POST(req: NextRequest) {
     });
 
     if (existing.docs.length > 0) {
-      // Case study exists — check if it needs images
+      // Case study exists - check if it needs images
       const existingCS = existing.docs[0] as any;
       if (!existingCS.displayImage) {
         const displayPath = `/case-studies/${cs.slug}.webp`;

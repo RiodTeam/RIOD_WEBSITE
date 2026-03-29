@@ -31,12 +31,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: insight.title,
     description,
+    alternates: {
+      canonical: `https://riod.energy/insights/${slug}`,
+    },
     openGraph: {
       title: insight.title,
       description,
       url: `https://riod.energy/insights/${slug}`,
       type: "article",
       images: insight.image ? [{ url: insight.image, width: 1400, height: 800 }] : [],
+    },
+    twitter: {
+      card: "summary_large_image" as const,
+      title: insight.title,
+      description,
     },
   };
 }

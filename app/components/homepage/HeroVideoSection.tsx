@@ -93,7 +93,7 @@ export default function HeroVideoSection() {
           </div>
         </div>
 
-        {/* Bottom navigation links — temporarily hidden */}
+        {/* Bottom navigation links - temporarily hidden */}
       </div>
     </section>
   );

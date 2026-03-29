@@ -149,7 +149,7 @@ const Header = () => {
                     </span>
                   </Link>
 
-                  {/* Applications — flyout on hover */}
+                  {/* Applications - flyout on hover */}
                   <div
                     className="relative border-t border-white/10"
                     onMouseEnter={() => setShowAppsFlyout(true)}
@@ -276,7 +276,7 @@ const Header = () => {
             {/* RIGHT SIDE: Support + Cart + Mobile menu */}
             <div className="flex items-center gap-5 xl:gap-6">
               <a
-                href="https://support.riod.in"
+                href="https://support.riod.energy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${textColor} hover:text-gray-300 transition-colors hidden lg:block`}
@@ -285,7 +285,7 @@ const Header = () => {
                 <Headset className="w-5 h-5 xl:w-[22px] xl:h-[22px]" />
               </a>
 
-              {/* CART ICON — desktop only, shown when items in cart */}
+              {/* CART ICON - desktop only, shown when items in cart */}
               {totalQuantity > 0 && (
                 <div className="hidden lg:block">
                   <CartIcon />
@@ -498,7 +498,7 @@ const Header = () => {
           {/* MOBILE CONTACT ICONS */}
           <div className="mt-12 ml-7 flex items-center space-x-6 pb-12">
             <a
-              href="https://support.riod.in"
+              href="https://support.riod.energy"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-300 transition-colors"

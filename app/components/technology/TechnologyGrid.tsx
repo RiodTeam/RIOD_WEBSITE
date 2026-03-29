@@ -39,7 +39,7 @@ export default function TechnologyGrid({
                       Upcoming
                     </span>
 
-                    {/* Icon — grayed */}
+                    {/* Icon - grayed */}
                     <div className="w-12 h-12 rounded-full bg-[#e0e0e0] flex items-center justify-center mb-5">
                       <tech.icon className="w-5 h-5 text-[#aaa]" />
                     </div>
@@ -96,7 +96,7 @@ export default function TechnologyGrid({
             </MotionWrapper>
           ))}
 
-          {/* RnD Square — Custom Engineering Tile */}
+          {/* RnD Square - Custom Engineering Tile */}
           <MotionWrapper delay={technologies.length * 0.06}>
             <a
               href="https://rndsquare.com"

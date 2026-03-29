@@ -9,6 +9,19 @@ export const metadata: Metadata = {
   title: "Buy EV Chargers Online India | Powerpod by RIOD",
   description:
     "Buy Powerpod AC EV chargers for home and commercial use. 3.3kW to 22kW. Type 2, OCPP, RFID. Shipping across India.",
+  openGraph: {
+    title: "Buy EV Chargers Online India | Powerpod by RIOD",
+    description:
+      "Buy Powerpod AC EV chargers for home and commercial use. 3.3kW to 22kW. Type 2, OCPP, RFID. Shipping across India.",
+    url: "https://riod.energy/store",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Buy EV Chargers Online India | Powerpod by RIOD",
+    description:
+      "Buy Powerpod AC EV chargers for home and commercial use. 3.3kW to 22kW. Type 2, OCPP, RFID. Shipping across India.",
+  },
 };
 
 export default async function ShopPage() {
@@ -22,7 +35,7 @@ export default async function ShopPage() {
       .map((e) => e.node)
       .filter((p) => !p.handle.includes("climate") && !p.handle.includes("rd280"));
   } catch {
-    // Shopify not configured yet — show placeholder
+    // Shopify not configured yet - show placeholder
   }
 
   const homeChargers = products.filter(

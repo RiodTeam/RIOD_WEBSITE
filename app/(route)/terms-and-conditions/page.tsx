@@ -4,6 +4,19 @@ export const metadata: Metadata = {
   title: "Terms and Conditions | RIOD",
   description:
     "Terms and conditions for using RIOD's EV charging products, energy management platforms, and related services.",
+  openGraph: {
+    title: "Terms and Conditions | RIOD",
+    description:
+      "Terms and conditions for using RIOD's EV charging products, energy management platforms, and related services.",
+    url: "https://riod.energy/terms-and-conditions",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms and Conditions | RIOD",
+    description:
+      "Terms and conditions for using RIOD's EV charging products, energy management platforms, and related services.",
+  },
 };
 
 export default function TermsAndConditionsPage() {
@@ -27,7 +40,7 @@ export default function TermsAndConditionsPage() {
               to and use of the website, products, and services provided by RnD
               Square Pvt. Ltd., operating under the brand name RIOD
               (&quot;Company&quot;, &quot;we&quot;, &quot;us&quot;, or
-              &quot;our&quot;). By accessing our website at riod.in, using our
+              &quot;our&quot;). By accessing our website at riod.energy, using our
               EV charging products, mobile applications, or energy management
               platforms (collectively, the &quot;Services&quot;), you agree to
               be bound by these Terms.
@@ -327,7 +340,7 @@ export default function TermsAndConditionsPage() {
                   href="https://riod.energy"
                   className="text-black underline hover:text-[#cdf80a] transition-colors"
                 >
-                  riod.in
+                  riod.energy
                 </a>
               </p>
             </div>

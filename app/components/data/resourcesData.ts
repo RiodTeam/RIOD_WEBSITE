@@ -26,7 +26,7 @@ export const resourceCategories: ResourceCategory[] = [
 ];
 
 export const resources: Resource[] = [
-  // Product Datasheets — Powerpod Lite
+  // Product Datasheets - Powerpod Lite
   {
     id: "ds-lite-3.3",
     title: "Powerpod Lite 3.3kW (RD010) Datasheet",
@@ -57,7 +57,7 @@ export const resources: Resource[] = [
     filePath: "/downloads/datasheets/RIOD_Powerpod_Lite_22kW.docx.pdf",
     icon: "FileText",
   },
-  // Product Datasheets — Powerpod Go
+  // Product Datasheets - Powerpod Go
   {
     id: "ds-go-3.3",
     title: "Powerpod Go 3.3kW (RD013) Datasheet",
@@ -88,7 +88,7 @@ export const resources: Resource[] = [
     filePath: "/downloads/datasheets/RIOD_Powerpod_Go_22kW.docx.pdf",
     icon: "FileText",
   },
-  // Product Datasheets — Powerpod City
+  // Product Datasheets - Powerpod City
   {
     id: "ds-city-3.3",
     title: "Powerpod City 3.3kW Dual (RD016) Datasheet",
@@ -171,7 +171,7 @@ export const resources: Resource[] = [
     id: "br-product-catalog",
     title: "RIOD Powerpod Product Catalogue",
     description:
-      "Complete product catalogue featuring all RIOD Powerpod EV chargers — Lite, Go, and City families.",
+      "Complete product catalogue featuring all RIOD Powerpod EV chargers - Lite, Go, and City families.",
     category: "Brochures",
     fileSize: "502 KB",
     filePath: "/downloads/datasheets/RIOD_Powerpod_Product_Catalogue.docx.pdf",

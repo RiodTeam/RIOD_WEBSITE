@@ -13,6 +13,12 @@ export const metadata: Metadata = {
     url: "https://riod.energy/products/ev-chargers",
     images: [{ url: "/heroes/ev-chargers-hero.webp", width: 1400, height: 800 }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "EV Chargers | RIOD",
+    description:
+      "Explore RIOD's full range of AC and DC EV chargers, from home charging pods to commercial DC fast chargers. Smart, connected, and built for India.",
+  },
 };
 
 const faqSchema = {

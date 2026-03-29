@@ -41,10 +41,10 @@ export default function ThankYouClient() {
         <p className="mt-10 text-sm text-gray-400">
           Questions? Email us at{" "}
           <a
-            href="mailto:info@riod.in"
+            href="mailto:hello@riod.in"
             className="text-[#1b1b1b] underline underline-offset-2"
           >
-            info@riod.in
+            hello@riod.in
           </a>
         </p>
       </div>

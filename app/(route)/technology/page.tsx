@@ -5,6 +5,19 @@ export const metadata: Metadata = {
   title: "Technology | RIOD",
   description:
     "Explore RIOD's full-stack EV charging technology, built in-house from power electronics and embedded firmware to CPMS platforms, energy management, and mobile applications.",
+  openGraph: {
+    title: "Technology | RIOD",
+    description:
+      "Explore RIOD's full-stack EV charging technology, built in-house from power electronics and embedded firmware to CPMS platforms, energy management, and mobile applications.",
+    url: "https://riod.energy/technology",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Technology | RIOD",
+    description:
+      "Explore RIOD's full-stack EV charging technology, built in-house from power electronics and embedded firmware to CPMS platforms, energy management, and mobile applications.",
+  },
 };
 
 export default function TechnologyPage() {

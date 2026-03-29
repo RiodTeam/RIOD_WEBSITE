@@ -21,7 +21,13 @@ export const metadata: Metadata = {
     description:
       "Turn parking infrastructure into a charging revenue stream. High-traffic chargers, dynamic pricing, payment collection, and real-time analytics for parking operators.",
     type: "website",
-    url: "/ev-charging-parking",
+    url: "https://riod.energy/ev-charging-parking",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EV Charging for Parking | Malls, Airports & Metro Stations | RIOD",
+    description:
+      "Turn parking infrastructure into a charging revenue stream. High-traffic chargers, dynamic pricing, payment collection, and real-time analytics for parking operators.",
   },
 };
 

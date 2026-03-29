@@ -86,7 +86,7 @@ export default function ContactFormSection() {
             <span className="text-[11px] text-[#9a99a2] font-normal ml-2 normal-case tracking-normal">tap code to change</span>
           </label>
           <div className="flex gap-0 mb-3 md:mb-4">
-            {/* Editable code — type any country code */}
+            {/* Editable code - type any country code */}
             <input
               type="text"
               name="countryCode"

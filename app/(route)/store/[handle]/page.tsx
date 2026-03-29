@@ -39,10 +39,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
       title: `${p.title} | Buy Online | RIOD India`,
       description: p.description.substring(0, 160),
+      alternates: {
+        canonical: `https://riod.energy/store/${handle}`,
+      },
       openGraph: {
         title: p.title,
         description: p.description.substring(0, 160),
+        url: `https://riod.energy/store/${handle}`,
         images: image ? [{ url: image }] : [],
+      },
+      twitter: {
+        card: "summary_large_image" as const,
+        title: `${p.title} | Buy Online | RIOD India`,
+        description: p.description.substring(0, 160),
       },
       other: {
         "script:ld+json": JSON.stringify({

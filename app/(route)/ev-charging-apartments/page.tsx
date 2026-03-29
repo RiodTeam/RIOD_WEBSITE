@@ -21,7 +21,13 @@ export const metadata: Metadata = {
     description:
       "Fair billing, no grid overload, resident self-service, and central monitoring. EV charging designed for Indian apartment complexes.",
     type: "website",
-    url: "/ev-charging-apartments",
+    url: "https://riod.energy/ev-charging-apartments",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EV Charging for Apartments & Flats | Residential Charging | RIOD",
+    description:
+      "Fair billing, no grid overload, resident self-service, and central monitoring. EV charging designed for Indian apartment complexes.",
   },
 };
 

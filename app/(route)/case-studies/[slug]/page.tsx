@@ -25,11 +25,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${caseStudy.title} | RIOD Case Studies`,
     description: caseStudy.summary,
+    alternates: {
+      canonical: `https://riod.energy/case-studies/${slug}`,
+    },
     openGraph: {
       title: `${caseStudy.title} | RIOD Case Studies`,
       description: caseStudy.summary,
       url: `https://riod.energy/case-studies/${slug}`,
       images: caseStudy.image ? [{ url: caseStudy.image, width: 1400, height: 800 }] : [],
+    },
+    twitter: {
+      card: "summary_large_image" as const,
+      title: `${caseStudy.title} | RIOD Case Studies`,
+      description: caseStudy.summary,
     },
   };
 }

@@ -22,7 +22,13 @@ export const metadata: Metadata = {
     description:
       "BIS-certified EV charging stations built for Indian conditions. AC chargers, DC fast chargers, OCPP compliant, cloud-managed. From a manufacturer that understands Indian electrical standards.",
     type: "website",
-    url: "/ev-charging-stations-india",
+    url: "https://riod.energy/ev-charging-stations-india",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EV Charging Stations in India | AC & DC Chargers | RIOD",
+    description:
+      "BIS-certified EV charging stations built for Indian conditions. AC chargers, DC fast chargers, OCPP compliant, cloud-managed. From a manufacturer that understands Indian electrical standards.",
   },
 };
 

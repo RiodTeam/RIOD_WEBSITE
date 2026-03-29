@@ -36,7 +36,7 @@ export default function CommunitySuite() {
     <section className="bg-[#1b1b1b] text-white pt-16 md:pt-[6.8rem] pb-16 md:pb-[6.8rem]">
       <div className="w-[90%] max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-          {/* Left — Text Content */}
+          {/* Left - Text Content */}
           <div>
             <MotionWrapper>
               <span className="text-xs font-medium tracking-[0.2em] uppercase text-[#cdf80a] block mb-3">
@@ -91,7 +91,7 @@ export default function CommunitySuite() {
             </div>
           </div>
 
-          {/* Right — Dashboard Image */}
+          {/* Right - Dashboard Image */}
           <MotionWrapper delay={0.2}>
             <div className="relative w-full h-[260px] sm:h-[340px] md:h-[460px] lg:h-[560px] rounded-xl overflow-hidden lg:mt-8">
               <Image

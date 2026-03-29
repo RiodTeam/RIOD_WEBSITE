@@ -6,6 +6,19 @@ export const metadata: Metadata = {
   title: "Case Studies | RIOD",
   description:
     "Real-world implementations of RIOD EV charging and energy management solutions across industries.",
+  openGraph: {
+    title: "Case Studies | RIOD",
+    description:
+      "Real-world implementations of RIOD EV charging and energy management solutions across industries.",
+    url: "https://riod.energy/case-studies",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Case Studies | RIOD",
+    description:
+      "Real-world implementations of RIOD EV charging and energy management solutions across industries.",
+  },
 };
 
 export default async function CaseStudiesPage() {

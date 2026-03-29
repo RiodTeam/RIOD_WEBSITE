@@ -4,6 +4,19 @@ export const metadata: Metadata = {
   title: "Privacy Policy | RIOD",
   description:
     "RIOD's privacy policy: how we collect, use, and protect your personal information across our EV charging and energy management platforms.",
+  openGraph: {
+    title: "Privacy Policy | RIOD",
+    description:
+      "RIOD's privacy policy: how we collect, use, and protect your personal information across our EV charging and energy management platforms.",
+    url: "https://riod.energy/privacy-policy",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | RIOD",
+    description:
+      "RIOD's privacy policy: how we collect, use, and protect your personal information across our EV charging and energy management platforms.",
+  },
 };
 
 export default function PrivacyPolicyPage() {
@@ -27,7 +40,7 @@ export default function PrivacyPolicyPage() {
               &quot;us&quot;, or &quot;our&quot;) is committed to protecting
               your privacy. This Privacy Policy explains how we collect, use,
               disclose, and safeguard your information when you visit our
-              website riod.in, use our EV charging products, mobile
+              website riod.energy, use our EV charging products, mobile
               applications, energy management platforms, or engage with any of
               our services (collectively, the &quot;Services&quot;).
             </p>
@@ -297,7 +310,7 @@ export default function PrivacyPolicyPage() {
                   href="https://riod.energy"
                   className="text-black underline hover:text-[#cdf80a] transition-colors"
                 >
-                  riod.in
+                  riod.energy
                 </a>
               </p>
             </div>

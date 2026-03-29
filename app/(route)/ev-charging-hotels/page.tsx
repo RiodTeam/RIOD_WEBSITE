@@ -21,7 +21,13 @@ export const metadata: Metadata = {
     description:
       "Offer premium EV charging as a guest amenity. Revenue from charging, sustainability branding, and competitive advantage for your hotel property.",
     type: "website",
-    url: "/ev-charging-hotels",
+    url: "https://riod.energy/ev-charging-hotels",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EV Charging for Hotels | Guest Amenity & Revenue Stream | RIOD",
+    description:
+      "Offer premium EV charging as a guest amenity. Revenue from charging, sustainability branding, and competitive advantage for your hotel property.",
   },
 };
 

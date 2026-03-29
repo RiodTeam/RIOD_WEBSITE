@@ -20,11 +20,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${product.name} | RIOD EV Chargers`,
     description: product.tagline,
+    alternates: {
+      canonical: `https://riod.energy/products/ev-chargers/${slug}`,
+    },
     openGraph: {
       title: `${product.name} | RIOD EV Chargers`,
       description: product.tagline,
       url: `https://riod.energy/products/ev-chargers/${slug}`,
       images: [{ url: product.heroImage, width: 1400, height: 800 }],
+    },
+    twitter: {
+      card: "summary_large_image" as const,
+      title: `${product.name} | RIOD EV Chargers`,
+      description: product.tagline,
     },
   };
 }

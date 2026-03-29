@@ -7,7 +7,7 @@ export default function VisionMissionSection() {
     <section className="w-full bg-white py-20 md:py-28 lg:pt-30 lg:pb-28">
       <div className="w-[90%] max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-[40%_50%] xl:grid-cols-[47%_50%] gap-16 lg:gap-24">
 
-        {/* LEFT SIDE — MAIN HEADING */}
+        {/* LEFT SIDE - MAIN HEADING */}
         <div className="flex items-start">
           <MotionWrapper>
             <h2 className="font-inter section-heading leading-normal! text-[#222222] md:w-[70%]">
@@ -18,7 +18,7 @@ export default function VisionMissionSection() {
           </MotionWrapper>
         </div>
 
-        {/* RIGHT SIDE — VISION + MISSION */}
+        {/* RIGHT SIDE - VISION + MISSION */}
         <div className="space-y-[3.7rem]">
 
           {/* Vision */}

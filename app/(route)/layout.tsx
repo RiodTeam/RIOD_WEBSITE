@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description: "RIOD - EV Charging & Energy Technology",
   metadataBase: new URL("https://riod.energy"),
   alternates: {
-    canonical: "/",
+    canonical: "https://riod.energy",
   },
   icons: {
     icon: "/icon.png",

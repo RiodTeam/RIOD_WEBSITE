@@ -21,6 +21,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${tech.name} | Technology | RIOD`,
     description: tech.tagline,
+    alternates: {
+      canonical: `https://riod.energy/technology/${slug}`,
+    },
     openGraph: {
       title: `${tech.name} | Technology | RIOD`,
       description: tech.tagline,
@@ -28,6 +31,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: tech.sections?.[0]?.image
         ? [{ url: tech.sections[0].image, width: 1400, height: 800 }]
         : [],
+    },
+    twitter: {
+      card: "summary_large_image" as const,
+      title: `${tech.name} | Technology | RIOD`,
+      description: tech.tagline,
     },
   };
 }

@@ -21,7 +21,13 @@ export const metadata: Metadata = {
     description:
       "Deploy workplace EV charging without overhauling your electrical infrastructure. Dynamic load balancing, employee billing, and ESG reporting built in.",
     type: "website",
-    url: "/ev-charging-workplaces",
+    url: "https://riod.energy/ev-charging-workplaces",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EV Charging for Workplaces | Office Charging Solutions | RIOD",
+    description:
+      "Deploy workplace EV charging without overhauling your electrical infrastructure. Dynamic load balancing, employee billing, and ESG reporting built in.",
   },
 };
 

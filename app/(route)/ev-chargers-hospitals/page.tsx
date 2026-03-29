@@ -5,6 +5,19 @@ export const metadata: Metadata = {
   title: "EV Chargers for Hospitals | Healthcare Charging Solutions",
   description:
     "Safe, reliable EV charging solutions for hospitals. Support staff, patients, visitors, and fleet vehicles with intelligent charging infrastructure.",
+  openGraph: {
+    title: "EV Chargers for Hospitals | Healthcare Charging Solutions",
+    description:
+      "Safe, reliable EV charging solutions for hospitals. Support staff, patients, visitors, and fleet vehicles with intelligent charging infrastructure.",
+    url: "https://riod.energy/ev-chargers-hospitals",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EV Chargers for Hospitals | Healthcare Charging Solutions",
+    description:
+      "Safe, reliable EV charging solutions for hospitals. Support staff, patients, visitors, and fleet vehicles with intelligent charging infrastructure.",
+  },
 };
 
 export default function Page() {
