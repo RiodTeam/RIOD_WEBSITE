@@ -263,18 +263,11 @@ export async function getCaseStudies(): Promise<CaseStudy[]> {
       depth: 1,
     });
 
-    if (result.docs.length > 0) {
-      const payloadStudies = result.docs.map(payloadCaseStudyToFrontend);
-      const payloadSlugs = new Set(payloadStudies.map((s) => s.slug));
-      const staticOnly = caseStudiesData.filter(
-        (s) => !payloadSlugs.has(s.slug)
-      );
-      return [...payloadStudies, ...staticOnly];
-    }
+    return result.docs.map(payloadCaseStudyToFrontend);
   } catch {
     // Payload not available
   }
-  return caseStudiesData;
+  return [];
 }
 
 export async function getCaseStudy(
@@ -296,9 +289,7 @@ export async function getCaseStudy(
     // Payload not available
   }
 
-  return caseStudiesData.find(
-    (s) => s.slug.trim().toLowerCase() === slug.trim().toLowerCase()
-  );
+  return undefined;
 }
 
 // ─── Slug providers for generateStaticParams ──────────────────────────
@@ -323,8 +314,6 @@ export async function getAllInsightSlugs(): Promise<string[]> {
 }
 
 export async function getAllCaseStudySlugs(): Promise<string[]> {
-  const staticSlugs = caseStudiesData.map((s) => s.slug);
-
   try {
     const payload = await getPayload({ config: configPromise });
     const result = await payload.find({
@@ -332,11 +321,10 @@ export async function getAllCaseStudySlugs(): Promise<string[]> {
       limit: 100,
       depth: 0,
     });
-    const payloadSlugs = result.docs
+    return result.docs
       .map((d: any) => d.slug as string)
       .filter(Boolean);
-    return [...new Set([...payloadSlugs, ...staticSlugs])];
   } catch {
-    return staticSlugs;
+    return [];
   }
 }
